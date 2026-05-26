@@ -2846,6 +2846,14 @@ ul {
     line-height: 1.6;
 }
 
+.pillar-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.2rem;
+    display: block;
+    border-radius: 8px;
+}
+
 .text-link {
     color: #2563eb;
     font-weight: 500;
