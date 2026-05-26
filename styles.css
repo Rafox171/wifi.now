@@ -2775,56 +2775,80 @@ ul {
 }
 
 /* Pilares (3 colunas) */
+/* Pilares (3 colunas) */
 .ln-pillars {
     background: #fff;
     padding: 6rem 0;
     color: var(--text-dark);
 }
 
+.ln-pillars .ln-section-head {
+    text-align: left;
+    margin-left: 0;
+    max-width: 100%;
+}
+
 .ln-pillars-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 0;
+    border-top: 1px solid #dbeafe;
+    padding-top: 2.5rem;
 }
 
-.ln-pillar {
-    background: var(--bg-light-soft);
-    border: 1px solid var(--border-light);
-    border-radius: 14px;
-    padding: 2rem;
-    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+.ln-pillars .ln-pillar {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 1.5rem 2.5rem 1.5rem 0;
+    transition: none;
+    box-shadow: none;
 }
 
-.ln-pillar:hover {
-    transform: translateY(-3px);
-    border-color: var(--primary-soft-2);
-    box-shadow: 0 12px 24px -10px rgba(37, 99, 235, 0.15);
+.ln-pillars .ln-pillar:hover {
+    transform: none;
+    box-shadow: none;
 }
 
-.ln-pillar-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    background: var(--primary-soft);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary);
-    margin-bottom: 1.5rem;
+.ln-pillars .ln-pillar:not(:last-child) {
+    border-right: 1px solid #e2e8f0;
 }
 
-.ln-pillar h3 {
+.ln-pillars .ln-pillar:nth-child(2) {
+    padding-left: 2.5rem;
+}
+
+.ln-pillars .ln-pillar:nth-child(3) {
+    padding-left: 2.5rem;
+    padding-right: 0;
+}
+
+.ln-pillar-num {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 1.2rem;
+    font-family: monospace;
+}
+
+.ln-pillars .ln-pillar h3 {
     font-size: 1.2rem;
     font-weight: 700;
-    color: var(--text-dark);
-    margin-bottom: 0.6rem;
+    color: #0B1F3A;
+    margin-bottom: 0.8rem;
     letter-spacing: -0.01em;
 }
 
-.ln-pillar p {
-    color: var(--text-dark-muted);
+.ln-pillars .ln-pillar p {
+    color: #475569;
     font-size: 0.95rem;
     line-height: 1.6;
+}
+
+.text-link {
+    color: #2563eb;
+    font-weight: 500;
 }
 
 .ln-pillar code {
@@ -3649,6 +3673,20 @@ ul {
     .ln-pillar,
     .ln-env-card,
     .ln-step { padding: 1.25rem; }
+
+    .ln-pillars-grid {
+        grid-template-columns: 1fr;
+        border-top: 1px solid #e2e8f0;
+        gap: 0;
+    }
+    .ln-pillars .ln-pillar {
+        border-right: none !important;
+        border-bottom: 1px solid #e2e8f0;
+        padding: 1.5rem 0 !important;
+    }
+    .ln-pillars .ln-pillar:last-child {
+        border-bottom: none;
+    }
 
     /* Stepper já vira 1col em 640 — reforço */
     .ln-step-title { font-size: 1rem; }
