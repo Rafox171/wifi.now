@@ -444,7 +444,7 @@ ul {
 .hero-actions {
     display: flex;
     gap: 0.8rem;
-    margin-left: 115px;
+    margin-left: 40px;
     margin-top: 130px;
     margin-bottom: 20px;
     flex-wrap: wrap;
