@@ -2855,6 +2855,11 @@ ul {
     border-radius: 8px;
 }
 
+.ln-pillars .ln-pillar:nth-child(2) .pillar-image,
+.ln-pillars .ln-pillar:nth-child(3) .pillar-image {
+    width: 250px;
+}
+
 .text-link {
     color: #2563eb;
     font-weight: 500;
