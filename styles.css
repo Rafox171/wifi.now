@@ -368,7 +368,8 @@ ul {
     background-color: #eef2fb;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 0 2rem;
     overflow: hidden;
 }
 
