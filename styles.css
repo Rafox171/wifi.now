@@ -376,7 +376,7 @@ ul {
     padding-top: 80px;
     position: relative;
     overflow: hidden;
-    background: url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/herowifinow.jpg') center/cover no-repeat;
+    background: linear-gradient(to bottom, #eef2fb 0%, rgba(238, 242, 251, 0) 15%), url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/herowifinow.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
