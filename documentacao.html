@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - wi-fi.now</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg" alt="wi-fi.now logo">
+            </a>
+            <div class="nav-links">
+                <a href="recursos.html">Recursos</a>
+                <a href="como-funciona.html">Como funciona</a>
+                <a href="planos.html">Planos</a>
+                <a href="faq.html">FAQ</a>
+                <a href="documentacao.html">Documentação</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="login-link">Entrar</a>
+                <a href="#" class="btn btn-primary">Começar grátis</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="ft-hero bg-light">
+        <div class="container ft-hero-container">
+            <span class="ft-eyebrow">Documentação técnica · V1.1 · 18/05/2026</span>
+            <h1 class="ft-hero-title">
+                Captive Portal FortiGate com <span class="text-brand-blue">wi-fi.now</span>
+            </h1>
+            <p class="ft-hero-sub">
+                Documento técnico da integração: portal externo de autenticação, RADIUS, accounting, pré-requisitos, ambientes especiais, troubleshooting e privacidade. Conteúdo baseado na versão 1.1 do documento técnico.
+            </p>
+            <div class="ft-subnav">
+                <a href="#visao-geral">Visão geral</a>
+                <a href="#fluxo">Funcionamento</a>
+                <a href="#radius">RADIUS</a>
+                <a href="#prerequisitos">Pré-requisitos</a>
+                <a href="#certificado">Certificado wildcard</a>
+                <a href="#ambientes">Ambientes especiais</a>
+                <a href="#troubleshooting">Troubleshooting</a>
+                <a href="#privacidade">Privacidade e LGPD</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visão geral -->
+    <section class="ft-section bg-light" id="visao-geral">
+        <div class="container ft-narrow">
+            <span class="ft-label">1. Visão geral</span>
+            <h2 class="ft-h2">Visão geral da solução</h2>
+            <p class="ft-body">
+                O captive portal no FortiGate é utilizado para controlar o acesso dos usuários conectados à rede Wi-Fi. Antes de permitir a navegação, o FortiGate redireciona o usuário para uma página de autenticação externa da plataforma wi-fi.now.
+            </p>
+            <p class="ft-body">A página externa segue o formato:</p>
+            <div class="ft-code-block">https://wi-fi.now/fgauth/[UNIQID]</div>
+            <p class="ft-body">
+                O <code>UNIQID</code> é uma string randômica alfanumérica de 8 a 16 caracteres, utilizada para identificar de forma única o cliente ou ambiente dentro da plataforma.
+            </p>
+
+            <div class="ft-split">
+                <div class="ft-split-col">
+                    <h3 class="ft-h3 ft-h3-pos">FortiGate</h3>
+                    <ul class="ft-list-check">
+                        <li>Controla o acesso à rede</li>
+                        <li>Intercepta o tráfego não autenticado</li>
+                        <li>Aplica políticas de firewall, NAT, filtros e bloqueios</li>
+                        <li>Libera a navegação após validação no portal</li>
+                    </ul>
+                </div>
+                <div class="ft-split-col">
+                    <h3 class="ft-h3 ft-h3-pos">wi-fi.now</h3>
+                    <ul class="ft-list-check">
+                        <li>Exibe o portal externo de autenticação</li>
+                        <li>URL: <code>https://wi-fi.now/fgauth/[UNIQID]</code></li>
+                        <li>Valida o usuário (token SMS/WhatsApp ou OAuth)</li>
+                        <li>Registra accounting da sessão</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funcionamento -->
+    <section class="ft-section ft-section-alt bg-light" id="fluxo">
+        <div class="container ft-narrow">
+            <span class="ft-label">3 · Funcionamento</span>
+            <h2 class="ft-h2">Funcionamento passo a passo</h2>
+            <p class="ft-body">
+                Fluxo conceitual do captive portal, do momento da conexão ao Wi-Fi até o registro de accounting da sessão.
+            </p>
+
+            <div class="ft-accordion">
+                <details open>
+                    <summary>3.1 — O cliente conecta na rede Wi-Fi</summary>
+                    <div class="ft-acc-body">
+                        <p>O usuário conecta seu dispositivo ao SSID configurado no ambiente. Recebe configurações básicas de rede: endereço IP, máscara, gateway e DNS. Mesmo conectado ao Wi-Fi, ainda não está liberado para navegar.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>3.2 — O cliente tenta acessar a Internet</summary>
+                    <div class="ft-acc-body">
+                        <p>Após conectar no Wi-Fi, o usuário tenta abrir um site, aplicativo ou serviço. Como o dispositivo ainda não foi autenticado ou liberado, o FortiGate identifica que esse cliente precisa passar pelo captive portal antes de acessar a Internet.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>3.3 — O FortiGate intercepta e redireciona para o wi-fi.now</summary>
+                    <div class="ft-acc-body">
+                        <p>O FortiGate analisa o tráfego vindo da rede Wi-Fi. Quando identifica que o usuário ainda não está autenticado, intercepta a tentativa de navegação e redireciona o navegador para a página externa do wi-fi.now no formato <code>https://wi-fi.now/fgauth/[UNIQID]</code>. O UNIQID é uma string randômica alfanumérica de 8 a 16 caracteres que identifica o cliente ou ambiente.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>3.4 — O usuário acessa a página customizada do wi-fi.now</summary>
+                    <div class="ft-acc-body">
+                        <p>O usuário visualiza a experiência configurada para aquele cliente: logo, identidade visual personalizada, termos de uso da rede, política de privacidade, botões de autenticação e campo para telefone. A página exibida depende das configurações associadas ao UNIQID do cliente.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>3.5 — O portal wi-fi.now valida o usuário</summary>
+                    <div class="ft-acc-body">
+                        <p>O usuário realiza o processo de autenticação definido para aquele cliente. O portal pode utilizar validação por token via SMS ou WhatsApp, ou autenticação OAuth com Google, LinkedIn ou Microsoft.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>5 — Liberação de acesso pelo FortiGate</summary>
+                    <div class="ft-acc-body">
+                        <p>Quando o processo no wi-fi.now é concluído, o FortiGate passa a reconhecer aquele cliente como autorizado. A partir desse momento, o usuário deixa de ficar preso no captive portal e passa a navegar conforme as regras configuradas no FortiGate.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>6 — Políticas de firewall e controle de acesso</summary>
+                    <div class="ft-acc-body">
+                        <p>A autenticação pelo portal <strong>não significa acesso irrestrito</strong>. Após a autenticação, o FortiGate continua sendo o responsável por aplicar as políticas de segurança e controle de tráfego. Mesmo após a liberação, o usuário pode continuar sujeito a bloqueio de sites, controle de aplicações, limite de banda, segmentação de rede, tempo máximo de sessão, logs de acesso, regras por grupo e políticas de segurança. Essas regras dependem exclusivamente das políticas estabelecidas no FortiGate/firewall.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- RADIUS -->
+    <section class="ft-section bg-light" id="radius">
+        <div class="container ft-narrow">
+            <span class="ft-label">7–12 · RADIUS</span>
+            <h2 class="ft-h2">RADIUS Authentication e Accounting</h2>
+            <p class="ft-body">
+                RADIUS Authentication valida o acesso. RADIUS Accounting registra eventos administrativos da sessão. O accounting <strong>não registra</strong> histórico de navegação.
+            </p>
+
+            <div class="ft-accordion">
+                <details>
+                    <summary>7 — O que é RADIUS Authentication</summary>
+                    <div class="ft-acc-body">
+                        <p>É o processo usado para validar ou autorizar o acesso do usuário ou dispositivo à rede. No contexto da integração entre FortiGate e wi-fi.now, está relacionado à validação da autenticação realizada no portal externo. Ajuda a determinar se o usuário ou dispositivo pode ser liberado para navegar após concluir a etapa de autenticação no portal.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>8 — O que é RADIUS Accounting</summary>
+                    <div class="ft-acc-body">
+                        <p>É o mecanismo usado para registrar informações administrativas sobre a sessão de acesso do usuário autenticado: início, fim, identificação do usuário, dispositivo, IP atribuído, MAC, tempo de permanência e status da autenticação. <strong>Não registra:</strong> sites acessados, URLs navegadas, conteúdo visualizado, aplicativos utilizados ou histórico de navegação.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>10.1 — Accounting-Start</summary>
+                    <div class="ft-acc-body">
+                        <p>Indica que uma sessão foi iniciada. Informação registrada: usuário autenticado, IP do cliente, MAC do dispositivo, horário de início e equipamento de origem.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>10.2 — Accounting-Stop</summary>
+                    <div class="ft-acc-body">
+                        <p>Indica que uma sessão foi encerrada. Informação registrada: horário de término, tempo total de sessão, motivo do encerramento quando disponível.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>10.3 — Accounting-Interim-Update (15 min)</summary>
+                    <div class="ft-acc-body">
+                        <p>Atualizações intermediárias enviadas durante uma sessão ativa, usadas para manter o registro atualizado enquanto o usuário permanece conectado. No wi-fi.now, o intervalo padrão é de <strong>15 minutos</strong>. Exemplo: usuário autentica às 10:00 → Accounting-Start às 10:00 → Interim-Update às 10:15, 10:30, 10:45 → Accounting-Stop ao encerrar a sessão.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>12 — Autorização dos IPs públicos para conexão RADIUS</summary>
+                    <div class="ft-acc-body">
+                        <p>Na contratação do serviço, o cliente deve fornecer os IPs públicos que estarão autorizados a efetuar conexão com o servidor RADIUS do wi-fi.now. Esses IPs correspondem aos endereços públicos de saída utilizados pelo FortiGate ou pelo ambiente do cliente. Caso o IP público não esteja previamente autorizado, a comunicação RADIUS poderá falhar, impactando a autenticação ou o registro de accounting. Se o cliente alterar link de Internet, IP público, NAT de saída ou arquitetura de borda, a autorização deverá ser revisada.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pré-requisitos -->
+    <section class="ft-section ft-section-alt bg-light" id="prerequisitos">
+        <div class="container ft-narrow">
+            <span class="ft-label">17–19, 26 · Pré-requisitos</span>
+            <h2 class="ft-h2">Pré-requisitos técnicos</h2>
+            <p class="ft-body">
+                Antes da ativação do captive portal com wi-fi.now, recomenda-se validar os pontos abaixo.
+            </p>
+
+            <div class="ft-accordion">
+                <details>
+                    <summary>17 — Checklist de pré-requisitos</summary>
+                    <div class="ft-acc-body">
+                        <p>FortiGate com acesso à Internet; DNS funcionando; NTP/hora correta no FortiGate; script wi-fi.now aplicado sem erros; certificado wildcard <code>*.fxo.com.br</code> instalado; walled garden configurado; RADIUS configurado; SSID/VLAN de visitantes definida; política de saída para Internet criada; cliente conseguindo resolver wi-fi.now; IPs públicos do cliente informados na contratação; IPs públicos autorizados no servidor RADIUS; FortiGate saindo para a Internet pelos IPs autorizados; portas e protocolos necessários liberados; validação de cenários com SD-WAN, failover ou balanceamento; validação de ambientes com FortiGate em HA; definição do tempo de sessão; avaliação do impacto de MAC privado/aleatório; termos de uso e política de privacidade definidos pelo cliente; homologação realizada antes da ativação em produção.</p>
+                        <p><strong>NTP/hora correta</strong> é especialmente importante, pois autenticação, certificados HTTPS, tokens, OAuth e logs podem falhar ou ficar inconsistentes se o horário do FortiGate estiver incorreto.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>18 — Portas e protocolos necessários</summary>
+                    <div class="ft-acc-body">
+                        <p>HTTPS/TCP 443 (acesso ao portal wi-fi.now), DNS/UDP-TCP 53 (resolução de nomes), RADIUS Authentication/UDP, RADIUS Accounting/UDP, NTP/UDP 123 (sincronização de horário). As portas específicas de RADIUS devem seguir a configuração definida no script gerado pelo wi-fi.now.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>19 — Walled garden</summary>
+                    <div class="ft-acc-body">
+                        <p>O walled garden é o conjunto de destinos que o usuário pode acessar antes de estar autenticado no captive portal. Necessário para permitir que o dispositivo consiga abrir a página do wi-fi.now e acessar serviços essenciais usados durante a autenticação. Inclui: domínios relacionados ao portal wi-fi.now, serviços necessários para autenticação OAuth, serviços necessários para validação por SMS ou WhatsApp e destinos necessários para funcionamento do captive portal. Fora desses destinos permitidos, o tráfego permanece bloqueado até a conclusão da autenticação.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>26 — Configuração no FortiGate (priorizar o script)</summary>
+                    <div class="ft-acc-body">
+                        <p>Neste primeiro momento, deve-se priorizar o uso do script de configuração gerado pelo wi-fi.now para o FortiGate. Esse script já contempla as configurações necessárias para o funcionamento da integração, incluindo certificado wildcard <code>*.fxo.com.br</code>, walled garden, configurações necessárias para RADIUS e demais parâmetros. Recomenda-se evitar configurações manuais isoladas fora do padrão definido pelo script, pois isso pode causar inconsistências no redirecionamento, na autenticação ou na liberação dos usuários.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificado -->
+    <section class="ft-section bg-light" id="certificado">
+        <div class="container ft-narrow">
+            <span class="ft-label">20 · Certificado</span>
+            <h2 class="ft-h2">Certificado wildcard *.fxo.com.br</h2>
+            <p class="ft-body">
+                O script de configuração gerado pelo wi-fi.now inclui o certificado wildcard:
+            </p>
+            <div class="ft-code-block">*.fxo.com.br</div>
+            <p class="ft-body">
+                Esse certificado é utilizado para que o wi-fi.now efetue a autenticação com o FortiGate de forma segura. Faz parte do processo de comunicação segura entre a plataforma e o FortiGate durante a integração do captive portal externo, ajudando a garantir que a troca de informações relacionada à autenticação ocorra de maneira protegida.
+            </p>
+        </div>
+    </section>
+
+    <!-- Ambientes especiais -->
+    <section class="ft-section ft-section-alt bg-light" id="ambientes">
+        <div class="container ft-narrow">
+            <span class="ft-label">21–24 · Ambientes especiais</span>
+            <h2 class="ft-h2">Ambientes especiais</h2>
+            <p class="ft-body">
+                Múltiplos links, SD-WAN, failover, FortiGate em HA, dispositivos com MAC privado/aleatório.
+            </p>
+
+            <div class="ft-accordion">
+                <details>
+                    <summary>21 — Múltiplos links, SD-WAN ou failover</summary>
+                    <div class="ft-acc-body">
+                        <p>Em ambientes com múltiplos links de Internet, SD-WAN, failover ou balanceamento de carga, todos os IPs públicos que possam ser utilizados pelo FortiGate para comunicação com o servidor RADIUS do wi-fi.now devem ser informados e previamente autorizados. Se o FortiGate alternar para um link de contingência ou sair por um IP público não autorizado, a comunicação com o servidor RADIUS poderá falhar. <strong>Impactos possíveis:</strong> falha na autenticação, falha no accounting, usuário preso no portal, sessão não registrada corretamente, intermitência em cenários de failover.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>22 — FortiGate em alta disponibilidade (HA)</summary>
+                    <div class="ft-acc-body">
+                        <p>Em ambientes com FortiGate em alta disponibilidade, deve-se validar: script aplicado corretamente, objetos sincronizados entre os membros do cluster, certificado wildcard <code>*.fxo.com.br</code> disponível, configurações de RADIUS sincronizadas, walled garden sincronizado, políticas de firewall consistentes, IP público de saída autorizado no wi-fi.now e comportamento validado após failover. Após qualquer teste ou evento de failover, recomenda-se validar novamente: redirecionamento para o portal, autenticação por SMS/WhatsApp, autenticação OAuth, liberação de navegação e registro de accounting.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>23 — Tempo de sessão, expiração e reautenticação</summary>
+                    <div class="ft-acc-body">
+                        <p>O tempo de sessão depende das configurações aplicadas no FortiGate e/ou retornadas pela integração RADIUS. Situações que podem exigir nova autenticação: expiração do tempo de sessão, desconexão do Wi-Fi, troca de rede, renovação ou alteração de IP, troca de dispositivo, uso de MAC address aleatório, logout ou encerramento da sessão, reinício do equipamento ou do serviço. A autenticação normalmente é associada à sessão, dispositivo ou identificadores observados no ambiente, como IP e MAC address.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>24 — Troca de dispositivo e MAC privado/aleatório</summary>
+                    <div class="ft-acc-body">
+                        <p>Dispositivos modernos como celulares, tablets e notebooks podem utilizar MAC address privado ou aleatório por padrão. Esse comportamento pode impactar: identificação do dispositivo, registro de accounting, rastreabilidade por MAC address, necessidade de reautenticação e correlação entre usuário e dispositivo. Em ambientes onde a rastreabilidade por dispositivo é importante, recomenda-se orientar os usuários ou ajustar a política de rede conforme a necessidade do cliente.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting -->
+    <section class="ft-section bg-light" id="troubleshooting">
+        <div class="container ft-narrow">
+            <span class="ft-label">30–31 · Troubleshooting</span>
+            <h2 class="ft-h2">Troubleshooting básico</h2>
+            <p class="ft-body">
+                Sintomas comuns e possíveis causas para diagnóstico inicial. Coletar logs e evidências do FortiGate em caso de falhas.
+            </p>
+
+            <table class="ft-table">
+                <thead>
+                    <tr>
+                        <th>Sintoma</th>
+                        <th>Possível causa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Portal não abre</td>
+                        <td>DNS, walled garden, rota ou script não aplicado corretamente</td>
+                    </tr>
+                    <tr>
+                        <td>Usuário não é redirecionado</td>
+                        <td>Interface/SSID sem captive portal, política incorreta ou bypass indevido</td>
+                    </tr>
+                    <tr>
+                        <td>Usuário autentica mas não navega</td>
+                        <td>Política de firewall, NAT ou rota de saída</td>
+                    </tr>
+                    <tr>
+                        <td>OAuth não funciona</td>
+                        <td>Domínios do provedor não permitidos no walled garden; credenciais OAuth expiradas, revogadas ou mal configuradas pelo cliente</td>
+                    </tr>
+                    <tr>
+                        <td>Token SMS/WhatsApp não chega</td>
+                        <td>Serviço de SMS/WhatsApp, telefone inválido ou bloqueio de acesso necessário</td>
+                    </tr>
+                    <tr>
+                        <td>Erro de certificado</td>
+                        <td>Certificado ausente, expirado ou hora incorreta no FortiGate</td>
+                    </tr>
+                    <tr>
+                        <td>Accounting não aparece</td>
+                        <td>Configuração RADIUS, secret, porta, IP público não autorizado ou comunicação com servidor</td>
+                    </tr>
+                    <tr>
+                        <td>RADIUS não responde</td>
+                        <td>IP público de origem não autorizado, rota incorreta, firewall bloqueando ou servidor inacessível</td>
+                    </tr>
+                    <tr>
+                        <td>RADIUS funciona em link principal mas falha no secundário</td>
+                        <td>IP público do link secundário não autorizado no wi-fi.now</td>
+                    </tr>
+                    <tr>
+                        <td>Falha intermitente em SD-WAN</td>
+                        <td>Tráfego RADIUS saindo por IPs diferentes, nem todos autorizados</td>
+                    </tr>
+                    <tr>
+                        <td>Após failover do FortiGate, portal ou RADIUS falha</td>
+                        <td>Configuração, certificado, objetos ou IP de saída não validados no cluster HA</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="ft-h3">Logs e evidências para suporte</h3>
+            <p class="ft-body">
+                Coletar: data e horário do teste, SSID utilizado, IP do dispositivo, MAC address, método de autenticação, número de telefone (se token), provedor OAuth (se aplicável), IP público de saída do FortiGate, UNIQID do cliente, mensagem de erro exibida, evidência em print ou vídeo, resultado do teste de navegação. Logs do FortiGate relacionados a: captive portal, RADIUS Authentication, RADIUS Accounting, firewall policy, NAT, DNS, walled garden e eventos de HA ou SD-WAN quando aplicável.
+            </p>
+        </div>
+    </section>
+
+    <!-- Privacidade e LGPD -->
+    <section class="ft-section ft-section-alt bg-light" id="privacidade">
+        <div class="container ft-narrow">
+            <span class="ft-label">32–34 · Privacidade</span>
+            <h2 class="ft-h2">Privacidade e LGPD</h2>
+            <p class="ft-body">
+                Tratamento de dados, termos de uso e responsabilidades do cliente.
+            </p>
+
+            <div class="ft-accordion">
+                <details>
+                    <summary>32 — Termos de uso, política de privacidade e consentimento</summary>
+                    <div class="ft-acc-body">
+                        <p>O conteúdo dos termos de uso, política de privacidade e eventuais consentimentos exibidos no portal deve ser definido, fornecido e validado pelo cliente. O wi-fi.now disponibiliza o portal de autenticação, mas o conteúdo jurídico e regulatório apresentado ao usuário deve refletir as necessidades, políticas e responsabilidades do cliente. O cliente é responsável por validar: texto dos termos de uso, texto da política de privacidade, necessidade de consentimento, adequação à LGPD, adequação a políticas internas e adequação a normas regulatórias aplicáveis.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>33 — Privacidade e LGPD</summary>
+                    <div class="ft-acc-body">
+                        <p>O wi-fi.now registra informações necessárias para autenticação e accounting da sessão, como identificadores do usuário/dispositivo, horários de início e fim e dados técnicos da conexão. A plataforma <strong>não</strong> registra histórico de navegação, sites acessados, URLs navegadas ou conteúdo consumido pelo usuário. O tratamento de dados deve seguir as políticas de privacidade aplicáveis ao cliente e a legislação vigente, incluindo a LGPD quando aplicável.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>34 — HTTPS e redirecionamento</summary>
+                    <div class="ft-acc-body">
+                        <p>A página externa do wi-fi.now normalmente utiliza HTTPS: <code>https://wi-fi.now/fgauth/[UNIQID]</code>. Devido ao funcionamento dos navegadores modernos e ao uso predominante de HTTPS, o redirecionamento inicial do captive portal pode variar entre sistemas operacionais e navegadores. Em muitos casos, o próprio sistema operacional detecta o portal cativo e abre uma janela específica de autenticação. Comportamentos possíveis: abertura automática da tela de login, exibição de notificação de rede com login necessário, necessidade de abrir manualmente o navegador, diferenças entre Android, iOS, Windows e macOS, diferenças entre navegadores.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resumo -->
+    <section class="ft-section bg-light">
+        <div class="container ft-narrow">
+            <span class="ft-label">37 · Em uma frase</span>
+            <h2 class="ft-h2">Resumo executivo</h2>
+            <p class="ft-body ft-callout">
+                O FortiGate faz o controle e o redirecionamento do captive portal, enquanto o wi-fi.now apresenta a página externa de autenticação personalizada em <code>https://wi-fi.now/fgauth/[UNIQID]</code>, usando token via SMS/WhatsApp ou OAuth para validar o usuário antes da liberação do acesso, registrando apenas o accounting da sessão, com Accounting-Interim-Update padrão de 15 minutos, mantendo as políticas de segurança sob responsabilidade do FortiGate/firewall, as credenciais OAuth e conteúdos legais sob responsabilidade do cliente, e exigindo que os IPs públicos de saída estejam previamente autorizados para comunicação RADIUS.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="index.html" class="footer-logo">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg" alt="wi-fi.now logo">
+                </a>
+            </div>
+            <div class="footer-right">
+                <span class="copyright">Todos direitos reservados © 2026</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+.vscode/
+*.log
+.system_generated/
+.gemini/

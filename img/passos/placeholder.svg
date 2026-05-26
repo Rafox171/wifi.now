@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="450" fill="#f1f5f9"/>
+  <rect x="1" y="1" width="798" height="448" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8 6"/>
+  <g transform="translate(400 200)" fill="#94a3b8" text-anchor="middle" font-family="Inter, sans-serif">
+    <circle cx="0" cy="-30" r="38" fill="none" stroke="#94a3b8" stroke-width="3"/>
+    <path d="M -18 -42 L 0 -22 L 18 -42 M 0 -22 L 0 -10" fill="none" stroke="#94a3b8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text y="40" font-size="22" font-weight="600" fill="#475569">Adicione uma imagem aqui</text>
+    <text y="72" font-size="15" fill="#94a3b8">Substitua este arquivo em img/passos/</text>
+    <text y="94" font-size="15" fill="#94a3b8">Recomendado: 1600 × 900 px (16:9)</text>
+  </g>
+</svg>
