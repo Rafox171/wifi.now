@@ -361,6 +361,13 @@ ul {
     border-color: var(--primary);
 }
 
+/* Spacer entre navbar e hero */
+.nav-spacer {
+    width: 100%;
+    height: 3cm;
+    background-color: #eef2fb;
+}
+
 /* Hero Section — Linear style */
 .hero {
     width: 100%;
