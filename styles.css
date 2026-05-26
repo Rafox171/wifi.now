@@ -440,8 +440,10 @@ ul {
 
 /* Features Carousel - loop contínuo */
 .features-carousel {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: rgba(10, 18, 40, 0.75);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
@@ -449,7 +451,6 @@ ul {
     overflow: hidden;
     border-top: 1px solid rgba(255,255,255,0.08);
     z-index: 5;
-    margin-top: auto;
 }
 
 .carousel-wrapper {
