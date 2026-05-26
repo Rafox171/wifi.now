@@ -264,8 +264,11 @@ ul {
 /* Navbar — estilo Linear */
 .navbar {
     padding: 0.85rem 0;
-    position: relative;
-    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: rgba(6, 12, 30, 0.85);
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(12px);
@@ -360,9 +363,9 @@ ul {
 
 /* Hero Section */
 .hero {
-    height: calc(100vh - 80px);
+    height: 100vh;
     min-height: 560px;
-    padding: 0;
+    padding-top: 80px;
     position: relative;
     overflow: hidden;
     background: url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/hero1.jpg') center/cover no-repeat;
