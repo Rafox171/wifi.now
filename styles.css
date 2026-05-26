@@ -453,10 +453,10 @@ ul {
 .btn-hero {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
+    gap: 6px;
+    padding: 6px 13px;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     border-radius: 999px;
     text-decoration: none;
     cursor: pointer;
@@ -486,8 +486,8 @@ ul {
 }
 
 .btn-hero svg {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     display: block;
 }
 
