@@ -1976,25 +1976,63 @@ ul {
 
 .footer {
     background: #060c1e;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 2rem 0;
     margin-top: 4rem;
 }
 
 .footer-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-left {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    justify-content: flex-start;
+}
+
+.footer-left a {
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.15s ease;
+}
+
+.footer-left a:hover {
+    color: #ffffff;
+}
+
+.footer-bullet {
+    color: rgba(255, 255, 255, 0.2);
+    user-select: none;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .footer-logo img {
-    height: 28px;
+    height: 32px;
+    display: block;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .copyright {
-    color: var(--text-muted-2);
-    font-size: 0.9rem;
-    font-weight: 500;
+    color: inherit;
+    font-weight: 400;
 }
 
 /* Responsive */
@@ -4323,5 +4361,196 @@ ul {
     }
     .pricing-hero h1 {
         font-size: 2.25rem;
+    }
+}
+
+/* ============================================================
+   SEÇÃO NOVA ABORDAGEM (Senha compartilhada vs Wi-fi.now)
+   ============================================================ */
+.ln-approach {
+    background-color: var(--bg-light-soft);
+    padding: 6rem 0;
+    color: var(--text-dark);
+    border-top: 1px solid var(--border-light);
+}
+
+.ln-section-head-left {
+    max-width: 820px;
+    margin-bottom: 3.5rem;
+}
+
+.ln-section-head-left h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    color: var(--text-dark);
+    margin: 0.75rem 0 1.25rem;
+}
+
+.ln-section-head-left .section-desc {
+    font-size: 1.1rem;
+    color: var(--text-dark-muted);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.approach-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.approach-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px -8px rgba(15, 23, 42, 0.08);
+}
+
+.approach-card.common-way {
+    border: 1px solid var(--border-light);
+}
+
+.approach-card.wifi-now-way {
+    border: 2px solid var(--primary);
+}
+
+.approach-card-visual {
+    flex-shrink: 0;
+}
+
+.approach-img-wrapper {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.common-way .approach-img-wrapper {
+    background-color: #f1f5f9;
+}
+
+.wifi-now-way .approach-img-wrapper {
+    background-color: #eff6ff;
+}
+
+.approach-img-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.approach-card-content {
+    flex: 1;
+}
+
+.approach-card-content h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem;
+}
+
+.common-way .approach-card-content h3 {
+    color: var(--text-dark);
+}
+
+.wifi-now-way .approach-card-content h3 {
+    color: var(--primary);
+}
+
+.card-divider {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-light);
+    margin-bottom: 1.25rem;
+}
+
+.approach-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.approach-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text-dark-muted);
+    margin-bottom: 0.85rem;
+    line-height: 1.4;
+}
+
+.approach-list li:last-child {
+    margin-bottom: 0;
+}
+
+.approach-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon-cross {
+    background-color: #cbd5e1;
+    color: #ffffff;
+}
+
+.icon-cross svg {
+    width: 9px;
+    height: 9px;
+}
+
+.icon-check {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.icon-check svg {
+    width: 10px;
+    height: 10px;
+}
+
+@media (max-width: 900px) {
+    .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .approach-card {
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+    .approach-img-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 640px) {
+    .approach-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+    .ln-section-head-left h2 {
+        font-size: 1.85rem;
     }
 }

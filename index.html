@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wi-fi.now - Captive portal externo para FortiGate</title>
-    <link rel="stylesheet" href="styles.css?v=47">
+    <link rel="stylesheet" href="styles.css?v=51">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -267,7 +267,7 @@
                             <li>Termos de uso e política de privacidade</li>
                             <li>Credenciais OAuth (Google, LinkedIn, Microsoft)</li>
                             <li>IPs públicos autorizados no RADIUS wi-fi.now</li>
-                            <li>Definição de retenção e adequação LGPD</li>
+                        <li>Definição de retenção e adequação LGPD</li>
                             <li>Aplicação do script gerado pela plataforma</li>
                             <li>Homologação antes da entrada em produção</li>
                         </ul>
@@ -277,54 +277,97 @@
         </div>
     </section>
 
-    <!-- 4. Configure em minutos -->
-    <section class="ln-feature ln-feature-alt">
-        <div class="container ln-feature-grid ln-feature-top">
-            <div class="ln-feature-text">
-                <span class="ln-eyebrow">Implementação</span>
-                <h2>Script pronto. Sem projeto de três meses.</h2>
-                <p>Você informa os IPs públicos de saída. A plataforma autoriza no RADIUS, gera o script com certificado, walled garden e parâmetros. Você aplica no FortiGate. Pronto.</p>
-                <ul class="ln-checklist">
-                    <li>Script de configuração gerado pela plataforma</li>
-                    <li>Certificado wildcard <code>*.fxo.com.br</code> incluído</li>
-                    <li>Walled garden pré-configurado</li>
-                    <li>Parâmetros de RADIUS Authentication e Accounting</li>
-                    <li>Suporta HA, SD-WAN, failover e múltiplos links</li>
-                </ul>
-                <a href="documentacao.html" class="ln-link-arrow">Ver documentação técnica completa →</a>
+    <!-- Nova abordagem -->
+    <section class="ln-approach">
+        <div class="container">
+            <div class="ln-section-head-left">
+                <span class="ln-eyebrow">[ 04 ] CONTROLE DE ACESSO</span>
+                <h2>Senha compartilhada não é controle de acesso</h2>
+                <p class="section-desc">Dar a senha do Wi-Fi parece simples. O problema é quando visitantes, fornecedores e clientes acabam usando um acesso que não foi pensado para eles. Com o Wi-fi.now, o visitante entra por uma jornada própria de autenticação, sem misturar a rede corporativa com a rede de convidados.</p>
             </div>
-            <div class="ln-feature-visual">
-                <div class="ln-code-mockup">
-                    <div class="ln-code-header">
-                        <span class="ln-code-dot"></span>
-                        <span class="ln-code-dot"></span>
-                        <span class="ln-code-dot"></span>
-                        <span class="ln-code-title">fortigate-config.sh</span>
+            
+            <div class="approach-grid">
+                <!-- Do jeito comum -->
+                <div class="approach-card common-way">
+                    <div class="approach-card-visual">
+                        <div class="approach-img-wrapper">
+                            <img src="img/do-jeito-comum.png" alt="Do jeito comum" class="approach-img-placeholder" onerror="this.style.display='none';">
+                        </div>
                     </div>
-<pre class="ln-code-body"><span class="ln-code-cmt"># wi-fi.now → FortiGate (gerado pela plataforma)</span>
-<span class="ln-code-sec">config</span> user radius
-  <span class="ln-code-sec">edit</span> <span class="ln-code-str">"wifi-now-auth"</span>
-    <span class="ln-code-key">set</span> server      <span class="ln-code-str">"auth.wi-fi.now"</span>
-    <span class="ln-code-key">set</span> secret      <span class="ln-code-str">**********</span>
-    <span class="ln-code-key">set</span> auth-type   pap
-  <span class="ln-code-sec">next</span>
-<span class="ln-code-sec">end</span>
+                    <div class="approach-card-content">
+                        <h3>Do jeito comum</h3>
+                        <span class="card-divider"></span>
+                        <ul class="approach-list">
+                            <li>
+                                <span class="approach-icon icon-cross">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </span>
+                                Senha repassada várias vezes
+                            </li>
+                            <li>
+                                <span class="approach-icon icon-cross">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </span>
+                                Difícil saber quem acessou
+                            </li>
+                            <li>
+                                <span class="approach-icon icon-cross">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </span>
+                                Baixa rastreabilidade
+                            </li>
+                            <li>
+                                <span class="approach-icon icon-cross">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </span>
+                                Risco para a rede corporativa
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-<span class="ln-code-sec">config</span> user radius
-  <span class="ln-code-sec">edit</span> <span class="ln-code-str">"wifi-now-acct"</span>
-    <span class="ln-code-key">set</span> acct-server <span class="ln-code-str">"acct.wi-fi.now"</span>
-    <span class="ln-code-key">set</span> acct-interim-interval <span class="ln-code-str">900</span>
-  <span class="ln-code-sec">next</span>
-<span class="ln-code-sec">end</span>
-
-<span class="ln-code-cmt"># Captive portal externo</span>
-<span class="ln-code-sec">config</span> firewall policy
-  <span class="ln-code-key">set</span> auth-redirect-addr <span class="ln-code-str">"wi-fi.now/fgauth/[UNIQID]"</span>
-<span class="ln-code-sec">end</span></pre>
+                <!-- Com Wi-fi.now -->
+                <div class="approach-card wifi-now-way">
+                    <div class="approach-card-visual">
+                        <div class="approach-img-wrapper">
+                            <img src="img/com-wifi-now.png" alt="Com Wi-fi.now" class="approach-img-placeholder" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+                    <div class="approach-card-content">
+                        <h3>Com Wi-fi.now</h3>
+                        <span class="card-divider"></span>
+                        <ul class="approach-list">
+                            <li>
+                                <span class="approach-icon icon-check">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </span>
+                                Portal personalizado
+                            </li>
+                            <li>
+                                <span class="approach-icon icon-check">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </span>
+                                Autenticação por WhatsApp, SMS ou OAuth
+                            </li>
+                            <li>
+                                <span class="approach-icon icon-check">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </span>
+                                Sessão registrada
+                            </li>
+                            <li>
+                                <span class="approach-icon icon-check">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </span>
+                                Rede corporativa preservada
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- 5. LGPD / Auditoria transparente -->
     <section class="ln-feature">
@@ -435,12 +478,19 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-left">
+                <a href="#">Termos</a>
+                <span class="footer-bullet">•</span>
+                <a href="#">Privacidade</a>
+                <span class="footer-bullet">•</span>
+                <a href="#">DPA</a>
+            </div>
+            <div class="footer-center">
                 <a href="#" class="footer-logo">
                     <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg" alt="wi-fi.now logo">
                 </a>
             </div>
             <div class="footer-right">
-                <span class="copyright">Todos direitos reservados © 2026</span>
+                <span class="copyright">Todos os direitos reservados © 2026</span>
             </div>
         </div>
     </footer>
