@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planos - wi-fi.now</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=40">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,203 +14,383 @@
             <a href="index.html" class="logo">
                 <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg" alt="wi-fi.now logo">
             </a>
-            <div class="nav-links">
-                <a href="recursos.html">Recursos</a>
-                <a href="como-funciona.html">Como funciona</a>
-                <a href="planos.html">Planos</a>
-                <a href="faq.html">FAQ</a>
-                <a href="documentacao.html">Documentação</a>
-            </div>
-            <div class="nav-actions">
-                <a href="#" class="login-link">Entrar</a>
-                <a href="#" class="btn btn-primary">Começar grátis</a>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="recursos.html">Recursos</a>
+                    <a href="como-funciona.html">Como funciona</a>
+                    <a href="planos.html">Planos</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="documentacao.html">Documentação</a>
+                </div>
+                <span class="nav-divider"></span>
+                <div class="nav-actions">
+                    <a href="#" class="login-link">Entrar</a>
+                    <a href="#" class="btn btn-pill">Começar grátis</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="ft-hero bg-light">
-        <div class="container ft-hero-container">
-            <span class="ft-eyebrow">Escopo do serviço</span>
-            <h1 class="ft-hero-title">
-                Escopo e <span class="text-brand-blue">responsabilidades</span> do serviço wi-fi.now
-            </h1>
-            <p class="ft-hero-sub">
-                O <strong>wi-fi.now</strong> atua no portal de autenticação e no registro de accounting da sessão. As políticas de acesso, bloqueio, segmentação, filtros, NAT, controle de aplicações e demais regras de segurança são de responsabilidade do FortiGate/firewall e da administração do ambiente do cliente.
-            </p>
-            <div class="ft-hero-actions">
-                <a href="#" class="btn btn-primary">Falar com vendas</a>
-                <a href="documentacao.html" class="ft-link-arrow">Documentação técnica &rsaquo;</a>
+    <!-- Pricing Hero Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-hero">
+                <h1>Escolha o plano ideal para a sua rede</h1>
+                <p>Portal cativo FortiGate sob medida. Comece a validar gratuitamente ou escale para conexões e recursos corporativos ilimitados.</p>
+            </div>
+
+            <!-- Toggle de Faturamento -->
+            <div class="pricing-toggle-container">
+                <span class="pricing-toggle-label active" id="label-monthly">Mensal</span>
+                <input type="checkbox" id="pricing-checkbox" class="pricing-toggle-checkbox">
+                <label for="pricing-checkbox" class="pricing-toggle-switch"></label>
+                <span class="pricing-toggle-label" id="label-yearly">Anual (Economize 20%)</span>
+            </div>
+
+            <!-- Pricing Grid -->
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="pricing-card">
+                    <h3>Grátis</h3>
+                    <p class="pricing-card-desc">Ideal para testes de bancada e ambientes de homologação.</p>
+                    <div class="pricing-price-wrap">
+                        <span class="pricing-currency">R$</span>
+                        <span class="pricing-price" data-monthly="0" data-yearly="0">0</span>
+                        <span class="pricing-period">/mês</span>
+                    </div>
+                    <div class="pricing-billing-note">Grátis para sempre</div>
+                    <ul class="pricing-features-list">
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            1 localidade (1 FortiGate)
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            Até 50 conexões simultâneas
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            250 logins/mês
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            Autenticação Google OAuth
+                        </li>
+                    </ul>
+                    <a href="#" class="pricing-btn pricing-btn-secondary">Começar grátis</a>
+                </div>
+
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <h3>Básico</h3>
+                    <p class="pricing-card-desc">Para empresas de pequeno porte com poucos pontos de acesso.</p>
+                    <div class="pricing-price-wrap">
+                        <span class="pricing-currency">R$</span>
+                        <span class="pricing-price" data-monthly="59" data-yearly="49">59</span>
+                        <span class="pricing-period">/mês</span>
+                    </div>
+                    <div class="pricing-billing-note" id="billing-note-basic">cobrado mensalmente</div>
+                    <ul class="pricing-features-list">
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            Até 5 localidades
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            Conexões simultâneas ilimitadas
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            OAuth completo (Google, MS, LinkedIn)
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            Validação por Token SMS (básico)
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            Suporte técnico por email
+                        </li>
+                    </ul>
+                    <a href="#" class="pricing-btn pricing-btn-secondary">Assinar plano</a>
+                </div>
+
+                <!-- Business Plan -->
+                <div class="pricing-card">
+                    <h3>Business</h3>
+                    <p class="pricing-card-desc">Para empresas com múltiplos sites que necessitam de marca própria.</p>
+                    <div class="pricing-price-wrap">
+                        <span class="pricing-currency">R$</span>
+                        <span class="pricing-price" data-monthly="179" data-yearly="149">179</span>
+                        <span class="pricing-period">/mês</span>
+                    </div>
+                    <div class="pricing-billing-note" id="billing-note-business">cobrado mensalmente</div>
+                    <ul class="pricing-features-list">
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            <strong>Localidades ilimitadas</strong>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            Validação por WhatsApp & SMS
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            <strong>Customização total (Branding)</strong>
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            Dashboard de Analytics & Auditoria
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            Suporte prioritário via WhatsApp
+                        </li>
+                    </ul>
+                    <a href="#" class="pricing-btn pricing-btn-secondary">Assinar plano</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <h3>Corporativo</h3>
+                    <p class="pricing-card-desc">Para empresas com altas exigências de conformidade, SSO e SLAs.</p>
+                    <div class="pricing-price-wrap" style="margin-top:0.5rem">
+                        <span class="pricing-price" style="font-size:2.25rem">Sob consulta</span>
+                    </div>
+                    <div class="pricing-billing-note" style="margin-bottom:2.25rem">Faturamento sob medida</div>
+                    <ul class="pricing-features-list">
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            Todos os recursos do Business
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            SSO Corporativo (SAML/SCIM)
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            Retenção LGPD estendida
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            SLA de disponibilidade 99.9%
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
+                            Suporte de Onboarding & Gerente de conta
+                        </li>
+                    </ul>
+                    <a href="#" class="pricing-btn pricing-btn-secondary">Falar com vendas</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Faz / Não faz -->
-    <section class="ft-section bg-light">
-        <div class="container ft-narrow">
-            <span class="ft-label">Escopo da plataforma</span>
-            <h2 class="ft-h2">O que está incluído e o que não está</h2>
-            <p class="ft-body">
-                O escopo da plataforma é deliberadamente restrito. Tudo o que envolve política de tráfego, segurança e conteúdo jurídico fica fora — pertence ao FortiGate ou ao cliente.
-            </p>
+    <!-- Detailed Feature Comparison Table Section -->
+    <section class="compare-table-section">
+        <div class="container">
+            <h2 class="compare-table-title">Compare os recursos dos planos</h2>
+            
+            <div class="compare-table-wrapper">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th class="col-feature">Recurso</th>
+                            <th class="col-plan">Grátis</th>
+                            <th class="col-plan">Básico</th>
+                            <th class="col-plan">Business</th>
+                            <th class="col-plan">Corporativo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Grupo 1: Limites -->
+                        <tr class="row-group">
+                            <td colspan="5">Limites de Localidade e Sessão</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Localidades incluídas<span>FortiGates ou sites cadastrados</span></td>
+                            <td class="col-val">1 site</td>
+                            <td class="col-val">Até 5 sites</td>
+                            <td class="col-val">Ilimitado</td>
+                            <td class="col-val">Ilimitado</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Conexões simultâneas<span>Limite de dispositivos navegando ao mesmo tempo</span></td>
+                            <td class="col-val">Até 50</td>
+                            <td class="col-val">Ilimitado</td>
+                            <td class="col-val">Ilimitado</td>
+                            <td class="col-val">Ilimitado</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Logins por mês<span>Quantidade total de autenticações de visitantes</span></td>
+                            <td class="col-val">250</td>
+                            <td class="col-val">Ilimitado</td>
+                            <td class="col-val">Ilimitado</td>
+                            <td class="col-val">Ilimitado</td>
+                        </tr>
 
-            <div class="ft-split">
-                <div class="ft-split-col">
-                    <h3 class="ft-h3 ft-h3-pos">O que o wi-fi.now faz</h3>
-                    <ul class="ft-list-check">
-                        <li>Portal externo customizado com UNIQID por cliente</li>
-                        <li>Validação por token via SMS ou WhatsApp</li>
-                        <li>Autenticação OAuth com Google, LinkedIn ou Microsoft</li>
-                        <li>Registro de accounting RADIUS da sessão</li>
-                        <li>Accounting-Interim-Update a cada 15 minutos</li>
-                        <li>Script de configuração para o FortiGate</li>
-                        <li>Certificado wildcard <code>*.fxo.com.br</code> no script</li>
-                        <li>Walled garden necessário para a autenticação</li>
-                    </ul>
-                </div>
-                <div class="ft-split-col">
-                    <h3 class="ft-h3 ft-h3-neg">O que o wi-fi.now não faz</h3>
-                    <ul class="ft-list-x">
-                        <li>Não aplica bloqueio de sites</li>
-                        <li>Não controla aplicações</li>
-                        <li>Não substitui as políticas do firewall</li>
-                        <li>Não registra histórico de navegação</li>
-                        <li>Não armazena URLs acessadas pelo usuário</li>
-                        <li>Não define regras de segurança da rede</li>
-                        <li>Não é responsável pelas credenciais OAuth do cliente</li>
-                        <li>Não define termos de uso nem política de privacidade</li>
-                        <li>Não controla o comportamento de MAC aleatório</li>
-                    </ul>
-                </div>
+                        <!-- Grupo 2: Autenticação -->
+                        <tr class="row-group">
+                            <td colspan="5">Métodos de Autenticação</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Autenticação Google OAuth<span>Acesso rápido via conta do Google</span></td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Microsoft & LinkedIn OAuth<span>Integração de redes adicionais para login</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Validação por SMS<span>Token enviado via SMS para confirmação do celular</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val">Sim (Básico)</td>
+                            <td class="col-val">Sim (Créditos Inclusos)</td>
+                            <td class="col-val">Sim (Customizado)</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Validação por WhatsApp<span>Token de acesso direto via WhatsApp do visitante</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Integração SAML & SCIM<span>Autenticação de colaboradores com Single Sign-On (SSO)</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                        </tr>
+
+                        <!-- Grupo 3: Branding -->
+                        <tr class="row-group">
+                            <td colspan="5">Branding e Experiência do Visitante</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Termos de uso customizáveis<span>Adicionar os seus próprios termos jurídicos</span></td>
+                            <td class="col-val">Padrão</td>
+                            <td class="col-val">Padrão</td>
+                            <td class="col-val">Customizado</td>
+                            <td class="col-val">Customizado</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Logotipo e marca própria<span>Remoção da marca wifi.now do portal cativo</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Domínio próprio<span>URL de autenticação com o seu domínio corporativo</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                        </tr>
+
+                        <!-- Grupo 4: Integrações e RADIUS -->
+                        <tr class="row-group">
+                            <td colspan="5">Integrações e RADIUS</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Accounting RADIUS<span>Envio de Start, Interim e Stop</span></td>
+                            <td class="col-val">Padrão (15m)</td>
+                            <td class="col-val">Padrão (15m)</td>
+                            <td class="col-val">Customizável</td>
+                            <td class="col-val">Customizável</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Certificado Wildcard SSL<span>Script FortiGate pré-configurado com SSL corporativo</span></td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Suporte a ambientes HA / Cluster<span>Garantia de funcionamento redundante no firewall</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                        </tr>
+
+                        <!-- Grupo 5: Suporte -->
+                        <tr class="row-group">
+                            <td colspan="5">Suporte e Garantias</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Canal de suporte<span>Forma de contato com nosso suporte técnico</span></td>
+                            <td class="col-val">Fórum / Base</td>
+                            <td class="col-val">Email</td>
+                            <td class="col-val">WhatsApp & Email</td>
+                            <td class="col-val">Dedicado 24/7</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Tempo de resposta (SLA)<span>Garantia de resposta máxima a chamados</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val">Até 24 horas</td>
+                            <td class="col-val">Até 4 horas</td>
+                            <td class="col-val">SLA Customizado</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Gerente de Contas dedicado<span>Profissional acompanhando sua conta</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
+                            <td class="col-val">
+                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
-    </section>
-
-    <!-- Responsabilidades -->
-    <section class="ft-section ft-section-alt bg-light">
-        <div class="container ft-narrow">
-            <span class="ft-label">Responsabilidades</span>
-            <h2 class="ft-h2">Divisão clara entre as partes</h2>
-            <p class="ft-body">
-                Cada componente da integração tem um papel específico. Conhecer essa divisão evita escalonamento incorreto e acelera o diagnóstico em caso de incidentes.
-            </p>
-
-            <table class="ft-table">
-                <thead>
-                    <tr>
-                        <th>Parte</th>
-                        <th>Responsabilidade</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>wi-fi.now</td>
-                        <td>Portal de autenticação externo, validação do usuário e registro de accounting da sessão.</td>
-                    </tr>
-                    <tr>
-                        <td>FortiGate / firewall</td>
-                        <td>Redirecionamento, controle de acesso, políticas de firewall, RADIUS e liberação da sessão.</td>
-                    </tr>
-                    <tr>
-                        <td>Cliente / Administrador</td>
-                        <td>Aplicação do script, validação do ambiente, políticas de segurança, operação da rede, credenciais OAuth, termos de uso, política de privacidade e consentimentos.</td>
-                    </tr>
-                    <tr>
-                        <td>Componentes técnicos</td>
-                        <td>RADIUS Authentication valida o acesso. RADIUS Accounting registra a sessão. Firewall Policy, DNS/DHCP, Walled garden e IP público autorizado completam a integração.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <!-- Pré-requisitos -->
-    <section class="ft-section bg-light">
-        <div class="container ft-narrow">
-            <span class="ft-label">Pré-requisitos técnicos</span>
-            <h2 class="ft-h2">O que validar antes da ativação</h2>
-            <p class="ft-body">
-                Antes da ativação do captive portal com wi-fi.now, recomenda-se validar os pontos abaixo. O cliente deve fornecer os IPs públicos que estarão autorizados a efetuar conexão com o servidor RADIUS do wi-fi.now.
-            </p>
-
-            <h3 class="ft-h3">FortiGate</h3>
-            <ul class="ft-list">
-                <li>Acesso à Internet funcionando, DNS resolvendo corretamente</li>
-                <li><strong>NTP/hora correta</strong> sincronizado — crítico para certificados HTTPS, tokens, OAuth e logs</li>
-                <li>SSID/VLAN de visitantes definida e política de saída para Internet criada</li>
-                <li>Cliente conseguindo resolver <code>wi-fi.now</code></li>
-            </ul>
-
-            <h3 class="ft-h3">Script wi-fi.now</h3>
-            <ul class="ft-list">
-                <li>Script de configuração aplicado sem erros</li>
-                <li>Certificado wildcard <code>*.fxo.com.br</code> instalado</li>
-                <li>Walled garden configurado conforme o script</li>
-                <li>RADIUS configurado com parâmetros do script</li>
-                <li>Portas e protocolos necessários liberados</li>
-            </ul>
-
-            <h3 class="ft-h3">IPs públicos e ambientes complexos</h3>
-            <ul class="ft-list">
-                <li>IPs públicos do cliente informados na contratação e autorizados no servidor RADIUS</li>
-                <li>FortiGate saindo para a Internet pelos IPs autorizados</li>
-                <li>Em ambientes com <strong>múltiplos links, SD-WAN ou failover</strong>, todos os IPs possíveis informados</li>
-                <li>Validação de ambientes com <strong>FortiGate em HA</strong>, quando aplicável</li>
-            </ul>
-
-            <h3 class="ft-h3">Operação e conformidade</h3>
-            <ul class="ft-list">
-                <li>Definição do tempo de sessão e política de reautenticação</li>
-                <li>Avaliação do impacto de MAC privado/aleatório em dispositivos móveis</li>
-                <li>Termos de uso e política de privacidade definidos pelo cliente</li>
-                <li>Homologação realizada antes da ativação em produção</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Portas e protocolos -->
-    <section class="ft-section ft-section-alt bg-light">
-        <div class="container ft-narrow">
-            <span class="ft-label">Portas e protocolos</span>
-            <h2 class="ft-h2">Comunicação necessária para a integração</h2>
-            <p class="ft-body">
-                As portas e protocolos abaixo devem estar liberados conforme o script de configuração gerado pela plataforma. As portas específicas de RADIUS Authentication e RADIUS Accounting seguem a configuração definida no script.
-            </p>
-
-            <table class="ft-table">
-                <thead>
-                    <tr>
-                        <th>Protocolo / Porta</th>
-                        <th>Finalidade</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTTPS / TCP 443</td>
-                        <td>Acesso ao portal wi-fi.now e provedores OAuth</td>
-                    </tr>
-                    <tr>
-                        <td>DNS / UDP-TCP 53</td>
-                        <td>Resolução de nomes</td>
-                    </tr>
-                    <tr>
-                        <td>RADIUS Authentication / UDP</td>
-                        <td>Validação do acesso (porta conforme script)</td>
-                    </tr>
-                    <tr>
-                        <td>RADIUS Accounting / UDP</td>
-                        <td>Registro da sessão (porta conforme script)</td>
-                    </tr>
-                    <tr>
-                        <td>NTP / UDP 123</td>
-                        <td>Sincronização de horário — crítico para certificado e tokens</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <p class="ft-body ft-callout">
-                A liberação correta dessas comunicações é essencial para que o portal externo, a autenticação, o accounting e a sincronização de horário funcionem adequadamente.
-            </p>
         </div>
     </section>
 
@@ -228,5 +408,59 @@
         </div>
     </footer>
 
+    <script>
+        const toggleCheckbox = document.getElementById('pricing-checkbox');
+        const prices = document.querySelectorAll('.pricing-price');
+        const basicNote = document.getElementById('billing-note-basic');
+        const businessNote = document.getElementById('billing-note-business');
+        const labelMonthly = document.getElementById('label-monthly');
+        const labelYearly = document.getElementById('label-yearly');
+
+        toggleCheckbox.addEventListener('change', function() {
+            const isYearly = this.checked;
+            
+            // Toggle active labels
+            if (isYearly) {
+                labelYearly.classList.add('active');
+                labelMonthly.classList.remove('active');
+            } else {
+                labelMonthly.classList.add('active');
+                labelYearly.classList.remove('active');
+            }
+
+            // Update prices
+            prices.forEach(price => {
+                const monthlyVal = price.getAttribute('data-monthly');
+                const yearlyVal = price.getAttribute('data-yearly');
+                if (monthlyVal && yearlyVal) {
+                    price.textContent = isYearly ? yearlyVal : monthlyVal;
+                }
+            });
+
+            // Update billing notes
+            if (isYearly) {
+                basicNote.textContent = 'cobrado anualmente (R$ 588/ano)';
+                businessNote.textContent = 'cobrado anualmente (R$ 1.788/ano)';
+            } else {
+                basicNote.textContent = 'cobrado mensalmente';
+                businessNote.textContent = 'cobrado mensalmente';
+            }
+        });
+
+        // Click labels to toggle
+        labelMonthly.addEventListener('click', () => {
+            if (toggleCheckbox.checked) {
+                toggleCheckbox.checked = false;
+                toggleCheckbox.dispatchEvent(new Event('change'));
+            }
+        });
+
+        labelYearly.addEventListener('click', () => {
+            if (!toggleCheckbox.checked) {
+                toggleCheckbox.checked = true;
+                toggleCheckbox.dispatchEvent(new Event('change'));
+            }
+        });
+    </script>
 </body>
 </html>
