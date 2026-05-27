@@ -446,7 +446,7 @@ ul {
 .hero-actions {
     display: flex;
     gap: 0.8rem;
-    margin-left: 78px;
+    margin-left: 15px;
     margin-top: 149px;
     margin-bottom: 20px;
     flex-wrap: wrap;
@@ -3377,18 +3377,19 @@ ul {
 .ln-resp-header {
     padding: 1.5rem 1.5rem 1.25rem;
     color: #fff;
+    height: 140px;
 }
 
 .ln-resp-col-wifi .ln-resp-header {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    background: url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/bannerwifi.jpg') center/100% 100% no-repeat;
 }
 
 .ln-resp-col-forti .ln-resp-header {
-    background: linear-gradient(135deg, #ee3124 0%, #c81e0f 100%);
+    background: url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/herofort.jpg') center/100% 100% no-repeat;
 }
 
 .ln-resp-col-you .ln-resp-header {
-    background: linear-gradient(135deg, #475569 0%, #1e293b 100%);
+    background: url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/clientes%20hero.jpg') center/100% 100% no-repeat;
 }
 
 .ln-resp-eyebrow {
@@ -3565,6 +3566,7 @@ ul {
     .ln-no-list { grid-template-columns: 1fr; }
     .ln-resp,
     .ln-envs { padding: 4rem 0; }
+    .ln-resp-header { height: auto; }
     .hero-actions {
         margin-left: 0;
         margin-top: 2rem;
