@@ -39,357 +39,73 @@
                 <p>Portal cativo FortiGate sob medida. Comece a validar gratuitamente ou escale para conexões e recursos corporativos ilimitados.</p>
             </div>
 
-            <!-- Toggle de Faturamento -->
-            <div class="pricing-toggle-container">
-                <span class="pricing-toggle-label active" id="label-monthly">Mensal</span>
-                <input type="checkbox" id="pricing-checkbox" class="pricing-toggle-checkbox">
-                <label for="pricing-checkbox" class="pricing-toggle-switch"></label>
-                <span class="pricing-toggle-label" id="label-yearly">Anual (Economize 20%)</span>
-            </div>
-
-            <!-- Pricing Grid -->
-            <div class="pricing-grid">
-                <!-- Free Plan -->
-                <div class="pricing-card">
-                    <h3>Grátis</h3>
-                    <p class="pricing-card-desc">Ideal para testes de bancada e ambientes de homologação.</p>
-                    <div class="pricing-price-wrap">
-                        <span class="pricing-currency">R$</span>
-                        <span class="pricing-price" data-monthly="0" data-yearly="0">0</span>
-                        <span class="pricing-period">/mês</span>
-                    </div>
-                    <div class="pricing-billing-note">Grátis para sempre</div>
-                    <ul class="pricing-features-list">
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            1 localidade (1 FortiGate)
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            Até 50 conexões simultâneas
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            250 logins/mês
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            Autenticação Google OAuth
-                        </li>
-                    </ul>
-                    <a href="#" class="pricing-btn pricing-btn-secondary">Começar grátis</a>
-                </div>
-
-                <!-- Basic Plan -->
-                <div class="pricing-card">
-                    <h3>Básico</h3>
-                    <p class="pricing-card-desc">Para empresas de pequeno porte com poucos pontos de acesso.</p>
-                    <div class="pricing-price-wrap">
-                        <span class="pricing-currency">R$</span>
-                        <span class="pricing-price" data-monthly="59" data-yearly="49">59</span>
-                        <span class="pricing-period">/mês</span>
-                    </div>
-                    <div class="pricing-billing-note" id="billing-note-basic">cobrado mensalmente</div>
-                    <ul class="pricing-features-list">
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            Até 5 localidades
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            Conexões simultâneas ilimitadas
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            OAuth completo (Google, MS, LinkedIn)
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            Validação por Token SMS (básico)
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            Suporte técnico por email
-                        </li>
-                    </ul>
-                    <a href="#" class="pricing-btn pricing-btn-secondary">Assinar plano</a>
-                </div>
-
-                <!-- Business Plan -->
-                <div class="pricing-card">
-                    <h3>Business</h3>
-                    <p class="pricing-card-desc">Para empresas com múltiplos sites que necessitam de marca própria.</p>
-                    <div class="pricing-price-wrap">
-                        <span class="pricing-currency">R$</span>
-                        <span class="pricing-price" data-monthly="179" data-yearly="149">179</span>
-                        <span class="pricing-period">/mês</span>
-                    </div>
-                    <div class="pricing-billing-note" id="billing-note-business">cobrado mensalmente</div>
-                    <ul class="pricing-features-list">
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            <strong>Localidades ilimitadas</strong>
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            Validação por WhatsApp & SMS
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            <strong>Customização total (Branding)</strong>
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            Dashboard de Analytics & Auditoria
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            Suporte prioritário via WhatsApp
-                        </li>
-                    </ul>
-                    <a href="#" class="pricing-btn pricing-btn-secondary">Assinar plano</a>
-                </div>
-
-                <!-- Enterprise Plan -->
-                <div class="pricing-card">
-                    <h3>Corporativo</h3>
-                    <p class="pricing-card-desc">Para empresas com altas exigências de conformidade, SSO e SLAs.</p>
-                    <div class="pricing-price-wrap" style="margin-top:0.5rem">
-                        <span class="pricing-price" style="font-size:2.25rem">Sob consulta</span>
-                    </div>
-                    <div class="pricing-billing-note" style="margin-bottom:2.25rem">Faturamento sob medida</div>
-                    <ul class="pricing-features-list">
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            Todos os recursos do Business
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            SSO Corporativo (SAML/SCIM)
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            Retenção LGPD estendida
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            SLA de disponibilidade 99.9%
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg>
-                            Suporte de Onboarding & Gerente de conta
-                        </li>
-                    </ul>
-                    <a href="#" class="pricing-btn pricing-btn-secondary">Falar com vendas</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Detailed Feature Comparison Table Section -->
-    <section class="compare-table-section">
-        <div class="container">
-            <h2 class="compare-table-title">Compare os recursos dos planos</h2>
-            
-            <div class="compare-table-wrapper">
+            <div class="compare-table-wrapper" style="margin-top: 2rem; background: #ffffff; border-radius: 12px; border: 1px solid var(--border-light); overflow: hidden; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.02);">
                 <table class="compare-table">
                     <thead>
                         <tr>
-                            <th class="col-feature">Recurso</th>
-                            <th class="col-plan">Grátis</th>
-                            <th class="col-plan">Básico</th>
-                            <th class="col-plan">Business</th>
-                            <th class="col-plan">Corporativo</th>
+                            <th style="font-weight: 700; font-size: 0.95rem;">Tier</th>
+                            <th style="font-weight: 700; font-size: 0.95rem;">FortiGate (faixa)</th>
+                            <th style="font-weight: 700; font-size: 0.95rem; text-align: right;">USD/mês</th>
+                            <th style="font-weight: 700; font-size: 0.95rem; text-align: right;">USD/ano</th>
+                            <th style="font-weight: 700; font-size: 0.95rem; text-align: right; color: var(--primary);">BRL/mês*</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Grupo 1: Limites -->
-                        <tr class="row-group">
-                            <td colspan="5">Limites de Localidade e Sessão</td>
+                        <tr>
+                            <td style="font-weight: 600; color: var(--primary);">Tier 1</td>
+                            <td>FG-30 a FG-60</td>
+                            <td style="text-align: right;">20</td>
+                            <td style="text-align: right;">200</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--text-dark);">106</td>
                         </tr>
                         <tr>
-                            <td class="feature-name">Localidades incluídas<span>FortiGates ou sites cadastrados</span></td>
-                            <td class="col-val">1 site</td>
-                            <td class="col-val">Até 5 sites</td>
-                            <td class="col-val">Ilimitado</td>
-                            <td class="col-val">Ilimitado</td>
+                            <td style="font-weight: 600; color: var(--primary);">Tier 2</td>
+                            <td>FG-70 a FG-90</td>
+                            <td style="text-align: right;">35</td>
+                            <td style="text-align: right;">350</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--text-dark);">186</td>
                         </tr>
                         <tr>
-                            <td class="feature-name">Conexões simultâneas<span>Limite de dispositivos navegando ao mesmo tempo</span></td>
-                            <td class="col-val">Até 50</td>
-                            <td class="col-val">Ilimitado</td>
-                            <td class="col-val">Ilimitado</td>
-                            <td class="col-val">Ilimitado</td>
+                            <td style="font-weight: 600; color: var(--primary);">Tier 3</td>
+                            <td>FG-100 a FG-200</td>
+                            <td style="text-align: right;">65</td>
+                            <td style="text-align: right;">650</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--text-dark);">345</td>
                         </tr>
                         <tr>
-                            <td class="feature-name">Logins por mês<span>Quantidade total de autenticações de visitantes</span></td>
-                            <td class="col-val">250</td>
-                            <td class="col-val">Ilimitado</td>
-                            <td class="col-val">Ilimitado</td>
-                            <td class="col-val">Ilimitado</td>
-                        </tr>
-
-                        <!-- Grupo 2: Autenticação -->
-                        <tr class="row-group">
-                            <td colspan="5">Métodos de Autenticação</td>
+                            <td style="font-weight: 600; color: var(--primary);">Tier 4</td>
+                            <td>FG-300 a FG-600</td>
+                            <td style="text-align: right;">115</td>
+                            <td style="text-align: right;">1.150</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--text-dark);">610</td>
                         </tr>
                         <tr>
-                            <td class="feature-name">Autenticação Google OAuth<span>Acesso rápido via conta do Google</span></td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
+                            <td style="font-weight: 600; color: var(--primary);">Tier 5</td>
+                            <td>FG-700 a FG-1000</td>
+                            <td style="text-align: right;">200</td>
+                            <td style="text-align: right;">2.000</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--text-dark);">1.060</td>
                         </tr>
                         <tr>
-                            <td class="feature-name">Microsoft & LinkedIn OAuth<span>Integração de redes adicionais para login</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
+                            <td style="font-weight: 600; color: var(--primary);">Tier 6</td>
+                            <td>FG-1100 a FG-1800</td>
+                            <td style="text-align: right;">350</td>
+                            <td style="text-align: right;">3.500</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--text-dark);">1.855</td>
                         </tr>
                         <tr>
-                            <td class="feature-name">Validação por SMS<span>Token enviado via SMS para confirmação do celular</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val">Sim (Básico)</td>
-                            <td class="col-val">Sim (Créditos Inclusos)</td>
-                            <td class="col-val">Sim (Customizado)</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Validação por WhatsApp<span>Token de acesso direto via WhatsApp do visitante</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Integração SAML & SCIM<span>Autenticação de colaboradores com Single Sign-On (SSO)</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                        </tr>
-
-                        <!-- Grupo 3: Branding -->
-                        <tr class="row-group">
-                            <td colspan="5">Branding e Experiência do Visitante</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Termos de uso customizáveis<span>Adicionar os seus próprios termos jurídicos</span></td>
-                            <td class="col-val">Padrão</td>
-                            <td class="col-val">Padrão</td>
-                            <td class="col-val">Customizado</td>
-                            <td class="col-val">Customizado</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Logotipo e marca própria<span>Remoção da marca wifi.now do portal cativo</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Domínio próprio<span>URL de autenticação com o seu domínio corporativo</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                        </tr>
-
-                        <!-- Grupo 4: Integrações e RADIUS -->
-                        <tr class="row-group">
-                            <td colspan="5">Integrações e RADIUS</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Accounting RADIUS<span>Envio de Start, Interim e Stop</span></td>
-                            <td class="col-val">Padrão (15m)</td>
-                            <td class="col-val">Padrão (15m)</td>
-                            <td class="col-val">Customizável</td>
-                            <td class="col-val">Customizável</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Certificado Wildcard SSL<span>Script FortiGate pré-configurado com SSL corporativo</span></td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Suporte a ambientes HA / Cluster<span>Garantia de funcionamento redundante no firewall</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
-                        </tr>
-
-                        <!-- Grupo 5: Suporte -->
-                        <tr class="row-group">
-                            <td colspan="5">Suporte e Garantias</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Canal de suporte<span>Forma de contato com nosso suporte técnico</span></td>
-                            <td class="col-val">Fórum / Base</td>
-                            <td class="col-val">Email</td>
-                            <td class="col-val">WhatsApp & Email</td>
-                            <td class="col-val">Dedicado 24/7</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Tempo de resposta (SLA)<span>Garantia de resposta máxima a chamados</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val">Até 24 horas</td>
-                            <td class="col-val">Até 4 horas</td>
-                            <td class="col-val">SLA Customizado</td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">Gerente de Contas dedicado<span>Profissional acompanhando sua conta</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val"><span class="compare-dash-icon">—</span></td>
-                            <td class="col-val">
-                                <span class="compare-check-icon"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M12.101 6.10299C12.433 5.77105 12.433 5.23286 12.101 4.90091C11.7691 4.56897 11.2309 4.56897 10.899 4.90091L6.5 9.29987L5.10104 7.90091C4.7691 7.56897 4.2309 7.56897 3.89896 7.90091C3.56701 8.23286 3.56701 8.77105 3.89896 9.10299L5.89896 11.103C6.2309 11.4349 6.7691 11.4349 7.10104 11.103L12.101 6.10299Z"/></svg></span>
-                            </td>
+                            <td style="font-weight: 600; color: var(--primary);">Enterprise</td>
+                            <td>FG-2600F e superiores (chassis 3000F+, 4000F+, 6000F+, 7000F+)</td>
+                            <td style="text-align: right; font-style: italic; color: var(--text-dark-muted);">sob consulta</td>
+                            <td style="text-align: right; color: var(--text-dark-muted);">—</td>
+                            <td style="text-align: right; color: var(--text-dark-muted);">—</td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <div class="pricing-disclaimer" style="text-align: center; margin-top: 2rem; font-size: 0.8rem; color: var(--text-dark-muted);">
+                <p>* Câmbio fixo R$ 5,30/USD. Revisão semestral ou se cotação fechar fora da banda R$ 4,80–R$ 5,80 por 30 dias.</p>
             </div>
         </div>
     </section>
@@ -414,60 +130,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        const toggleCheckbox = document.getElementById('pricing-checkbox');
-        const prices = document.querySelectorAll('.pricing-price');
-        const basicNote = document.getElementById('billing-note-basic');
-        const businessNote = document.getElementById('billing-note-business');
-        const labelMonthly = document.getElementById('label-monthly');
-        const labelYearly = document.getElementById('label-yearly');
-
-        toggleCheckbox.addEventListener('change', function() {
-            const isYearly = this.checked;
-            
-            // Toggle active labels
-            if (isYearly) {
-                labelYearly.classList.add('active');
-                labelMonthly.classList.remove('active');
-            } else {
-                labelMonthly.classList.add('active');
-                labelYearly.classList.remove('active');
-            }
-
-            // Update prices
-            prices.forEach(price => {
-                const monthlyVal = price.getAttribute('data-monthly');
-                const yearlyVal = price.getAttribute('data-yearly');
-                if (monthlyVal && yearlyVal) {
-                    price.textContent = isYearly ? yearlyVal : monthlyVal;
-                }
-            });
-
-            // Update billing notes
-            if (isYearly) {
-                basicNote.textContent = 'cobrado anualmente (R$ 588/ano)';
-                businessNote.textContent = 'cobrado anualmente (R$ 1.788/ano)';
-            } else {
-                basicNote.textContent = 'cobrado mensalmente';
-                businessNote.textContent = 'cobrado mensalmente';
-            }
-        });
-
-        // Click labels to toggle
-        labelMonthly.addEventListener('click', () => {
-            if (toggleCheckbox.checked) {
-                toggleCheckbox.checked = false;
-                toggleCheckbox.dispatchEvent(new Event('change'));
-            }
-        });
-
-        labelYearly.addEventListener('click', () => {
-            if (!toggleCheckbox.checked) {
-                toggleCheckbox.checked = true;
-                toggleCheckbox.dispatchEvent(new Event('change'));
-            }
-        });
-    </script>
 </body>
 </html>

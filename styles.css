@@ -365,13 +365,13 @@ ul {
 
 .nav-spacer {
     width: 100%;
-    height: 4.5cm;
+    height: auto;
     background-color: #eef2fb;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 2.3cm 2rem 0;
+    padding: 2.3cm 2rem 2rem;
     overflow: hidden;
     gap: 0.5rem;
 }
