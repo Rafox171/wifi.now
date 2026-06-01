@@ -393,7 +393,6 @@ ul {
     margin: 0;
     max-width: 120ch;
 }
-
 /* Hero Section — Linear style */
 .hero {
     width: 100%;
@@ -402,10 +401,51 @@ ul {
     padding-top: 80px;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to bottom, #eef2fb 0%, rgba(238, 242, 251, 0) 15%), url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/herowifinow.jpg') center/cover no-repeat;
+    background: #0a1228;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+.hero-carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #eef2fb 0%, rgba(238, 242, 251, 0) 15%);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .hero-container {
@@ -420,27 +460,111 @@ ul {
 }
 
 .hero-content {
-    width: 100%;
-    max-width: 1100px;
+    position: absolute;
+    left: clamp(24px, 4.5vw, 72px);
+    /* ancora o bloco no ponto onde a parte clara da imagem termina (~46%),
+       deixando uma folga antes da divisão para o texto nunca encostar */
+    right: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    max-width: none;
     text-align: left;
+    z-index: 3;
 }
 
-.hero-content h1 {
-    font-size: clamp(2.5rem, 5.5vw, 5rem);
+.hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #1d4ed8;
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+.hero-eyebrow::before {
+    content: '';
+    width: 28px;
+    height: 2px;
+    background-color: #2563eb;
+    flex-shrink: 0;
+}
+
+.hero-title {
+    font-size: clamp(44px, 4.8vw, 72px);
+    font-weight: 700;
+    line-height: 1.06;
+    letter-spacing: -0.04em;
+    color: #0F172A;
+    max-width: 100%;
+    margin: 18px 0 22px;
+}
+
+.hero-subtitle {
+    font-size: 19px;
+    line-height: 1.45;
+    color: #334155;
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.hero-action-group {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.btn-hero-main {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.85rem 1.75rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 999px;
     font-weight: 600;
-    line-height: 1.05;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.03em;
-    max-width: 18ch;
+    font-size: 0.95rem;
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+    border: none;
+    cursor: pointer;
 }
 
-.hero-content p {
-    font-size: 1.2rem;
-    color: #0B1F3A;
-    margin-bottom: 2rem;
-    max-width: 75ch;
-    line-height: 1.6;
+.btn-hero-main:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+    transform: translateY(-1px);
+}
+
+.hero-hint {
+    font-size: 0.85rem;
+    color: #64748b;
     font-weight: 500;
+}
+
+.text-teal {
+    color: #00D1B2;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        left: 20px;
+        right: 20px;
+        max-width: none;
+        width: auto;
+    }
+    .hero-title {
+        font-size: clamp(30px, 8vw, 40px);
+        margin: 12px 0 16px;
+    }
+    .hero-subtitle {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
 }
 
 .hero-actions {
