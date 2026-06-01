@@ -5175,3 +5175,36 @@ ul {
         gap: 0.85rem;
     }
 }
+
+/* Hero Carousel Indicators */
+.hero-indicators {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.indicator-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(15, 23, 42, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s, width 0.2s;
+}
+
+.indicator-dot:hover {
+    background-color: rgba(15, 23, 42, 0.5);
+    transform: scale(1.2);
+}
+
+.indicator-dot.active {
+    background-color: #2563eb;
+    width: 24px;
+    border-radius: 5px;
+    border-color: #2563eb;
+}
