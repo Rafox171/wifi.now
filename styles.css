@@ -3787,9 +3787,37 @@ ul {
     .hero {
         aspect-ratio: auto;
         min-height: 0;
-        padding: 2rem 0 5rem;
+        padding: 0;
+        display: block;
+        overflow: hidden;
         background-size: cover;
         background-position: center;
+    }
+    /* carrossel de fundo cobre toda a hero */
+    .hero-carousel {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+    }
+    /* texto volta ao fluxo para a hero ganhar altura e parar de sobrepor */
+    .hero-content {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: auto;
+        max-width: 100%;
+        padding: 92px 20px 24px;
+    }
+    /* overlay mais forte para o texto escuro ler sobre a foto */
+    .hero-carousel-overlay {
+        background: linear-gradient(to bottom, rgba(238, 242, 251, 0.92) 0%, rgba(238, 242, 251, 0.78) 55%, rgba(238, 242, 251, 0.6) 100%);
+    }
+    /* faixa de features volta ao fluxo, abaixo do texto */
+    .features-carousel {
+        position: relative;
+        bottom: auto;
     }
     .hero-container {
         padding: 1rem 0 4rem;
@@ -3982,9 +4010,37 @@ ul {
     .hero {
         aspect-ratio: auto;
         min-height: 0;
-        padding: 2rem 0 5rem;
+        padding: 0;
+        display: block;
+        overflow: hidden;
         background-size: cover;
         background-position: center;
+    }
+    /* carrossel de fundo cobre toda a hero */
+    .hero-carousel {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+    }
+    /* texto volta ao fluxo para a hero ganhar altura e parar de sobrepor */
+    .hero-content {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: auto;
+        max-width: 100%;
+        padding: 92px 20px 24px;
+    }
+    /* overlay mais forte para o texto escuro ler sobre a foto */
+    .hero-carousel-overlay {
+        background: linear-gradient(to bottom, rgba(238, 242, 251, 0.92) 0%, rgba(238, 242, 251, 0.78) 55%, rgba(238, 242, 251, 0.6) 100%);
+    }
+    /* faixa de features volta ao fluxo, abaixo do texto */
+    .features-carousel {
+        position: relative;
+        bottom: auto;
     }
     .hero-container {
         padding: 1rem 0 4rem;

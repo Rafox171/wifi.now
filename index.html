@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wi-fi.now - Captive portal externo para FortiGate</title>
-    <link rel="stylesheet" href="styles.css?v=66">
+    <link rel="stylesheet" href="styles.css?v=67">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -487,12 +487,26 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const slides = document.querySelectorAll('.hero-slide');
+            const hero = document.querySelector('.hero');
             if (slides.length > 0) {
                 let currentSlide = 0;
+                let isPaused = false;
+                
+                if (hero) {
+                    hero.addEventListener('mouseenter', () => {
+                        isPaused = true;
+                    });
+                    hero.addEventListener('mouseleave', () => {
+                        isPaused = false;
+                    });
+                }
+                
                 setInterval(() => {
-                    slides[currentSlide].classList.remove('active');
-                    currentSlide = (currentSlide + 1) % slides.length;
-                    slides[currentSlide].classList.add('active');
+                    if (!isPaused) {
+                        slides[currentSlide].classList.remove('active');
+                        currentSlide = (currentSlide + 1) % slides.length;
+                        slides[currentSlide].classList.add('active');
+                    }
                 }, 3000);
             }
         });
