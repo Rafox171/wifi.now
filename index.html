@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wi-fi.now - Captive portal externo para FortiGate</title>
-    <link rel="stylesheet" href="styles.css?v=61">
+    <link rel="stylesheet" href="styles.css?v=66">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -331,108 +331,136 @@
     </section>
 
 
-    <!-- 5. LGPD / Auditoria transparente -->
-    <section class="ln-feature">
-        <div class="container ln-feature-grid ln-feature-top">
-            <div class="ln-feature-text">
-                <span class="ln-eyebrow">Conformidade LGPD</span>
-                <h2>Auditoria sem invadir privacidade.</h2>
-                <p>O accounting RADIUS responde a uma pergunta administrativa: <strong>quem acessou a rede, com qual dispositivo, quando entrou e quando saiu</strong>. Histórico de navegação não é nosso escopo — fica nas políticas do FortiGate.</p>
-                <ul class="ln-no-list">
-                    <li class="ln-no-list-title">O que wi-fi.now NÃO faz</li>
-                    <li>Não bloqueia sites</li>
-                    <li>Não controla aplicações</li>
-                    <li>Não registra histórico de navegação</li>
-                    <li>Não armazena URLs acessadas</li>
-                    <li>Não substitui o firewall</li>
-                    <li>Não define conteúdo jurídico</li>
-                    <li>Não gerencia credenciais OAuth</li>
-                    <li>Não controla MAC aleatório</li>
-                </ul>
-            </div>
-            <div class="ln-feature-visual">
-                <div class="ln-compare">
-                    <div class="ln-compare-col ln-compare-yes">
-                        <span class="ln-compare-label">Registramos</span>
-                        <ul>
-                            <li>Usuário autenticado</li>
-                            <li>IP do dispositivo</li>
-                            <li>MAC address</li>
-                            <li>Horário de início</li>
-                            <li>Horário de encerramento</li>
-                            <li>Duração total da sessão</li>
-                            <li>Método de autenticação</li>
-                        </ul>
-                    </div>
-                    <div class="ln-compare-col ln-compare-no">
-                        <span class="ln-compare-label">Não registramos</span>
-                        <ul>
-                            <li>Sites acessados</li>
-                            <li>URLs navegadas</li>
-                            <li>Rota de navegação</li>
-                            <li>Tempo em cada destino</li>
-                            <li>Conteúdo consumido</li>
-                            <li>Aplicativos utilizados</li>
-                            <li>Histórico de busca</li>
-                        </ul>
-                    </div>
+    <!-- 5. LGPD / Auditoria transparente (vídeo de fundo) -->
+    <section class="ln-video">
+        <video class="ln-video-bg" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+            <source src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/d2ddd6e7d724b250442cc6b541d08a4e.mp4" type="video/mp4">
+        </video>
+        <div class="ln-video-overlay"></div>
+        <div class="container ln-video-content">
+            <span class="ln-video-eyebrow">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Conformidade LGPD
+            </span>
+            <h2>Auditoria inteligente.<br>Privacidade <span class="ln-video-hl">respeitada.</span></h2>
+            <span class="ln-video-divider"></span>
+            <p class="ln-video-lead">Registramos apenas o essencial para auditoria administrativa: <strong>quem acessou, com qual dispositivo, quando entrou e quando saiu.</strong></p>
+            <p class="ln-video-sub">Não monitoramos navegação, não armazenamos conteúdo e não violamos a privacidade dos usuários.</p>
+            <div class="ln-video-features">
+                <div class="ln-video-feature">
+                    <span class="ln-video-feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </span>
+                    <span class="ln-video-feature-label">Identificação<br>de usuários</span>
+                </div>
+                <div class="ln-video-feature">
+                    <span class="ln-video-feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </span>
+                    <span class="ln-video-feature-label">Informações<br>de acesso</span>
+                </div>
+                <div class="ln-video-feature">
+                    <span class="ln-video-feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                    </span>
+                    <span class="ln-video-feature-label">Conformidade<br>e segurança</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6. Ambientes complexos -->
-    <section class="ln-envs">
+    <!-- 6. Do acesso ao controle do ambiente (fluxo) -->
+    <section class="ln-flow">
         <div class="container">
             <div class="ln-section-head">
-                <span class="ln-eyebrow">Enterprise-ready</span>
-                <h2>Pronto para o seu ambiente, por mais complexo que ele seja.</h2>
-                <p>HA, SD-WAN, failover, MAC aleatório. O script cobre os cenários e a homologação valida antes da produção. Só pedimos que todos os IPs públicos de saída estejam autorizados no RADIUS.</p>
+                <span class="ln-eyebrow">Controle de ambiente</span>
+                <h2>Do acesso ao controle do seu ambiente</h2>
+                <p>O wi-fi.now conecta autenticação, identificação do usuário e rastreabilidade em uma experiência simples para o time de TI e transparente para quem acessa.</p>
             </div>
-            <div class="ln-envs-grid">
-                <div class="ln-env-card">
-                    <div class="ln-env-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="10" x2="6" y2="14"/><line x1="10" y1="10" x2="10" y2="14"/><line x1="14" y1="10" x2="14" y2="14"/><line x1="18" y1="10" x2="18" y2="14"/></svg>
+            <div class="ln-flow-grid">
+                <div class="ln-flow-card">
+                    <span class="ln-flow-step">01</span>
+                    <div class="ln-flow-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
                     </div>
-                    <h3>FortiGate em HA</h3>
-                    <p>Script aplicado no cluster, certificado e objetos sincronizados, comportamento validado após failover.</p>
+                    <h3>Usuário autenticado</h3>
+                    <p>Identifique quem acessou a rede.</p>
                 </div>
-                <div class="ln-env-card">
-                    <div class="ln-env-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                    </div>
-                    <h3>SD-WAN e múltiplos links</h3>
-                    <p>Todos os IPs públicos possíveis de saída ficam autorizados. Failover não derruba autenticação nem accounting.</p>
+
+                <div class="ln-flow-arrow">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </div>
-                <div class="ln-env-card">
-                    <div class="ln-env-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+
+                <div class="ln-flow-card">
+                    <span class="ln-flow-step">02</span>
+                    <div class="ln-flow-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="8 8 11 11 16 6"/></svg>
                     </div>
-                    <h3>Homologação antes da produção</h3>
-                    <p>Validamos redirecionamento, autenticação, accounting, Interim de 15 min, HA e múltiplos navegadores antes do go-live.</p>
+                    <h3>Dispositivo reconhecido</h3>
+                    <p>Associe o acesso ao IP, MAC e sessão.</p>
                 </div>
-                <div class="ln-env-card">
-                    <div class="ln-env-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+
+                <div class="ln-flow-arrow">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+
+                <div class="ln-flow-card">
+                    <span class="ln-flow-step">03</span>
+                    <div class="ln-flow-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
                     </div>
-                    <h3>MAC aleatório</h3>
-                    <p>Apontamos os impactos em accounting e reautenticação. Você decide a política para Android, iOS e dispositivos modernos.</p>
+                    <h3>Ambiente auditável</h3>
+                    <p>Tenha registros claros para segurança e conformidade.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 7. Pull quote + CTA final -->
-    <section class="ln-cta">
-        <div class="container ln-cta-container">
-            <span class="ln-eyebrow">A real</span>
-            <blockquote>
-                Visitante clica no SSID. Em segundos, vê seu portal. Autentica. Wi-Fi abre. Você tem registro de quem, quando, por quanto tempo.
-            </blockquote>
-            <div class="ln-cta-actions">
-                <a href="como-funciona.html" class="btn btn-primary">Como funciona →</a>
-                <a href="documentacao.html" class="btn-outline-dark">Ver documentação</a>
+    <!-- 7. Depoimento -->
+    <section class="ln-testimonial">
+        <div class="container ln-testimonial-container">
+            <div class="ln-section-head">
+                <span class="ln-eyebrow">Depoimento</span>
+                <h2>Quem usa, entende o valor rapidamente</h2>
             </div>
+
+            <figure class="ln-quote-card">
+                <blockquote>Antes, tínhamos dificuldade para saber quem estava conectado à rede corporativa e em quais horários. Com o wi-fi.now, ganhamos rastreabilidade sem invadir a privacidade dos usuários. A operação ficou mais clara, segura e alinhada às exigências internas de compliance.</blockquote>
+                <figcaption class="ln-quote-author">
+                    <span class="ln-quote-avatar">MC</span>
+                    <span class="ln-quote-author-info">
+                        <strong>Marina Costa</strong>
+                        <span>Coordenadora de TI, Grupo Atlântica</span>
+                    </span>
+                </figcaption>
+            </figure>
+
+            <ul class="ln-quote-highlights">
+                <li>
+                    <span class="ln-quote-check">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </span>
+                    Mais visibilidade para o time de TI
+                </li>
+                <li>
+                    <span class="ln-quote-check">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </span>
+                    Auditoria simples dos acessos
+                </li>
+                <li>
+                    <span class="ln-quote-check">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </span>
+                    Privacidade preservada
+                </li>
+                <li>
+                    <span class="ln-quote-check">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </span>
+                    Apoio à conformidade LGPD
+                </li>
+            </ul>
         </div>
     </section>
 

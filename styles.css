@@ -4709,3 +4709,408 @@ ul {
         font-size: 1.85rem;
     }
 }
+
+/* 5. Seção LGPD — vídeo de fundo full-bleed com texto sobreposto */
+.ln-video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 21 / 9;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #060a18;
+}
+
+.ln-video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.ln-video-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    /* escurecimento geral + reforço à esquerda, onde fica o texto */
+    background:
+        linear-gradient(90deg, rgba(4, 8, 20, 0.94) 0%, rgba(4, 8, 20, 0.8) 45%, rgba(4, 8, 20, 0.55) 100%),
+        rgba(4, 8, 20, 0.35);
+}
+
+.ln-video-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+}
+
+.ln-video-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #00D1B2;
+    margin-bottom: 18px;
+}
+
+.ln-video-content h2 {
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    margin: 0;
+    max-width: 640px;
+    color: #ffffff;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.45);
+}
+
+.ln-video-hl {
+    color: #00D1B2;
+}
+
+.ln-video-divider {
+    display: block;
+    width: 64px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #00D1B2;
+    margin: 1.75rem 0;
+}
+
+.ln-video-lead,
+.ln-video-sub {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    max-width: 600px;
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+}
+
+.ln-video-sub {
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.ln-video-lead strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.ln-video-features {
+    display: flex;
+    align-items: flex-start;
+    margin-top: clamp(2.5rem, 6vh, 4.5rem);
+}
+
+.ln-video-feature {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0 2rem;
+}
+
+.ln-video-feature:first-child {
+    padding-left: 0;
+}
+
+.ln-video-feature + .ln-video-feature::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    height: calc(100% - 12px);
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+.ln-video-feature-icon {
+    color: #00D1B2;
+    display: inline-flex;
+}
+
+.ln-video-feature-label {
+    font-size: 0.92rem;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 768px) {
+    .ln-video {
+        aspect-ratio: auto;
+        min-height: 0;
+        padding: 5rem 0;
+    }
+    .ln-video-overlay {
+        background:
+            linear-gradient(180deg, rgba(4, 8, 20, 0.82) 0%, rgba(4, 8, 20, 0.72) 100%),
+            rgba(4, 8, 20, 0.35);
+    }
+    .ln-video-lead,
+    .ln-video-sub {
+        font-size: 1.02rem;
+    }
+    .ln-video-feature {
+        padding: 0 1.25rem;
+    }
+    .ln-video-feature-label {
+        font-size: 0.82rem;
+    }
+}
+
+/* ============================================================
+   6. Fluxo — Do acesso ao controle do ambiente
+   ============================================================ */
+.ln-flow {
+    background: var(--bg-light-soft);
+    padding: 6rem 0;
+    color: var(--text-dark);
+}
+
+.ln-flow-grid {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+}
+
+.ln-flow-card {
+    position: relative;
+    flex: 1 1 0;
+    max-width: 320px;
+    background: #fff;
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    padding: 2rem 1.75rem;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.ln-flow-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary-soft-2);
+    box-shadow: 0 12px 28px -12px rgba(37, 99, 235, 0.18);
+}
+
+.ln-flow-step {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--primary-soft-2);
+}
+
+.ln-flow-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--primary-soft);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+.ln-flow-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+.ln-flow-card p {
+    font-size: 0.9rem;
+    color: var(--text-dark-muted);
+    line-height: 1.55;
+    margin: 0;
+}
+
+.ln-flow-arrow {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    color: var(--primary-soft-2);
+}
+
+@media (max-width: 860px) {
+    .ln-flow-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .ln-flow-card {
+        width: 100%;
+        max-width: 420px;
+    }
+    .ln-flow-arrow {
+        width: auto;
+        height: 44px;
+        transform: rotate(90deg);
+    }
+}
+
+/* ============================================================
+   7. Depoimento
+   ============================================================ */
+.ln-testimonial {
+    background: var(--bg-dark);
+    color: var(--text-light);
+    padding: 6rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ln-testimonial-container {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.ln-testimonial .ln-section-head {
+    margin-bottom: 2.5rem;
+}
+
+.ln-testimonial .ln-section-head h2 {
+    color: var(--text-light);
+}
+
+.ln-testimonial .ln-eyebrow {
+    color: var(--primary-light);
+}
+
+.ln-quote-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin: 0 0 2rem;
+    box-shadow: 0 24px 60px -24px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.ln-quote-card::before {
+    content: "\201C";
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-size: 4rem;
+    line-height: 1;
+    font-family: Georgia, serif;
+    color: var(--primary-soft-2);
+}
+
+.ln-quote-card blockquote {
+    margin: 1.5rem 0 1.75rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+.ln-quote-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.ln-quote-avatar {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+}
+
+.ln-quote-author-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+.ln-quote-author-info strong {
+    color: var(--text-dark);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.ln-quote-author-info span {
+    color: var(--text-dark-muted);
+    font-size: 0.88rem;
+}
+
+.ln-quote-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 1.5rem;
+}
+
+.ln-quote-highlights li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text-muted-2);
+}
+
+.ln-quote-check {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(59, 130, 246, 0.15);
+    color: var(--primary-light);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ln-quote-check svg {
+    width: 12px;
+    height: 12px;
+}
+
+@media (max-width: 768px) {
+    .ln-flow,
+    .ln-testimonial {
+        padding: 4rem 0;
+    }
+    .ln-quote-card {
+        padding: 2rem 1.5rem;
+    }
+    .ln-quote-card blockquote {
+        font-size: 1.08rem;
+    }
+    .ln-quote-highlights {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+    }
+}
