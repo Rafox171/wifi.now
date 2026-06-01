@@ -4751,6 +4751,7 @@ ul {
     color: #ffffff;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    padding-left: 48px;
     width: 100%;
 }
 
@@ -5099,6 +5100,10 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .ln-video-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .ln-flow,
     .ln-testimonial {
         padding: 4rem 0;
