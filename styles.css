@@ -4523,15 +4523,16 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    align-items: stretch;
 }
 
 .approach-card {
     background: #ffffff;
     border-radius: 16px;
-    padding: 2.5rem;
+    padding: 0;
     display: flex;
-    align-items: center;
-    gap: 2.25rem;
+    flex-direction: column;
+    overflow: hidden;
     box-shadow: 0 4px 20px rgba(15, 23, 42, 0.02);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -4545,87 +4546,126 @@ ul {
     border: 1px solid var(--border-light);
 }
 
-.approach-card.wifi-now-way {
-    border: 2px solid var(--primary);
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
 }
 
-.approach-card-visual {
+@keyframes rotate-gradient-border {
+    to {
+        --angle: 360deg;
+    }
+}
+
+.approach-card.wifi-now-way {
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(#ffffff, #ffffff) padding-box, conic-gradient(from var(--angle), #2563eb, #00D1B2, #1256FF, #2563eb) border-box;
+    border-radius: 16px;
+    animation: rotate-gradient-border 4s linear infinite;
+}
+
+/* Cabeçalho do card: ícone + título + legenda */
+.approach-card-head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.approach-badge {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
 }
 
-.approach-img-wrapper {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.approach-badge svg {
+    width: 20px;
+    height: 20px;
 }
 
-.common-way .approach-img-wrapper {
-    background-color: #f1f5f9;
+.badge-cross {
+    background-color: #fee2e2;
+    color: #ef4444;
 }
 
-.wifi-now-way .approach-img-wrapper {
-    background-color: #eff6ff;
-}
-
-.approach-img-placeholder {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.approach-card-content {
-    flex: 1;
-}
-
-.approach-card-content h3 {
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin: 0 0 0.75rem;
-}
-
-.common-way .approach-card-content h3 {
-    color: var(--text-dark);
-}
-
-.wifi-now-way .approach-card-content h3 {
+.badge-check {
+    background-color: #dbeafe;
     color: var(--primary);
 }
 
-.card-divider {
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--border-light);
-    margin-bottom: 1.25rem;
+.approach-head-text h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+    line-height: 1.2;
 }
 
+.common-way .approach-head-text h3 {
+    color: var(--text-dark);
+}
+
+.wifi-now-way .approach-head-text h3 {
+    color: var(--primary);
+}
+
+.approach-head-text p {
+    font-size: 0.95rem;
+    color: var(--text-dark-muted);
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Placeholder de imagem 16:9 — basta trocar o src no HTML */
+.approach-media {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 0;
+    overflow: hidden;
+    background-color: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wifi-now-way .approach-media {
+    background-color: #ffffff;
+}
+
+.approach-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Lista de itens em 2 colunas */
 .approach-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem 1.5rem;
 }
 
 .approach-list li {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    font-size: 0.95rem;
-    color: var(--text-dark-muted);
-    margin-bottom: 0.85rem;
-    line-height: 1.4;
-}
-
-.approach-list li:last-child {
-    margin-bottom: 0;
+    gap: 0.65rem;
+    font-size: 0.92rem;
+    color: var(--text-dark);
+    line-height: 1.35;
+    margin: 0;
 }
 
 .approach-icon {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
@@ -4634,13 +4674,13 @@ ul {
 }
 
 .icon-cross {
-    background-color: #cbd5e1;
+    background-color: #ef4444;
     color: #ffffff;
 }
 
 .icon-cross svg {
-    width: 9px;
-    height: 9px;
+    width: 10px;
+    height: 10px;
 }
 
 .icon-check {
@@ -4649,8 +4689,8 @@ ul {
 }
 
 .icon-check svg {
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
 }
 
 @media (max-width: 900px) {
@@ -4658,21 +4698,12 @@ ul {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    .approach-card {
-        padding: 2rem;
-        gap: 1.5rem;
-    }
-    .approach-img-wrapper {
-        width: 100px;
-        height: 100px;
-    }
 }
 
 @media (max-width: 640px) {
-    .approach-card {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.25rem;
+    .approach-list {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
     }
     .ln-section-head-left h2 {
         font-size: 1.85rem;
