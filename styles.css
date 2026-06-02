@@ -670,10 +670,11 @@ ul {
     gap: 0;
     width: max-content;
     animation: scroll-left 30s linear infinite;
+    pointer-events: auto;
 }
 
 .carousel-track:hover {
-    animation-play-state: paused;
+    animation-play-state: paused !important;
 }
 
 @keyframes scroll-left {
@@ -3818,6 +3819,7 @@ ul {
     .features-carousel {
         position: relative;
         bottom: auto;
+        height: 52px;
     }
     .hero-container {
         padding: 1rem 0 4rem;
@@ -3846,7 +3848,7 @@ ul {
     .btn-hero svg { width: 16px; height: 16px; }
 
     /* Carousel — itens menos espaçados */
-    .features-carousel { height: auto; padding: 0.5rem 0; }
+    .features-carousel { padding: 0; }
     .carousel-item { padding: 0 1.25rem; }
     .carousel-item h3 { font-size: 0.72rem; }
 
@@ -4041,6 +4043,7 @@ ul {
     .features-carousel {
         position: relative;
         bottom: auto;
+        height: 52px;
     }
     .hero-container {
         padding: 1rem 0 4rem;
@@ -4069,7 +4072,7 @@ ul {
     .btn-hero svg { width: 16px; height: 16px; }
 
     /* Carousel — itens menos espaçados */
-    .features-carousel { height: auto; padding: 0.5rem 0; }
+    .features-carousel { padding: 0; }
     .carousel-item { padding: 0 1.25rem; }
     .carousel-item h3 { font-size: 0.72rem; }
 
@@ -5179,7 +5182,7 @@ ul {
 /* Hero Carousel Indicators */
 .hero-indicators {
     position: absolute;
-    bottom: 24px;
+    bottom: 62px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
