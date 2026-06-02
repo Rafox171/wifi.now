@@ -26,7 +26,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--bg-dark);
+    background-color: #ffffff;
     color: var(--text-light);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -319,6 +319,16 @@ ul {
 
 .nav-links a:hover {
     color: #ffffff;
+}
+
+.nav-fabio {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.15s ease;
+}
+
+.nav-fabio:hover {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .nav-divider {
@@ -2100,10 +2110,10 @@ ul {
 }
 
 .footer {
-    background: #060c1e;
+    background: var(--bg-dark);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 2rem 0;
-    margin-top: 4rem;
+    margin-top: 50rem;
 }
 
 .footer-container {
