@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wi-fi.now - Captive portal externo para FortiGate</title>
-    <link rel="stylesheet" href="styles.css?v=73">
+    <link rel="stylesheet" href="styles.css?v=74">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,12 +22,18 @@
                     <a href="planos.html">Planos</a>
                     <a href="faq.html">FAQ</a>
                     <a href="documentacao.html">Documentação</a>
+                    <a href="#" class="nav-mobile-login">Entrar</a>
                 </div>
                 <span class="nav-divider"></span>
                 <div class="nav-actions">
                     <a href="#" class="login-link">Entrar</a>
                     <a href="#" class="btn btn-pill">Começar grátis</a>
                 </div>
+                <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
@@ -494,6 +500,23 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Menu mobile (hamburguer)
+            const navbar = document.querySelector('.navbar');
+            const navToggle = document.querySelector('.nav-toggle');
+            if (navToggle && navbar) {
+                navToggle.addEventListener('click', () => {
+                    const isOpen = navbar.classList.toggle('nav-open');
+                    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+                // Fecha o menu ao clicar em um link
+                navbar.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navbar.classList.remove('nav-open');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
             const slides = document.querySelectorAll('.hero-slide');
             const dots = document.querySelectorAll('.indicator-dot');
             
