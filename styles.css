@@ -3827,6 +3827,7 @@ ul {
 
     /* Menu vira dropdown vertical sob a navbar */
     .nav-links {
+        display: flex;
         position: absolute;
         top: 100%;
         left: 0;
