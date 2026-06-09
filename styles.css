@@ -5167,6 +5167,84 @@ ul {
     }
 }
 
+/* Fluxo com videos 1:1 (video em cima, texto embaixo) */
+.ln-flow-videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.ln-flow-video-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.ln-flow-video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--bg-light-soft);
+    border: 1px dashed var(--border-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-dark-muted);
+    font-size: 0.85rem;
+    margin-bottom: 1.25rem;
+}
+
+.ln-flow-video video,
+.ln-flow-video img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0;
+    display: block;
+}
+
+.ln-flow-video-num {
+    position: absolute;
+    top: 0.85rem;
+    right: 0.85rem;
+    z-index: 2;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #fff;
+    background: rgba(15, 23, 42, 0.55);
+    border-radius: 8px;
+    padding: 0.2rem 0.5rem;
+}
+
+.ln-flow-video-item h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+.ln-flow-video-item p {
+    font-size: 0.9rem;
+    color: var(--text-dark-muted);
+    line-height: 1.55;
+    margin: 0;
+}
+
+@media (max-width: 860px) {
+    .ln-flow-videos {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        gap: 2.5rem;
+    }
+}
+
 /* ============================================================
    7. Depoimento
    ============================================================ */
