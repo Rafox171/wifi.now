@@ -2154,6 +2154,32 @@ ul {
     .ft-code-block { font-size: 0.82rem; }
 }
 
+/* ============================================================
+   Celular: heros de imagem em 9:16 e reset dos ajustes de desktop
+   ============================================================ */
+@media (max-width: 768px) {
+    /* Neutraliza os deslocamentos finos usados no desktop (margens negativas inline) */
+    .ft-hero-text {
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        max-width: 100% !important;
+    }
+    .ft-hero-container {
+        justify-content: flex-start !important;
+    }
+
+    /* Heros com imagem de fundo (Recursos e Onboarding): formato vertical 9:16 */
+    .ft-hero:not(.bg-light) {
+        aspect-ratio: 9 / 16 !important;
+        max-height: 100vh;
+        display: flex !important;
+        align-items: center !important;
+        background-size: cover !important;
+        background-position: center !important;
+        padding: 2.5rem 0 !important;
+    }
+}
+
 .footer {
     background: var(--bg-dark);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
