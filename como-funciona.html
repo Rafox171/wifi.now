@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como funciona - wi-fi.now</title>
-    <link rel="stylesheet" href="styles.css?v=73">
+    <link rel="stylesheet" href="styles.css?v=77">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,358 +20,121 @@
                     <a href="como-funciona.html">Onboarding</a>
                     <a href="planos.html">Planos</a>
                     <a href="faq.html">FAQ</a>
-                    <a href="documentacao.html">Documentação</a>
+                    <a href="#" class="nav-mobile-login">Entrar</a>
                 </div>
                 <span class="nav-divider"></span>
                 <div class="nav-actions">
                     <a href="#" class="login-link">Entrar</a>
                     <a href="#" class="btn btn-pill">Começar grátis</a>
                 </div>
+                <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
     <section class="ft-hero bg-light">
-        <div class="container ft-hero-container">
-            <span class="ft-eyebrow">Tutorial · Captive portal passo a passo</span>
-            <h1 class="ft-hero-title">
-                Como funciona o captive portal <span class="text-brand-blue">FortiGate + wi-fi.now</span>
-            </h1>
-            <p class="ft-hero-sub">
-                Doze etapas, do clique no SSID ao registro administrativo da sessão. O FortiGate controla o acesso, o <strong>wi-fi.now</strong> faz a autenticação no portal externo e registra o accounting.
-            </p>
-            <div class="ft-hero-actions">
-                <a href="#passo-1" class="btn btn-primary">Começar tutorial</a>
-                <a href="#autenticacao" class="ft-link-arrow">Métodos de autenticação &rsaquo;</a>
-            </div>
+      <div class="container ft-hero-container">
+        <div class="ft-hero-text">
+          <span class="ft-eyebrow">Onboarding ::: Como funciona</span>
+          <h1 class="ft-hero-title">Do SSID ao acesso liberado, <span class="text-teal">em minutos</span>.</h1>
+          <p class="ft-hero-sub">Sem servidor, sem projeto. Use o FortiGate que você já tem, aplique o script e pronto.</p>
+          <div class="ft-hero-actions">
+            <a href="#" class="btn btn-primary">Começar grátis</a>
+            <a href="recursos.html" class="ft-link-arrow">Ver recursos &rsaquo;</a>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Passo 1 -->
-    <section class="ft-tutorial-step bg-light" id="passo-1">
-        <div class="container ft-step-grid">
-            <div class="ft-step-text">
-                <span class="ft-step-num">01</span>
-                <h2 class="ft-step-title">Conexão no Wi-Fi</h2>
-                <p class="ft-body">
-                    O usuário conecta o dispositivo ao SSID configurado no ambiente. O FortiGate (ou o FortiAP) entrega as configurações básicas de rede via DHCP: endereço IP, máscara, gateway e DNS.
-                </p>
-                <p class="ft-body">
-                    Mesmo conectado ao Wi-Fi, o dispositivo ainda <strong>não está liberado para navegar</strong>. Toda tentativa de tráfego para fora do walled garden será interceptada nas próximas etapas.
-                </p>
-            </div>
-            <figure class="ft-step-image">
-                <!-- Coloque sua imagem em: img/passos/passo-01.png -->
-                <img src="img/passos/passo-01.png" alt="Conexão ao SSID Wi-Fi" onerror="this.onerror=null;this.src='img/passos/placeholder.svg';this.classList.add('is-placeholder');">
-                <figcaption>Dispositivo conectando ao SSID configurado</figcaption>
-            </figure>
+    <!-- Fluxo -->
+    <section class="ln-flow">
+      <div class="container">
+        <div class="ln-section-head">
+          <span class="ln-eyebrow">[ COMO FUNCIONA ]</span>
+          <h2>Três passos. Nada de projeto.</h2>
+          <p>Do toque no SSID ao acesso liberado, com a sessão registrada.</p>
         </div>
+        <div class="ln-flow-grid">
+          <div class="ln-flow-card">
+            <span class="ln-flow-step">01</span>
+            <div class="ln-flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg></div>
+            <h3>Visitante conecta</h3>
+            <p>Entra no SSID de visitantes, separado da rede interna.</p>
+          </div>
+          <div class="ln-flow-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          <div class="ln-flow-card">
+            <span class="ln-flow-step">02</span>
+            <div class="ln-flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="8 8 11 11 16 6"/></svg></div>
+            <h3>Valida no portal</h3>
+            <p>Recebe um código por WhatsApp ou SMS, ou entra com Google, LinkedIn ou Microsoft.</p>
+          </div>
+          <div class="ln-flow-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+          <div class="ln-flow-card">
+            <span class="ln-flow-step">03</span>
+            <div class="ln-flow-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+            <h3>FortiGate libera</h3>
+            <p>Acesso liberado conforme a sua política. A sessão fica registrada.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Passo 2 -->
-    <section class="ft-tutorial-step ft-tutorial-alt bg-light" id="passo-2">
-        <div class="container ft-step-grid ft-step-reverse">
-            <div class="ft-step-text">
-                <span class="ft-step-num">02</span>
-                <h2 class="ft-step-title">Tentativa de acesso à Internet</h2>
-                <p class="ft-body">
-                    O usuário abre o navegador, um aplicativo ou tenta acessar qualquer serviço. O dispositivo dispara requisições para a Internet, mas elas chegam até o FortiGate antes de qualquer roteamento externo.
-                </p>
-                <p class="ft-body">
-                    O FortiGate identifica que o cliente <strong>ainda não foi autenticado</strong> e, portanto, precisa passar pelo captive portal antes de ter o tráfego liberado.
-                </p>
-            </div>
-            <figure class="ft-step-image">
-                <!-- Coloque sua imagem em: img/passos/passo-02.png -->
-                <img src="img/passos/passo-02.png" alt="Tentativa de acesso à Internet" onerror="this.onerror=null;this.src='img/passos/placeholder.svg';this.classList.add('is-placeholder');">
-                <figcaption>Tentativa de abrir um site antes da autenticação</figcaption>
-            </figure>
+    <!-- Feature: Simplicidade -->
+    <section class="ln-feature">
+      <div class="container ln-feature-grid">
+        <div class="ln-feature-text">
+          <span class="ln-eyebrow">[ SIMPLICIDADE ]</span>
+          <h2>Use o que já está aí</h2>
+          <p>Seu FortiGate já faz o trabalho pesado. Falta só ligar o wi-fi.now.</p>
+          <ul class="ln-checklist">
+            <li>Sem servidor local nem RADIUS local</li>
+            <li>Sem link de internet novo</li>
+            <li>Script de configuração pronto</li>
+            <li>Homologação antes de ir para produção</li>
+          </ul>
+          <a href="recursos.html" class="ln-link-arrow">Ver recursos &rsaquo;</a>
         </div>
+        <div class="ln-feature-visual">
+          <div class="media-ph"><span>Espaço para imagem</span></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Passo 3 -->
-    <section class="ft-tutorial-step bg-light" id="passo-3">
-        <div class="container ft-step-grid">
-            <div class="ft-step-text">
-                <span class="ft-step-num">03</span>
-                <h2 class="ft-step-title">FortiGate intercepta e redireciona</h2>
-                <p class="ft-body">
-                    O FortiGate intercepta a sessão HTTP/HTTPS e redireciona o navegador do usuário para a página externa do wi-fi.now:
-                </p>
-                <div class="ft-code-block">https://wi-fi.now/fgauth/[UNIQID]</div>
-                <p class="ft-body">
-                    O <code>UNIQID</code> é uma string alfanumérica de 8 a 16 caracteres que identifica o cliente ou ambiente na plataforma wi-fi.now.
-                </p>
-            </div>
-            <figure class="ft-step-image">
-                <!-- Coloque sua imagem em: img/passos/passo-03.png -->
-                <img src="img/passos/passo-03.png" alt="Redirecionamento ao portal externo" onerror="this.onerror=null;this.src='img/passos/placeholder.svg';this.classList.add('is-placeholder');">
-                <figcaption>Redirecionamento HTTP para o portal externo</figcaption>
-            </figure>
+    <!-- Feature: Portal -->
+    <section class="ln-feature ln-feature-alt ln-feature-reverse">
+      <div class="container ln-feature-grid">
+        <div class="ln-feature-text">
+          <span class="ln-eyebrow">[ PORTAL ]</span>
+          <h2>Portal com a sua cara</h2>
+          <p>Logo, cores e termos definidos por você. A validação acontece por token ou login, do jeito que faz sentido para o seu público.</p>
+          <ul class="ln-checklist">
+            <li>Logo e identidade do cliente</li>
+            <li>Termos e privacidade que você define</li>
+            <li>Token por SMS ou WhatsApp, ou OAuth</li>
+            <li>URL no formato wi-fi.now/fgauth</li>
+          </ul>
         </div>
+        <div class="ln-feature-visual">
+          <div class="media-ph"><span>Espaço para imagem</span></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Passo 4 -->
-    <section class="ft-tutorial-step ft-tutorial-alt bg-light" id="passo-4">
-        <div class="container ft-step-grid ft-step-reverse">
-            <div class="ft-step-text">
-                <span class="ft-step-num">04</span>
-                <h2 class="ft-step-title">Página customizada do wi-fi.now</h2>
-                <p class="ft-body">
-                    O usuário visualiza a página externa configurada para aquele cliente: logo, identidade visual personalizada, termos de uso, política de privacidade e os métodos de autenticação disponíveis no ambiente.
-                </p>
-                <p class="ft-body">
-                    A página exibida depende inteiramente das configurações associadas ao UNIQID do cliente na plataforma wi-fi.now.
-                </p>
-            </div>
-            <figure class="ft-step-image">
-                <!-- Coloque sua imagem em: img/passos/passo-04.png -->
-                <img src="img/passos/passo-04.png" alt="Página customizada do portal wi-fi.now" onerror="this.onerror=null;this.src='img/passos/placeholder.svg';this.classList.add('is-placeholder');">
-                <figcaption>Portal customizado exibido ao usuário</figcaption>
-            </figure>
+    <!-- CTA -->
+    <section class="ln-cta">
+      <div class="container ln-cta-container">
+        <span class="ln-eyebrow">Coloque no ar hoje</span>
+        <blockquote>Configure uma vez. Volte a trabalhar.</blockquote>
+        <div class="ln-cta-actions">
+          <a href="#" class="btn btn-primary">Começar grátis</a>
+          <a href="#" class="btn-outline-dark">Falar com a gente</a>
         </div>
-    </section>
-
-    <!-- Passo 5 -->
-    <section class="ft-tutorial-step bg-light" id="passo-5">
-        <div class="container ft-step-grid">
-            <div class="ft-step-text">
-                <span class="ft-step-num">05</span>
-                <h2 class="ft-step-title">Autenticação do usuário</h2>
-                <p class="ft-body">
-                    O usuário valida o acesso pelo método configurado:
-                </p>
-                <ul class="ft-list">
-                    <li><strong>Token via SMS ou WhatsApp</strong> — usuário informa o telefone, recebe um código e digita no portal.</li>
-                    <li><strong>OAuth</strong> — login com conta Google, LinkedIn ou Microsoft.</li>
-                </ul>
-                <p class="ft-body">
-                    Os dois métodos podem coexistir no mesmo portal. As credenciais OAuth são de responsabilidade do cliente.
-                </p>
-            </div>
-            <figure class="ft-step-image">
-                <!-- Coloque sua imagem em: img/passos/passo-05.png -->
-                <img src="img/passos/passo-05.png" alt="Métodos de autenticação do portal" onerror="this.onerror=null;this.src='img/passos/placeholder.svg';this.classList.add('is-placeholder');">
-                <figcaption>Token SMS/WhatsApp ou login OAuth</figcaption>
-            </figure>
-        </div>
-    </section>
-
-    <!-- Passo 6 -->
-    <section class="ft-tutorial-step ft-tutorial-alt bg-light" id="passo-6">
-        <div class="container ft-step-grid ft-step-reverse">
-            <div class="ft-step-text">
-                <span class="ft-step-num">06</span>
-                <h2 class="ft-step-title">wi-fi.now valida</h2>
-                <p class="ft-body">
-                    O portal valida o token recebido (no caso de SMS/WhatsApp) ou a confirmação do provedor OAuth. Em qualquer dos métodos, o resultado da validação aciona a liberação do usuário no FortiGate conforme o modelo de integração configurado.
-                </p>
-            </div>
-            <figure class="ft-step-image">
-                <!-- Coloque sua imagem em: img/passos/passo-06.png -->
-                <img src="img/passos/passo-06.png" alt="Validação do token ou OAuth" onerror="this.onerror=null;this.src='img/passos/placeholder.svg';this.classList.add('is-placeholder');">
-                <figcaption>Resultado da validação no portal</figcaption>
-            </figure>
-        </div>
-    </section>
-
-    <!-- Passo 7 -->
-    <section class="ft-tutorial-step bg-light" id="passo-7">
-        <div class="container ft-step-grid">
-            <div class="ft-step-text">
-                <span class="ft-step-num">07</span>
-                <h2 class="ft-step-title">FortiGate libera o cliente</h2>
-                <p class="ft-body">
-                    Com a confirmação da plataforma, o FortiGate passa a reconhecer aquele cliente (associado a IP e MAC) como autorizado. A partir desse momento, o usuário deixa de ficar preso no captive portal.
-                </p>
-                <p class="ft-body">
-                    O dispositivo já pode navegar — sempre respeitando as próximas camadas: políticas de firewall, filtros e perfis de segurança aplicados pelo FortiGate.
-                </p>
-            </div>
-            <figure class="ft-step-image">
-                <!-- Coloque sua imagem em: img/passos/passo-07.png -->
-                <img src="img/passos/passo-07.png" alt="Cliente autorizado no FortiGate" onerror="this.onerror=null;this.src='img/passos/placeholder.svg';this.classList.add('is-placeholder');">
-                <figcaption>Cliente autorizado, navegação liberada</figcaption>
-            </figure>
-        </div>
-    </section>
-
-    <!-- Passo 8 -->
-    <section class="ft-tutorial-step ft-tutorial-alt bg-light" id="passo-8">
-        <div class="container ft-step-grid ft-step-reverse">
-            <div class="ft-step-text">
-                <span class="ft-step-num">08</span>
-                <h2 class="ft-step-title">Políticas de firewall em vigor</h2>
-                <p class="ft-body">
-                    Liberar não significa acesso irrestrito. O FortiGate continua aplicando todas as políticas de segurança configuradas para a rede de visitantes:
-                </p>
-                <ul class="ft-list">
-                    <li>Bloqueio de sites e controle de aplicações</li>
-                    <li>Filtros, NAT e limites de banda</li>
-                    <li>Segmentação de rede e tempo máximo de sessão</li>
-                    <li>Perfis Web Filter, App Control, IPS, Antivirus</li>
-                </ul>
-            </div>
-            <figure class="ft-step-image">
-                <!-- Coloque sua imagem em: img/passos/passo-08.png -->
-                <img src="img/passos/passo-08.png" alt="Políticas de firewall aplicadas" onerror="this.onerror=null;this.src='img/passos/placeholder.svg';this.classList.add('is-placeholder');">
-                <figcaption>Perfis de segurança aplicados ao tráfego</figcaption>
-            </figure>
-        </div>
-    </section>
-
-    <!-- Passo 9 -->
-    <section class="ft-tutorial-step bg-light" id="passo-9">
-        <div class="container ft-step-grid">
-            <div class="ft-step-text">
-                <span class="ft-step-num">09</span>
-                <h2 class="ft-step-title">Accounting-Start</h2>
-                <p class="ft-body">
-                    O FortiGate envia para o servidor RADIUS do wi-fi.now um evento de <strong>Accounting-Start</strong>, informando o início da sessão.
-                </p>
-                <p class="ft-body">
-                    Dados registrados: usuário autenticado, IP do cliente, MAC do dispositivo, horário de início e equipamento de origem.
-                </p>
-            </div>
-            <figure class="ft-step-image">
-                <!-- Coloque sua imagem em: img/passos/passo-09.png -->
-                <img src="img/passos/passo-09.png" alt="Evento de Accounting-Start" onerror="this.onerror=null;this.src='img/passos/placeholder.svg';this.classList.add('is-placeholder');">
-                <figcaption>Registro de início da sessão</figcaption>
-            </figure>
-        </div>
-    </section>
-
-    <!-- Passo 10 -->
-    <section class="ft-tutorial-step ft-tutorial-alt bg-light" id="passo-10">
-        <div class="container ft-step-grid ft-step-reverse">
-            <div class="ft-step-text">
-                <span class="ft-step-num">10</span>
-                <h2 class="ft-step-title">Interim-Update a cada 15 min</h2>
-                <p class="ft-body">
-                    Enquanto a sessão estiver ativa, o FortiGate envia mensagens periódicas de <strong>Accounting-Interim-Update</strong> para manter o registro atualizado na plataforma wi-fi.now.
-                </p>
-                <p class="ft-body">
-                    O intervalo padrão é de <strong>15 minutos</strong>. Esse mecanismo garante visibilidade contínua do estado da sessão, mesmo em sessões longas.
-                </p>
-            </div>
-            <figure class="ft-step-image">
-                <!-- Coloque sua imagem em: img/passos/passo-10.png -->
-                <img src="img/passos/passo-10.png" alt="Interim-Update a cada 15 minutos" onerror="this.onerror=null;this.src='img/passos/placeholder.svg';this.classList.add('is-placeholder');">
-                <figcaption>Atualizações periódicas durante a sessão</figcaption>
-            </figure>
-        </div>
-    </section>
-
-    <!-- Passo 11 -->
-    <section class="ft-tutorial-step bg-light" id="passo-11">
-        <div class="container ft-step-grid">
-            <div class="ft-step-text">
-                <span class="ft-step-num">11</span>
-                <h2 class="ft-step-title">Accounting-Stop</h2>
-                <p class="ft-body">
-                    Quando a sessão é encerrada — por logout, desconexão, expiração de tempo ou troca de rede — o FortiGate envia um evento de <strong>Accounting-Stop</strong>.
-                </p>
-                <p class="ft-body">
-                    Dados registrados: horário de término, tempo total de sessão e motivo do encerramento (quando disponível).
-                </p>
-            </div>
-            <figure class="ft-step-image">
-                <!-- Coloque sua imagem em: img/passos/passo-11.png -->
-                <img src="img/passos/passo-11.png" alt="Evento de Accounting-Stop" onerror="this.onerror=null;this.src='img/passos/placeholder.svg';this.classList.add('is-placeholder');">
-                <figcaption>Registro de encerramento da sessão</figcaption>
-            </figure>
-        </div>
-    </section>
-
-    <!-- Passo 12 -->
-    <section class="ft-tutorial-step ft-tutorial-alt bg-light" id="passo-12">
-        <div class="container ft-step-grid ft-step-reverse">
-            <div class="ft-step-text">
-                <span class="ft-step-num">12</span>
-                <h2 class="ft-step-title">Registro administrativo final</h2>
-                <p class="ft-body">
-                    O wi-fi.now consolida os dados administrativos da sessão: identificação do usuário, dispositivo, IP, MAC, tempo de permanência e status.
-                </p>
-                <p class="ft-body ft-callout">
-                    O wi-fi.now <strong>não registra</strong> histórico de navegação, sites acessados, URLs navegadas, aplicativos utilizados ou qualquer conteúdo consumido durante a sessão.
-                </p>
-            </div>
-            <figure class="ft-step-image">
-                <!-- Coloque sua imagem em: img/passos/passo-12.png -->
-                <img src="img/passos/passo-12.png" alt="Registro administrativo da sessão" onerror="this.onerror=null;this.src='img/passos/placeholder.svg';this.classList.add('is-placeholder');">
-                <figcaption>Consolidação dos dados administrativos</figcaption>
-            </figure>
-        </div>
-    </section>
-
-    <!-- Métodos de autenticação - TABS -->
-    <section class="ft-section ft-section-alt bg-light" id="autenticacao">
-        <div class="container">
-            <div class="ft-narrow">
-                <span class="ft-label">Autenticação</span>
-                <h2 class="ft-h2">Métodos disponíveis</h2>
-                <p class="ft-body">
-                    O portal pode utilizar duas opções de validação, combinadas ou isoladas conforme a configuração do cliente.
-                </p>
-            </div>
-
-            <div class="ft-tabs" role="tablist">
-                <button class="ft-tab is-active" role="tab" aria-selected="true" data-tab="sms">Token SMS / WhatsApp</button>
-                <button class="ft-tab" role="tab" aria-selected="false" data-tab="oauth">OAuth (Google, LinkedIn, Microsoft)</button>
-            </div>
-
-            <div class="ft-tab-panels">
-                <div class="ft-tab-panel is-active" data-panel="sms" role="tabpanel">
-                    <div class="ft-panel-grid">
-                        <div>
-                            <h3 class="ft-h3">Validação por token SMS ou WhatsApp</h3>
-                            <p class="ft-body">
-                                O usuário informa um número de telefone e recebe um código de uso único por SMS ou WhatsApp. Após digitar o token no portal, o wi-fi.now valida o código e libera o acesso conforme a política configurada.
-                            </p>
-                            <p class="ft-body">
-                                Esse método confirma que o usuário possui acesso ao número informado antes de liberar a navegação.
-                            </p>
-                        </div>
-                        <div>
-                            <h4 class="ft-mini-title">Fluxo</h4>
-                            <ol class="ft-mini-steps">
-                                <li>Usuário informa o número de telefone</li>
-                                <li>wi-fi.now envia o token por SMS ou WhatsApp</li>
-                                <li>Usuário digita o token no portal</li>
-                                <li>wi-fi.now valida o token</li>
-                                <li>Acesso liberado conforme a política</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ft-tab-panel" data-panel="oauth" role="tabpanel">
-                    <div class="ft-panel-grid">
-                        <div>
-                            <h3 class="ft-h3">Autenticação OAuth com provedores externos</h3>
-                            <p class="ft-body">
-                                O usuário autentica com uma conta existente em Google, LinkedIn ou Microsoft. O portal redireciona ao provedor escolhido; após o consentimento, a confirmação retorna ao wi-fi.now e o acesso é liberado.
-                            </p>
-                            <p class="ft-body">
-                                <strong>Responsabilidade do cliente:</strong> credenciais OAuth (client ID, client secret, redirect URI, permissões, consentimentos e manutenção) são de inteira responsabilidade do cliente.
-                            </p>
-                        </div>
-                        <div>
-                            <h4 class="ft-mini-title">Fluxo</h4>
-                            <ol class="ft-mini-steps">
-                                <li>Usuário escolhe Google, LinkedIn ou Microsoft</li>
-                                <li>Portal redireciona para o provedor OAuth</li>
-                                <li>Usuário autentica no provedor</li>
-                                <li>Provedor retorna a confirmação ao wi-fi.now</li>
-                                <li>wi-fi.now valida o login</li>
-                                <li>Acesso liberado conforme a política</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- Footer -->
@@ -396,21 +159,22 @@
     </footer>
 
     <script>
-        document.querySelectorAll('.ft-tab').forEach(tab => {
-            tab.addEventListener('click', () => {
-                const target = tab.dataset.tab;
-                const container = tab.closest('section');
-                container.querySelectorAll('.ft-tab').forEach(t => {
-                    t.classList.remove('is-active');
-                    t.setAttribute('aria-selected', 'false');
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.querySelector('.navbar');
+            const navToggle = document.querySelector('.nav-toggle');
+            if (navToggle && navbar) {
+                navToggle.addEventListener('click', () => {
+                    const isOpen = navbar.classList.toggle('nav-open');
+                    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
                 });
-                container.querySelectorAll('.ft-tab-panel').forEach(p => p.classList.remove('is-active'));
-                tab.classList.add('is-active');
-                tab.setAttribute('aria-selected', 'true');
-                container.querySelector(`.ft-tab-panel[data-panel="${target}"]`).classList.add('is-active');
-            });
+                navbar.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navbar.classList.remove('nav-open');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
         });
     </script>
-
 </body>
 </html>

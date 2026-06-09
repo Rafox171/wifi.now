@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planos - wi-fi.now</title>
-    <link rel="stylesheet" href="styles.css?v=51">
+    <link rel="stylesheet" href="styles.css?v=77">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -17,16 +17,21 @@
             <div class="nav-right">
                 <div class="nav-links">
                     <a href="recursos.html">Recursos</a>
-                    <a href="como-funciona.html">Como funciona</a>
+                    <a href="como-funciona.html">Onboarding</a>
                     <a href="planos.html">Planos</a>
                     <a href="faq.html">FAQ</a>
-                    <a href="documentacao.html">Documentação</a>
+                    <a href="#" class="nav-mobile-login">Entrar</a>
                 </div>
                 <span class="nav-divider"></span>
                 <div class="nav-actions">
                     <a href="#" class="login-link">Entrar</a>
                     <a href="#" class="btn btn-pill">Começar grátis</a>
                 </div>
+                <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
@@ -97,15 +102,15 @@
                             <td style="font-weight: 600; color: var(--primary);">Enterprise</td>
                             <td>FG-2600F e superiores (chassis 3000F+, 4000F+, 6000F+, 7000F+)</td>
                             <td style="text-align: right; font-style: italic; color: var(--text-dark-muted);">sob consulta</td>
-                            <td style="text-align: right; color: var(--text-dark-muted);">—</td>
-                            <td style="text-align: right; color: var(--text-dark-muted);">—</td>
+                            <td style="text-align: right; font-style: italic; color: var(--text-dark-muted);">sob consulta</td>
+                            <td style="text-align: right; font-style: italic; color: var(--text-dark-muted);">sob consulta</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="pricing-disclaimer" style="text-align: center; margin-top: 2rem; font-size: 0.8rem; color: var(--text-dark-muted);">
-                <p>* Câmbio fixo R$ 5,30/USD. Revisão semestral ou se cotação fechar fora da banda R$ 4,80–R$ 5,80 por 30 dias.</p>
+                <p>* Câmbio fixo R$ 5,30/USD. Revisão semestral ou se cotação fechar fora da banda R$ 4,80 a R$ 5,80 por 30 dias.</p>
             </div>
         </div>
     </section>
@@ -130,5 +135,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.querySelector('.navbar');
+            const navToggle = document.querySelector('.nav-toggle');
+            if (navToggle && navbar) {
+                navToggle.addEventListener('click', () => {
+                    const isOpen = navbar.classList.toggle('nav-open');
+                    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+                navbar.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navbar.classList.remove('nav-open');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
