@@ -2155,19 +2155,11 @@ ul {
 }
 
 /* ============================================================
-   Celular: heros de imagem em 9:16 e reset dos ajustes de desktop
+   Celular: heros de imagem em 9:16
+   (o reset das margens negativas inline está no bloco <=1024px,
+   no fim do arquivo)
    ============================================================ */
 @media (max-width: 768px) {
-    /* Neutraliza os deslocamentos finos usados no desktop (margens negativas inline) */
-    .ft-hero-text {
-        margin-left: 0 !important;
-        margin-top: 0 !important;
-        max-width: 100% !important;
-    }
-    .ft-hero-container {
-        justify-content: flex-start !important;
-    }
-
     /* Heros com imagem de fundo (Recursos e Onboarding): formato vertical 9:16 */
     .ft-hero:not(.bg-light) {
         aspect-ratio: 9 / 16 !important;
@@ -3862,51 +3854,13 @@ ul {
     .login-link { display: none; }
     .nav-fabio { display: none; }
     .nav-divider { display: none; }
-    .nav-toggle { display: flex; }
     .btn-pill {
         padding: 0.4rem 0.95rem;
         font-size: 0.82rem;
     }
     .logo img { height: 28px; }
 
-    /* Menu vira dropdown vertical sob a navbar */
-    .nav-links {
-        display: flex;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        gap: 0;
-        background: rgba(6, 12, 30, 0.98);
-        -webkit-backdrop-filter: blur(14px);
-        backdrop-filter: blur(14px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        padding: 0 1.5rem;
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        pointer-events: none;
-        transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.3s ease;
-    }
-    .navbar.nav-open .nav-links {
-        max-height: 420px;
-        opacity: 1;
-        pointer-events: auto;
-        padding: 0.25rem 1.5rem 1rem;
-    }
-    .nav-links a {
-        font-size: 1rem;
-        padding: 0.9rem 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-        color: rgba(255, 255, 255, 0.85);
-    }
-    .nav-links a:last-child {
-        border-bottom: none;
-    }
-    .nav-mobile-login {
-        display: block;
-    }
+    /* O menu dropdown (hamburguer) está no bloco <=1024px, no fim do arquivo */
 
     /* Nav-spacer — altura auto, texto quebra */
     .nav-spacer {
@@ -4097,237 +4051,16 @@ ul {
     /* Botões gerais — touch-friendly */
     .btn { padding: 0.7rem 1.2rem; font-size: 0.9rem; }
 
-    /* Footer empilhado */
+    /* Footer empilhado (o container é grid, não flex) */
     .footer { padding: 1.5rem 0; margin-top: 3rem; }
     .footer-container {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
-    .footer-logo img { height: 24px; }
-    .copyright { font-size: 0.82rem; }
-
-    /* Mockup hero — sem zoom forçado */
-    .mockup-image {
-        transform: none;
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .container { padding: 0 1rem; }
-    .hero-content h1 { font-size: 1.7rem; }
-    .nav-spacer span { font-size: 1.25rem; }
-    .ln-section-head h2,
-    .ln-feature-text h2 { font-size: 1.35rem; }
-    .btn-pill { padding: 0.38rem 0.8rem; font-size: 0.78rem; }
-    .nav-links { gap: 1rem; }
-    .hero-actions { flex-direction: column; align-items: stretch; }
-    .btn-hero { justify-content: center; }
-}
-
-/* ============================================================
-   PRICING PAGE STYLES (Linear Pricing Style)
-   ============================================================ */
-.pricing-section {
-    background-color: var(--bg-darker);
-    color: var(--text-light);
-    padding: 8rem 0 6rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.pricing-hero {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 3.5rem;
-}
-
-.pricing-hero h1 {
-    font-size: clamp(2.5rem, 5.5vw, 4.5rem);
-    font-weight: 800;
-    letter-spacing: -0.035em;
-    line-height: 1.05;
-    margin-bottom: 1.25rem;
-    color: #fff;
-}
-
-.pricing-hero p {
-    font-size: 1.15rem;
-    color: var(--text-muted);
-    line-height: 1.6;
-}
-
-/* Pricing Toggle */
-.pricing-toggle-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    /* Hero — empilhar e respirar */
-    .hero {
-        aspect-ratio: auto;
-        min-height: 0;
-        padding: 0;
-        display: block;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-    }
-    /* carrossel de fundo cobre toda a hero */
-    .hero-carousel {
-        position: absolute;
-        inset: 0;
-        height: 100%;
-    }
-    /* texto volta ao fluxo para a hero ganhar altura e parar de sobrepor */
-    .hero-content {
-        position: relative;
-        left: auto;
-        right: auto;
-        top: auto;
-        transform: none;
-        width: auto;
-        max-width: 100%;
-        padding: 92px 20px 24px;
-    }
-    /* overlay mais forte para o texto escuro ler sobre a foto */
-    .hero-carousel-overlay {
-        background: linear-gradient(to bottom, rgba(238, 242, 251, 0.92) 0%, rgba(238, 242, 251, 0.78) 55%, rgba(238, 242, 251, 0.6) 100%);
-    }
-    /* faixa de features volta ao fluxo, abaixo do texto */
-    .features-carousel {
-        position: relative;
-        bottom: auto;
-        height: 52px;
-    }
-    .hero-container {
-        padding: 1rem 0 4rem;
-        gap: 1.5rem;
-    }
-    .hero-content h1 {
-        font-size: 2rem;
-        max-width: 100%;
-        line-height: 1.1;
-        margin-bottom: 1rem;
-    }
-    .hero-content p {
-        font-size: 1rem;
-        max-width: 100%;
-        margin-bottom: 1.5rem;
-    }
-    .hero-actions {
-        margin: 1rem 0 0;
-        gap: 0.6rem;
-        justify-content: flex-start;
-    }
-    .btn-hero {
-        padding: 0.55rem 0.95rem;
-        font-size: 0.8rem;
-    }
-    .btn-hero svg { width: 16px; height: 16px; }
-
-    /* Carousel — itens menos espaçados */
-    .features-carousel { padding: 0; }
-    .carousel-item { padding: 0 1.25rem; }
-    .carousel-item h3 { font-size: 0.72rem; }
-
-    /* Banner FCS — empilhado */
-    .banner-fcs { padding: 1.25rem 0; }
-    .banner-container {
-        flex-direction: column;
-        align-items: stretch;
-        text-align: center;
-        gap: 1.25rem;
-    }
-    .banner-left {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .fcs-logo {
-        padding-right: 0;
-        border-right: none;
-        justify-content: center;
-    }
-    .fcs-logo-img { height: 64px; }
-    .banner-text h2 { font-size: 1.1rem; }
-    .banner-text p { font-size: 0.82rem; }
-
-    /* Section heads — tipografia menor */
-    .ln-section-head { margin-bottom: 2rem; }
-    .ln-section-head h2,
-    .ln-feature-text h2 {
-        font-size: 1.55rem;
-        line-height: 1.2;
-    }
-    .ln-section-head p,
-    .ln-feature-text p { font-size: 0.95rem; }
-    .ln-eyebrow { font-size: 0.7rem; }
-
-    /* Pillars, envs, steps — padding interno menor */
-    .ln-pillars,
-    .ln-feature,
-    .ln-resp,
-    .ln-envs,
-    .ln-principles,
-    .ln-cta { padding: 3rem 0; }
-    .ln-pillar,
-    .ln-env-card,
-    .ln-step { padding: 1.25rem; }
-
-    .ln-pillars-grid {
         grid-template-columns: 1fr;
-        border-top: 1px solid #e2e8f0;
-        gap: 0;
-    }
-    .ln-pillars .ln-pillar {
-        border-right: none !important;
-        border-bottom: 1px solid #e2e8f0;
-        padding: 1.5rem 0 !important;
-    }
-    .ln-pillars .ln-pillar:last-child {
-        border-bottom: none;
-    }
-
-    /* Stepper já vira 1col em 640 — reforço */
-    .ln-step-title { font-size: 1rem; }
-    .ln-step-desc { font-size: 0.88rem; }
-
-    /* Responsabilidades */
-    .ln-resp-header { padding: 1.25rem 1.25rem 1rem; }
-    .ln-resp-name { font-size: 1.1rem; }
-    .ln-resp-body { padding: 1rem 1.25rem 1.25rem; }
-    .ln-resp-body li { font-size: 0.88rem; padding: 0.6rem 0 0.6rem 1.4rem; }
-
-    /* Code mockup — scroll horizontal */
-    .ln-code-mockup { font-size: 0.78rem; }
-    .ln-code-body { overflow-x: auto; }
-
-    /* Compare LGPD */
-    .ln-compare { grid-template-columns: 1fr; gap: 1rem; }
-
-    /* No-list — 1 col já vem de 1024, garante font */
-    .ln-no-list { padding: 1.25rem; }
-    .ln-no-list li { font-size: 0.88rem; }
-
-    /* CTA pull quote */
-    .ln-cta blockquote {
-        font-size: 1.1rem;
-        line-height: 1.4;
-    }
-    .ln-cta-actions { flex-direction: column; gap: 0.75rem; }
-    .ln-cta-actions .btn,
-    .ln-cta-actions .btn-outline-dark { width: 100%; text-align: center; justify-content: center; }
-
-    /* Botões gerais — touch-friendly */
-    .btn { padding: 0.7rem 1.2rem; font-size: 0.9rem; }
-
-    /* Footer empilhado */
-    .footer { padding: 1.5rem 0; margin-top: 3rem; }
-    .footer-container {
-        flex-direction: column;
+        justify-items: center;
         gap: 1rem;
         text-align: center;
     }
+    .footer-left,
+    .footer-right { justify-content: center; }
     .footer-logo img { height: 24px; }
     .copyright { font-size: 0.82rem; }
 
@@ -4345,7 +4078,6 @@ ul {
     .ln-section-head h2,
     .ln-feature-text h2 { font-size: 1.35rem; }
     .btn-pill { padding: 0.38rem 0.8rem; font-size: 0.78rem; }
-    .nav-links { gap: 1rem; }
     .hero-actions { flex-direction: column; align-items: stretch; }
     .btn-hero { justify-content: center; }
 }
@@ -4388,6 +4120,7 @@ ul {
     align-items: center;
     gap: 1rem;
     margin-bottom: 3rem;
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -5586,4 +5319,114 @@ ul {
     .form-modal-card { padding: 1.85rem 1.25rem; }
     .form-modal-title { font-size: 1.35rem; }
     .form-modal-form textarea { min-height: 110px; }
+}
+
+/* Divisor pontilhado leve entre secoes de fundo claro */
+.section-divider {
+    border: 0;
+    border-top: 1px dashed var(--border-light);
+    margin: 0;
+}
+
+/* Variante com respiro (usada entre secoes com imagem de fundo, ex: FAQ) */
+.section-divider-spaced {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+/* ============================================================
+   RESPONSIVO COMPLEMENTAR ::: tablet (<=1024px) e celular (<=768px)
+   Corrige a adaptação mobile sem alterar o desktop (>1024px).
+   ============================================================ */
+@media (max-width: 1024px) {
+    /* Navegação: hamburguer + dropdown valem também para tablet.
+       Antes, os links sumiam em <=1024px e o botão só existia em <=768px,
+       deixando a faixa 769-1024px sem menu. */
+    .nav-toggle { display: flex; }
+
+    .nav-links {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: rgba(6, 12, 30, 0.98);
+        -webkit-backdrop-filter: blur(14px);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 0 1.5rem;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.3s ease;
+    }
+    .navbar.nav-open .nav-links {
+        max-height: 420px;
+        opacity: 1;
+        pointer-events: auto;
+        padding: 0.25rem 1.5rem 1rem;
+    }
+    .nav-links a {
+        font-size: 1rem;
+        padding: 0.9rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        color: rgba(255, 255, 255, 0.85);
+    }
+    .nav-links a:last-child { border-bottom: none; }
+    .nav-mobile-login { display: block; }
+
+    /* Heros internos: neutraliza as margens negativas inline do desktop
+       (como-funciona: -491px; recursos/faq: -189px) */
+    .ft-hero-text {
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        max-width: 100% !important;
+    }
+    .ft-hero-container {
+        justify-content: flex-start !important;
+    }
+
+    /* Painel claro atrás do texto: legível sobre qualquer recorte da foto */
+    .ft-hero:not(.bg-light) .ft-hero-text {
+        background: rgba(248, 250, 252, 0.9);
+        border-radius: 14px;
+        padding: 1.75rem 1.4rem;
+    }
+
+    /* Seções do FAQ com aspect-ratio inline: altura automática,
+       senão o acordeão vaza sobre a seção seguinte */
+    .ft-section[style*="aspect-ratio"] {
+        aspect-ratio: auto !important;
+        padding: 3rem 0.75rem !important;
+    }
+    .ft-section[style*="aspect-ratio"] .ft-narrow {
+        background: rgba(255, 255, 255, 0.93);
+        border-radius: 14px;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    /* Planos: o wrapper da tabela tem overflow:hidden inline;
+       sem esta regra a tabela é cortada sem opção de rolar */
+    .compare-table-wrapper {
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Headers dos cards de responsabilidade: cover em vez de 100% 100%,
+       que distorce a foto quando vira coluna única */
+    .ln-resp-grid .ln-resp-header { background-size: cover !important; }
+
+    /* Trava estouro horizontal residual */
+    html, body { overflow-x: hidden; }
+}
+
+@media (max-width: 768px) {
+    /* Evita o zoom automático do iOS ao focar campos do formulário */
+    .form-modal-form input,
+    .form-modal-form select,
+    .form-modal-form textarea { font-size: 16px; }
 }
