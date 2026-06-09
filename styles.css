@@ -3459,7 +3459,7 @@ ul {
 .ln-cta {
     background: var(--bg-dark);
     color: var(--text-light);
-    padding: 6rem 0;
+    padding: 4rem 0;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -3474,24 +3474,14 @@ ul {
 }
 
 .ln-cta blockquote {
-    font-size: 1.7rem;
+    font-size: 1.45rem;
     line-height: 1.4;
     color: var(--text-light);
     font-weight: 500;
     letter-spacing: -0.015em;
-    margin: 0 auto 2.5rem;
-    max-width: 760px;
+    margin: 0 auto 1.75rem;
+    max-width: 640px;
     font-style: normal;
-}
-
-.ln-cta blockquote::before {
-    content: "\201C";
-    display: block;
-    font-size: 4rem;
-    color: var(--primary-light);
-    line-height: 1;
-    font-family: Georgia, serif;
-    margin-bottom: 0.5rem;
 }
 
 .ln-cta-actions {
