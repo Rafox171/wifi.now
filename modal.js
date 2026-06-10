@@ -70,8 +70,17 @@
       document.body.style.overflow = '';
     }
 
-    // Liga todos os botoes/links cujo texto seja "Comecar gratis" / "Comece gratis"
-    var triggers = ['comecar gratis', 'comece gratis'];
+    // Liga todos os botoes/links cujo texto seja "Comecar gratis" / "Comece gratis" ou similares
+    var triggers = [
+      'comecar gratis',
+      'comece gratis',
+      'teste gratis',
+      'testar gratis',
+      'indique e ganhe',
+      'falar com a gente',
+      'fale com a gente',
+      'solicitar acesso'
+    ];
     var clickables = document.querySelectorAll('a, button');
     for (var i = 0; i < clickables.length; i++) {
       var el = clickables[i];

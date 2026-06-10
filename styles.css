@@ -5330,8 +5330,8 @@ ul {
 
 /* Variante com respiro (usada entre secoes com imagem de fundo, ex: FAQ) */
 .section-divider-spaced {
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
 }
 
 /* ============================================================
