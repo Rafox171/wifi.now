@@ -79,7 +79,8 @@
       'indique e ganhe',
       'falar com a gente',
       'fale com a gente',
-      'solicitar acesso'
+      'solicitar acesso',
+      'contacte a gente'
     ];
     var clickables = document.querySelectorAll('a, button');
     for (var i = 0; i < clickables.length; i++) {
