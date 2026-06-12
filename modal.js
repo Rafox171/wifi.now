@@ -77,6 +77,7 @@
       'teste gratis',
       'testar gratis',
       'indique e ganhe',
+      'indique e tenha acesso gratuito',
       'falar com a gente',
       'fale com a gente',
       'solicitar acesso',
