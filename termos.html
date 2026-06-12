@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso do Site | wi-fi.now</title>
+    <meta name="description" content="Termos de Uso do Site wi-fi.now: condições de acesso e navegação, valor jurídico do conteúdo, propriedade intelectual, uso aceitável, privacidade e disposições gerais.">
+    <meta name="keywords" content="termos de uso wi-fi.now, condições de uso, termos site, navegação wi-fi.now, propriedade intelectual">
+    <link rel="canonical" href="https://wi-fi.now/termos.html">
+    <link rel="icon" type="image/svg+xml" href="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg">
+    <!-- Open Graph / compartilhamento em redes e WhatsApp -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="wi-fi.now">
+    <meta property="og:url" content="https://wi-fi.now/termos.html">
+    <meta property="og:title" content="Termos de Uso do Site | wi-fi.now">
+    <meta property="og:description" content="Condições de acesso e navegação, valor jurídico do conteúdo, propriedade intelectual, uso aceitável, privacidade e disposições gerais do site wi-fi.now.">
+    <meta property="og:image" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/escritorio.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Termos de Uso do Site | wi-fi.now">
+    <meta name="twitter:description" content="Condições de acesso e navegação, valor jurídico do conteúdo, propriedade intelectual, uso aceitável, privacidade e disposições gerais do site wi-fi.now.">
+    <meta name="twitter:image" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/escritorio.jpg">
+    <link rel="stylesheet" href="styles.css?v=86">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ===== Página Termos (mesmo estilo da DPA) ===== */
+        .dpa-page { background: #ffffff; }
+
+        .dpa-header {
+            background: #0b0f19;
+            padding: 5.5rem 0 4.5rem;
+            text-align: center;
+        }
+        .dpa-title {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.05;
+            color: #ffffff;
+            max-width: 880px;
+            margin: 0 auto 1.75rem;
+        }
+        .dpa-effective {
+            font-family: 'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+        }
+        .dpa-effective .sep { margin: 0 0.75rem; color: rgba(255, 255, 255, 0.25); }
+
+        .dpa-layout {
+            display: grid;
+            grid-template-columns: 250px minmax(0, 1fr);
+            gap: 4rem;
+            padding: 3.5rem 0 5rem;
+        }
+
+        /* Sumário lateral fixo */
+        .dpa-toc {
+            position: sticky;
+            top: 96px;
+            align-self: start;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+        .dpa-toc-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-dark-muted);
+            margin-bottom: 0.9rem;
+        }
+        .dpa-toc a {
+            display: block;
+            font-size: 0.84rem;
+            line-height: 1.4;
+            color: var(--text-dark-muted);
+            text-decoration: none;
+            padding: 0.32rem 0.75rem;
+            border-left: 2px solid var(--border-light);
+            transition: color 0.15s ease, border-color 0.15s ease;
+        }
+        .dpa-toc a:hover { color: var(--text-dark); }
+        .dpa-toc a.is-active {
+            color: var(--primary);
+            border-left-color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Corpo do documento */
+        .dpa-doc { max-width: 760px; }
+        .dpa-doc section { scroll-margin-top: 110px; }
+        .dpa-doc h2 {
+            display: flex;
+            align-items: baseline;
+            gap: 0.75rem;
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-dark);
+            margin: 3rem 0 1.1rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-light);
+        }
+        .dpa-doc section:first-child h2 { margin-top: 0; border-top: none; padding-top: 0; }
+        .dpa-num {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+            white-space: nowrap;
+        }
+        .dpa-doc h3 {
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 1.75rem 0 0.6rem;
+        }
+        .dpa-doc p {
+            font-size: 0.95rem;
+            line-height: 1.75;
+            color: var(--text-dark-muted);
+            margin-bottom: 1rem;
+        }
+        .dpa-doc p strong { color: var(--text-dark); }
+        .dpa-doc a { color: var(--primary); }
+
+        .dpa-clause { color: var(--primary); font-weight: 700; margin-right: 0.35rem; }
+
+        /* Responsivo */
+        @media (max-width: 1023px) {
+            .dpa-layout { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; }
+            .dpa-toc {
+                position: static;
+                max-height: none;
+                border: 1px solid var(--border-light);
+                border-radius: 12px;
+                padding: 1.25rem;
+                background: var(--bg-light-soft);
+            }
+            .dpa-title { font-size: 2.2rem; }
+            .dpa-header { padding: 3.5rem 0 3rem; }
+        }
+
+        @media print {
+            .navbar, .dpa-toc, .footer { display: none !important; }
+            .dpa-layout { grid-template-columns: 1fr; padding: 0; }
+        }
+    </style>
+</head>
+<body class="dpa-page">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg" alt="wi-fi.now logo">
+            </a>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="recursos.html">Recursos</a>
+                    <a href="como-funciona.html">Onboarding</a>
+                    <a href="planos.html">Planos</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="#" class="nav-mobile-login">Entrar</a>
+                </div>
+                <span class="nav-divider"></span>
+                <div class="nav-actions">
+                    <a href="#" class="login-link">Entrar</a>
+                    <a href="#" class="btn btn-pill">Comece agora</a>
+                </div>
+                <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho do documento -->
+    <header class="dpa-header">
+        <div class="container">
+            <h1 class="dpa-title">Termos de Uso do Site</h1>
+            <p class="dpa-effective">Vigente a partir de: 12/06/2026<span class="sep">|</span>Versão 1.1 (consolidada)</p>
+        </div>
+    </header>
+
+    <div class="container dpa-layout">
+        <!-- Sumário -->
+        <aside class="dpa-toc" aria-label="Sumário do documento">
+            <div class="dpa-toc-label">Nesta página</div>
+            <a href="#s1">1. Quem somos e o que estes Termos regem</a>
+            <a href="#s2">2. Aceitação e alterações</a>
+            <a href="#s3">3. Conteúdo do Site e seu valor jurídico</a>
+            <a href="#s4">4. Cadastro e área logada</a>
+            <a href="#s5">5. Propriedade intelectual</a>
+            <a href="#s6">6. Uso aceitável do Site</a>
+            <a href="#s7">7. Links e conteúdo de terceiros</a>
+            <a href="#s8">8. Disponibilidade do Site e isenções</a>
+            <a href="#s9">9. Privacidade e cookies</a>
+            <a href="#s10">10. Disposições gerais, lei e foro</a>
+        </aside>
+
+        <!-- Documento -->
+        <main class="dpa-doc">
+            <section id="s1">
+                <h2><span class="dpa-num">1.</span>Quem somos e o que estes Termos regem</h2>
+                <p><span class="dpa-clause">1.1.</span>O site wi-fi.now ("Site") é operado por FXO Serviços em Informática Ltda., CNPJ 11.566.322/0001-19 ("FXO", "nós"). Estes Termos de Uso do Site ("Termos do Site") regem o acesso e a navegação no Site e o uso de seu conteúdo, por qualquer pessoa ("você").</p>
+                <p><span class="dpa-clause">1.2.</span>Estes Termos do Site não regem o uso da plataforma Wi-Fi.now. A contratação e o uso da plataforma são regidos pelos Termos de Uso da Plataforma, aceitos no cadastro, e, quando existente, pelo contrato celebrado entre a FXO e o cliente, que prevalecem sobre estes Termos do Site em qualquer matéria relativa ao serviço.</p>
+                <p><span class="dpa-clause">1.3.</span>Se você acessa o Site em nome de uma empresa, declara ter poderes para representá-la quanto à navegação e ao conteúdo aqui regulados.</p>
+            </section>
+
+            <section id="s2">
+                <h2><span class="dpa-num">2.</span>Aceitação e alterações</h2>
+                <p><span class="dpa-clause">2.1.</span>Ao navegar no Site, você declara ter lido e concordado com estes Termos do Site e com a <a href="privacidade.html">Política de Privacidade</a>. Se não concordar, interrompa a navegação. Estes Termos do Site permanecem disponíveis, de forma permanente e em local de destaque no Site, para consulta a qualquer momento.</p>
+                <p><span class="dpa-clause">2.2.</span>Podemos atualizar estes Termos do Site, publicando a nova versão nesta página com a respectiva data de vigência e mantendo o histórico de versões. Alterações relevantes serão destacadas. A navegação após a vigência da nova versão implica concordância com o texto revisado.</p>
+            </section>
+
+            <section id="s3">
+                <h2><span class="dpa-num">3.</span>Conteúdo do Site e seu valor jurídico</h2>
+                <p><span class="dpa-clause">3.1.</span>O conteúdo do Site (textos, páginas de produto, materiais, blog, FAQs, comparativos e simulações) tem caráter exclusivamente informativo e publicitário. Ele não integra os instrumentos contratuais da FXO, não constitui oferta vinculante, garantia, promessa de funcionalidade, de resultado ou de conformidade regulatória, nem assessoria jurídica, de segurança ou de privacidade.</p>
+                <p><span class="dpa-clause">3.2.</span>O escopo, as funcionalidades e as responsabilidades relativas à plataforma Wi-Fi.now são exclusivamente os descritos nos Termos de Uso da Plataforma, no contrato aplicável e em seus anexos, incluindo o documento técnico que descreve o funcionamento da solução. Em caso de divergência entre o conteúdo do Site e tais instrumentos, prevalecem sempre os instrumentos contratuais.</p>
+                <p><span class="dpa-clause">3.3.</span>As informações sobre legislação, incluindo a Lei nº 13.709/2018 (LGPD) e a Lei nº 12.965/2014 (Marco Civil da Internet), publicadas no Site são genéricas e educativas. A adequação jurídica de cada cliente depende de avaliação própria, cabendo-lhe buscar assessoria especializada.</p>
+            </section>
+
+            <section id="s4">
+                <h2><span class="dpa-num">4.</span>Cadastro e área logada</h2>
+                <p><span class="dpa-clause">4.1.</span>Algumas áreas do Site permitem criar conta, iniciar período de avaliação ou acessar o painel administrativo. A partir do cadastro, aplicam-se os Termos de Uso da Plataforma e a <a href="privacidade.html">Política de Privacidade</a>, apresentados e aceitos naquele ato, com registro da versão aceita.</p>
+                <p><span class="dpa-clause">4.2.</span>Você é responsável pela veracidade e atualidade dos dados informados e pela guarda e confidencialidade de suas credenciais, respondendo pelas atividades realizadas sob sua conta.</p>
+            </section>
+
+            <section id="s5">
+                <h2><span class="dpa-num">5.</span>Propriedade intelectual</h2>
+                <p><span class="dpa-clause">5.1.</span>O Site e todo o seu conteúdo (marcas, incluindo "Wi-Fi.now" e "FXO", logotipos, layout, design, textos, imagens, vídeos, código-fonte, bases de dados e materiais) pertencem à FXO ou a seus licenciantes e são protegidos pela legislação de propriedade intelectual, incluindo a Lei nº 9.610/1998 e a Lei nº 9.279/1996.</p>
+                <p><span class="dpa-clause">5.2.</span>É permitido visualizar, baixar e imprimir conteúdo do Site exclusivamente para uso próprio e interno, mantidos intactos os avisos de titularidade. Qualquer outro uso depende de autorização prévia e escrita da FXO.</p>
+                <p><span class="dpa-clause">5.3.</span>É expressamente vedado, sem autorização escrita da FXO: reproduzir, distribuir ou explorar comercialmente o conteúdo do Site; utilizar as marcas, logotipos ou sinais distintivos da FXO; empregar engenharia reversa, mineração ou coleta automatizada massiva (scraping) do Site, inclusive para fins concorrenciais, treinamento de modelos computacionais ou revenda de dados; ressalvadas a indexação ordinária por mecanismos de busca e a leitura automatizada em volume compatível com a navegação normal.</p>
+            </section>
+
+            <section id="s6">
+                <h2><span class="dpa-num">6.</span>Uso aceitável do Site</h2>
+                <p><span class="dpa-clause">6.1.</span>Ao usar o Site, você se compromete a não: (i) tentar obter acesso não autorizado a sistemas, contas, redes ou dados; (ii) introduzir código malicioso, realizar ataques de negação de serviço ou sobrecarregar deliberadamente a infraestrutura; (iii) burlar, remover ou contornar mecanismos de segurança ou de controle de acesso; (iv) utilizar o Site para finalidade ilícita, fraudulenta ou que viole direitos de terceiros; ou (v) reproduzir o Site, no todo ou em parte, em outro ambiente (framing, espelhamento) sem autorização.</p>
+                <p><span class="dpa-clause">6.2.</span>Você responde integralmente pelos danos que causar à FXO ou a terceiros em razão de violação destes Termos do Site ou da lei, obrigando-se a ressarcir a FXO dos custos, despesas e condenações daí decorrentes, devidamente comprovados, incluindo honorários advocatícios razoáveis fixados ou homologados em decisão judicial ou arbitral.</p>
+            </section>
+
+            <section id="s7">
+                <h2><span class="dpa-num">7.</span>Links e conteúdo de terceiros</h2>
+                <p><span class="dpa-clause">7.1.</span>O Site pode conter links para sites e serviços de terceiros, fornecidos por conveniência. A FXO não controla e não responde, direta ou indiretamente, pelo conteúdo, práticas, políticas ou produtos desses destinos, nem por danos decorrentes do seu uso. O acesso é por sua conta e risco, recomendando-se a leitura dos termos e políticas de cada destino.</p>
+            </section>
+
+            <section id="s8">
+                <h2><span class="dpa-num">8.</span>Disponibilidade do Site e isenções</h2>
+                <p><span class="dpa-clause">8.1.</span>O Site é fornecido "no estado em que se encontra" e "conforme a disponibilidade". A FXO não garante que o Site estará disponível de forma ininterrupta, segura ou livre de erros, podendo suspendê-lo, alterá-lo ou descontinuá-lo, no todo ou em parte, a qualquer tempo, independentemente de aviso.</p>
+                <p><span class="dpa-clause">8.2.</span>Na máxima extensão permitida pela legislação aplicável, a FXO não responde por danos decorrentes do uso ou da impossibilidade de uso do Site ou de seu conteúdo informativo, incluindo danos indiretos, lucros cessantes, perda de dados ou de oportunidade.</p>
+                <p><span class="dpa-clause">8.3.</span>Nada nestes Termos do Site exclui ou limita responsabilidades que a legislação aplicável não permita excluir ou limitar, incluindo, quando incidentes, as decorrentes da legislação de proteção do consumidor e de proteção de dados pessoais. As isenções desta cláusula aplicam-se na máxima extensão legalmente admissível, e a eventual redução judicial de seu alcance não prejudica sua validade remanescente.</p>
+            </section>
+
+            <section id="s9">
+                <h2><span class="dpa-num">9.</span>Privacidade e cookies</h2>
+                <p><span class="dpa-clause">9.1.</span>O tratamento de dados pessoais de visitantes do Site, incluindo dados de navegação e cookies, é regido pela <a href="privacidade.html">Política de Privacidade</a>, que integra estes Termos do Site por referência. Em caso de divergência sobre matéria de dados pessoais, prevalece a Política de Privacidade.</p>
+            </section>
+
+            <section id="s10">
+                <h2><span class="dpa-num">10.</span>Disposições gerais, lei e foro</h2>
+                <p><span class="dpa-clause">10.1.</span>A eventual tolerância da FXO quanto a descumprimentos não constitui novação nem renúncia de direitos. Se alguma disposição destes Termos do Site for considerada inválida ou ineficaz, as demais permanecem em pleno vigor, devendo a disposição atingida ser interpretada ou substituída de modo a preservar, tanto quanto possível, sua finalidade original.</p>
+                <p><span class="dpa-clause">10.2.</span>Estes Termos do Site são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da Comarca de São Paulo, Estado de São Paulo, para dirimir as controvérsias decorrentes da navegação no Site, ressalvado o foro do domicílio do usuário nas hipóteses em que a legislação de proteção do consumidor o assegurar.</p>
+                <p><span class="dpa-clause">10.3.</span>Estes Termos do Site podem ser disponibilizados em outros idiomas, como cortesia. Em caso de divergência entre versões, prevalece, para todos os fins, a versão em língua portuguesa.</p>
+                <p style="margin-top: 2rem; font-weight: 600; color: var(--text-dark);">Dúvidas sobre estes Termos do Site podem ser encaminhadas para <a href="mailto:dpo@wi-fi.now">dpo@wi-fi.now</a></p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="termos.html">Termos</a>
+                <span class="footer-bullet">•</span>
+                <a href="privacidade.html">Privacidade</a>
+                <span class="footer-bullet">•</span>
+                <a href="dpa.html">DPA</a>
+            </div>
+            <div class="footer-center">
+                <a href="index.html" class="footer-logo">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg" alt="wi-fi.now logo">
+                </a>
+            </div>
+            <div class="footer-right">
+                <span class="copyright">Todos os direitos reservados © 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.querySelector('.navbar');
+            const navToggle = document.querySelector('.nav-toggle');
+            if (navToggle && navbar) {
+                navToggle.addEventListener('click', () => {
+                    const isOpen = navbar.classList.toggle('nav-open');
+                    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+                navbar.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navbar.classList.remove('nav-open');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            // Sumário: destaca a seção visível durante a rolagem
+            const tocLinks = Array.from(document.querySelectorAll('.dpa-toc a'));
+            const sections = tocLinks
+                .map(link => document.querySelector(link.getAttribute('href')))
+                .filter(Boolean);
+            const byId = {};
+            tocLinks.forEach(link => { byId[link.getAttribute('href').slice(1)] = link; });
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        tocLinks.forEach(l => l.classList.remove('is-active'));
+                        const link = byId[entry.target.id];
+                        if (link) link.classList.add('is-active');
+                    }
+                });
+            }, { rootMargin: '-20% 0px -70% 0px' });
+            sections.forEach(s => observer.observe(s));
+        });
+    </script>
+    <script src="modal.js?v=5"></script>
+</body>
+</html>

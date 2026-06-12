@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade | wi-fi.now</title>
+    <meta name="description" content="Política de Privacidade do wi-fi.now: como a FXO coleta, usa, compartilha e protege dados pessoais na plataforma e nos sites, conforme a LGPD. Papéis, retenção, direitos e contato do DPO.">
+    <meta name="keywords" content="política de privacidade wi-fi.now, lgpd, dados pessoais, controladora, operadora, cookies, retenção, direitos do titular">
+    <link rel="canonical" href="https://wi-fi.now/privacidade.html">
+    <link rel="icon" type="image/svg+xml" href="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg">
+    <!-- Open Graph / compartilhamento em redes e WhatsApp -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="wi-fi.now">
+    <meta property="og:url" content="https://wi-fi.now/privacidade.html">
+    <meta property="og:title" content="Política de Privacidade | wi-fi.now">
+    <meta property="og:description" content="Como a FXO coleta, usa, compartilha e protege dados pessoais na plataforma Wi-Fi.now e nos sites, conforme a LGPD.">
+    <meta property="og:image" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/escritorio.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Política de Privacidade | wi-fi.now">
+    <meta name="twitter:description" content="Como a FXO coleta, usa, compartilha e protege dados pessoais na plataforma Wi-Fi.now e nos sites, conforme a LGPD.">
+    <meta name="twitter:image" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/escritorio.jpg">
+    <link rel="stylesheet" href="styles.css?v=86">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ===== Página Privacidade (mesmo estilo da DPA) ===== */
+        .dpa-page { background: #ffffff; }
+
+        .dpa-header {
+            background: #0b0f19;
+            padding: 5.5rem 0 4.5rem;
+            text-align: center;
+        }
+        .dpa-title {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.05;
+            color: #ffffff;
+            max-width: 880px;
+            margin: 0 auto 1.75rem;
+        }
+        .dpa-effective {
+            font-family: 'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+        }
+        .dpa-effective .sep { margin: 0 0.75rem; color: rgba(255, 255, 255, 0.25); }
+
+        .dpa-layout {
+            display: grid;
+            grid-template-columns: 250px minmax(0, 1fr);
+            gap: 4rem;
+            padding: 3.5rem 0 5rem;
+        }
+
+        /* Sumário lateral fixo */
+        .dpa-toc {
+            position: sticky;
+            top: 96px;
+            align-self: start;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+        .dpa-toc-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-dark-muted);
+            margin-bottom: 0.9rem;
+        }
+        .dpa-toc a {
+            display: block;
+            font-size: 0.84rem;
+            line-height: 1.4;
+            color: var(--text-dark-muted);
+            text-decoration: none;
+            padding: 0.32rem 0.75rem;
+            border-left: 2px solid var(--border-light);
+            transition: color 0.15s ease, border-color 0.15s ease;
+        }
+        .dpa-toc a:hover { color: var(--text-dark); }
+        .dpa-toc a.is-active {
+            color: var(--primary);
+            border-left-color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Corpo do documento */
+        .dpa-doc { max-width: 760px; }
+        .dpa-doc section { scroll-margin-top: 110px; }
+        .dpa-doc h2 {
+            display: flex;
+            align-items: baseline;
+            gap: 0.75rem;
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-dark);
+            margin: 3rem 0 1.1rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-light);
+        }
+        .dpa-doc section:first-child h2 { margin-top: 0; border-top: none; padding-top: 0; }
+        .dpa-num {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+            white-space: nowrap;
+        }
+        .dpa-doc h3 {
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 1.75rem 0 0.6rem;
+        }
+        .dpa-doc p {
+            font-size: 0.95rem;
+            line-height: 1.75;
+            color: var(--text-dark-muted);
+            margin-bottom: 1rem;
+        }
+        .dpa-doc p strong { color: var(--text-dark); }
+        .dpa-doc a { color: var(--primary); }
+
+        .dpa-clause { color: var(--primary); font-weight: 700; margin-right: 0.35rem; }
+
+        .dpa-doc ul {
+            margin: 0 0 1rem 1.25rem;
+            padding: 0;
+        }
+        .dpa-doc ul li {
+            list-style: disc;
+            font-size: 0.95rem;
+            line-height: 1.75;
+            color: var(--text-dark-muted);
+            margin-bottom: 0.4rem;
+        }
+        .dpa-doc ul li strong { color: var(--text-dark); }
+
+        /* Tabelas */
+        .dpa-table-wrap {
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 1.25rem 0 2rem;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.02);
+        }
+        .dpa-table { width: 100%; border-collapse: collapse; background: #ffffff; }
+        .dpa-table th {
+            text-align: left;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            background: var(--bg-light-soft);
+            padding: 0.85rem 1.25rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .dpa-table td {
+            font-size: 0.9rem;
+            line-height: 1.65;
+            color: var(--text-dark-muted);
+            padding: 0.95rem 1.25rem;
+            border-bottom: 1px solid var(--border-light);
+            vertical-align: top;
+        }
+        .dpa-table tr:last-child td { border-bottom: none; }
+        .dpa-table td:first-child {
+            font-weight: 600;
+            color: var(--text-dark);
+            width: 32%;
+        }
+
+        /* Responsivo */
+        @media (max-width: 1023px) {
+            .dpa-layout { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; }
+            .dpa-toc {
+                position: static;
+                max-height: none;
+                border: 1px solid var(--border-light);
+                border-radius: 12px;
+                padding: 1.25rem;
+                background: var(--bg-light-soft);
+            }
+            .dpa-title { font-size: 2.2rem; }
+            .dpa-header { padding: 3.5rem 0 3rem; }
+        }
+
+        @media print {
+            .navbar, .dpa-toc, .footer { display: none !important; }
+            .dpa-layout { grid-template-columns: 1fr; padding: 0; }
+        }
+    </style>
+</head>
+<body class="dpa-page">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg" alt="wi-fi.now logo">
+            </a>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="recursos.html">Recursos</a>
+                    <a href="como-funciona.html">Onboarding</a>
+                    <a href="planos.html">Planos</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="#" class="nav-mobile-login">Entrar</a>
+                </div>
+                <span class="nav-divider"></span>
+                <div class="nav-actions">
+                    <a href="#" class="login-link">Entrar</a>
+                    <a href="#" class="btn btn-pill">Comece agora</a>
+                </div>
+                <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho do documento -->
+    <header class="dpa-header">
+        <div class="container">
+            <h1 class="dpa-title">Política de Privacidade</h1>
+            <p class="dpa-effective">Vigente a partir de: 12/06/2026<span class="sep">|</span>Versão 1.1 (consolidada)</p>
+        </div>
+    </header>
+
+    <div class="container dpa-layout">
+        <!-- Sumário -->
+        <aside class="dpa-toc" aria-label="Sumário do documento">
+            <div class="dpa-toc-label">Nesta página</div>
+            <a href="#s1">1. Dois papéis: dados que controlamos e dados que operamos</a>
+            <a href="#s2">2. Quais informações coletamos</a>
+            <a href="#s3">3. Como usamos as informações e com que bases legais</a>
+            <a href="#s4">4. Cookies e tecnologias de rastreamento</a>
+            <a href="#s5">5. Com quem compartilhamos</a>
+            <a href="#s6">6. Transferências internacionais e residência dos dados</a>
+            <a href="#s7">7. Retenção</a>
+            <a href="#s8">8. Segurança</a>
+            <a href="#s9">9. Seus direitos e como exercê-los</a>
+            <a href="#s10">10. Comunicações de marketing</a>
+            <a href="#s11">11. Crianças e adolescentes</a>
+            <a href="#s12">12. Encarregado e contato</a>
+            <a href="#s13">13. Alterações desta Política</a>
+        </aside>
+
+        <!-- Documento -->
+        <main class="dpa-doc">
+            <section id="intro">
+                <p>Esta Política de Privacidade explica como a FXO Serviços em Informática Ltda. ("FXO", "nós") coleta, usa, compartilha e protege dados pessoais no contexto da plataforma Wi-Fi.now e dos nossos sites (em conjunto, o "Serviço"). Ela integra, por referência, os <a href="termos.html">Termos de Uso do Site</a>, os Termos de Uso da Plataforma e, quanto aos dados operados em nome de clientes, o <a href="dpa.html">Acordo de Tratamento de Dados (DPA)</a>. Em caso de divergência sobre matéria de dados pessoais, prevalece esta Política e, na relação Controlador-Operadora, o DPA.</p>
+            </section>
+
+            <section id="s1">
+                <h2><span class="dpa-num">1.</span>Dois papéis: dados que controlamos e dados que operamos</h2>
+                <p>Tratamos dados pessoais em duas qualidades distintas, e essa diferença define quem responde pelo quê:</p>
+                <p><strong>Dados que controlamos.</strong> As informações de Administradores (clientes que operam a plataforma) e de visitantes dos nossos sites são tratadas pela FXO na qualidade de Controladora (art. 5º, VI, da LGPD), para finalidades próprias: prestar o Serviço, faturar, dar suporte, garantir segurança e nos comunicarmos com você. Esta Política rege esse tratamento.</p>
+                <p><strong>Dados que operamos para nossos clientes.</strong> Quando um Administrador usa o Serviço para oferecer Wi-Fi a seus Visitantes, o Administrador é o Controlador dos dados pessoais dos Visitantes, por decidir as finalidades e os meios do tratamento, e a FXO atua exclusivamente como Operadora (art. 5º, VII, da LGPD), tratando esses dados em nome do Administrador, conforme suas instruções e o DPA. Se você é Visitante de uma rede Wi-Fi, o Controlador dos seus dados é o estabelecimento que opera a rede; dirija a ele os seus pedidos. Prestaremos ao estabelecimento o apoio necessário, na qualidade de Operadora, sem prejuízo das responsabilidades que a lei atribui diretamente à FXO nessa qualidade.</p>
+            </section>
+
+            <section id="s2">
+                <h2><span class="dpa-num">2.</span>Quais informações coletamos</h2>
+                <p><strong>Informações que você fornece.</strong> Ao se cadastrar, contratar ou falar conosco: nome, e-mail, senha, nome do estabelecimento, modelo do equipamento de rede, dados de cobrança e contato, e o conteúdo das suas comunicações conosco.</p>
+                <p><strong>Informações coletadas automaticamente.</strong> Ao acessar o Serviço ou nossos sites: endereço IP, informações de dispositivo e navegador, dados de conexão, data e hora de acesso, páginas visitadas e registros equivalentes, inclusive por cookies e tecnologias similares (Seção 4).</p>
+                <p><strong>Informações de terceiros.</strong> Podemos receber informações de prestadores de serviço, parceiros e fontes públicas, combinando-as com as que já temos, para operar e melhorar o Serviço e nossas comunicações.</p>
+                <p><strong>Dados de Visitantes operados para Administradores.</strong> Por meio do portal cativo, e em nome do Administrador, o Serviço trata o mínimo necessário para autenticar Visitantes e cumprir obrigações legais: identificadores de autenticação (telefone, ou dados básicos do perfil OAuth: identificador da conta, nome e e-mail), registros de consentimento e registros de sessão (accounting: IP atribuído, MAC, início e fim, tempo de permanência). A coleta é mínima por desenho.</p>
+                <p><strong>O que não fazemos, em nenhuma hipótese:</strong> não exigimos nem armazenamos senhas de Visitantes; não registramos histórico de navegação, sites acessados, URLs ou conteúdo consumido; não usamos dados de Visitantes para marketing comportamental, criação de perfis ou personas; e não vendemos dados pessoais.</p>
+            </section>
+
+            <section id="s3">
+                <h2><span class="dpa-num">3.</span>Como usamos as informações e com que bases legais</h2>
+                <p>Usamos os dados que controlamos para as finalidades abaixo, cada uma amparada em base legal do art. 7º da LGPD:</p>
+                <div class="dpa-table-wrap">
+                    <table class="dpa-table">
+                        <thead>
+                            <tr>
+                                <th>Finalidade</th>
+                                <th>Base legal (LGPD, art. 7º)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Criar e administrar contas; prestar, operar e melhorar o Serviço; suporte</td>
+                                <td>Execução de contrato ou de procedimentos preliminares (inciso V)</td>
+                            </tr>
+                            <tr>
+                                <td>Cobrança, contabilidade, auditoria</td>
+                                <td>Execução de contrato (V) e cumprimento de obrigação legal (II)</td>
+                            </tr>
+                            <tr>
+                                <td>Segurança do Serviço, prevenção a fraudes e a incidentes</td>
+                                <td>Legítimo interesse (IX), ponderado com seus direitos, e cumprimento de obrigação legal (II)</td>
+                            </tr>
+                            <tr>
+                                <td>Mensagens operacionais e transacionais (cadastro, segurança, cobrança)</td>
+                                <td>Execução de contrato (V)</td>
+                            </tr>
+                            <tr>
+                                <td>Comunicações de marketing a Administradores</td>
+                                <td>Legítimo interesse (IX), com descadastramento garantido (Seção 10), ou consentimento (I), conforme o caso</td>
+                            </tr>
+                            <tr>
+                                <td>Produção de dados agregados e anonimizados</td>
+                                <td>Legítimo interesse (IX); dados anonimizados de forma irreversível deixam de ser dados pessoais</td>
+                            </tr>
+                            <tr>
+                                <td>Cumprimento de obrigações legais e exercício de direitos em processos</td>
+                                <td>Cumprimento de obrigação legal (II) e exercício regular de direitos (VI)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Os dados de Visitantes são tratados exclusivamente para prestar o Serviço ao Administrador e cumprir obrigações legais, sob a base legal adotada pelo Administrador na qualidade de Controlador, conforme o DPA. Não realizamos decisões unicamente automatizadas que produzam efeitos jurídicos sobre os titulares.</p>
+            </section>
+
+            <section id="s4">
+                <h2><span class="dpa-num">4.</span>Cookies e tecnologias de rastreamento</h2>
+                <p>Usamos cookies e tecnologias similares para operar nossos sites, lembrar preferências, medir uso e melhorar desempenho. Cookies não essenciais são utilizados apenas com o seu consentimento, quando exigido, gerenciável pelo banner do site e pelas configurações do seu navegador, inclusive para recusá-los ou apagá-los. O bloqueio de certos cookies pode afetar funcionalidades. O portal cativo exibido aos Visitantes não utiliza cookies de publicidade.</p>
+            </section>
+
+            <section id="s5">
+                <h2><span class="dpa-num">5.</span>Com quem compartilhamos</h2>
+                <p><strong>Não vendemos dados pessoais.</strong> Podemos compartilhar dados pessoais com: (i) prestadores de serviço (hospedagem, processamento de pagamentos, envio de mensagens, incluindo gateways de SMS e WhatsApp); (ii) empresas do nosso grupo, para as finalidades desta Política; (iii) autoridades e terceiros, quando a divulgação for exigida por lei, ordem judicial ou requisição de autoridade competente, na estrita medida da ordem recebida, ou quando necessária para apurar fraudes, proteger direitos e segurança ou executar nossos contratos; e (iv) outros destinatários, com a sua autorização.</p>
+                <p>Os provedores de identidade OAuth (Google, LinkedIn, Microsoft) e as operadoras de telefonia atuam como agentes de tratamento autônomos na relação direta que mantêm com você, sob seus próprios termos e políticas.</p>
+            </section>
+
+            <section id="s6">
+                <h2><span class="dpa-num">6.</span>Transferências internacionais e residência dos dados</h2>
+                <p>A residência padrão dos dados de Visitantes é o Brasil, e o Serviço pode ser configurado, nos planos que ofereçam esse recurso, para que os dados de Visitantes não deixem a região escolhida. Quando dados pessoais forem transferidos para outro país, por exemplo a um prestador de serviço, adotaremos salvaguardas compatíveis com o regime dos arts. 33 e seguintes da LGPD e com a regulamentação da ANPD vigente, incluindo, quando cabível, cláusulas contratuais padrão por ela reconhecidas.</p>
+            </section>
+
+            <section id="s7">
+                <h2><span class="dpa-num">7.</span>Retenção</h2>
+                <p>Mantemos dados pessoais apenas pelo tempo necessário às finalidades desta Política, salvo prazo maior exigido ou permitido por lei:</p>
+                <div class="dpa-table-wrap">
+                    <table class="dpa-table">
+                        <thead>
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Prazo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Registros de sessão (accounting) de Visitantes</td>
+                                <td>12 meses do encerramento de cada sessão, em linha com os deveres de guarda do Marco Civil da Internet, quando aplicáveis à Controladora, e com o exercício regular de direitos em processo judicial, administrativo ou arbitral (LGPD, art. 7º, VI); em seguida, expurgo automático e definitivo, conforme o DPA</td>
+                            </tr>
+                            <tr>
+                                <td>Registros de consentimento de Visitantes</td>
+                                <td>Pelo prazo necessário à comprovação do tratamento e ao exercício regular de direitos</td>
+                            </tr>
+                            <tr>
+                                <td>Dados cadastrais e financeiros de Administradores</td>
+                                <td>Pela vigência da relação contratual e pelos prazos legais, regulatórios e prescricionais aplicáveis</td>
+                            </tr>
+                            <tr>
+                                <td>Dados de navegação nos nossos sites e cookies</td>
+                                <td>Pelos prazos indicados no banner de cookies, conforme a categoria</td>
+                            </tr>
+                            <tr>
+                                <td>Cópias de segurança (cifradas)</td>
+                                <td>Ciclo próprio de sobrescrição, detalhado no DPA, não superior a 90 dias após a eliminação na base ativa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Quando os dados deixam de ser necessários, são eliminados de forma definitiva ou anonimizados de forma irreversível.</p>
+            </section>
+
+            <section id="s8">
+                <h2><span class="dpa-num">8.</span>Segurança</h2>
+                <p>Adotamos salvaguardas técnicas e administrativas compatíveis com o estado da técnica, incluindo criptografia em trânsito e em repouso, controles de acesso por papéis, autenticação multifator para administradores, segregação lógica por cliente, monitoramento e testes periódicos. Nenhum método de transmissão ou armazenamento é totalmente seguro; a segurança da sua conta também depende da confidencialidade das suas credenciais. Incidentes de segurança que possam acarretar risco ou dano relevante serão comunicados nos termos da LGPD, da regulamentação da ANPD e, quanto a dados operados, do DPA.</p>
+            </section>
+
+            <section id="s9">
+                <h2><span class="dpa-num">9.</span>Seus direitos e como exercê-los</h2>
+                <p>Nos termos do art. 18 da LGPD, você pode solicitar: confirmação da existência de tratamento; acesso aos dados; correção de dados incompletos, inexatos ou desatualizados; anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade; portabilidade, observada a regulamentação; informação sobre compartilhamentos realizados; informação sobre a possibilidade de não consentir e suas consequências; revogação do consentimento; e revisão de decisões tomadas unicamente com base em tratamento automatizado, quando existentes. Você também pode peticionar à ANPD.</p>
+                <p><strong>Como exercer:</strong> envie seu pedido ao Encarregado (Seção 12). Para sua proteção, poderemos solicitar informações que confirmem a sua identidade antes de atender ao pedido; responderemos nos prazos da legislação e da regulamentação da ANPD. Se você é Visitante de uma rede operada por um cliente nosso, dirija seu pedido ao estabelecimento que opera a rede, o Controlador dos seus dados; prestaremos a ele o apoio necessário, na qualidade de Operadora, conforme o DPA.</p>
+            </section>
+
+            <section id="s10">
+                <h2><span class="dpa-num">10.</span>Comunicações de marketing</h2>
+                <p>Mensagens operacionais e transacionais (cadastro, segurança, cobrança) são necessárias à prestação do Serviço e não admitem descadastramento. Demais comunicações, como novidades e materiais, podem ser canceladas a qualquer momento pelo link presente na própria mensagem ou pelo canal da Seção 12. Não enviamos marketing a Visitantes das redes dos nossos clientes.</p>
+            </section>
+
+            <section id="s11">
+                <h2><span class="dpa-num">11.</span>Crianças e adolescentes</h2>
+                <p>O Serviço destina-se a maiores de 18 anos e a pessoas jurídicas, e não é direcionado a crianças; não coletamos intencionalmente dados de crianças. Os textos exibidos no portal cativo de cada estabelecimento são definidos pelo Administrador, a quem cabe observar o art. 14 da LGPD quando seu público incluir crianças e adolescentes.</p>
+            </section>
+
+            <section id="s12">
+                <h2><span class="dpa-num">12.</span>Encarregado e contato</h2>
+                <p>O Encarregado pelo tratamento de dados pessoais (DPO) da FXO pode ser contatado pelo e-mail <a href="mailto:dpo@wi-fi.now">dpo@wi-fi.now</a>. Responderemos às comunicações nos prazos legais e regulamentares.</p>
+            </section>
+
+            <section id="s13">
+                <h2><span class="dpa-num">13.</span>Alterações desta Política</h2>
+                <p>Podemos atualizar esta Política, publicando a nova versão com a respectiva data de vigência e mantendo o histórico de versões. Alterações materiais serão comunicadas com destaque e com antecedência mínima de 15 (quinze) dias; nesse prazo, o Administrador que não concordar com a nova versão poderá resilir o contrato sem ônus, observadas as obrigações já constituídas. Esta Política pode ser disponibilizada em outros idiomas, como cortesia; em caso de divergência entre versões, prevalece, para todos os fins, a versão em língua portuguesa.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="termos.html">Termos</a>
+                <span class="footer-bullet">•</span>
+                <a href="privacidade.html">Privacidade</a>
+                <span class="footer-bullet">•</span>
+                <a href="dpa.html">DPA</a>
+            </div>
+            <div class="footer-center">
+                <a href="index.html" class="footer-logo">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg" alt="wi-fi.now logo">
+                </a>
+            </div>
+            <div class="footer-right">
+                <span class="copyright">Todos os direitos reservados © 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.querySelector('.navbar');
+            const navToggle = document.querySelector('.nav-toggle');
+            if (navToggle && navbar) {
+                navToggle.addEventListener('click', () => {
+                    const isOpen = navbar.classList.toggle('nav-open');
+                    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+                navbar.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navbar.classList.remove('nav-open');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            // Sumário: destaca a seção visível durante a rolagem
+            const tocLinks = Array.from(document.querySelectorAll('.dpa-toc a'));
+            const sections = tocLinks
+                .map(link => document.querySelector(link.getAttribute('href')))
+                .filter(Boolean);
+            const byId = {};
+            tocLinks.forEach(link => { byId[link.getAttribute('href').slice(1)] = link; });
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        tocLinks.forEach(l => l.classList.remove('is-active'));
+                        const link = byId[entry.target.id];
+                        if (link) link.classList.add('is-active');
+                    }
+                });
+            }, { rootMargin: '-20% 0px -70% 0px' });
+            sections.forEach(s => observer.observe(s));
+        });
+    </script>
+    <script src="modal.js?v=5"></script>
+</body>
+</html>
