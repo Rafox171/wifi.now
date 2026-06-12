@@ -81,7 +81,10 @@
       'falar com a gente',
       'fale com a gente',
       'solicitar acesso',
-      'contacte a gente'
+      'contacte a gente',
+      'sob consulta',
+      'fale com um especialista',
+      'comece agora'
     ];
     var clickables = document.querySelectorAll('a, button');
     for (var i = 0; i < clickables.length; i++) {
