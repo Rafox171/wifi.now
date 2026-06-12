@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordo de Tratamento de Dados Pessoais (DPA) | wi-fi.now</title>
+    <meta name="description" content="DPA do wi-fi.now: como a FXO trata dados pessoais em nome da Controladora, conforme a LGPD. Papéis, segurança, suboperadores, retenção, incidentes e auditoria.">
+    <meta name="keywords" content="dpa wi-fi.now, acordo de tratamento de dados, lgpd captive portal, operadora lgpd, dados pessoais wi-fi visitantes">
+    <link rel="canonical" href="https://wi-fi.now/dpa.html">
+    <link rel="icon" type="image/svg+xml" href="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg">
+    <!-- Open Graph / compartilhamento em redes e WhatsApp -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="wi-fi.now">
+    <meta property="og:url" content="https://wi-fi.now/dpa.html">
+    <meta property="og:title" content="Acordo de Tratamento de Dados Pessoais (DPA) | wi-fi.now">
+    <meta property="og:description" content="Como a FXO trata dados pessoais em nome da Controladora, conforme a LGPD. Papéis, segurança, suboperadores, retenção, incidentes e auditoria.">
+    <meta property="og:image" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/escritorio.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Acordo de Tratamento de Dados Pessoais (DPA) | wi-fi.now">
+    <meta name="twitter:description" content="Como a FXO trata dados pessoais em nome da Controladora, conforme a LGPD.">
+    <meta name="twitter:image" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/escritorio.jpg">
+    <link rel="stylesheet" href="styles.css?v=86">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ===== Página DPA (estilo documento legal, ref. linear.app/privacy) ===== */
+        .dpa-page { background: #ffffff; }
+
+        .dpa-header {
+            background: #0b0f19;
+            padding: 5.5rem 0 4.5rem;
+            text-align: center;
+        }
+        .dpa-header-logo {
+            height: 36px;
+            width: auto;
+            display: block;
+            margin: 0 auto 2.5rem;
+        }
+        .dpa-title {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.05;
+            color: #ffffff;
+            max-width: 880px;
+            margin: 0 auto 1.75rem;
+        }
+        .dpa-effective {
+            font-family: 'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.55);
+        }
+        .dpa-effective .sep { margin: 0 0.75rem; color: rgba(255, 255, 255, 0.25); }
+
+        .dpa-layout {
+            display: grid;
+            grid-template-columns: 250px minmax(0, 1fr);
+            gap: 4rem;
+            padding: 3.5rem 0 5rem;
+        }
+
+        /* Sumário lateral fixo */
+        .dpa-toc {
+            position: sticky;
+            top: 96px;
+            align-self: start;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+        .dpa-toc-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-dark-muted);
+            margin-bottom: 0.9rem;
+        }
+        .dpa-toc a {
+            display: block;
+            font-size: 0.84rem;
+            line-height: 1.4;
+            color: var(--text-dark-muted);
+            text-decoration: none;
+            padding: 0.32rem 0.75rem;
+            border-left: 2px solid var(--border-light);
+            transition: color 0.15s ease, border-color 0.15s ease;
+        }
+        .dpa-toc a:hover { color: var(--text-dark); }
+        .dpa-toc a.is-active {
+            color: var(--primary);
+            border-left-color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Corpo do documento */
+        .dpa-doc { max-width: 760px; }
+        .dpa-doc section { scroll-margin-top: 110px; }
+        .dpa-doc h2 {
+            display: flex;
+            align-items: baseline;
+            gap: 0.75rem;
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-dark);
+            margin: 3rem 0 1.1rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-light);
+        }
+        .dpa-doc section:first-child h2 { margin-top: 0; border-top: none; padding-top: 0; }
+        .dpa-num {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+            white-space: nowrap;
+        }
+        .dpa-doc h3 {
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 1.75rem 0 0.6rem;
+        }
+        .dpa-doc p {
+            font-size: 0.95rem;
+            line-height: 1.75;
+            color: var(--text-dark-muted);
+            margin-bottom: 1rem;
+        }
+        .dpa-doc p strong { color: var(--text-dark); }
+        .dpa-doc a { color: var(--primary); }
+
+        .dpa-clause { color: var(--primary); font-weight: 700; margin-right: 0.35rem; }
+
+        /* Tabelas dos apêndices */
+        .dpa-table-wrap {
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 1.25rem 0 2rem;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.02);
+        }
+        .dpa-table { width: 100%; border-collapse: collapse; background: #ffffff; }
+        .dpa-table th {
+            text-align: left;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            background: var(--bg-light-soft);
+            padding: 0.85rem 1.25rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .dpa-table td {
+            font-size: 0.9rem;
+            line-height: 1.65;
+            color: var(--text-dark-muted);
+            padding: 0.95rem 1.25rem;
+            border-bottom: 1px solid var(--border-light);
+            vertical-align: top;
+        }
+        .dpa-table tr:last-child td { border-bottom: none; }
+        .dpa-table td:first-child {
+            font-weight: 600;
+            color: var(--text-dark);
+            width: 32%;
+        }
+        .dpa-row-negative td {
+            background: rgba(4, 210, 180, 0.05);
+        }
+
+        /* Responsivo */
+        @media (max-width: 1023px) {
+            .dpa-layout { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; }
+            .dpa-toc {
+                position: static;
+                max-height: none;
+                border: 1px solid var(--border-light);
+                border-radius: 12px;
+                padding: 1.25rem;
+                background: var(--bg-light-soft);
+            }
+            .dpa-title { font-size: 2.2rem; }
+            .dpa-header { padding: 3.5rem 0 3rem; }
+        }
+
+        @media print {
+            .navbar, .dpa-toc, .footer { display: none !important; }
+            .dpa-layout { grid-template-columns: 1fr; padding: 0; }
+        }
+    </style>
+</head>
+<body class="dpa-page">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg" alt="wi-fi.now logo">
+            </a>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="recursos.html">Recursos</a>
+                    <a href="como-funciona.html">Onboarding</a>
+                    <a href="planos.html">Planos</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="#" class="nav-mobile-login">Entrar</a>
+                </div>
+                <span class="nav-divider"></span>
+                <div class="nav-actions">
+                    <a href="#" class="login-link">Entrar</a>
+                    <a href="#" class="btn btn-pill">Comece agora</a>
+                </div>
+                <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho do documento -->
+    <header class="dpa-header">
+        <div class="container">
+            <h1 class="dpa-title">Acordo de Tratamento de Dados Pessoais (DPA)</h1>
+            <p class="dpa-effective">Vigente a partir de: 12/06/2026<span class="sep">|</span>Versão 1.0 (consolidada)</p>
+        </div>
+    </header>
+
+    <div class="container dpa-layout">
+        <!-- Sumário -->
+        <aside class="dpa-toc" aria-label="Sumário do documento">
+            <div class="dpa-toc-label">Nesta página</div>
+            <a href="#s1">1. Objeto e relação com os instrumentos contratuais</a>
+            <a href="#s2">2. Papéis e instruções documentadas</a>
+            <a href="#s3">3. Escopo do tratamento</a>
+            <a href="#s4">4. Confidencialidade do pessoal</a>
+            <a href="#s5">5. Segurança do tratamento</a>
+            <a href="#s6">6. Suboperadores</a>
+            <a href="#s7">7. Transferências internacionais</a>
+            <a href="#s8">8. Assistência à Controladora</a>
+            <a href="#s9">9. Retenção e eliminação</a>
+            <a href="#s10">10. Incidentes de segurança</a>
+            <a href="#s11">11. Auditoria</a>
+            <a href="#s12">12. Responsabilidade</a>
+            <a href="#s13">13. Vigência</a>
+            <a href="#a1">Apêndice 1 ::: Descrição do tratamento</a>
+            <a href="#a2">Apêndice 2 ::: Medidas de segurança</a>
+        </aside>
+
+        <!-- Documento -->
+        <main class="dpa-doc">
+            <section id="s1">
+                <h2><svg class="dpa-num" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M560-360h80v-400H480v80h80v320ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Objeto e relação com os instrumentos contratuais</h2>
+                <p><span class="dpa-clause">1.1.</span>Este Acordo de Tratamento de Dados Pessoais ("DPA") disciplina o tratamento de dados pessoais realizado pela FXO Serviços em Informática Ltda. ("FXO" ou "Operadora") em nome do cliente ("Controladora"), no âmbito da plataforma wi-fi.now, em conformidade com a Lei nº 13.709/2018 ("LGPD"). Aplica-se tanto aos clientes vinculados por contrato bilateral (como Anexo II) quanto aos vinculados por adesão aos <strong>Termos de Uso da Plataforma</strong>, que o incorporam por referência.</p>
+                <p><span class="dpa-clause">1.2.</span><strong>Vinculação recíproca.</strong> Este DPA e o instrumento principal (contrato ou <strong>Termos de Uso da Plataforma</strong>) são mutuamente condicionados: a aceitação de um implica a aceitação do outro, e o término de um implica o término do outro, ressalvadas as obrigações que, por sua natureza, sobrevivam. Em matéria de proteção de dados pessoais, este DPA prevalece sobre o instrumento principal.</p>
+                <p><span class="dpa-clause">1.3.</span>Este DPA não se aplica aos dados pessoais que a FXO trata na qualidade de controladora — dados cadastrais, financeiros e de uso do painel pelos prepostos da Controladora —, regidos pela <strong>Política de Privacidade</strong>.</p>
+            </section>
+
+            <section id="s2">
+                <h2><svg class="dpa-num" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M440-360h240v-80H520v-80h80q33 0 56.5-23.5T680-600v-80q0-33-23.5-56.5T600-760H440v80h160v80h-80q-33 0-56.5 23.5T440-520v160ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Papéis e instruções documentadas</h2>
+                <p><span class="dpa-clause">2.1.</span>No tratamento de dados pessoais de Usuários Finais por meio da plataforma, a Controladora determina as finalidades e os meios de tratamento (art. 5º, VI, da LGPD), e a FXO atua exclusivamente como Operadora (art. 5º, VII), tratando os dados em nome da Controladora e segundo suas instruções documentadas.</p>
+                <p><span class="dpa-clause">2.2.</span>Constituem instruções documentadas da Controladora: (i) o instrumento principal e este DPA, incluindo o Apêndice 1; (ii) as configurações realizadas pela Controladora no painel administrativo (métodos de autenticação habilitados, campos coletados, personalização do portal); e (iii) instruções escritas supervenientes, desde que lícitas, tecnicamente viáveis e compatíveis com o escopo da plataforma.</p>
+                <p><span class="dpa-clause">2.3.</span>A FXO informará a Controladora, sem demora injustificada, caso entenda que uma instrução viola a LGPD ou outra norma aplicável, podendo suspender a execução da instrução específica até confirmação escrita da Controladora, que assumirá a responsabilidade correspondente.</p>
+                <p><span class="dpa-clause">2.4.</span><strong>Vedações absolutas.</strong> É vedado à FXO: (i) tratar os dados pessoais dos Usuários Finais para finalidades próprias, incluindo publicidade, enriquecimento de bases, criação de perfis comportamentais ou comercialização de dados, sob qualquer hipótese; (ii) correlacionar Registros de Sessão com dados de navegação — registros de navegação, quando existentes, residem exclusivamente na infraestrutura da Controladora e não transitam pelos sistemas da FXO; e (iii) reter dados além dos prazos da Seção 9.</p>
+                <p><span class="dpa-clause">2.5.</span>A FXO poderá utilizar dados agregados e anonimizados de forma irreversível, insuscetíveis de reidentificação, para fins estatísticos e de melhoria da plataforma; uma vez anonimizados, tais dados deixam de constituir dados pessoais para os fins da LGPD.</p>
+            </section>
+
+            <section id="s3">
+                <h2><svg class="dpa-num" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M440-360h160q33 0 56.5-23.5T680-440v-60q0-26-17-43t-43-17q26 0 43-17t17-43v-60q0-33-23.5-56.5T600-760H440v80h160v80h-80v80h80v80H440v80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Escopo do tratamento</h2>
+                <p><span class="dpa-clause">3.1.</span>O escopo do tratamento — categorias de titulares, categorias de dados, finalidades, natureza e duração — está descrito no Apêndice 1, que delimita exaustivamente o tratamento autorizado. Qualquer tratamento fora do Apêndice 1 depende de aditivo escrito.</p>
+                <p><span class="dpa-clause">3.2.</span><strong>Declarações da Controladora.</strong> A Controladora declara e garante que: (i) possui base legal válida para o tratamento dos dados dos Usuários Finais (art. 7º da LGPD); (ii) disponibiliza aos Usuários Finais, no portal e em seus ambientes físicos, as informações exigidas pelos arts. 9º e 18 da LGPD; e (iii) suas instruções observam a legislação aplicável. A FXO não responde pela ausência ou invalidade de base legal definida pela Controladora.</p>
+                <p><span class="dpa-clause">3.3.</span><strong>Dados sensíveis e regulados.</strong> É vedado à Controladora configurar o portal cativo para coletar dados pessoais sensíveis (art. 5º, II, da LGPD), dados de crianças e adolescentes ou dados sujeitos a regimes regulatórios específicos, salvo prévia comunicação escrita à FXO e aditivo específico. A coleta em desacordo com este item corre por risco exclusivo da Controladora e autoriza a suspensão imediata do recurso envolvido.</p>
+            </section>
+
+            <section id="s4">
+                <h2><svg class="dpa-num" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M600-360h80v-400h-80v160h-80v-160h-80v240h160v160ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Confidencialidade do pessoal</h2>
+                <p><span class="dpa-clause">4.1.</span>A FXO assegura que o acesso aos dados pessoais tratados em nome da Controladora é restrito a profissionais com necessidade funcional de acesso, vinculados a obrigação de confidencialidade contratual ou estatutária e treinados em proteção de dados pessoais.</p>
+            </section>
+
+            <section id="s5">
+                <h2><svg class="dpa-num" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M440-360h160q33 0 56.5-23.5T680-440v-80q0-33-23.5-56.5T600-600h-80v-80h120v-80H520q-33 0-56.5 23.5T440-680v240q0 33 23.5 56.5T520-360Zm0-160h80v80h-80v-80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Segurança do tratamento</h2>
+                <p><span class="dpa-clause">5.1.</span>A FXO adotará as medidas técnicas e administrativas descritas no Apêndice 2, aptas a proteger os dados pessoais de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou difusão (LGPD, arts. 46 a 49), observado o estado da técnica e a natureza dos dados tratados.</p>
+                <p><span class="dpa-clause">5.2.</span>A FXO poderá atualizar as medidas do Apêndice 2, desde que o nível de proteção resultante não seja reduzido.</p>
+            </section>
+
+            <section id="s6">
+                <h2><svg class="dpa-num" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M520-360h80q33 0 56.5-23.5T680-440v-80q0-33-23.5-56.5T600-600h-80v-80h120v-80H520q-33 0-56.5 23.5T440-680v240q0 33 23.5 56.5T520-360Zm0-320h80v80h-80v-80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Suboperadores</h2>
+                <p><span class="dpa-clause">6.1.</span>A Controladora autoriza, de forma geral, a contratação de suboperadores pela FXO para a execução da plataforma (infraestrutura de nuvem, envio de tokens por SMS e WhatsApp e serviços correlatos).</p>
+                <p><span class="dpa-clause">6.2.</span>A FXO comunicará à Controladora, com antecedência mínima de 30 (trinta) dias, a inclusão ou substituição de suboperador com acesso a dados pessoais dos Usuários Finais. A Controladora poderá objetar, por escrito e fundamentadamente, em 15 (quinze) dias da comunicação. Persistindo a objeção sem alternativa razoável, a Controladora poderá resolver o vínculo quanto aos ambientes afetados, sem multa, como remédio exclusivo.</p>
+                <p><span class="dpa-clause">6.3.</span><strong>Responsabilidade pela cadeia.</strong> A FXO imporá contratualmente a cada suboperador obrigações de proteção de dados equivalentes às deste DPA e permanecerá integralmente responsável, perante a Controladora, pelos atos e omissões de seus suboperadores como se seus fossem.</p>
+                <p><span class="dpa-clause">6.4.</span>Os provedores de identidade OAuth (Google, LinkedIn, Microsoft) e as operadoras de telefonia do Usuário Final não são suboperadores da FXO: atuam como agentes de tratamento autônomos, sob seus próprios termos, na relação direta que mantêm com o Usuário Final e/ou com a Controladora, titular das credenciais OAuth.</p>
+            </section>
+
+            <section id="s7">
+                <h2><svg class="dpa-num" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M440-360h80l160-320v-80H440v80h160L440-360ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Transferências internacionais</h2>
+                <p><span class="dpa-clause">7.1.</span>O tratamento será realizado, preferencialmente, em infraestrutura localizada no Brasil. Caso a execução da plataforma envolva suboperador que armazene ou acesse dados fora do território nacional, a FXO assegurará que a transferência observe o regime dos arts. 33 e seguintes da LGPD e a regulamentação da ANPD vigente à época, incluindo, quando cabível, cláusulas contratuais padrão por ela reconhecidas.</p>
+            </section>
+
+            <section id="s8">
+                <h2><svg class="dpa-num" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M520-360h80q33 0 56.5-23.5T680-440v-60q0-26-17-43t-43-17q26 0 43-17t17-43v-60q0-33-23.5-56.5T600-760h-80q-33 0-56.5 23.5T440-680v60q0 26 17 43t43 17q-26 0-43 17t-17 43v60q0 33 23.5 56.5T520-360Zm0-320h80v80h-80v-80Zm0 240v-80h80v80h-80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Assistência à Controladora</h2>
+                <h3>8.1. Direitos dos titulares</h3>
+                <p><span class="dpa-clause">8.1.1.</span>Cabe à Controladora responder aos pedidos de titulares (LGPD, art. 18). Pedidos de Usuários Finais recebidos diretamente pela FXO serão encaminhados à Controladora em até 5 (cinco) dias úteis, sem resposta de mérito ao titular, salvo instrução escrita em contrário ou dever legal.</p>
+                <p><span class="dpa-clause">8.1.2.</span>A FXO disponibilizará à Controladora, pelo painel ou mediante solicitação, as funcionalidades e informações razoavelmente necessárias ao atendimento de pedidos de acesso, correção, eliminação, portabilidade e informação sobre o tratamento, no limite dos dados descritos no Apêndice 1.</p>
+                <h3>8.2. Demais obrigações</h3>
+                <p><span class="dpa-clause">8.2.1.</span>A FXO prestará cooperação razoável à Controladora na elaboração de relatórios de impacto à proteção de dados pessoais (RIPD) e no atendimento a requisições da ANPD, no que se refira ao tratamento descrito neste DPA. Cooperação que exceda o uso ordinário do plano contratado poderá ser cobrada conforme tabela vigente da FXO, comunicada previamente.</p>
+            </section>
+
+            <section id="s9">
+                <h2><svg class="dpa-num" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M480-360h120q33 0 56.5-23.5T680-440v-240q0-33-23.5-56.5T600-760h-80q-33 0-56.5 23.5T440-680v80q0 33 23.5 56.5T520-520h80v80H480v80Zm120-240h-80v-80h80v80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Retenção e eliminação</h2>
+                <p><span class="dpa-clause">9.1.</span><strong>Registros de Sessão (accounting):</strong> mantidos por 12 (doze) meses contados do encerramento de cada sessão, prazo que atende, com margem, aos deveres de guarda do Marco Civil da Internet aplicáveis à Controladora. Ao término, a FXO promoverá o expurgo automático, definitivo e irrecuperável.</p>
+                <p><span class="dpa-clause">9.2.</span>Registros de consentimento e identificadores de autenticação: mantidos pela vigência do vínculo e, após seu término, pelo prazo necessário ao cumprimento de obrigações legais e ao exercício regular de direitos em processos, limitado o uso a essas finalidades.</p>
+                <p><span class="dpa-clause">9.3.</span>Término do vínculo: a FXO disponibilizará a exportação dos dados pessoais em formato estruturado de leitura corrente por 30 (trinta) dias e, em seguida, eliminará os dados pessoais tratados em nome da Controladora, ressalvada a conservação exigida por lei. A eliminação será certificada por escrito mediante solicitação da Controladora.</p>
+                <p><span class="dpa-clause">9.4.</span>Cópias de segurança: dados em backups cifrados seguem ciclo próprio de sobrescrita, não superior a 90 (noventa) dias após a eliminação na base ativa, permanecendo nesse intervalo logicamente inacessíveis ao uso ordinário e protegidos pelas medidas do Apêndice 2.</p>
+            </section>
+
+            <section id="s10">
+                <h2><svg class="dpa-num" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M370-360h80v-400h-80v400ZM510-680v-80h240v80H510ZM510-360v-80h240v80H510ZM510-440h80v-240h-80v240ZM670-440h80v-240h-80v240ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Incidentes de segurança</h2>
+                <p><span class="dpa-clause">10.1.</span><strong>Prazo de comunicação.</strong> A FXO comunicará à Controladora, sem demora injustificada e em prazo não superior a 48 (quarenta e oito) horas contadas da ciência, todo incidente de segurança que possa acarretar risco ou dano relevante aos Usuários Finais, com as informações disponíveis: natureza do incidente, categorias e volume estimado de titulares e dados afetados, medidas adotadas e recomendadas, e ponto de contato.</p>
+                <p><span class="dpa-clause">10.2.</span>As informações serão complementadas progressivamente, à medida da apuração, sem que a pendência de detalhes justifique retardo da comunicação inicial.</p>
+                <p><span class="dpa-clause">10.3.</span>Cabe à Controladora, na qualidade de controladora dos dados dos Usuários Finais, avaliar e realizar as comunicações à ANPD e aos titulares nos prazos da regulamentação vigente. O prazo do item 10.1 foi fixado para preservar a margem de cumprimento do prazo regulamentar da Controladora. A FXO prestará a cooperação necessária a essas comunicações.</p>
+                <p><span class="dpa-clause">10.4.</span>A FXO comunicará diretamente à ANPD apenas os incidentes relativos a dados de que seja controladora. Nenhuma das partes admitirá, em nome da outra, responsabilidade perante titulares ou autoridades.</p>
+            </section>
+
+            <section id="s11">
+                <h2><svg class="dpa-num" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M370-360h80v-400h-80v400ZM590-360h80v-400h-80v400ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Auditoria</h2>
+                <p><span class="dpa-clause">11.1.</span>A FXO disponibilizará anualmente, mediante solicitação, documentação que demonstre o cumprimento deste DPA (descrição das medidas de segurança, atestados, certificações ou relatórios de avaliações independentes, quando existentes).</p>
+                <p><span class="dpa-clause">11.2.</span>Caso a documentação não seja razoavelmente suficiente, a Controladora poderá realizar, diretamente ou por auditor independente sujeito à confidencialidade, 1 (uma) auditoria por período de 12 (doze) meses, mediante aviso prévio de 30 (trinta) dias, em dias úteis e horário comercial, limitada ao tratamento objeto deste DPA, sem acesso a dados de outros clientes da FXO, a segredos de negócio ou a sistemas alheios ao escopo, e às custas da Controladora.</p>
+                <p><span class="dpa-clause">11.3.</span>Auditoria adicional será admitida após incidente de segurança relevante ou por determinação de autoridade competente.</p>
+            </section>
+
+            <section id="s12">
+                <h2><svg class="dpa-num" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M370-360h80v-400h-80v400ZM510-680v-80h240v80H510ZM670-600v-80h80v80h-80ZM510-520v-80h240v80H510ZM510-440v-80h80v80h-80ZM510-360v-80h240v80H510ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Responsabilidade</h2>
+                <p><span class="dpa-clause">12.1.</span>A responsabilidade das partes por violações deste DPA observa o regime de limitação de responsabilidade e de indenização do instrumento principal.</p>
+                <p><span class="dpa-clause">12.2.</span>A parte que ressarcir dano causado pela outra terá direito de regresso, na medida da participação de cada agente no evento danoso (LGPD, art. 42, § 4º).</p>
+            </section>
+
+            <section id="s13">
+                <h2><svg class="dpa-num" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M370-360h80v-400h-80v400ZM510-680v-80h240v80H510ZM670-440v-240h80v240h-80ZM550-520v-80h200v80H550ZM510-360v-80h240v80H510ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Vigência</h2>
+                <p><span class="dpa-clause">13.1.</span>Este DPA vigora enquanto a FXO tratar dados pessoais em nome da Controladora, sobrevivendo ao término as obrigações das Seções 4, 9, 10 e 12. Este DPA pode ser disponibilizado em outros idiomas, como cortesia; em caso de divergência, prevalece a versão em língua portuguesa.</p>
+            </section>
+
+            <section id="a1">
+                <h2><span class="dpa-num">A1</span>Apêndice 1 — Descrição do tratamento</h2>
+                <div class="dpa-table-wrap">
+                    <table class="dpa-table">
+                        <thead>
+                            <tr>
+                                <th>Elemento</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Categorias de titulares</td>
+                                <td>Usuários Finais: pessoas naturais que se autenticam no portal cativo para acessar a rede Wi-Fi da Controladora (visitantes, clientes, colaboradores).</td>
+                            </tr>
+                            <tr>
+                                <td>Dados — autenticação por token</td>
+                                <td>Número de telefone informado; token enviado e validado; registro de consentimento (texto, versão, data, hora).</td>
+                            </tr>
+                            <tr>
+                                <td>Dados — autenticação OAuth</td>
+                                <td>Dados básicos retornados pelo provedor escolhido pelo Usuário Final (identificador da conta, nome e e-mail, conforme escopo configurado); registro de consentimento. A plataforma não recebe nem armazena senhas.</td>
+                            </tr>
+                            <tr>
+                                <td>Dados — Registros de Sessão (accounting)</td>
+                                <td>Identificação do usuário autenticado, endereço IP atribuído, endereço MAC, horários de início e fim, tempo de permanência, status, atualizações periódicas (intervalo padrão de 15 minutos).</td>
+                            </tr>
+                            <tr class="dpa-row-negative">
+                                <td>Dados expressamente NÃO tratados</td>
+                                <td>Histórico de navegação, sites acessados, URLs, aplicações utilizadas, conteúdo de comunicações, geolocalização, dados sensíveis (art. 5º, II, da LGPD). Registros de navegação, quando existentes, residem exclusivamente no firewall da Controladora.</td>
+                            </tr>
+                            <tr>
+                                <td>Finalidades</td>
+                                <td>(i) autenticar Usuários Finais; (ii) registrar accounting de sessão; (iii) registrar consentimentos de forma auditável; (iv) cumprir deveres legais de guarda aplicáveis. Nenhuma outra.</td>
+                            </tr>
+                            <tr>
+                                <td>Natureza do tratamento</td>
+                                <td>Coleta, registro, armazenamento, consulta, exportação e eliminação, por meios automatizados.</td>
+                            </tr>
+                            <tr>
+                                <td>Duração</td>
+                                <td>Pela vigência do vínculo, observados os prazos de retenção da Seção 9.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="a2">
+                <h2><span class="dpa-num">A2</span>Apêndice 2 — Medidas técnicas e administrativas de segurança</h2>
+                <div class="dpa-table-wrap">
+                    <table class="dpa-table">
+                        <thead>
+                            <tr>
+                                <th>Domínio</th>
+                                <th>Medidas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Criptografia</td>
+                                <td>Tráfego cifrado em trânsito (TLS) entre dispositivo, portal e plataforma; comunicação com o firewall suportada por certificado dedicado; dados em repouso cifrados; backups cifrados.</td>
+                            </tr>
+                            <tr>
+                                <td>Controle de acesso</td>
+                                <td>Acesso lógico por necessidade funcional (least privilege); autenticação reforçada para acessos administrativos; revisão periódica de acessos; registro (log) de acessos administrativos aos dados.</td>
+                            </tr>
+                            <tr>
+                                <td>Segregação</td>
+                                <td>Isolamento lógico por ambiente (UNIQID); segregação entre produção e desenvolvimento; dados de clientes distintos não compartilham contexto de acesso.</td>
+                            </tr>
+                            <tr>
+                                <td>Operação segura</td>
+                                <td>Gestão de vulnerabilidades e atualizações; hardening de servidores; monitoramento de disponibilidade e de eventos de segurança; restrição de origem para comunicação RADIUS (IPs públicos previamente autorizados).</td>
+                            </tr>
+                            <tr>
+                                <td>Continuidade</td>
+                                <td>Cópias de segurança periódicas cifradas; procedimentos de restauração testados; ciclo de sobrescrita de backups não superior a 90 dias após eliminação na base ativa.</td>
+                            </tr>
+                            <tr>
+                                <td>Pessoas e processos</td>
+                                <td>Obrigações de confidencialidade; treinamento periódico em privacidade e segurança; procedimento interno de resposta a incidentes com papéis definidos; Encarregado designado (privacidade@fxo.com.br).</td>
+                            </tr>
+                            <tr>
+                                <td>Descarte</td>
+                                <td>Expurgo automatizado ao fim dos prazos da Seção 9, com eliminação definitiva e irrecuperável na base ativa.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#">Termos</a>
+                <span class="footer-bullet">•</span>
+                <a href="#">Privacidade</a>
+                <span class="footer-bullet">•</span>
+                <a href="dpa.html">DPA</a>
+            </div>
+            <div class="footer-center">
+                <a href="index.html" class="footer-logo">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg" alt="wi-fi.now logo">
+                </a>
+            </div>
+            <div class="footer-right">
+                <span class="copyright">Todos os direitos reservados © 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.querySelector('.navbar');
+            const navToggle = document.querySelector('.nav-toggle');
+            if (navToggle && navbar) {
+                navToggle.addEventListener('click', () => {
+                    const isOpen = navbar.classList.toggle('nav-open');
+                    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+                navbar.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navbar.classList.remove('nav-open');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            // Sumário: destaca a seção visível durante a rolagem
+            const tocLinks = Array.from(document.querySelectorAll('.dpa-toc a'));
+            const sections = tocLinks
+                .map(link => document.querySelector(link.getAttribute('href')))
+                .filter(Boolean);
+            const byId = {};
+            tocLinks.forEach(link => { byId[link.getAttribute('href').slice(1)] = link; });
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        tocLinks.forEach(l => l.classList.remove('is-active'));
+                        const link = byId[entry.target.id];
+                        if (link) link.classList.add('is-active');
+                    }
+                });
+            }, { rootMargin: '-20% 0px -70% 0px' });
+            sections.forEach(s => observer.observe(s));
+        });
+    </script>
+    <script src="modal.js?v=5"></script>
+</body>
+</html>
