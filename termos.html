@@ -20,7 +20,7 @@
     <meta name="twitter:title" content="Termos de Uso do Site | wi-fi.now">
     <meta name="twitter:description" content="Condições de acesso e navegação, valor jurídico do conteúdo, propriedade intelectual, uso aceitável, privacidade e disposições gerais do site wi-fi.now.">
     <meta name="twitter:image" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/escritorio.jpg">
-    <link rel="stylesheet" href="styles.css?v=87">
+    <link rel="stylesheet" href="styles.css?v=88">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         /* ===== Página Termos (mesmo estilo da DPA) ===== */
@@ -151,6 +151,25 @@
                 color: rgba(255, 255, 255, 0.72);
             }
             .dpa-effective .sep { margin: 0 0.5rem; }
+
+            /* leitura confortável no mobile: fonte maior, entrelinha folgada
+               e mais respiro antes dos títulos de seção */
+            .dpa-doc { max-width: 100%; }
+            .dpa-doc p,
+            .dpa-doc ul li {
+                font-size: 1.05rem;
+                line-height: 1.8;
+            }
+            .dpa-doc p { margin-bottom: 1.35rem; }
+            .dpa-doc h2 {
+                font-size: 1.3rem;
+                gap: 0.6rem;
+                margin: 2.75rem 0 1.35rem;
+                padding-top: 1.85rem;
+            }
+            .dpa-doc section:first-child h2 { margin-top: 0; padding-top: 0; }
+            .dpa-doc h3 { font-size: 1.08rem; margin: 1.9rem 0 0.65rem; }
+            .dpa-clause { margin-right: 0.45rem; }
         }
 
         @media (max-width: 480px) {

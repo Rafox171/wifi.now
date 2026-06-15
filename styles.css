@@ -3914,7 +3914,7 @@ ul {
         max-width: 100%;
         /* folga inferior maior + safe-area: texto e botão nunca encostam
            nos indicadores, na faixa de features ou na barra do navegador */
-        padding: 0 22px calc(96px + env(safe-area-inset-bottom, 0px));
+        padding: 0 24px calc(96px + env(safe-area-inset-bottom, 0px));
         text-align: left;
         z-index: 3;
         overflow-wrap: break-word;
@@ -3971,8 +3971,9 @@ ul {
     }
     .hero-eyebrow::before { width: 20px; }
     .hero-subtitle {
-        font-size: 1rem;
-        margin-bottom: 1.25rem;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
     }
     .hero-action-group {
         gap: 0.85rem 1rem;
@@ -4018,7 +4019,9 @@ ul {
         line-height: 1.2;
     }
     .ln-section-head p,
-    .ln-feature-text p { font-size: 0.95rem; }
+    .ln-feature-text p { font-size: 1rem; line-height: 1.7; }
+    .ln-checklist li,
+    .ln-pillar p { font-size: 1rem; line-height: 1.65; }
     .ln-eyebrow { font-size: 0.7rem; }
 
     /* Pillars, envs, steps — padding interno menor */
@@ -4100,8 +4103,8 @@ ul {
 }
 
 @media (max-width: 480px) {
-    .container { padding: 0 1rem; }
-    .hero-content { padding-left: 18px; padding-right: 18px; }
+    .container { padding: 0 1.25rem; }
+    .hero-content { padding-left: 20px; padding-right: 20px; }
     .hero-content h1 { font-size: 1.7rem; }
     .hero-eyebrow { font-size: 0.68rem; }
     .hero-subtitle { font-size: 0.95rem; }

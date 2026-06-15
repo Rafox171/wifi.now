@@ -20,7 +20,7 @@
     <meta name="twitter:title" content="Acordo de Tratamento de Dados Pessoais (DPA) | wi-fi.now">
     <meta name="twitter:description" content="Como a FXO trata dados pessoais em nome da Controladora, conforme a LGPD.">
     <meta name="twitter:image" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/escritorio.jpg">
-    <link rel="stylesheet" href="styles.css?v=87">
+    <link rel="stylesheet" href="styles.css?v=88">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         /* ===== Página DPA (estilo documento legal, ref. linear.app/privacy) ===== */
@@ -195,14 +195,65 @@
                 color: rgba(255, 255, 255, 0.72);
             }
             .dpa-effective .sep { margin: 0 0.5rem; }
+
+            /* leitura confortável no mobile: fonte maior, entrelinha folgada
+               e mais respiro antes dos títulos de seção */
+            .dpa-doc { max-width: 100%; }
+            .dpa-doc p,
+            .dpa-doc ul li {
+                font-size: 1.05rem;
+                line-height: 1.8;
+            }
+            .dpa-doc p { margin-bottom: 1.35rem; }
+            .dpa-doc h2 {
+                font-size: 1.3rem;
+                gap: 0.6rem;
+                margin: 2.75rem 0 1.35rem;
+                padding-top: 1.85rem;
+            }
+            .dpa-doc section:first-child h2 { margin-top: 0; padding-top: 0; }
+            .dpa-doc h3 { font-size: 1.08rem; margin: 1.9rem 0 0.65rem; }
+            .dpa-clause { margin-right: 0.45rem; }
+        }
+
+        /* Tabelas viram cards empilhados — escaneável no celular,
+           sem aperto de 2 colunas nem scroll horizontal */
+        @media (max-width: 640px) {
+            .dpa-table-wrap { box-shadow: none; }
+            .dpa-table thead { display: none; }
+            .dpa-table,
+            .dpa-table tbody,
+            .dpa-table tr,
+            .dpa-table td { display: block; width: 100%; }
+            .dpa-table tr {
+                padding: 0.9rem 0;
+                border-bottom: 1px solid var(--border-light);
+            }
+            .dpa-table tr:last-child { border-bottom: none; }
+            .dpa-table td {
+                border-bottom: none;
+                padding: 0.1rem 1.1rem;
+            }
+            .dpa-table td:first-child {
+                width: 100%;
+                font-size: 0.72rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                color: var(--primary);
+                padding-bottom: 0.3rem;
+            }
+            .dpa-table td:nth-child(2) {
+                font-size: 1rem;
+                line-height: 1.7;
+                color: var(--text-dark-muted);
+            }
         }
 
         @media (max-width: 480px) {
             .dpa-header { padding: 4.5rem 0 2.25rem; }
             .dpa-title { font-size: 1.85rem; }
             .dpa-doc h2 { font-size: 1.2rem; }
-            .dpa-table td, .dpa-table th { padding: 0.7rem 0.85rem; }
-            .dpa-table td:first-child { width: 38%; }
             .dpa-effective .sep {
                 display: block;
                 height: 0;
