@@ -31,6 +31,7 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     zoom: 95%;
+    overflow-x: hidden;
 }
 
 a {
@@ -3882,7 +3883,8 @@ ul {
     /* Hero vertical (9:16) — carrossel de fundo + conteúdo centralizado */
     .hero {
         aspect-ratio: auto;
-        min-height: 88vh;
+        min-height: 88vh;          /* fallback p/ navegadores sem svh */
+        min-height: 88svh;         /* evita corte sob a barra do Safari iOS */
         padding: 0;
         position: relative;
         display: block;
@@ -3910,9 +3912,12 @@ ul {
         transform: none;
         width: 100%;
         max-width: 100%;
-        padding: 0 24px 70px;
+        /* folga inferior maior + safe-area: texto e botão nunca encostam
+           nos indicadores, na faixa de features ou na barra do navegador */
+        padding: 0 22px calc(96px + env(safe-area-inset-bottom, 0px));
         text-align: left;
         z-index: 3;
+        overflow-wrap: break-word;
     }
     /* overlay claro forte para o texto escuro ler sobre toda a foto */
     .hero-carousel-overlay {
@@ -3955,6 +3960,29 @@ ul {
         font-size: 0.8rem;
     }
     .btn-hero svg { width: 16px; height: 16px; }
+
+    /* Hero da home (classes reais usadas no HTML) — antes só havia regra
+       para .hero-actions/.btn-hero legados, que não existem nesta hero */
+    .hero-eyebrow {
+        font-size: 0.72rem;
+        letter-spacing: 0.1em;
+        margin-bottom: 12px;
+        max-width: 100%;
+    }
+    .hero-eyebrow::before { width: 20px; }
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+    }
+    .hero-action-group {
+        gap: 0.85rem 1rem;
+        margin-top: 0.5rem;
+    }
+    .btn-hero-main {
+        padding: 0.8rem 1.6rem;
+        font-size: 0.95rem;
+    }
+    .hero-hint { font-size: 0.8rem; }
 
     /* Carousel — itens menos espaçados */
     .features-carousel { padding: 0; }
@@ -4073,13 +4101,27 @@ ul {
 
 @media (max-width: 480px) {
     .container { padding: 0 1rem; }
+    .hero-content { padding-left: 18px; padding-right: 18px; }
     .hero-content h1 { font-size: 1.7rem; }
+    .hero-eyebrow { font-size: 0.68rem; }
+    .hero-subtitle { font-size: 0.95rem; }
     .nav-spacer span { font-size: 1.25rem; }
     .ln-section-head h2,
     .ln-feature-text h2 { font-size: 1.35rem; }
     .btn-pill { padding: 0.38rem 0.8rem; font-size: 0.78rem; }
     .hero-actions { flex-direction: column; align-items: stretch; }
     .btn-hero { justify-content: center; }
+}
+
+@media (max-width: 360px) {
+    .hero-content h1 { font-size: 1.5rem; }
+    .hero-subtitle { font-size: 0.9rem; }
+    .hero-eyebrow {
+        font-size: 0.64rem;
+        letter-spacing: 0.06em;
+    }
+    .btn-hero-main { padding: 0.75rem 1.35rem; }
+    .hero-hint { font-size: 0.76rem; }
 }
 
 /* ============================================================

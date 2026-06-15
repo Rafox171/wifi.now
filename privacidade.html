@@ -20,7 +20,7 @@
     <meta name="twitter:title" content="Política de Privacidade | wi-fi.now">
     <meta name="twitter:description" content="Como a FXO coleta, usa, compartilha e protege dados pessoais na plataforma Wi-Fi.now e nos sites, conforme a LGPD.">
     <meta name="twitter:image" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/escritorio.jpg">
-    <link rel="stylesheet" href="styles.css?v=86">
+    <link rel="stylesheet" href="styles.css?v=87">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         /* ===== Página Privacidade (mesmo estilo da DPA) ===== */
@@ -180,7 +180,7 @@
 
         /* Responsivo */
         @media (max-width: 1023px) {
-            .dpa-layout { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; }
+            .dpa-layout { grid-template-columns: 1fr; gap: 2rem; padding-top: 2rem; }
             .dpa-toc {
                 position: static;
                 max-height: none;
@@ -190,7 +190,28 @@
                 background: var(--bg-light-soft);
             }
             .dpa-title { font-size: 2.2rem; }
-            .dpa-header { padding: 3.5rem 0 3rem; }
+            /* folga maior no topo: a navbar é fixa e cobre o início do header */
+            .dpa-header { padding: 5rem 0 2.5rem; }
+            .dpa-effective {
+                font-size: 0.78rem;
+                letter-spacing: 0.08em;
+                line-height: 1.7;
+                color: rgba(255, 255, 255, 0.72);
+            }
+            .dpa-effective .sep { margin: 0 0.5rem; }
+        }
+
+        @media (max-width: 480px) {
+            .dpa-header { padding: 4.5rem 0 2.25rem; }
+            .dpa-title { font-size: 1.85rem; }
+            .dpa-doc h2 { font-size: 1.2rem; }
+            .dpa-effective .sep {
+                display: block;
+                height: 0;
+                margin: 0.15rem 0;
+                overflow: hidden;
+                color: transparent;
+            }
         }
 
         @media print {
