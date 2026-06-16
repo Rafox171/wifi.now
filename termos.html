@@ -132,7 +132,9 @@
 
         /* Responsivo */
         @media (max-width: 1023px) {
-            .dpa-layout { grid-template-columns: 1fr; gap: 2rem; padding-top: 2rem; }
+            /* respiro lateral de 24px no corpo (o .dpa-layout zerava o padding
+               do .container, deixando o texto colado na borda no mobile) */
+            .dpa-layout { grid-template-columns: 1fr; gap: 2rem; padding: 2rem 24px 4rem; }
             .dpa-toc {
                 position: static;
                 max-height: none;
@@ -144,6 +146,8 @@
             .dpa-title { font-size: 2.2rem; }
             /* folga maior no topo: a navbar é fixa e cobre o início do header */
             .dpa-header { padding: 5rem 0 2.5rem; }
+            /* título do header alinhado ao corpo, mesmo respiro lateral (24px) */
+            .dpa-header .container { padding-left: 24px; padding-right: 24px; }
             .dpa-effective {
                 font-size: 0.78rem;
                 letter-spacing: 0.08em;
