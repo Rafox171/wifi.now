@@ -239,29 +239,6 @@ ul {
     color: #fff;
 }
 
-/* Badges */
-.badge {
-    display: inline-block;
-    background-color: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.08);
-    padding: 0.35rem 0.85rem;
-    border-radius: 1rem;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    margin-bottom: 1.5rem;
-    color: var(--text-muted-2);
-}
-
-.badge-transparent {
-    background-color: transparent;
-    color: var(--primary-light);
-    border: none;
-    padding: 0;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-}
-
 /* Navbar — estilo Linear */
 .navbar {
     padding: 0.85rem 0;
@@ -680,20 +657,6 @@ ul {
     flex-wrap: wrap;
 }
 
-.badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    padding: 0.4rem 0.8rem;
-    background-color: rgba(37, 99, 235, 0.12);
-    border: 1px solid rgba(37, 99, 235, 0.25);
-    border-radius: 0.375rem;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #dbeafe;
-    white-space: nowrap;
-}
-
 /* Features Carousel - loop contínuo */
 .features-carousel {
     position: absolute;
@@ -1004,10 +967,6 @@ ul {
 }
 
 .challenge-header::-webkit-details-marker {
-    display: none;
-}
-
-.challenge-header::marker {
     display: none;
 }
 
@@ -2207,6 +2166,7 @@ ul {
 
 .footer-bullet {
     color: rgba(255, 255, 255, 0.2);
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -3013,7 +2973,6 @@ ul {
     line-height: 1.6;
 }
 
-/* Pilares (3 colunas) */
 /* Pilares (3 colunas) */
 .ln-pillars {
     background: #fff;

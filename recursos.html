@@ -20,6 +20,10 @@
     <meta name="twitter:title" content="Recursos do captive portal para FortiGate | wi-fi.now">
     <meta name="twitter:description" content="Visitante fora da rede interna: tráfego segregado por VLAN, acesso vinculado a um celular identificado e conformidade LGPD e Marco Civil desde a base.">
     <meta name="twitter:image" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/heropageswifi.jpg">
+    <link rel="preconnect" href="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev">
     <link rel="stylesheet" href="styles.css?v=88">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -31,7 +35,7 @@
                 <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg" alt="wi-fi.now logo">
             </a>
             <div class="nav-right">
-                <div class="nav-links">
+                <div class="nav-links" id="nav-links">
                     <a href="recursos.html">Recursos</a>
                     <a href="como-funciona.html">Onboarding</a>
                     <a href="planos.html">Planos</a>
@@ -43,7 +47,7 @@
                     <a href="#" class="login-link">Entrar</a>
                     <a href="#" class="btn btn-pill">Comece agora</a>
                 </div>
-                <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -100,7 +104,7 @@
           <a href="como-funciona.html" class="ln-link-arrow">Ver como funciona &rsaquo;</a>
         </div>
         <div class="ln-feature-visual">
-          <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/config%20fortigate.jpg" alt="Configuração do FortiGate" class="media-ph">
+          <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/config%20fortigate.jpg" alt="Configuração do FortiGate" class="media-ph" loading="lazy" decoding="async">
         </div>
       </div>
     </section>
@@ -122,7 +126,7 @@
           </ul>
         </div>
         <div class="ln-feature-visual">
-          <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/Dashboard.jpg" alt="Dashboard de auditoria" class="media-ph">
+          <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/Dashboard.jpg" alt="Dashboard de auditoria" class="media-ph" loading="lazy" decoding="async">
         </div>
       </div>
     </section>
@@ -166,6 +170,7 @@
                 navToggle.addEventListener('click', () => {
                     const isOpen = navbar.classList.toggle('nav-open');
                     navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                    navToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
                 });
                 navbar.querySelectorAll('.nav-links a').forEach(link => {
                     link.addEventListener('click', () => {

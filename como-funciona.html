@@ -20,6 +20,10 @@
     <meta name="twitter:title" content="Como funciona o captive portal no FortiGate | wi-fi.now">
     <meta name="twitter:description" content="Três passos, nada de projeto: o visitante conecta no SSID, valida por token SMS, WhatsApp ou OAuth e o FortiGate libera o acesso com a sessão registrada.">
     <meta name="twitter:image" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/wifinow%2Bfortigate.jpg">
+    <link rel="preconnect" href="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev">
     <link rel="stylesheet" href="styles.css?v=88">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -31,7 +35,7 @@
                 <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg" alt="wi-fi.now logo">
             </a>
             <div class="nav-right">
-                <div class="nav-links">
+                <div class="nav-links" id="nav-links">
                     <a href="recursos.html">Recursos</a>
                     <a href="como-funciona.html">Onboarding</a>
                     <a href="planos.html">Planos</a>
@@ -43,7 +47,7 @@
                     <a href="#" class="login-link">Entrar</a>
                     <a href="#" class="btn btn-pill">Comece agora</a>
                 </div>
-                <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -79,7 +83,7 @@
           <div class="ln-flow-video-item">
             <div class="ln-flow-video">
               <span class="ln-flow-video-num">01</span>
-              <video src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/mexendo%20no%20celular.mp4" muted playsinline preload="auto"></video>
+              <video src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/mexendo%20no%20celular.mp4" muted playsinline preload="metadata" aria-hidden="true"></video>
             </div>
             <h3>Visitante conecta</h3>
             <p>Entra no SSID de visitantes, separado da rede interna.</p>
@@ -87,7 +91,7 @@
           <div class="ln-flow-video-item">
             <div class="ln-flow-video">
               <span class="ln-flow-video-num">02</span>
-              <video src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/smartphone_notification.mp4" muted playsinline preload="auto"></video>
+              <video src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/smartphone_notification.mp4" muted playsinline preload="metadata" aria-hidden="true"></video>
             </div>
             <h3>Valida no portal</h3>
             <p>Recebe um código por WhatsApp ou SMS, ou entra com Google, LinkedIn ou Microsoft.</p>
@@ -95,7 +99,7 @@
           <div class="ln-flow-video-item">
             <div class="ln-flow-video">
               <span class="ln-flow-video-num">03</span>
-              <video src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/wifi_now_fortigate.mp4" muted playsinline preload="auto"></video>
+              <video src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/wifi_now_fortigate.mp4" muted playsinline preload="metadata" aria-hidden="true"></video>
             </div>
             <h3>FortiGate libera</h3>
             <p>Acesso liberado conforme a sua política. A sessão fica registrada.</p>
@@ -122,7 +126,7 @@
           <a href="recursos.html" class="ln-link-arrow">Ver recursos &rsaquo;</a>
         </div>
         <div class="ln-feature-visual">
-          <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/wififortigate.jpg" alt="FortiGate com wi-fi.now" class="media-ph">
+          <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/wififortigate.jpg" alt="FortiGate com wi-fi.now" class="media-ph" loading="lazy" decoding="async">
         </div>
       </div>
     </section>
@@ -144,7 +148,7 @@
           </ul>
         </div>
         <div class="ln-feature-visual">
-          <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logo%20com%20sua%20cara.jpg" alt="Portal personalizado com a marca do cliente" class="media-ph">
+          <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logo%20com%20sua%20cara.jpg" alt="Portal personalizado com a marca do cliente" class="media-ph" loading="lazy" decoding="async">
         </div>
       </div>
     </section>
@@ -188,6 +192,7 @@
                 navToggle.addEventListener('click', () => {
                     const isOpen = navbar.classList.toggle('nav-open');
                     navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                    navToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
                 });
                 navbar.querySelectorAll('.nav-links a').forEach(link => {
                     link.addEventListener('click', () => {
