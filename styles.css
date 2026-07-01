@@ -2194,7 +2194,7 @@ ul {
 
 .footer {
     background: var(--bg-dark);
-    border-top: 10px solid #ffffff;
+    border-top: 50px solid #ffffff;
     padding: 2rem 0;
     margin-top: 1rem;
 }
