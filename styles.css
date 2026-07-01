@@ -2194,7 +2194,7 @@ ul {
 
 .footer {
     background: var(--bg-dark);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 10px solid #ffffff;
     padding: 2rem 0;
     margin-top: 1rem;
 }
@@ -4500,6 +4500,117 @@ ul {
 }
 
 /* ============================================================
+   SEÇÃO COMPATIBILIDADE COM FABRICANTES (logo strip)
+   ============================================================ */
+.ln-brands {
+    background: var(--bg-dark);
+    padding: 0.4375rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ln-brands-label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #f8fafc;
+    margin-bottom: 0.34375rem;
+    margin-left: -5cm;
+}
+
+.ln-brands-brace {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1;
+    color: #f8fafc;
+}
+
+/* Carrossel: 4 slots fixos, logos trocam de posição em onda */
+.ln-brands-carousel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    height: 148px;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%);
+}
+
+.ln-brands-slot {
+    position: relative;
+    height: 100%;
+}
+
+.ln-brands-slot img {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    height: 64px;
+    width: auto;
+    max-width: 78%;
+    object-fit: contain;
+    opacity: 0;
+    transition:
+        opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform, filter;
+}
+
+/* Estado de repouso (oculto) = ponto de entrada, variando por slot */
+.ln-brands-slot[data-variant="up"] img { transform: translateY(28px); }
+.ln-brands-slot[data-variant="down"] img { transform: translateY(-28px); }
+.ln-brands-slot[data-variant="side"] img { transform: translateX(-28px); }
+.ln-brands-slot[data-variant="reveal"] img { transform: scale(0.9); filter: blur(5px); }
+
+/* Logo visível na posição */
+.ln-brands-slot img.is-active {
+    opacity: 0.97;
+    transform: none;
+    filter: none;
+    z-index: 2;
+}
+
+/* Logo saindo: fade + leve deslocamento vertical + leve blur */
+.ln-brands-slot img.is-exiting {
+    opacity: 0;
+    transform: translateY(-16px);
+    filter: blur(4px);
+    z-index: 1;
+}
+
+/* Ajuste fino por marca (hooks opcionais) */
+.ln-brands-slot img.logo-hpe { height: 105px; }
+
+@media (prefers-reduced-motion: reduce) {
+    .ln-brands-slot img { transition: none; }
+}
+
+@media (max-width: 768px) {
+    .ln-brands { padding: 0.3125rem 0; }
+    .ln-brands-label { font-size: 0.75rem; margin-bottom: 0.25rem; }
+    .ln-brands-carousel { height: 120px; }
+    .ln-brands-slot img { height: 48px; }
+    .ln-brands-slot img.logo-hpe { height: 79px; }
+}
+
+@media (max-width: 640px) {
+    .ln-brands-carousel {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        grid-auto-rows: 100px;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+    .ln-brands-slot img { height: 44px; max-width: 72%; }
+    .ln-brands-slot img.logo-hpe { height: 72px; }
+}
+
+/* ============================================================
    SEÇÃO NOVA ABORDAGEM (Senha compartilhada vs Wi-fi.now)
    ============================================================ */
 .ln-approach {
@@ -5388,7 +5499,7 @@ ul {
 /* Divisor pontilhado leve entre secoes de fundo claro */
 .section-divider {
     border: 0;
-    border-top: 1px dashed var(--border-light);
+    border-top: 50px solid rgba(255, 255, 255, 0.15);
     margin: 0;
 }
 
