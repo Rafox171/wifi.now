@@ -1,0 +1,2122 @@
+{
+  "header.recursos": {
+    "pt": "Recursos",
+    "es": "Recursos",
+    "en": "Features"
+  },
+  "header.onboarding": {
+    "pt": "Onboarding",
+    "es": "Incorporación",
+    "en": "Onboarding"
+  },
+  "header.planos": {
+    "pt": "Planos",
+    "es": "Planes",
+    "en": "Plans"
+  },
+  "header.faq": {
+    "pt": "FAQ",
+    "es": "Preguntas frecuentes",
+    "en": "FAQ"
+  },
+  "header.entrar": {
+    "pt": "Entrar",
+    "es": "Ingresar",
+    "en": "Login"
+  },
+  "header.comece_agora": {
+    "pt": "Comece agora",
+    "es": "Comienza ahora",
+    "en": "Get started"
+  },
+  "header.nav_mobile_login": {
+    "pt": "Entrar",
+    "es": "Ingresar",
+    "en": "Login"
+  },
+  "hero.slide1.eyebrow": {
+    "pt": "Mais um visitante pedindo Wi-Fi.",
+    "es": "Otro visitante pidiendo Wi-Fi.",
+    "en": "Another visitor asking for Wi-Fi."
+  },
+  "hero.slide1.titulo": {
+    "pt": "Seu Wi-Fi de visitantes pronto em minutos",
+    "es": "Tu Wi-Fi de visitantes listo en minutos",
+    "en": "Your guest Wi-Fi ready in minutes"
+  },
+  "hero.slide1.subtitulo": {
+    "pt": "Teste grátis. Use o FortiGate que você já tem. Sem senha compartilhada, sem servidor local.",
+    "es": "Prueba gratuita. Usa el FortiGate que ya tienes. Sin contraseña compartida, sin servidor local.",
+    "en": "Free trial. Use the FortiGate you already have. No shared password, no local server."
+  },
+  "hero.slide1.hint": {
+    "pt": "feito para quem cuida da rede",
+    "es": "hecho para quienes cuidan la red",
+    "en": "made for network administrators"
+  },
+  "hero.slide2.eyebrow": {
+    "pt": "Senha compartilhada resolve agora. Depois sobra para você.",
+    "es": "Contraseña compartida resuelve ahora. Luego te sobrecarga.",
+    "en": "Shared password solves it now. Then it becomes your problem."
+  },
+  "hero.slide2.titulo": {
+    "pt": "Saia do improviso antes que vire problema",
+    "es": "Sal de la improvisación antes de que sea un problema",
+    "en": "Get out of improvisation before it becomes a problem"
+  },
+  "hero.slide2.subtitulo": {
+    "pt": "Coloque o acesso de visitantes no fluxo certo: portal, identificação e registro de sessão, direto no FortiGate que você já conhece.",
+    "es": "Pon el acceso de visitantes en el flujo correcto: portal, identificación y registro de sesión, directamente en el FortiGate que ya conoces.",
+    "en": "Put guest access in the right flow: portal, identification, and session logging, right in the FortiGate you already know."
+  },
+  "hero.slide2.hint": {
+    "pt": "simples para quem vive rede todos os dias",
+    "es": "simple para quienes viven con redes todos los días",
+    "en": "simple for those who live with networks every day"
+  },
+  "hero.slide3.eyebrow": {
+    "pt": "Solução cara demais também é problema.",
+    "es": "Una solución demasiado cara también es un problema.",
+    "en": "An overly expensive solution is also a problem."
+  },
+  "hero.slide3.titulo": {
+    "pt": "Wi-Fi de visitantes, de admin para admin",
+    "es": "Wi-Fi de visitantes, de administrador a administrador",
+    "en": "Guest Wi-Fi, admin to admin"
+  },
+  "hero.slide3.subtitulo": {
+    "pt": "Feito para resolver uma dor comum de quem usa FortiGate, com simplicidade, preço acessível e comunidade em volta.",
+    "es": "Hecho para resolver un dolor común de quienes usan FortiGate, con simplicidad, precio asequible y comunidad alrededor.",
+    "en": "Built to solve a common pain for FortiGate users, with simplicity, affordable pricing, and a community around it."
+  },
+  "hero.slide3.cta": {
+    "pt": "Ver planos",
+    "es": "Ver planes",
+    "en": "View plans"
+  },
+  "hero.slide3.hint": {
+    "pt": "uma solução do tamanho da dor",
+    "es": "una solución del tamaño del dolor",
+    "en": "a solution sized to the pain"
+  },
+  "hero.cta": {
+    "pt": "Comece agora",
+    "es": "Comienza ahora",
+    "en": "Get started"
+  },
+  "hero.titulo": {
+    "pt": "Captive portal externo para FortiGate",
+    "es": "Portal cautivo externo para FortiGate",
+    "en": "External captive portal for FortiGate"
+  },
+  "hero.subtitulo": {
+    "pt": "Wi-Fi de visitantes com validação por token SMS, WhatsApp ou OAuth. Sem amarrar.",
+    "es": "Wi-Fi de visitantes con validación por token SMS, WhatsApp u OAuth. Sin restricciones.",
+    "en": "Guest Wi-Fi with token validation via SMS, WhatsApp, or OAuth. No lock-in."
+  },
+  "hero.cta_1": {
+    "pt": "Comece agora",
+    "es": "Comienza ahora",
+    "en": "Get started"
+  },
+  "hero.cta_2": {
+    "pt": "Comece agora",
+    "es": "Comienza ahora",
+    "en": "Get started"
+  },
+  "banner_fcs.titulo": {
+    "pt": "Encontre a gente no FCS 2026",
+    "es": "Encuéntranos en el FCS 2026",
+    "en": "Meet us at FCS 2026"
+  },
+  "banner_fcs.descricao": {
+    "pt": "Vem conversar sobre captive portal, LGPD e segurança de rede.",
+    "es": "Ven a conversar sobre portal cautivo, LGPD y seguridad de red.",
+    "en": "Let's talk about captive portal, LGPD, and network security."
+  },
+  "pilares.titulo": {
+    "pt": "Por que wi-fi.now",
+    "es": "Por qué wi-fi.now",
+    "en": "Why wi-fi.now"
+  },
+  "pilares.portal_marca": {
+    "pt": "Portal na sua marca",
+    "es": "Portal en tu marca",
+    "en": "Portal in your brand"
+  },
+  "pilares.portal_marca_desc": {
+    "pt": "Portal com a identidade da sua empresa. Logo, cores e termos definidos por você.",
+    "es": "Portal con la identidad de tu empresa. Logo, colores y términos definidos por ti.",
+    "en": "Portal with your company identity. Logo, colors, and terms defined by you."
+  },
+  "pilares.token_auth": {
+    "pt": "Token SMS ou OAuth",
+    "es": "Token SMS u OAuth",
+    "en": "SMS token or OAuth"
+  },
+  "pilares.token_auth_desc": {
+    "pt": "Validação por token SMS/WhatsApp ou login Google, LinkedIn, Microsoft. Sem amarrar.",
+    "es": "Validación por token SMS/WhatsApp o inicio de sesión con Google, LinkedIn, Microsoft. Sin restricciones.",
+    "en": "Validation via SMS/WhatsApp token or Google, LinkedIn, Microsoft login. No lock-in."
+  },
+  "pilares.radius": {
+    "pt": "RADIUS Accounting",
+    "es": "Contabilidad RADIUS",
+    "en": "RADIUS Accounting"
+  },
+  "pilares.radius_desc": {
+    "pt": "Quem, quando, por quanto tempo. Nada de histórico de navegação.",
+    "es": "Quién, cuándo, cuánto tiempo. Sin historial de navegación.",
+    "en": "Who, when, how long. No browsing history."
+  },
+  "approach.titulo": {
+    "pt": "Senha compartilhada resolve agora. Depois sobra para você.",
+    "es": "Contraseña compartida resuelve ahora. Luego te sobrecarga.",
+    "en": "Shared password solves it now. Then it becomes your problem."
+  },
+  "approach.comum": {
+    "pt": "A forma comum",
+    "es": "La forma común",
+    "en": "The common way"
+  },
+  "approach.wifi_now": {
+    "pt": "A forma wi-fi.now",
+    "es": "La forma wi-fi.now",
+    "en": "The wi-fi.now way"
+  },
+  "lgpd.titulo": {
+    "pt": "Auditoria inteligente. Privacidade respeitada.",
+    "es": "Auditoría inteligente. Privacidad respetada.",
+    "en": "Smart audit. Privacy respected."
+  },
+  "lgpd.descricao": {
+    "pt": "Conformidade à Lei Geral de Proteção de Dados.",
+    "es": "Cumplimiento de la Ley General de Protección de Datos.",
+    "en": "Compliance with General Data Protection Law."
+  },
+  "comunidade.titulo": {
+    "pt": "Faça parte da maior comunidade de captive portal",
+    "es": "Sé parte de la mayor comunidad de portal cautivo",
+    "en": "Join the largest captive portal community"
+  },
+  "comunidade.descricao": {
+    "pt": "O wi-fi.now cresce de admin para admin. Indique outro administrador e, quando ele ativar no FortiGate, vocês dois ganham acesso grátis.",
+    "es": "Wi-fi.now crece de administrador a administrador. Recomienda otro administrador y cuando active en FortiGate, ambos obtienen acceso gratuito.",
+    "en": "wi-fi.now grows admin to admin. Refer another admin and when they activate on FortiGate, you both get free access."
+  },
+  "comunidade.passo_1": {
+    "pt": "Indique um admin",
+    "es": "Recomienda un administrador",
+    "en": "Refer an admin"
+  },
+  "comunidade.passo_1_desc": {
+    "pt": "Compartilhe seu link com quem também cuida de uma rede Fortinet.",
+    "es": "Comparte tu enlace con quien también administra una red Fortinet.",
+    "en": "Share your link with anyone managing a Fortinet network."
+  },
+  "comunidade.passo_2": {
+    "pt": "Ele ativa no FortiGate",
+    "es": "Activa en FortiGate",
+    "en": "They activate on FortiGate"
+  },
+  "comunidade.passo_2_desc": {
+    "pt": "Seu indicado liga o wi-fi.now na rede dele em minutos.",
+    "es": "Tu recomendado activa wi-fi.now en su red en minutos.",
+    "en": "Your referral activates wi-fi.now on their network in minutes."
+  },
+  "comunidade.passo_3": {
+    "pt": "Vocês ganham",
+    "es": "Ustedes ganan",
+    "en": "You both win"
+  },
+  "comunidade.passo_3_desc": {
+    "pt": "Acesso grátis liberado para os dois.",
+    "es": "Acceso gratuito desbloqueado para ambos.",
+    "en": "Free access unlocked for both."
+  },
+  "comunidade.cta": {
+    "pt": "Indique e ganhe",
+    "es": "Recomienda y gana",
+    "en": "Refer and earn"
+  },
+  "testimonial.titulo": {
+    "pt": "Quem usa, entende o valor rapidamente",
+    "es": "Quién lo usa, entiende el valor rápidamente",
+    "en": "Users understand the value quickly"
+  },
+  "testimonial.eyebrow": {
+    "pt": "Depoimento",
+    "es": "Testimonio",
+    "en": "Testimonial"
+  },
+  "footer.texto": {
+    "pt": "wi-fi.now · NET · SEC · OPS",
+    "es": "wi-fi.now · NET · SEC · OPS",
+    "en": "wi-fi.now · NET · SEC · OPS"
+  },
+  "footer.privacy": {
+    "pt": "Privacidade",
+    "es": "Privacidad",
+    "en": "Privacy"
+  },
+  "footer.termos": {
+    "pt": "Termos de uso",
+    "es": "Términos de uso",
+    "en": "Terms of use"
+  },
+  "footer.dpa": {
+    "pt": "DPA",
+    "es": "DPA",
+    "en": "DPA"
+  },
+  "recursos.hero_titulo": {
+    "pt": "Wi-Fi para visitantes, sem abrir a sua rede.",
+    "es": "Wi-Fi para visitantes, sin abrir tu red.",
+    "en": "Guest Wi-Fi without opening your network."
+  },
+  "recursos.hero_descricao": {
+    "pt": "Portal cativo sob medida para o seu FortiGate. Rápido, seguro e em conformidade com LGPD e Marco Civil, por padrão. Sem link novo, sem servidor local, sem projeto caro.",
+    "es": "Portal cautivo personalizado para tu FortiGate. Rápido, seguro y conforme a LGPD y Marco Civil, de forma predeterminada. Sin enlace nuevo, sin servidor local, sin proyecto costoso.",
+    "en": "Custom captive portal for your FortiGate. Fast, secure, and LGPD and Marco Civil compliant by default. No new link, no local server, no expensive project."
+  },
+  "recursos.hero_cta": {
+    "pt": "Comece agora",
+    "es": "Comienza ahora",
+    "en": "Get started"
+  },
+  "recursos.pillars_titulo": {
+    "pt": "O que você ganha",
+    "es": "Lo que obtienes",
+    "en": "What you get"
+  },
+  "recursos.pilar_1_titulo": {
+    "pt": "Segurança",
+    "es": "Seguridad",
+    "en": "Security"
+  },
+  "recursos.pilar_1_desc": {
+    "pt": "O visitante nunca entra na rede dos PDVs e dos dispositivos internos. Tráfego segregado por VLAN, isolado do resto da operação.",
+    "es": "El visitante nunca accede a la red de PDV y dispositivos internos. Tráfico segregado por VLAN, aislado del resto de la operación.",
+    "en": "Visitors never access your POS and internal device networks. Traffic segregated by VLAN, isolated from the rest of operations."
+  },
+  "recursos.pilar_2_titulo": {
+    "pt": "Rastreabilidade",
+    "es": "Trazabilidad",
+    "en": "Traceability"
+  },
+  "recursos.pilar_2_desc": {
+    "pt": "Cada acesso fica vinculado a um celular, identificado por código via WhatsApp. Quando perguntarem quem estava na rede, você responde.",
+    "es": "Cada acceso se vincula a un teléfono móvil, identificado por código vía WhatsApp. Cuando pregunten quién estaba en la red, tú respondes.",
+    "en": "Each access is linked to a mobile phone, identified by code via WhatsApp. When someone asks who was on the network, you have the answer."
+  },
+  "recursos.pilar_3_titulo": {
+    "pt": "Conformidade by design",
+    "es": "Conformidad por diseño",
+    "en": "Compliance by design"
+  },
+  "recursos.pilar_3_desc": {
+    "pt": "LGPD e Marco Civil desde a base, não como remendo. Auditável por padrão.",
+    "es": "LGPD y Marco Civil desde la base, no como un parche. Auditable por defecto.",
+    "en": "LGPD and Marco Civil from the ground up, not as an afterthought. Auditable by default."
+  },
+  "recursos.simplicidade_titulo": {
+    "pt": "Usa o FortiGate que você já tem",
+    "es": "Usa el FortiGate que ya tienes",
+    "en": "Use the FortiGate you already have"
+  },
+  "recursos.simplicidade_desc": {
+    "pt": "Você já pagou pelo ecossistema Fortinet. O wi-fi.now extrai o máximo dele, sem nada para instalar no local. Plugou, funcionou.",
+    "es": "Ya pagaste por el ecosistema Fortinet. wi-fi.now extrae lo máximo de él, sin nada que instalar en el sitio. Enchufó, funcionó.",
+    "en": "You've already paid for the Fortinet ecosystem. wi-fi.now gets the most out of it, with nothing to install on-site. Plug and play."
+  },
+  "recursos.conformidade_titulo": {
+    "pt": "Conformidade que já nasce pronta",
+    "es": "Conformidad que ya viene lista",
+    "en": "Compliance that's ready out of the box"
+  },
+  "recursos.conformidade_desc": {
+    "pt": "Registramos só o essencial para auditoria: quem acessou, com qual dispositivo, quando entrou e quando saiu. Navegação do visitante, sites e URLs não entram no registro.",
+    "es": "Solo registramos lo esencial para auditoría: quién accedió, qué dispositivo, cuándo entró y cuándo salió. Navegación, sitios y URLs del visitante no se registran.",
+    "en": "We only record what's essential for audit: who accessed, which device, when they entered and left. Visitor browsing, sites, and URLs are not recorded."
+  },
+  "recursos.cta_quote": {
+    "pt": "Seu FortiGate faz tudo. Falta só ligar o wi-fi.now.",
+    "es": "Tu FortiGate lo hace todo. Solo falta conectar wi-fi.now.",
+    "en": "Your FortiGate does everything. Just turn on wi-fi.now."
+  },
+  "recursos.cta_button": {
+    "pt": "Comece agora",
+    "es": "Comienza ahora",
+    "en": "Get started"
+  },
+  "resp.eyebrow": {
+    "pt": "[ 03 ] DIVISÃO DE PAPÉIS",
+    "es": "[ 03 ] DIVISIÓN DE ROLES",
+    "en": "[ 03 ] ROLE DIVISION"
+  },
+  "resp.titulo": {
+    "pt": "Cada parte faz bem uma coisa.",
+    "es": "Cada parte hace bien una cosa.",
+    "en": "Each part does one thing well."
+  },
+  "resp.descricao": {
+    "pt": "Sem sobreposição, sem confusão de escopo. wi-fi.now cuida do portal e do accounting. FortiGate cuida de segurança e tráfego. Você define termos e retenção.",
+    "es": "Sin superposición, sin confusión de alcance. wi-fi.now maneja el portal y la contabilidad. FortiGate maneja la seguridad y el tráfico. Defines los términos y la retención.",
+    "en": "No overlap, no scope confusion. wi-fi.now handles the portal and accounting. FortiGate handles security and traffic. You define terms and retention."
+  },
+  "resp.wifi.label": {
+    "pt": "Plataforma",
+    "es": "Plataforma",
+    "en": "Platform"
+  },
+  "resp.wifi.name": {
+    "pt": "wi-fi.now",
+    "es": "wi-fi.now",
+    "en": "wi-fi.now"
+  },
+  "resp.wifi.tag": {
+    "pt": "Portal de autenticação e accounting da sessão.",
+    "es": "Portal de autenticación y contabilidad de sesión.",
+    "en": "Session authentication and accounting portal."
+  },
+  "resp.wifi.item1": {
+    "pt": "Portal personalizado para cada cliente",
+    "es": "Portal personalizado para cada cliente",
+    "en": "Custom portal for each client"
+  },
+  "resp.wifi.item2": {
+    "pt": "Validação por token SMS ou WhatsApp",
+    "es": "Validación por token SMS o WhatsApp",
+    "en": "Validation via SMS or WhatsApp token"
+  },
+  "resp.wifi.item3": {
+    "pt": "OAuth Google, LinkedIn e Microsoft",
+    "es": "OAuth de Google, LinkedIn y Microsoft",
+    "en": "Google, LinkedIn, and Microsoft OAuth"
+  },
+  "resp.wifi.item4": {
+    "pt": "RADIUS Accounting",
+    "es": "RADIUS Accounting",
+    "en": "RADIUS Accounting"
+  },
+  "resp.wifi.item5": {
+    "pt": "Conexão segura para acessar Wi-Fi",
+    "es": "Conexión segura para acceder a Wi-Fi",
+    "en": "Secure connection to access Wi-Fi"
+  },
+  "resp.wifi.item6": {
+    "pt": "Relatório simples de uso da sessão",
+    "es": "Informe simple de uso de sesión",
+    "en": "Simple session usage report"
+  },
+  "resp.forti.label": {
+    "pt": "Firewall",
+    "es": "Firewall",
+    "en": "Firewall"
+  },
+  "resp.forti.name": {
+    "pt": "FortiGate",
+    "es": "FortiGate",
+    "en": "FortiGate"
+  },
+  "resp.forti.tag": {
+    "pt": "Controle de acesso, segurança e políticas de tráfego.",
+    "es": "Control de acceso, seguridad y políticas de tráfico.",
+    "en": "Access control, security, and traffic policies."
+  },
+  "resp.forti.item1": {
+    "pt": "Redirecionamento ao portal externo",
+    "es": "Redireccionar al portal externo",
+    "en": "Redirect to external portal"
+  },
+  "resp.forti.item2": {
+    "pt": "Liberação do cliente após autenticação",
+    "es": "Liberación del cliente después de la autenticación",
+    "en": "Client release after authentication"
+  },
+  "resp.forti.item3": {
+    "pt": "Firewall, NAT e segmentação de rede",
+    "es": "Firewall, NAT y segmentación de red",
+    "en": "Firewall, NAT, and network segmentation"
+  },
+  "resp.forti.item4": {
+    "pt": "Web Filter, App Control, IPS, Antivirus",
+    "es": "Web Filter, App Control, IPS, Antivirus",
+    "en": "Web Filter, App Control, IPS, Antivirus"
+  },
+  "resp.forti.item5": {
+    "pt": "Bloqueios, limites de banda e tempo de sessão",
+    "es": "Bloqueos, límites de ancho de banda y tiempo de sesión",
+    "en": "Blocks, bandwidth limits, and session time"
+  },
+  "resp.forti.item6": {
+    "pt": "Envio dos eventos de accounting RADIUS",
+    "es": "Entrega de eventos de contabilidad RADIUS",
+    "en": "RADIUS accounting event delivery"
+  },
+  "resp.you.label": {
+    "pt": "Cliente",
+    "es": "Cliente",
+    "en": "Client"
+  },
+  "resp.you.name": {
+    "pt": "Você",
+    "es": "Tú",
+    "en": "You"
+  },
+  "resp.you.tag": {
+    "pt": "Política, identidade e conformidade do ambiente.",
+    "es": "Política, identidad y conformidad del ambiente.",
+    "en": "Policy, identity, and environment compliance."
+  },
+  "resp.you.item1": {
+    "pt": "Termos de uso e política de privacidade",
+    "es": "Términos de uso y política de privacidad",
+    "en": "Terms of use and privacy policy"
+  },
+  "resp.you.item2": {
+    "pt": "Credenciais OAuth (Google, LinkedIn, Microsoft)",
+    "es": "Credenciales OAuth (Google, LinkedIn, Microsoft)",
+    "en": "OAuth credentials (Google, LinkedIn, Microsoft)"
+  },
+  "resp.you.item3": {
+    "pt": "IPs públicos autorizados no RADIUS wi-fi.now",
+    "es": "IPs públicos autorizados en RADIUS wi-fi.now",
+    "en": "Public IPs authorized on RADIUS wi-fi.now"
+  },
+  "resp.you.item4": {
+    "pt": "Definição de retenção e adequação LGPD",
+    "es": "Definición de retención y conformidad LGPD",
+    "en": "Retention definition and LGPD compliance"
+  },
+  "resp.you.item5": {
+    "pt": "Aplicação do script gerado pela plataforma",
+    "es": "Aplicar el script generado por la plataforma",
+    "en": "Apply the script generated by the platform"
+  },
+  "resp.you.item6": {
+    "pt": "Homologação antes da entrada em produção",
+    "es": "Homologación antes de la entrada en producción",
+    "en": "Homologation before production go-live"
+  },
+  "approach.eyebrow": {
+    "pt": "[ 04 ] A FERIDA",
+    "es": "[ 04 ] LA HERIDA",
+    "en": "[ 04 ] THE WOUND"
+  },
+  "approach.descricao": {
+    "pt": "A recepção passa a senha. O fornecedor compartilha. O visitante volta outro dia e ainda conecta. Quando alguém pergunta quem acessou, quando acessou e por quanto tempo, a resposta cai na TI.",
+    "es": "La recepción pasa la contraseña. El proveedor la comparte. El visitante vuelve otro día y aún se conecta. Cuando alguien pregunta quién accedió, cuándo y por cuánto tiempo, la respuesta cae en TI.",
+    "en": "Reception passes the password. The vendor shares it. The visitor comes back another day and still connects. When someone asks who accessed, when, and for how long, IT gets the blame."
+  },
+  "lgpd.eyebrow": {
+    "pt": "Conformidade LGPD",
+    "es": "Conformidad LGPD",
+    "en": "LGPD Compliance"
+  },
+  "lgpd.lead": {
+    "pt": "Registramos apenas o essencial para auditoria administrativa: quem acessou, com qual dispositivo, quando entrou e quando saiu.",
+    "es": "Solo registramos lo esencial para auditoría administrativa: quién accedió, qué dispositivo, cuándo entró y cuándo salió.",
+    "en": "We record only what's essential for administrative audit: who accessed, which device, when they entered and left."
+  },
+  "lgpd.sub": {
+    "pt": "Não monitoramos navegação, não armazenamos conteúdo e não violamos a privacidade dos usuários.",
+    "es": "No monitoreamos navegación, no almacenamos contenido y no violamos la privacidad de los usuarios.",
+    "en": "We don't monitor browsing, store content, or violate user privacy."
+  },
+  "lgpd.feature1": {
+    "pt": "Identificação de usuários",
+    "es": "Identificación de usuarios",
+    "en": "User identification"
+  },
+  "lgpd.feature2": {
+    "pt": "Informações de acesso",
+    "es": "Información de acceso",
+    "en": "Access information"
+  },
+  "lgpd.feature3": {
+    "pt": "Conformidade e segurança",
+    "es": "Conformidad y seguridad",
+    "en": "Compliance and security"
+  },
+  "testimonial.quote": {
+    "pt": "Antes, liberar Wi-Fi pra visitante sempre virava discussão: segurança, equipamento, quem acessou o quê. O wi-fi.now resolveu isso sem trocar nada da nossa infraestrutura. Configuramos, e voltamos a trabalhar. O melhor elogio que eu consigo dar é que esqueço que ele existe, ele só funciona, e quando preciso saber quem acessou, está tudo lá.",
+    "es": "Antes, liberar Wi-Fi para visitante siempre se convertía en una discusión: seguridad, equipamiento, quién accedió a qué. wi-fi.now resolvió esto sin cambiar nada de nuestra infraestructura. Configuramos, y volvemos al trabajo. El mejor elogio que puedo dar es que olvido que existe, simplemente funciona, y cuando necesito saber quién accedió, está todo ahí.",
+    "en": "Before, enabling guest Wi-Fi always turned into a discussion: security, equipment, who accessed what. wi-fi.now solved this without changing anything in our infrastructure. We configured it and got back to work. The best compliment I can give is that I forget it exists, it just works, and when I need to know who accessed it, everything is there."
+  },
+  "testimonial.author": {
+    "pt": "Rodrigo Perenha",
+    "es": "Rodrigo Perenha",
+    "en": "Rodrigo Perenha"
+  },
+  "testimonial.role": {
+    "pt": "Diretor ::: Kamino",
+    "es": "Director ::: Kamino",
+    "en": "Director ::: Kamino"
+  },
+  "testimonial.highlight1": {
+    "pt": "Mais visibilidade para o time de TI",
+    "es": "Más visibilidad para el equipo de TI",
+    "en": "More visibility for the IT team"
+  },
+  "testimonial.highlight2": {
+    "pt": "Auditoria simples dos acessos",
+    "es": "Auditoría simple de accesos",
+    "en": "Simple audit of access"
+  },
+  "testimonial.highlight3": {
+    "pt": "Privacidade preservada",
+    "es": "Privacidad preservada",
+    "en": "Privacy preserved"
+  },
+  "testimonial.highlight4": {
+    "pt": "Apoio à conformidade LGPD",
+    "es": "Soporte para conformidad LGPD",
+    "en": "Support for LGPD compliance"
+  },
+  "footer.privacidade": {
+    "pt": "Privacidade",
+    "es": "Privacidad",
+    "en": "Privacy"
+  },
+  "footer.copyright": {
+    "pt": "Todos os direitos reservados © 2026",
+    "es": "Todos los derechos reservados © 2026",
+    "en": "All rights reserved © 2026"
+  },
+  "cf.hero_eyebrow": {
+    "pt": "Onboarding ::: Como funciona",
+    "es": "Incorporación ::: Cómo funciona",
+    "en": "Onboarding ::: How it works"
+  },
+  "cf.hero_titulo": {
+    "pt": "Do SSID ao acesso liberado, em minutos.",
+    "es": "Del SSID al acceso liberado, en minutos.",
+    "en": "From SSID to access granted, in minutes."
+  },
+  "cf.hero_desc": {
+    "pt": "Sem servidor, sem projeto. Use o FortiGate que você já tem, aplique o script e pronto.",
+    "es": "Sin servidor, sin proyecto. Usa el FortiGate que ya tienes, aplica el script y listo.",
+    "en": "No server, no project. Use the FortiGate you already have, apply the script, done."
+  },
+  "cf.hero_cta": {
+    "pt": "Comece agora",
+    "es": "Comienza ahora",
+    "en": "Get started"
+  },
+  "cf.hero_link": {
+    "pt": "Ver recursos ›",
+    "es": "Ver recursos ›",
+    "en": "See features ›"
+  },
+  "cf.fluxo_eyebrow": {
+    "pt": "[ COMO FUNCIONA ]",
+    "es": "[ CÓMO FUNCIONA ]",
+    "en": "[ HOW IT WORKS ]"
+  },
+  "cf.fluxo_titulo": {
+    "pt": "Três passos. Nada de projeto.",
+    "es": "Tres pasos. Sin proyecto.",
+    "en": "Three steps. No project."
+  },
+  "cf.fluxo_desc": {
+    "pt": "Do toque no SSID ao acesso liberado, com a sessão registrada.",
+    "es": "Del toque en el SSID al acceso liberado, con la sesión registrada.",
+    "en": "From SSID tap to access granted, with session recorded."
+  },
+  "cf.passo1_titulo": {
+    "pt": "Visitante conecta",
+    "es": "Visitante conecta",
+    "en": "Visitor connects"
+  },
+  "cf.passo1_desc": {
+    "pt": "Entra no SSID de visitantes, separado da rede interna.",
+    "es": "Se conecta al SSID de visitantes, separado de la red interna.",
+    "en": "Connects to guest SSID, separate from internal network."
+  },
+  "cf.passo2_titulo": {
+    "pt": "Valida no portal",
+    "es": "Valida en el portal",
+    "en": "Validates on the portal"
+  },
+  "cf.passo2_desc": {
+    "pt": "Recebe um código por WhatsApp ou SMS, ou entra com Google, LinkedIn ou Microsoft.",
+    "es": "Recibe un código por WhatsApp o SMS, o entra con Google, LinkedIn o Microsoft.",
+    "en": "Receives a code via WhatsApp or SMS, or signs in with Google, LinkedIn, or Microsoft."
+  },
+  "cf.passo3_titulo": {
+    "pt": "FortiGate libera",
+    "es": "FortiGate libera",
+    "en": "FortiGate grants access"
+  },
+  "cf.passo3_desc": {
+    "pt": "Acesso liberado conforme a sua política. A sessão fica registrada.",
+    "es": "Acceso liberado según tu política. La sesión queda registrada.",
+    "en": "Access granted according to your policy. The session is recorded."
+  },
+  "cf.simpl_eyebrow": {
+    "pt": "[ SIMPLICIDADE ]",
+    "es": "[ SIMPLICIDAD ]",
+    "en": "[ SIMPLICITY ]"
+  },
+  "cf.simpl_titulo": {
+    "pt": "Use o que já está aí",
+    "es": "Usa lo que ya está ahí",
+    "en": "Use what's already there"
+  },
+  "cf.simpl_desc": {
+    "pt": "Seu FortiGate já faz o trabalho pesado. Falta só ligar o wi-fi.now.",
+    "es": "Tu FortiGate ya hace el trabajo pesado. Solo falta activar wi-fi.now.",
+    "en": "Your FortiGate already does the heavy lifting. Just turn on wi-fi.now."
+  },
+  "cf.simpl_item1": {
+    "pt": "Sem servidor local nem RADIUS local",
+    "es": "Sin servidor local ni RADIUS local",
+    "en": "No local server or local RADIUS"
+  },
+  "cf.simpl_item2": {
+    "pt": "Sem link de internet novo",
+    "es": "Sin nuevo enlace de internet",
+    "en": "No new internet link"
+  },
+  "cf.simpl_item3": {
+    "pt": "Script de configuração pronto",
+    "es": "Script de configuración listo",
+    "en": "Ready-to-use configuration script"
+  },
+  "cf.simpl_item4": {
+    "pt": "Homologação antes de ir para produção",
+    "es": "Homologación antes de ir a producción",
+    "en": "Validation before going to production"
+  },
+  "cf.simpl_link": {
+    "pt": "Ver recursos ›",
+    "es": "Ver recursos ›",
+    "en": "See features ›"
+  },
+  "cf.portal_eyebrow": {
+    "pt": "[ PORTAL ]",
+    "es": "[ PORTAL ]",
+    "en": "[ PORTAL ]"
+  },
+  "cf.portal_titulo": {
+    "pt": "Portal com a sua cara",
+    "es": "Portal con tu identidad",
+    "en": "Portal with your identity"
+  },
+  "cf.portal_desc": {
+    "pt": "Logo, cores e termos definidos por você. A validação acontece por token ou login, do jeito que faz sentido para o seu público.",
+    "es": "Logo, colores y términos definidos por ti. La validación ocurre por token o inicio de sesión, de la manera que tiene sentido para tu público.",
+    "en": "Logo, colors, and terms defined by you. Validation happens by token or login, the way that makes sense for your audience."
+  },
+  "cf.portal_item1": {
+    "pt": "Logo e identidade do cliente",
+    "es": "Logo e identidad del cliente",
+    "en": "Client logo and identity"
+  },
+  "cf.portal_item2": {
+    "pt": "Termos e privacidade que você define",
+    "es": "Términos y privacidad que defines tú",
+    "en": "Terms and privacy defined by you"
+  },
+  "cf.portal_item3": {
+    "pt": "Token por SMS ou WhatsApp, ou OAuth",
+    "es": "Token por SMS o WhatsApp, u OAuth",
+    "en": "Token via SMS or WhatsApp, or OAuth"
+  },
+  "cf.portal_item4": {
+    "pt": "Portal com URL exclusiva para a sua operação",
+    "es": "Portal con URL exclusiva para tu operación",
+    "en": "Portal with exclusive URL for your operation"
+  },
+  "cf.cta_quote": {
+    "pt": "Configure uma vez. Volte a trabalhar.",
+    "es": "Configura una vez. Vuelve a trabajar.",
+    "en": "Configure once. Get back to work."
+  },
+  "cf.cta_btn": {
+    "pt": "Comece agora",
+    "es": "Comienza ahora",
+    "en": "Get started"
+  },
+  "planos.hero_titulo": {
+    "pt": "Escolha o plano ideal para a sua rede",
+    "es": "Elige el plan ideal para tu red",
+    "en": "Choose the ideal plan for your network"
+  },
+  "planos.hero_desc": {
+    "pt": "Portal cativo FortiGate sob medida. Comece a validar gratuitamente ou escale para conexões e recursos corporativos ilimitados.",
+    "es": "Portal cautivo FortiGate a medida. Comienza a validar gratuitamente o escala a conexiones y recursos corporativos ilimitados.",
+    "en": "Custom FortiGate captive portal. Start validating for free or scale to unlimited enterprise connections and features."
+  },
+  "planos.col_tier": {
+    "pt": "Tier",
+    "es": "Nivel",
+    "en": "Tier"
+  },
+  "planos.col_modelo": {
+    "pt": "FortiGate (faixa)",
+    "es": "FortiGate (rango)",
+    "en": "FortiGate (range)"
+  },
+  "planos.col_plano_anual": {
+    "pt": "plano anual",
+    "es": "plan anual",
+    "en": "annual plan"
+  },
+  "planos.enterprise_link": {
+    "pt": "Fale com um especialista",
+    "es": "Habla con un especialista",
+    "en": "Talk to a specialist"
+  },
+  "planos.enterprise_desc": {
+    "pt": "Fale com nosso time para receber uma proposta personalizada.",
+    "es": "Habla con nuestro equipo para recibir una propuesta personalizada.",
+    "en": "Talk to our team for a personalized proposal."
+  },
+  "planos.cta_quote": {
+    "pt": "Comece agora. Escale quando a rede crescer.",
+    "es": "Comienza ahora. Escala cuando la red crezca.",
+    "en": "Start now. Scale when the network grows."
+  },
+  "planos.cta_btn": {
+    "pt": "Comece agora",
+    "es": "Comienza ahora",
+    "en": "Get started"
+  },
+  "faq.hero_eyebrow": {
+    "pt": "FAQ",
+    "es": "Preguntas frecuentes",
+    "en": "FAQ"
+  },
+  "faq.hero_titulo": {
+    "pt": "Perguntas diretas, respostas diretas.",
+    "es": "Preguntas directas, respuestas directas.",
+    "en": "Direct questions, direct answers."
+  },
+  "faq.hero_desc": {
+    "pt": "O essencial sobre o wi-fi.now para quem cuida da rede.",
+    "es": "Lo esencial sobre wi-fi.now para quienes administran redes.",
+    "en": "The essentials about wi-fi.now for network administrators."
+  },
+  "faq.hero_cta": {
+    "pt": "Comece agora",
+    "es": "Comienza ahora",
+    "en": "Get started"
+  },
+  "faq.s1_label": {
+    "pt": "Antes de começar",
+    "es": "Antes de comenzar",
+    "en": "Before you start"
+  },
+  "faq.s1_titulo": {
+    "pt": "Começando",
+    "es": "Empezando",
+    "en": "Getting started"
+  },
+  "faq.q1_pergunta": {
+    "pt": "Preciso ter FortiGate?",
+    "es": "¿Necesito tener FortiGate?",
+    "en": "Do I need a FortiGate?"
+  },
+  "faq.q1_resposta": {
+    "pt": "Sim, é o pré-requisito. O wi-fi.now roda em cima do seu FortiGate, que faz o trabalho pesado de controle de acesso. Sem FortiGate, não é o caso de uso agora. A gente diz isso cedo, sem rodeio.",
+    "es": "Sí, es el prerrequisito. wi-fi.now corre sobre tu FortiGate, que hace el trabajo pesado de control de acceso. Sin FortiGate, no es el caso de uso ahora. Lo decimos temprano, sin rodeos.",
+    "en": "Yes, it's the prerequisite. wi-fi.now runs on top of your FortiGate, which does the heavy lifting for access control. Without FortiGate, it's not the use case right now. We say this upfront, no beating around the bush."
+  },
+  "faq.q2_pergunta": {
+    "pt": "Preciso instalar servidor ou RADIUS local?",
+    "es": "¿Necesito instalar un servidor o RADIUS local?",
+    "en": "Do I need to install a local server or RADIUS?"
+  },
+  "faq.q2_resposta": {
+    "pt": "Não. O wi-fi.now é cloud e usa o seu FortiGate. Sem servidor local, sem RADIUS local, sem link novo.",
+    "es": "No. wi-fi.now es cloud y usa tu FortiGate. Sin servidor local, sin RADIUS local, sin nuevo enlace.",
+    "en": "No. wi-fi.now is cloud-based and uses your FortiGate. No local server, no local RADIUS, no new link."
+  },
+  "faq.q3_pergunta": {
+    "pt": "Vou precisar trocar minha infraestrutura?",
+    "es": "¿Necesitaré cambiar mi infraestructura?",
+    "en": "Will I need to change my infrastructure?"
+  },
+  "faq.q3_resposta": {
+    "pt": "Não. O wi-fi.now aproveita o que já existe. Seu FortiGate já faz o trabalho pesado, falta só ligar o wi-fi.now.",
+    "es": "No. wi-fi.now aprovecha lo que ya existe. Tu FortiGate ya hace el trabajo pesado, solo falta activar wi-fi.now.",
+    "en": "No. wi-fi.now uses what's already there. Your FortiGate already does the heavy lifting, you just need to turn on wi-fi.now."
+  },
+  "faq.q4_pergunta": {
+    "pt": "Em quanto tempo coloco no ar?",
+    "es": "¿En cuánto tiempo lo pongo en marcha?",
+    "en": "How long does it take to go live?"
+  },
+  "faq.q4_resposta": {
+    "pt": "Minutos. A configuração entra via script pronto, sem ajuste manual linha a linha. Aplica, homologa e vai para produção.",
+    "es": "Minutos. La configuración entra vía script listo, sin ajuste manual línea por línea. Aplica, homologa y va a producción.",
+    "en": "Minutes. Configuration is applied via a ready-made script, no manual line-by-line adjustment. Apply, validate, and go to production."
+  },
+  "faq.q5_pergunta": {
+    "pt": "Isso é uma ferramenta de marketing?",
+    "es": "¿Es esto una herramienta de marketing?",
+    "en": "Is this a marketing tool?"
+  },
+  "faq.q5_resposta": {
+    "pt": "Não. O foco é acesso, controle e conformidade. Sem CRM obrigatório, sem captura de leads como meta.",
+    "es": "No. El foco es acceso, control y conformidad. Sin CRM obligatorio, sin captura de leads como objetivo.",
+    "en": "No. The focus is access, control, and compliance. No mandatory CRM, no lead capture as a goal."
+  },
+  "faq.s2_label": {
+    "pt": "Segurança e conformidade",
+    "es": "Seguridad y conformidad",
+    "en": "Security and compliance"
+  },
+  "faq.s2_titulo": {
+    "pt": "Privacidade e controle",
+    "es": "Privacidad y control",
+    "en": "Privacy and control"
+  },
+  "faq.q6_pergunta": {
+    "pt": "Atende LGPD e Marco Civil?",
+    "es": "¿Cumple con la LGPD y el Marco Civil?",
+    "en": "Is it compliant with LGPD and Marco Civil?"
+  },
+  "faq.q6_resposta": {
+    "pt": "Sim, conformidade desde a base. LGPD e Marco Civil contemplados por padrão, não como remendo. Auditável por padrão.",
+    "es": "Sí, conformidad desde la base. LGPD y Marco Civil contemplados por defecto, no como parche. Auditable por defecto.",
+    "en": "Yes, compliance from the ground up. LGPD and Marco Civil built in by default, not as an afterthought. Auditable by default."
+  },
+  "faq.q7_pergunta": {
+    "pt": "O que vocês registram?",
+    "es": "¿Qué registran?",
+    "en": "What do you record?"
+  },
+  "faq.q7_resposta": {
+    "pt": "Quem acessou, com qual dispositivo, quando entrou e quando saiu. Só isso. Não registramos histórico de navegação, sites acessados nem URLs.",
+    "es": "Quién accedió, qué dispositivo, cuándo entró y cuándo salió. Solo eso. No registramos historial de navegación, sitios visitados ni URLs.",
+    "en": "Who accessed, which device, when they entered and left. That's it. We don't record browsing history, visited sites, or URLs."
+  },
+  "faq.q8_pergunta": {
+    "pt": "O wi-fi.now identifica qualquer fraudador?",
+    "es": "¿wi-fi.now identifica cualquier fraude?",
+    "en": "Does wi-fi.now identify any fraudster?"
+  },
+  "faq.q8_resposta": {
+    "pt": "Não prometemos infalibilidade. O wi-fi.now vincula sessão, dispositivo e código identificado via WhatsApp ou SMS. Isso dissuade a maioria e mantém evidência. Dissuade, não blinda.",
+    "es": "No prometemos infalibilidad. wi-fi.now vincula sesión, dispositivo y código identificado vía WhatsApp o SMS. Esto disuade a la mayoría y mantiene evidencia. Disuade, no blindar.",
+    "en": "We don't promise infallibility. wi-fi.now links session, device, and code identified via WhatsApp or SMS. This deters most and maintains evidence. Deters, doesn't shield."
+  },
+  "faq.q9_pergunta": {
+    "pt": "Sou parceiro ou revenda Fortinet, dá pra revender?",
+    "es": "Soy socio o revendedor Fortinet, ¿puedo revender?",
+    "en": "I'm a Fortinet partner or reseller, can I resell?"
+  },
+  "faq.q9_resposta": {
+    "pt": "Dá. Temos o modelo White-Label para parceiros e revendas Fortinet. Você entrega com a sua marca.",
+    "es": "Sí. Tenemos el modelo White-Label para socios y revendedores Fortinet. Entregas con tu propia marca.",
+    "en": "Yes. We have a White-Label model for Fortinet partners and resellers. You deliver under your own brand."
+  },
+  "faq.q10_pergunta": {
+    "pt": "Funciona sem FortiGate?",
+    "es": "¿Funciona sin FortiGate?",
+    "en": "Does it work without FortiGate?"
+  },
+  "faq.q10_resposta": {
+    "pt": "Não. O foco é Fortinet. Sem FortiGate, não é o caso de uso agora. A gente diz isso cedo, sem rodeio.",
+    "es": "No. El foco es Fortinet. Sin FortiGate, no es el caso de uso ahora. Lo decimos temprano, sin rodeos.",
+    "en": "No. The focus is Fortinet. Without FortiGate, it's not the use case right now. We say this upfront, no beating around the bush."
+  },
+  "faq.cta_quote": {
+    "pt": "Resolve a fila de chamados de Wi-Fi de visitante de uma vez.",
+    "es": "Resuelve la cola de tickets de Wi-Fi de visitante de una vez.",
+    "en": "Resolve the guest Wi-Fi ticket backlog once and for all."
+  },
+  "faq.cta_btn": {
+    "pt": "Comece agora",
+    "es": "Comienza ahora",
+    "en": "Get started"
+  },
+  "termos.titulo": {
+    "pt": "Termos de Uso do Site",
+    "es": "Términos de Uso del Sitio",
+    "en": "Website Terms of Use"
+  },
+  "termos.toc_label": {
+    "pt": "Nesta página",
+    "es": "En esta página",
+    "en": "On this page"
+  },
+  "termos.toc_s1": {
+    "pt": "1. Quem somos e o que estes Termos regem",
+    "es": "1. Quiénes somos y qué rigen estos Términos",
+    "en": "1. Who we are and what these Terms govern"
+  },
+  "termos.toc_s2": {
+    "pt": "2. Aceitação e alterações",
+    "es": "2. Aceptación y modificaciones",
+    "en": "2. Acceptance and amendments"
+  },
+  "termos.toc_s3": {
+    "pt": "3. Conteúdo do Site e seu valor jurídico",
+    "es": "3. Contenido del Sitio y su valor jurídico",
+    "en": "3. Site content and its legal value"
+  },
+  "termos.toc_s4": {
+    "pt": "4. Cadastro e área logada",
+    "es": "4. Registro y área de acceso",
+    "en": "4. Registration and logged area"
+  },
+  "termos.toc_s5": {
+    "pt": "5. Propriedade intelectual",
+    "es": "5. Propiedad intelectual",
+    "en": "5. Intellectual property"
+  },
+  "termos.toc_s6": {
+    "pt": "6. Uso aceitável do Site",
+    "es": "6. Uso aceptable del Sitio",
+    "en": "6. Acceptable use of the Site"
+  },
+  "termos.toc_s7": {
+    "pt": "7. Links e conteúdo de terceiros",
+    "es": "7. Enlaces y contenido de terceros",
+    "en": "7. Links and third-party content"
+  },
+  "termos.toc_s8": {
+    "pt": "8. Disponibilidade do Site e isenções",
+    "es": "8. Disponibilidad del Sitio y exenciones",
+    "en": "8. Site availability and disclaimers"
+  },
+  "termos.toc_s9": {
+    "pt": "9. Privacidade e cookies",
+    "es": "9. Privacidad y cookies",
+    "en": "9. Privacy and cookies"
+  },
+  "termos.toc_s10": {
+    "pt": "10. Disposições gerais, lei e foro",
+    "es": "10. Disposiciones generales, ley y fuero",
+    "en": "10. General provisions, governing law and jurisdiction"
+  },
+  "termos.s1_h2": {
+    "pt": "Quem somos e o que estes Termos regem",
+    "es": "Quiénes somos y qué rigen estos Términos",
+    "en": "Who we are and what these Terms govern"
+  },
+  "termos.s1_p1": {
+    "pt": "O site wi-fi.now (\"Site\") é operado por FXO Serviços em Informática Ltda., CNPJ 11.566.322/0001-19 (\"FXO\", \"nós\"). Estes Termos de Uso do Site (\"Termos do Site\") regem o acesso e a navegação no Site e o uso de seu conteúdo, por qualquer pessoa (\"você\").",
+    "es": "El sitio wi-fi.now (\"Sitio\") es operado por FXO Serviços em Informática Ltda., CNPJ 11.566.322/0001-19 (\"FXO\", \"nosotros\"). Estos Términos de Uso del Sitio (\"Términos del Sitio\") rigen el acceso y la navegación en el Sitio y el uso de su contenido, por cualquier persona (\"usted\").",
+    "en": "The wi-fi.now website (\"Site\") is operated by FXO Serviços em Informática Ltda., CNPJ 11.566.322/0001-19 (\"FXO\", \"we\"). These Website Terms of Use (\"Site Terms\") govern access and browsing of the Site and use of its content, by any person (\"you\")."
+  },
+  "termos.s1_p2": {
+    "pt": "Estes Termos do Site não regem o uso da plataforma Wi-Fi.now. A contratação e o uso da plataforma são regidos pelos Termos de Uso da Plataforma, aceitos no cadastro, e, quando existente, pelo contrato celebrado entre a FXO e o cliente, que prevalecem sobre estes Termos do Site em qualquer matéria relativa ao serviço.",
+    "es": "Estos Términos del Sitio no rigen el uso de la plataforma Wi-Fi.now. La contratación y el uso de la plataforma se rigen por los Términos de Uso de la Plataforma, aceptados en el registro, y, cuando exista, por el contrato celebrado entre FXO y el cliente, que prevalece sobre estos Términos del Sitio en cualquier materia relativa al servicio.",
+    "en": "These Site Terms do not govern use of the Wi-Fi.now platform. Platform engagement and use are governed by the Platform Terms of Use, accepted at registration, and, where applicable, by the contract between FXO and the client, which prevails over these Site Terms on any matter relating to the service."
+  },
+  "termos.s1_p3": {
+    "pt": "Se você acessa o Site em nome de uma empresa, declara ter poderes para representá-la quanto à navegação e ao conteúdo aqui regulados.",
+    "es": "Si accede al Sitio en nombre de una empresa, declara tener poderes para representarla en lo que respecta a la navegación y al contenido aquí regulados.",
+    "en": "If you access the Site on behalf of a company, you declare that you have authority to represent it with respect to the navigation and content regulated herein."
+  },
+  "termos.s2_h2": {
+    "pt": "Aceitação e alterações",
+    "es": "Aceptación y modificaciones",
+    "en": "Acceptance and amendments"
+  },
+  "termos.s2_p1": {
+    "pt": "Ao navegar no Site, você declara ter lido e concordado com estes Termos do Site e com a Política de Privacidade. Se não concordar, interrompa a navegação. Estes Termos do Site permanecem disponíveis, de forma permanente e em local de destaque no Site, para consulta a qualquer momento.",
+    "es": "Al navegar por el Sitio, declara haber leído y aceptado estos Términos del Sitio y la Política de Privacidad. Si no está de acuerdo, deje de navegar. Estos Términos del Sitio están disponibles de forma permanente y en un lugar destacado del Sitio para consulta en cualquier momento.",
+    "en": "By browsing the Site, you declare that you have read and agreed to these Site Terms and the Privacy Policy. If you disagree, stop browsing. These Site Terms are permanently available in a prominent location on the Site for reference at any time."
+  },
+  "termos.s2_p2": {
+    "pt": "Podemos atualizar estes Termos do Site, publicando a nova versão nesta página com a respectiva data de vigência e mantendo o histórico de versões. Alterações relevantes serão destacadas. A navegação após a vigência da nova versão implica concordância com o texto revisado.",
+    "es": "Podemos actualizar estos Términos del Sitio publicando la nueva versión en esta página con la fecha de vigencia correspondiente y manteniendo el historial de versiones. Los cambios relevantes serán destacados. La navegación después de la vigencia de la nueva versión implica aceptación del texto revisado.",
+    "en": "We may update these Site Terms by posting the new version on this page with the applicable effective date and maintaining a version history. Relevant changes will be highlighted. Continued browsing after the new version takes effect constitutes agreement with the revised text."
+  },
+  "termos.s3_h2": {
+    "pt": "Conteúdo do Site e seu valor jurídico",
+    "es": "Contenido del Sitio y su valor jurídico",
+    "en": "Site content and its legal value"
+  },
+  "termos.s3_p1": {
+    "pt": "O conteúdo do Site (textos, páginas de produto, materiais, blog, FAQs, comparativos e simulações) tem caráter exclusivamente informativo e publicitário. Ele não integra os instrumentos contratuais da FXO, não constitui oferta vinculante, garantia, promessa de funcionalidade, de resultado ou de conformidade regulatória, nem assessoria jurídica, de segurança ou de privacidade.",
+    "es": "El contenido del Sitio (textos, páginas de producto, materiales, blog, FAQs, comparativos y simulaciones) tiene carácter exclusivamente informativo y publicitario. No integra los instrumentos contractuales de FXO, no constituye oferta vinculante, garantía, promesa de funcionalidad, resultado o conformidad regulatoria, ni asesoría jurídica, de seguridad o de privacidad.",
+    "en": "The Site content (texts, product pages, materials, blog, FAQs, comparisons, and simulations) is exclusively informational and promotional in nature. It does not form part of FXO's contractual instruments, does not constitute a binding offer, warranty, promise of functionality, result, or regulatory compliance, nor legal, security, or privacy advice."
+  },
+  "termos.s3_p2": {
+    "pt": "O escopo, as funcionalidades e as responsabilidades relativas à plataforma Wi-Fi.now são exclusivamente os descritos nos Termos de Uso da Plataforma, no contrato aplicável e em seus anexos, incluindo o documento técnico que descreve o funcionamento da solução. Em caso de divergência entre o conteúdo do Site e tais instrumentos, prevalecem sempre os instrumentos contratuais.",
+    "es": "El alcance, las funcionalidades y las responsabilidades relativas a la plataforma Wi-Fi.now son exclusivamente las descritas en los Términos de Uso de la Plataforma, en el contrato aplicable y sus anexos, incluido el documento técnico que describe el funcionamiento de la solución. En caso de divergencia entre el contenido del Sitio y dichos instrumentos, siempre prevalecen los instrumentos contractuales.",
+    "en": "The scope, features, and responsibilities relating to the Wi-Fi.now platform are exclusively those described in the Platform Terms of Use, the applicable contract, and its annexes, including the technical document describing the solution's operation. In case of discrepancy between the Site content and such instruments, the contractual instruments always prevail."
+  },
+  "termos.s3_p3": {
+    "pt": "As informações sobre legislação, incluindo a Lei nº 13.709/2018 (LGPD) e a Lei nº 12.965/2014 (Marco Civil da Internet), publicadas no Site são genéricas e educativas. A adequação jurídica de cada cliente depende de avaliação própria, cabendo-lhe buscar assessoria especializada.",
+    "es": "La información sobre legislación, incluida la Ley n.º 13.709/2018 (LGPD) y la Ley n.º 12.965/2014 (Marco Civil de Internet), publicada en el Sitio es genérica y educativa. La adecuación jurídica de cada cliente depende de su propia evaluación, siendo su responsabilidad buscar asesoría especializada.",
+    "en": "Information about legislation, including Law No. 13,709/2018 (LGPD) and Law No. 12,965/2014 (Internet Civil Framework), published on the Site is generic and educational. Each client's legal compliance depends on their own assessment, and they are responsible for seeking specialized advice."
+  },
+  "termos.s4_h2": {
+    "pt": "Cadastro e área logada",
+    "es": "Registro y área de acceso",
+    "en": "Registration and logged area"
+  },
+  "termos.s4_p1": {
+    "pt": "Algumas áreas do Site permitem criar conta, iniciar período de avaliação ou acessar o painel administrativo. A partir do cadastro, aplicam-se os Termos de Uso da Plataforma e a Política de Privacidade, apresentados e aceitos naquele ato, com registro da versão aceita.",
+    "es": "Algunas áreas del Sitio permiten crear una cuenta, iniciar un período de evaluación o acceder al panel administrativo. A partir del registro, se aplican los Términos de Uso de la Plataforma y la Política de Privacidad, presentados y aceptados en ese momento, con registro de la versión aceptada.",
+    "en": "Some areas of the Site allow you to create an account, start a trial period, or access the administrative dashboard. From registration onward, the Platform Terms of Use and Privacy Policy apply, presented and accepted at that time, with the accepted version recorded."
+  },
+  "termos.s4_p2": {
+    "pt": "Você é responsável pela veracidade e atualidade dos dados informados e pela guarda e confidencialidade de suas credenciais, respondendo pelas atividades realizadas sob sua conta.",
+    "es": "Usted es responsable de la veracidad y actualidad de los datos proporcionados y de la custodia y confidencialidad de sus credenciales, siendo responsable de las actividades realizadas bajo su cuenta.",
+    "en": "You are responsible for the accuracy and currency of the information provided and for safeguarding and keeping confidential your credentials, and are liable for activities carried out under your account."
+  },
+  "termos.s5_h2": {
+    "pt": "Propriedade intelectual",
+    "es": "Propiedad intelectual",
+    "en": "Intellectual property"
+  },
+  "termos.s5_p1": {
+    "pt": "O Site e todo o seu conteúdo (marcas, incluindo \"Wi-Fi.now\" e \"FXO\", logotipos, layout, design, textos, imagens, vídeos, código-fonte, bases de dados e materiais) pertencem à FXO ou a seus licenciantes e são protegidos pela legislação de propriedade intelectual, incluindo a Lei nº 9.610/1998 e a Lei nº 9.279/1996.",
+    "es": "El Sitio y todo su contenido (marcas, incluidas \"Wi-Fi.now\" y \"FXO\", logotipos, diseño, textos, imágenes, vídeos, código fuente, bases de datos y materiales) pertenecen a FXO o a sus licenciantes y están protegidos por la legislación de propiedad intelectual, incluida la Ley n.º 9.610/1998 y la Ley n.º 9.279/1996.",
+    "en": "The Site and all its content (trademarks including \"Wi-Fi.now\" and \"FXO\", logos, layout, design, texts, images, videos, source code, databases, and materials) belong to FXO or its licensors and are protected by intellectual property legislation, including Law No. 9,610/1998 and Law No. 9,279/1996."
+  },
+  "termos.s5_p2": {
+    "pt": "É permitido visualizar, baixar e imprimir conteúdo do Site exclusivamente para uso próprio e interno, mantidos intactos os avisos de titularidade. Qualquer outro uso depende de autorização prévia e escrita da FXO.",
+    "es": "Se permite visualizar, descargar e imprimir contenido del Sitio exclusivamente para uso personal e interno, manteniendo intactos los avisos de titularidad. Cualquier otro uso requiere autorización previa y por escrito de FXO.",
+    "en": "You may view, download, and print Site content solely for personal and internal use, keeping ownership notices intact. Any other use requires FXO's prior written authorization."
+  },
+  "termos.s5_p3": {
+    "pt": "É expressamente vedado, sem autorização escrita da FXO: reproduzir, distribuir ou explorar comercialmente o conteúdo do Site; utilizar as marcas, logotipos ou sinais distintivos da FXO; empregar engenharia reversa, mineração ou coleta automatizada massiva (scraping) do Site, inclusive para fins concorrenciais, treinamento de modelos computacionais ou revenda de dados; ressalvadas a indexação ordinária por mecanismos de busca e a leitura automatizada em volume compatível com a navegação normal.",
+    "es": "Sin autorización escrita de FXO, está expresamente prohibido: reproducir, distribuir o explotar comercialmente el contenido del Sitio; utilizar las marcas, logotipos o signos distintivos de FXO; emplear ingeniería inversa, minería o recopilación automatizada masiva (scraping) del Sitio, incluso para fines competitivos, entrenamiento de modelos computacionales o reventa de datos; salvo la indexación ordinaria por motores de búsqueda y la lectura automatizada en volumen compatible con la navegación normal.",
+    "en": "Without FXO's written authorization, the following are expressly prohibited: reproducing, distributing, or commercially exploiting Site content; using FXO's trademarks, logos, or distinctive signs; employing reverse engineering, data mining, or mass automated collection (scraping) of the Site, including for competitive purposes, training computational models, or data resale; except for ordinary search engine indexing and automated reading at volumes consistent with normal browsing."
+  },
+  "termos.s6_h2": {
+    "pt": "Uso aceitável do Site",
+    "es": "Uso aceptable del Sitio",
+    "en": "Acceptable use of the Site"
+  },
+  "termos.s6_p1": {
+    "pt": "Ao usar o Site, você se compromete a não: (i) tentar obter acesso não autorizado a sistemas, contas, redes ou dados; (ii) introduzir código malicioso, realizar ataques de negação de serviço ou sobrecarregar deliberadamente a infraestrutura; (iii) burlar, remover ou contornar mecanismos de segurança ou de controle de acesso; (iv) utilizar o Site para finalidade ilícita, fraudulenta ou que viole direitos de terceiros; ou (v) reproduzir o Site, no todo ou em parte, em outro ambiente (framing, espelhamento) sem autorização.",
+    "es": "Al usar el Sitio, se compromete a no: (i) intentar obtener acceso no autorizado a sistemas, cuentas, redes o datos; (ii) introducir código malicioso, realizar ataques de denegación de servicio o sobrecargar deliberadamente la infraestructura; (iii) eludir, eliminar o sortear mecanismos de seguridad o de control de acceso; (iv) utilizar el Sitio para fines ilícitos, fraudulentos o que violen derechos de terceros; o (v) reproducir el Sitio, total o parcialmente, en otro entorno (framing, espejado) sin autorización.",
+    "en": "By using the Site, you agree not to: (i) attempt to gain unauthorized access to systems, accounts, networks, or data; (ii) introduce malicious code, conduct denial-of-service attacks, or deliberately overload the infrastructure; (iii) circumvent, remove, or bypass security or access control mechanisms; (iv) use the Site for unlawful, fraudulent purposes or in violation of third-party rights; or (v) reproduce the Site, in whole or in part, in another environment (framing, mirroring) without authorization."
+  },
+  "termos.s6_p2": {
+    "pt": "Você responde integralmente pelos danos que causar à FXO ou a terceiros em razão de violação destes Termos do Site ou da lei, obrigando-se a ressarcir a FXO dos custos, despesas e condenações daí decorrentes, devidamente comprovados, incluindo honorários advocatícios razoáveis fixados ou homologados em decisão judicial ou arbitral.",
+    "es": "Usted responde íntegramente por los daños que cause a FXO o a terceros por violación de estos Términos del Sitio o de la ley, comprometiéndose a reembolsar a FXO los costes, gastos y condenas resultantes, debidamente comprobados, incluidos los honorarios de abogados razonables fijados u homologados en decisión judicial o arbitral.",
+    "en": "You are fully liable for any damages caused to FXO or third parties arising from violation of these Site Terms or applicable law, and agree to reimburse FXO for the duly evidenced costs, expenses, and judgments resulting therefrom, including reasonable attorney's fees awarded or confirmed in a judicial or arbitral decision."
+  },
+  "termos.s7_h2": {
+    "pt": "Links e conteúdo de terceiros",
+    "es": "Enlaces y contenido de terceros",
+    "en": "Links and third-party content"
+  },
+  "termos.s7_p1": {
+    "pt": "O Site pode conter links para sites e serviços de terceiros, fornecidos por conveniência. A FXO não controla e não responde, direta ou indiretamente, pelo conteúdo, práticas, políticas ou produtos desses destinos, nem por danos decorrentes do seu uso. O acesso é por sua conta e risco, recomendando-se a leitura dos termos e políticas de cada destino.",
+    "es": "El Sitio puede contener enlaces a sitios y servicios de terceros, proporcionados por conveniencia. FXO no controla ni responde, directa o indirectamente, por el contenido, prácticas, políticas o productos de esos destinos, ni por los daños derivados de su uso. El acceso es bajo su propio riesgo, y se recomienda leer los términos y políticas de cada destino.",
+    "en": "The Site may contain links to third-party websites and services provided for convenience. FXO does not control and is not responsible, directly or indirectly, for the content, practices, policies, or products of those destinations, nor for any damages arising from their use. Access is at your own risk, and you are advised to read the terms and policies of each destination."
+  },
+  "termos.s8_h2": {
+    "pt": "Disponibilidade do Site e isenções",
+    "es": "Disponibilidad del Sitio y exenciones",
+    "en": "Site availability and disclaimers"
+  },
+  "termos.s8_p1": {
+    "pt": "O Site é fornecido \"no estado em que se encontra\" e \"conforme a disponibilidade\". A FXO não garante que o Site estará disponível de forma ininterrupta, segura ou livre de erros, podendo suspendê-lo, alterá-lo ou descontinuá-lo, no todo ou em parte, a qualquer tempo, independentemente de aviso.",
+    "es": "El Sitio se proporciona \"tal como está\" y \"según disponibilidad\". FXO no garantiza que el Sitio estará disponible de forma ininterrumpida, segura o libre de errores, pudiendo suspenderlo, modificarlo o descontinuarlo, total o parcialmente, en cualquier momento, sin previo aviso.",
+    "en": "The Site is provided \"as is\" and \"as available\". FXO does not warrant that the Site will be available uninterruptedly, securely, or free from errors, and may suspend, modify, or discontinue it, in whole or in part, at any time without notice."
+  },
+  "termos.s8_p2": {
+    "pt": "Na máxima extensão permitida pela legislação aplicável, a FXO não responde por danos decorrentes do uso ou da impossibilidade de uso do Site ou de seu conteúdo informativo, incluindo danos indiretos, lucros cessantes, perda de dados ou de oportunidade.",
+    "es": "En la máxima extensión permitida por la legislación aplicable, FXO no responde por los daños derivados del uso o de la imposibilidad de uso del Sitio o de su contenido informativo, incluidos los daños indirectos, lucro cesante, pérdida de datos o de oportunidad.",
+    "en": "To the maximum extent permitted by applicable law, FXO is not liable for damages arising from the use or inability to use the Site or its informational content, including indirect damages, lost profits, data loss, or loss of opportunity."
+  },
+  "termos.s8_p3": {
+    "pt": "Nada nestes Termos do Site exclui ou limita responsabilidades que a legislação aplicável não permita excluir ou limitar, incluindo, quando incidentes, as decorrentes da legislação de proteção do consumidor e de proteção de dados pessoais. As isenções desta cláusula aplicam-se na máxima extensão legalmente admissível, e a eventual redução judicial de seu alcance não prejudica sua validade remanescente.",
+    "es": "Nada en estos Términos del Sitio excluye o limita responsabilidades que la legislación aplicable no permita excluir o limitar, incluidas, cuando corresponda, las derivadas de la legislación de protección al consumidor y de protección de datos personales. Las exenciones de esta cláusula se aplican en la máxima extensión legalmente admisible, y una eventual reducción judicial de su alcance no perjudica su validez restante.",
+    "en": "Nothing in these Site Terms excludes or limits liabilities that applicable law does not permit to be excluded or limited, including, where applicable, those arising from consumer protection and personal data protection legislation. The disclaimers in this clause apply to the maximum legally admissible extent, and any judicial reduction of their scope does not affect their remaining validity."
+  },
+  "termos.s9_h2": {
+    "pt": "Privacidade e cookies",
+    "es": "Privacidad y cookies",
+    "en": "Privacy and cookies"
+  },
+  "termos.s9_p1": {
+    "pt": "O tratamento de dados pessoais de visitantes do Site, incluindo dados de navegação e cookies, é regido pela Política de Privacidade, que integra estes Termos do Site por referência. Em caso de divergência sobre matéria de dados pessoais, prevalece a Política de Privacidade.",
+    "es": "El tratamiento de datos personales de los visitantes del Sitio, incluidos los datos de navegación y cookies, se rige por la Política de Privacidad, que se integra a estos Términos del Sitio por referencia. En caso de divergencia sobre materia de datos personales, prevalece la Política de Privacidad.",
+    "en": "The processing of personal data of Site visitors, including browsing data and cookies, is governed by the Privacy Policy, which is incorporated into these Site Terms by reference. In case of discrepancy regarding personal data matters, the Privacy Policy prevails."
+  },
+  "termos.s10_h2": {
+    "pt": "Disposições gerais, lei e foro",
+    "es": "Disposiciones generales, ley y fuero",
+    "en": "General provisions, governing law and jurisdiction"
+  },
+  "termos.s10_p1": {
+    "pt": "A eventual tolerância da FXO quanto a descumprimentos não constitui novação nem renúncia de direitos. Se alguma disposição destes Termos do Site for considerada inválida ou ineficaz, as demais permanecem em pleno vigor, devendo a disposição atingida ser interpretada ou substituída de modo a preservar, tanto quanto possível, sua finalidade original.",
+    "es": "La eventual tolerancia de FXO ante incumplimientos no constituye novación ni renuncia de derechos. Si alguna disposición de estos Términos del Sitio se considera inválida o ineficaz, las demás permanecen en plena vigencia, debiendo la disposición afectada ser interpretada o sustituida de modo que preserve, en la medida de lo posible, su finalidad original.",
+    "en": "Any tolerance by FXO of non-compliance does not constitute novation or waiver of rights. If any provision of these Site Terms is held invalid or unenforceable, the remaining provisions remain in full force, and the affected provision shall be interpreted or replaced so as to preserve, to the extent possible, its original purpose."
+  },
+  "termos.s10_p2": {
+    "pt": "Estes Termos do Site são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da Comarca de São Paulo, Estado de São Paulo, para dirimir as controvérsias decorrentes da navegação no Site, ressalvado o foro do domicílio do usuário nas hipóteses em que a legislação de proteção do consumidor o assegurar.",
+    "es": "Estos Términos del Sitio se rigen por las leyes de la República Federativa de Brasil. Se elige el fuero de la Comarca de São Paulo, Estado de São Paulo, para resolver las controversias derivadas de la navegación en el Sitio, salvo el fuero del domicilio del usuario en los casos en que la legislación de protección al consumidor lo garantice.",
+    "en": "These Site Terms are governed by the laws of the Federative Republic of Brazil. The courts of the Judicial District of São Paulo, State of São Paulo, are elected to resolve disputes arising from browsing the Site, except for the user's domicile courts where consumer protection legislation so provides."
+  },
+  "termos.s10_p3": {
+    "pt": "Estes Termos do Site podem ser disponibilizados em outros idiomas, como cortesia. Em caso de divergência entre versões, prevalece, para todos os fins, a versão em língua portuguesa.",
+    "es": "Estos Términos del Sitio pueden estar disponibles en otros idiomas, como cortesía. En caso de divergencia entre versiones, prevalece, para todos los efectos, la versión en lengua portuguesa.",
+    "en": "These Site Terms may be made available in other languages as a courtesy. In case of discrepancy between versions, the Portuguese-language version prevails for all purposes."
+  },
+  "termos.s10_contact": {
+    "pt": "Dúvidas sobre estes Termos do Site podem ser encaminhadas para dpo@wi-fi.now",
+    "es": "Las dudas sobre estos Términos del Sitio pueden enviarse a dpo@wi-fi.now",
+    "en": "Questions about these Site Terms may be sent to dpo@wi-fi.now"
+  },
+  "privacidade.titulo": {
+    "pt": "Política de Privacidade",
+    "es": "Política de Privacidad",
+    "en": "Privacy Policy"
+  },
+  "privacidade.vigente_label": {
+    "pt": "Vigente a partir de:",
+    "es": "Vigente a partir de:",
+    "en": "Effective as of:"
+  },
+  "privacidade.versao_label": {
+    "pt": "Versão",
+    "es": "Versión",
+    "en": "Version"
+  },
+  "privacidade.consolidada_label": {
+    "pt": "(consolidada)",
+    "es": "(consolidada)",
+    "en": "(consolidated)"
+  },
+  "privacidade.toc_label": {
+    "pt": "Nesta página",
+    "es": "En esta página",
+    "en": "On this page"
+  },
+  "privacidade.toc_s1": {
+    "pt": "1. Dois papéis: dados que controlamos e dados que operamos",
+    "es": "1. Dos roles: datos que controlamos y datos que operamos",
+    "en": "1. Two roles: data we control and data we process"
+  },
+  "privacidade.toc_s2": {
+    "pt": "2. Quais informações coletamos",
+    "es": "2. Qué información recopilamos",
+    "en": "2. What information we collect"
+  },
+  "privacidade.toc_s3": {
+    "pt": "3. Como usamos as informações e com que bases legais",
+    "es": "3. Cómo usamos la información y con qué bases legales",
+    "en": "3. How we use information and under what legal bases"
+  },
+  "privacidade.toc_s4": {
+    "pt": "4. Cookies e tecnologias de rastreamento",
+    "es": "4. Cookies y tecnologías de rastreo",
+    "en": "4. Cookies and tracking technologies"
+  },
+  "privacidade.toc_s5": {
+    "pt": "5. Com quem compartilhamos",
+    "es": "5. Con quién compartimos",
+    "en": "5. Who we share with"
+  },
+  "privacidade.toc_s6": {
+    "pt": "6. Transferências internacionais e residência dos dados",
+    "es": "6. Transferencias internacionales y residencia de los datos",
+    "en": "6. International transfers and data residency"
+  },
+  "privacidade.toc_s7": {
+    "pt": "7. Retenção",
+    "es": "7. Retención",
+    "en": "7. Retention"
+  },
+  "privacidade.toc_s8": {
+    "pt": "8. Segurança",
+    "es": "8. Seguridad",
+    "en": "8. Security"
+  },
+  "privacidade.toc_s9": {
+    "pt": "9. Seus direitos e como exercê-los",
+    "es": "9. Sus derechos y cómo ejercerlos",
+    "en": "9. Your rights and how to exercise them"
+  },
+  "privacidade.toc_s10": {
+    "pt": "10. Comunicações de marketing",
+    "es": "10. Comunicaciones de marketing",
+    "en": "10. Marketing communications"
+  },
+  "privacidade.toc_s11": {
+    "pt": "11. Crianças e adolescentes",
+    "es": "11. Niños, niñas y adolescentes",
+    "en": "11. Children and adolescents"
+  },
+  "privacidade.toc_s12": {
+    "pt": "12. Encarregado e contato",
+    "es": "12. Encargado y contacto",
+    "en": "12. Data Protection Officer and contact"
+  },
+  "privacidade.toc_s13": {
+    "pt": "13. Alterações desta Política",
+    "es": "13. Cambios a esta Política",
+    "en": "13. Changes to this Policy"
+  },
+  "privacidade.intro_p1": {
+    "pt": "Esta Política de Privacidade explica como a FXO Serviços em Informática Ltda. (\"FXO\", \"nós\") coleta, usa, compartilha e protege dados pessoais no contexto da plataforma Wi-Fi.now e dos nossos sites (em conjunto, o \"Serviço\"). Ela integra, por referência, os <a href=\"termos.html\">Termos de Uso do Site</a>, os Termos de Uso da Plataforma e, quanto aos dados operados em nome de clientes, o <a href=\"dpa.html\">Acordo de Tratamento de Dados (DPA)</a>. Em caso de divergência sobre matéria de dados pessoais, prevalece esta Política e, na relação Controlador-Operadora, o DPA.",
+    "es": "Esta Política de Privacidad explica cómo FXO Serviços em Informática Ltda. (\"FXO\", \"nosotros\") recopila, usa, comparte y protege datos personales en el contexto de la plataforma Wi-Fi.now y de nuestros sitios (en conjunto, el \"Servicio\"). Incorpora, por referencia, los <a href=\"termos.html\">Términos de Uso del Sitio</a>, los Términos de Uso de la Plataforma y, en cuanto a los datos operados en nombre de clientes, el <a href=\"dpa.html\">Acuerdo de Tratamiento de Datos (DPA)</a>. En caso de divergencia sobre materia de datos personales, prevalece esta Política y, en la relación Controlador-Operadora, el DPA.",
+    "en": "This Privacy Policy explains how FXO Serviços em Informática Ltda. (\"FXO\", \"we\") collects, uses, shares and protects personal data in connection with the Wi-Fi.now platform and our websites (together, the \"Service\"). It incorporates by reference the <a href=\"termos.html\">Website Terms of Use</a>, the Platform Terms of Use and, with respect to data processed on behalf of customers, the <a href=\"dpa.html\">Data Processing Agreement (DPA)</a>. In case of divergence on personal data matters, this Policy prevails, and in the Controller-Processor relationship, the DPA prevails."
+  },
+  "privacidade.s1_h2": {
+    "pt": "Dois papéis: dados que controlamos e dados que operamos",
+    "es": "Dos roles: datos que controlamos y datos que operamos",
+    "en": "Two roles: data we control and data we process"
+  },
+  "privacidade.s1_p1": {
+    "pt": "Tratamos dados pessoais em duas qualidades distintas, e essa diferença define quem responde pelo quê:",
+    "es": "Tratamos datos personales en dos calidades distintas, y esa diferencia define quién responde por qué:",
+    "en": "We process personal data in two distinct capacities, and this difference defines who is responsible for what:"
+  },
+  "privacidade.s1_p2": {
+    "pt": "<strong>Dados que controlamos.</strong> As informações de Administradores (clientes que operam a plataforma) e de visitantes dos nossos sites são tratadas pela FXO na qualidade de Controladora (art. 5º, VI, da LGPD), para finalidades próprias: prestar o Serviço, faturar, dar suporte, garantir segurança e nos comunicarmos com você. Esta Política rege esse tratamento.",
+    "es": "<strong>Datos que controlamos.</strong> La información de los Administradores (clientes que operan la plataforma) y de los visitantes de nuestros sitios es tratada por FXO en calidad de Controladora (art. 5º, VI, de la LGPD), para fines propios: prestar el Servicio, facturar, brindar soporte, garantizar la seguridad y comunicarnos con usted. Esta Política rige ese tratamiento.",
+    "en": "<strong>Data we control.</strong> Information about Administrators (customers who operate the platform) and visitors to our websites is processed by FXO as Controller (art. 5, VI, of the LGPD), for our own purposes: providing the Service, billing, support, ensuring security and communicating with you. This Policy governs that processing."
+  },
+  "privacidade.s1_p3": {
+    "pt": "<strong>Dados que operamos para nossos clientes.</strong> Quando um Administrador usa o Serviço para oferecer Wi-Fi a seus Visitantes, o Administrador é o Controlador dos dados pessoais dos Visitantes, por decidir as finalidades e os meios do tratamento, e a FXO atua exclusivamente como Operadora (art. 5º, VII, da LGPD), tratando esses dados em nome do Administrador, conforme suas instruções e o DPA. Se você é Visitante de uma rede Wi-Fi, o Controlador dos seus dados é o estabelecimento que opera a rede; dirija a ele os seus pedidos. Prestaremos ao estabelecimento o apoio necessário, na qualidade de Operadora, sem prejuízo das responsabilidades que a lei atribui diretamente à FXO nessa qualidade.",
+    "es": "<strong>Datos que operamos para nuestros clientes.</strong> Cuando un Administrador usa el Servicio para ofrecer Wi-Fi a sus Visitantes, el Administrador es el Controlador de los datos personales de los Visitantes, por decidir las finalidades y los medios del tratamiento, y FXO actúa exclusivamente como Operadora (art. 5º, VII, de la LGPD), tratando esos datos en nombre del Administrador, conforme a sus instrucciones y al DPA. Si usted es Visitante de una red Wi-Fi, el Controlador de sus datos es el establecimiento que opera la red; dirija a él sus solicitudes. Prestaremos al establecimiento el apoyo necesario, en calidad de Operadora, sin perjuicio de las responsabilidades que la ley atribuye directamente a FXO en esa calidad.",
+    "en": "<strong>Data we process for our customers.</strong> When an Administrator uses the Service to offer Wi-Fi to its Visitors, the Administrator is the Controller of the Visitors' personal data, as it decides the purposes and means of processing, and FXO acts exclusively as Processor (art. 5, VII, of the LGPD), processing that data on the Administrator's behalf, in accordance with its instructions and the DPA. If you are a Visitor of a Wi-Fi network, the Controller of your data is the establishment operating the network; direct your requests to it. We will provide the establishment with the necessary support, as Processor, without prejudice to the responsibilities that the law directly attributes to FXO in that capacity."
+  },
+  "privacidade.s2_h2": {
+    "pt": "Quais informações coletamos",
+    "es": "Qué información recopilamos",
+    "en": "What information we collect"
+  },
+  "privacidade.s2_p1": {
+    "pt": "<strong>Informações que você fornece.</strong> Ao se cadastrar, contratar ou falar conosco: nome, e-mail, senha, nome do estabelecimento, modelo do equipamento de rede, dados de cobrança e contato, e o conteúdo das suas comunicações conosco.",
+    "es": "<strong>Información que usted proporciona.</strong> Al registrarse, contratar o hablar con nosotros: nombre, correo electrónico, contraseña, nombre del establecimiento, modelo del equipo de red, datos de facturación y contacto, y el contenido de sus comunicaciones con nosotros.",
+    "en": "<strong>Information you provide.</strong> When you sign up, contract our services, or contact us: name, email, password, establishment name, network equipment model, billing and contact details, and the content of your communications with us."
+  },
+  "privacidade.s2_p2": {
+    "pt": "<strong>Informações coletadas automaticamente.</strong> Ao acessar o Serviço ou nossos sites: endereço IP, informações de dispositivo e navegador, dados de conexão, data e hora de acesso, páginas visitadas e registros equivalentes, inclusive por cookies e tecnologias similares (Seção 4).",
+    "es": "<strong>Información recopilada automáticamente.</strong> Al acceder al Servicio o a nuestros sitios: dirección IP, información del dispositivo y del navegador, datos de conexión, fecha y hora de acceso, páginas visitadas y registros equivalentes, incluso mediante cookies y tecnologías similares (Sección 4).",
+    "en": "<strong>Information collected automatically.</strong> When you access the Service or our websites: IP address, device and browser information, connection data, date and time of access, pages visited and equivalent logs, including through cookies and similar technologies (Section 4)."
+  },
+  "privacidade.s2_p3": {
+    "pt": "<strong>Informações de terceiros.</strong> Podemos receber informações de prestadores de serviço, parceiros e fontes públicas, combinando-as com as que já temos, para operar e melhorar o Serviço e nossas comunicações.",
+    "es": "<strong>Información de terceros.</strong> Podemos recibir información de proveedores de servicios, socios y fuentes públicas, combinándola con la que ya tenemos, para operar y mejorar el Servicio y nuestras comunicaciones.",
+    "en": "<strong>Information from third parties.</strong> We may receive information from service providers, partners and public sources, combining it with information we already have, to operate and improve the Service and our communications."
+  },
+  "privacidade.s2_p4": {
+    "pt": "<strong>Dados de Visitantes operados para Administradores.</strong> Por meio do portal cativo, e em nome do Administrador, o Serviço trata o mínimo necessário para autenticar Visitantes e cumprir obrigações legais: identificadores de autenticação (telefone, ou dados básicos do perfil OAuth: identificador da conta, nome e e-mail), registros de consentimento e registros de sessão (accounting: IP atribuído, MAC, início e fim, tempo de permanência). A coleta é mínima por desenho.",
+    "es": "<strong>Datos de Visitantes operados para Administradores.</strong> A través del portal cautivo, y en nombre del Administrador, el Servicio trata lo mínimo necesario para autenticar a los Visitantes y cumplir obligaciones legales: identificadores de autenticación (teléfono, o datos básicos del perfil OAuth: identificador de la cuenta, nombre y correo electrónico), registros de consentimiento y registros de sesión (accounting: IP asignada, MAC, inicio y fin, tiempo de permanencia). La recopilación es mínima por diseño.",
+    "en": "<strong>Visitor data processed for Administrators.</strong> Through the captive portal, and on the Administrator's behalf, the Service processes the minimum necessary to authenticate Visitors and comply with legal obligations: authentication identifiers (phone number, or basic OAuth profile data: account identifier, name and email), consent records and session records (accounting: assigned IP, MAC address, start and end, duration). Collection is minimal by design."
+  },
+  "privacidade.s2_p5": {
+    "pt": "<strong>O que não fazemos, em nenhuma hipótese:</strong> não exigimos nem armazenamos senhas de Visitantes; não registramos histórico de navegação, sites acessados, URLs ou conteúdo consumido; não usamos dados de Visitantes para marketing comportamental, criação de perfis ou personas; e não vendemos dados pessoais.",
+    "es": "<strong>Lo que no hacemos, bajo ninguna circunstancia:</strong> no exigimos ni almacenamos contraseñas de Visitantes; no registramos historial de navegación, sitios visitados, URLs o contenido consumido; no usamos datos de Visitantes para marketing conductual, creación de perfiles o personas; y no vendemos datos personales.",
+    "en": "<strong>What we never do:</strong> we do not require or store Visitor passwords; we do not log browsing history, visited websites, URLs or consumed content; we do not use Visitor data for behavioral marketing, profiling or personas; and we do not sell personal data."
+  },
+  "privacidade.s3_h2": {
+    "pt": "Como usamos as informações e com que bases legais",
+    "es": "Cómo usamos la información y con qué bases legales",
+    "en": "How we use information and under what legal bases"
+  },
+  "privacidade.s3_p1": {
+    "pt": "Usamos os dados que controlamos para as finalidades abaixo, cada uma amparada em base legal do art. 7º da LGPD:",
+    "es": "Usamos los datos que controlamos para las finalidades siguientes, cada una amparada en una base legal del art. 7º de la LGPD:",
+    "en": "We use the data we control for the purposes below, each supported by a legal basis under art. 7 of the LGPD:"
+  },
+  "privacidade.s3_p2": {
+    "pt": "Os dados de Visitantes são tratados exclusivamente para prestar o Serviço ao Administrador e cumprir obrigações legais, sob a base legal adotada pelo Administrador na qualidade de Controlador, conforme o DPA. Não realizamos decisões unicamente automatizadas que produzam efeitos jurídicos sobre os titulares.",
+    "es": "Los datos de los Visitantes son tratados exclusivamente para prestar el Servicio al Administrador y cumplir obligaciones legales, bajo la base legal adoptada por el Administrador en calidad de Controlador, conforme al DPA. No realizamos decisiones únicamente automatizadas que produzcan efectos jurídicos sobre los titulares.",
+    "en": "Visitor data is processed exclusively to provide the Service to the Administrator and to comply with legal obligations, under the legal basis adopted by the Administrator as Controller, in accordance with the DPA. We do not make solely automated decisions that produce legal effects on data subjects."
+  },
+  "privacidade.s3_th1": {
+    "pt": "Finalidade",
+    "es": "Finalidad",
+    "en": "Purpose"
+  },
+  "privacidade.s3_th2": {
+    "pt": "Base legal (LGPD, art. 7º)",
+    "es": "Base legal (LGPD, art. 7º)",
+    "en": "Legal basis (LGPD, art. 7)"
+  },
+  "privacidade.s3_row1_col1": {
+    "pt": "Criar e administrar contas; prestar, operar e melhorar o Serviço; suporte",
+    "es": "Crear y administrar cuentas; prestar, operar y mejorar el Servicio; soporte",
+    "en": "Creating and managing accounts; providing, operating and improving the Service; support"
+  },
+  "privacidade.s3_row1_col2": {
+    "pt": "Execução de contrato ou de procedimentos preliminares (inciso V)",
+    "es": "Ejecución de contrato o de procedimientos preliminares (inciso V)",
+    "en": "Performance of a contract or preliminary procedures (item V)"
+  },
+  "privacidade.s3_row2_col1": {
+    "pt": "Cobrança, contabilidade, auditoria",
+    "es": "Facturación, contabilidad, auditoría",
+    "en": "Billing, accounting, auditing"
+  },
+  "privacidade.s3_row2_col2": {
+    "pt": "Execução de contrato (V) e cumprimento de obrigação legal (II)",
+    "es": "Ejecución de contrato (V) y cumplimiento de obligación legal (II)",
+    "en": "Performance of a contract (V) and compliance with a legal obligation (II)"
+  },
+  "privacidade.s3_row3_col1": {
+    "pt": "Segurança do Serviço, prevenção a fraudes e a incidentes",
+    "es": "Seguridad del Servicio, prevención de fraudes e incidentes",
+    "en": "Service security, fraud and incident prevention"
+  },
+  "privacidade.s3_row3_col2": {
+    "pt": "Legítimo interesse (IX), ponderado com seus direitos, e cumprimento de obrigação legal (II)",
+    "es": "Interés legítimo (IX), ponderado con sus derechos, y cumplimiento de obligación legal (II)",
+    "en": "Legitimate interest (IX), balanced against your rights, and compliance with a legal obligation (II)"
+  },
+  "privacidade.s3_row4_col1": {
+    "pt": "Mensagens operacionais e transacionais (cadastro, segurança, cobrança)",
+    "es": "Mensajes operativos y transaccionales (registro, seguridad, facturación)",
+    "en": "Operational and transactional messages (registration, security, billing)"
+  },
+  "privacidade.s3_row4_col2": {
+    "pt": "Execução de contrato (V)",
+    "es": "Ejecución de contrato (V)",
+    "en": "Performance of a contract (V)"
+  },
+  "privacidade.s3_row5_col1": {
+    "pt": "Comunicações de marketing a Administradores",
+    "es": "Comunicaciones de marketing a Administradores",
+    "en": "Marketing communications to Administrators"
+  },
+  "privacidade.s3_row5_col2": {
+    "pt": "Legítimo interesse (IX), com descadastramento garantido (Seção 10), ou consentimento (I), conforme o caso",
+    "es": "Interés legítimo (IX), con baja garantizada (Sección 10), o consentimiento (I), según el caso",
+    "en": "Legitimate interest (IX), with guaranteed opt-out (Section 10), or consent (I), as applicable"
+  },
+  "privacidade.s3_row6_col1": {
+    "pt": "Produção de dados agregados e anonimizados",
+    "es": "Producción de datos agregados y anonimizados",
+    "en": "Production of aggregated and anonymized data"
+  },
+  "privacidade.s3_row6_col2": {
+    "pt": "Legítimo interesse (IX); dados anonimizados de forma irreversível deixam de ser dados pessoais",
+    "es": "Interés legítimo (IX); los datos anonimizados de forma irreversible dejan de ser datos personales",
+    "en": "Legitimate interest (IX); irreversibly anonymized data ceases to be personal data"
+  },
+  "privacidade.s3_row7_col1": {
+    "pt": "Cumprimento de obrigações legais e exercício de direitos em processos",
+    "es": "Cumplimiento de obligaciones legales y ejercicio de derechos en procesos",
+    "en": "Compliance with legal obligations and exercise of rights in proceedings"
+  },
+  "privacidade.s3_row7_col2": {
+    "pt": "Cumprimento de obrigação legal (II) e exercício regular de direitos (VI)",
+    "es": "Cumplimiento de obligación legal (II) y ejercicio regular de derechos (VI)",
+    "en": "Compliance with a legal obligation (II) and regular exercise of rights (VI)"
+  },
+  "privacidade.s4_h2": {
+    "pt": "Cookies e tecnologias de rastreamento",
+    "es": "Cookies y tecnologías de rastreo",
+    "en": "Cookies and tracking technologies"
+  },
+  "privacidade.s4_p1": {
+    "pt": "Usamos cookies e tecnologias similares para operar nossos sites, lembrar preferências, medir uso e melhorar desempenho. Cookies não essenciais são utilizados apenas com o seu consentimento, quando exigido, gerenciável pelo banner do site e pelas configurações do seu navegador, inclusive para recusá-los ou apagá-los. O bloqueio de certos cookies pode afetar funcionalidades. O portal cativo exibido aos Visitantes não utiliza cookies de publicidade.",
+    "es": "Usamos cookies y tecnologías similares para operar nuestros sitios, recordar preferencias, medir el uso y mejorar el rendimiento. Las cookies no esenciales se utilizan solo con su consentimiento, cuando sea exigido, gestionable a través del banner del sitio y de la configuración de su navegador, incluso para rechazarlas o eliminarlas. El bloqueo de ciertas cookies puede afectar funcionalidades. El portal cautivo exhibido a los Visitantes no utiliza cookies de publicidad.",
+    "en": "We use cookies and similar technologies to operate our websites, remember preferences, measure usage and improve performance. Non-essential cookies are used only with your consent, when required, manageable through the site's banner and your browser settings, including to refuse or delete them. Blocking certain cookies may affect functionality. The captive portal shown to Visitors does not use advertising cookies."
+  },
+  "privacidade.s5_h2": {
+    "pt": "Com quem compartilhamos",
+    "es": "Con quién compartimos",
+    "en": "Who we share with"
+  },
+  "privacidade.s5_p1": {
+    "pt": "<strong>Não vendemos dados pessoais.</strong> Podemos compartilhar dados pessoais com: (i) prestadores de serviço (hospedagem, processamento de pagamentos, envio de mensagens, incluindo gateways de SMS e WhatsApp); (ii) empresas do nosso grupo, para as finalidades desta Política; (iii) autoridades e terceiros, quando a divulgação for exigida por lei, ordem judicial ou requisição de autoridade competente, na estrita medida da ordem recebida, ou quando necessária para apurar fraudes, proteger direitos e segurança ou executar nossos contratos; e (iv) outros destinatários, com a sua autorização.",
+    "es": "<strong>No vendemos datos personales.</strong> Podemos compartir datos personales con: (i) proveedores de servicios (alojamiento, procesamiento de pagos, envío de mensajes, incluyendo gateways de SMS y WhatsApp); (ii) empresas de nuestro grupo, para las finalidades de esta Política; (iii) autoridades y terceros, cuando la divulgación sea exigida por ley, orden judicial o requerimiento de autoridad competente, en la estricta medida de la orden recibida, o cuando sea necesaria para investigar fraudes, proteger derechos y seguridad o ejecutar nuestros contratos; y (iv) otros destinatarios, con su autorización.",
+    "en": "<strong>We do not sell personal data.</strong> We may share personal data with: (i) service providers (hosting, payment processing, message delivery, including SMS and WhatsApp gateways); (ii) companies within our corporate group, for the purposes of this Policy; (iii) authorities and third parties, when disclosure is required by law, court order or request from a competent authority, strictly to the extent of the order received, or when necessary to investigate fraud, protect rights and safety, or enforce our contracts; and (iv) other recipients, with your authorization."
+  },
+  "privacidade.s5_p2": {
+    "pt": "Os provedores de identidade OAuth (Google, LinkedIn, Microsoft) e as operadoras de telefonia atuam como agentes de tratamento autônomos na relação direta que mantêm com você, sob seus próprios termos e políticas.",
+    "es": "Los proveedores de identidad OAuth (Google, LinkedIn, Microsoft) y los operadores de telefonía actúan como agentes de tratamiento autónomos en la relación directa que mantienen con usted, bajo sus propios términos y políticas.",
+    "en": "OAuth identity providers (Google, LinkedIn, Microsoft) and telecom carriers act as independent data processing agents in the direct relationship they maintain with you, under their own terms and policies."
+  },
+  "privacidade.s6_h2": {
+    "pt": "Transferências internacionais e residência dos dados",
+    "es": "Transferencias internacionales y residencia de los datos",
+    "en": "International transfers and data residency"
+  },
+  "privacidade.s6_p1": {
+    "pt": "A residência padrão dos dados de Visitantes é o Brasil, e o Serviço pode ser configurado, nos planos que ofereçam esse recurso, para que os dados de Visitantes não deixem a região escolhida. Quando dados pessoais forem transferidos para outro país, por exemplo a um prestador de serviço, adotaremos salvaguardas compatíveis com o regime dos arts. 33 e seguintes da LGPD e com a regulamentação da ANPD vigente, incluindo, quando cabível, cláusulas contratuais padrão por ela reconhecidas.",
+    "es": "La residencia predeterminada de los datos de los Visitantes es Brasil, y el Servicio puede configurarse, en los planes que ofrezcan ese recurso, para que los datos de los Visitantes no salgan de la región elegida. Cuando datos personales sean transferidos a otro país, por ejemplo a un proveedor de servicios, adoptaremos salvaguardas compatibles con el régimen de los arts. 33 y siguientes de la LGPD y con la regulación vigente de la ANPD, incluyendo, cuando corresponda, cláusulas contractuales estándar reconocidas por ella.",
+    "en": "The default residency of Visitor data is Brazil, and the Service can be configured, on plans offering this feature, so that Visitor data does not leave the chosen region. When personal data is transferred to another country, for example to a service provider, we will adopt safeguards compatible with the regime of arts. 33 et seq. of the LGPD and with current ANPD regulations, including, where applicable, standard contractual clauses recognized by it."
+  },
+  "privacidade.s7_h2": {
+    "pt": "Retenção",
+    "es": "Retención",
+    "en": "Retention"
+  },
+  "privacidade.s7_p1": {
+    "pt": "Mantemos dados pessoais apenas pelo tempo necessário às finalidades desta Política, salvo prazo maior exigido ou permitido por lei:",
+    "es": "Mantenemos los datos personales solo por el tiempo necesario para las finalidades de esta Política, salvo plazo mayor exigido o permitido por ley:",
+    "en": "We retain personal data only for as long as necessary for the purposes of this Policy, unless a longer period is required or permitted by law:"
+  },
+  "privacidade.s7_p2": {
+    "pt": "Quando os dados deixam de ser necessários, são eliminados de forma definitiva ou anonimizados de forma irreversível.",
+    "es": "Cuando los datos dejan de ser necesarios, son eliminados de forma definitiva o anonimizados de forma irreversible.",
+    "en": "When data is no longer necessary, it is permanently deleted or irreversibly anonymized."
+  },
+  "privacidade.s7_th1": {
+    "pt": "Categoria",
+    "es": "Categoría",
+    "en": "Category"
+  },
+  "privacidade.s7_th2": {
+    "pt": "Prazo",
+    "es": "Plazo",
+    "en": "Period"
+  },
+  "privacidade.s7_row1_col1": {
+    "pt": "Registros de sessão (accounting) de Visitantes",
+    "es": "Registros de sesión (accounting) de Visitantes",
+    "en": "Visitor session records (accounting)"
+  },
+  "privacidade.s7_row1_col2": {
+    "pt": "12 meses do encerramento de cada sessão, em linha com os deveres de guarda do Marco Civil da Internet, quando aplicáveis à Controladora, e com o exercício regular de direitos em processo judicial, administrativo ou arbitral (LGPD, art. 7º, VI); em seguida, expurgo automático e definitivo, conforme o DPA",
+    "es": "12 meses desde el cierre de cada sesión, en línea con los deberes de guarda del Marco Civil de Internet, cuando sean aplicables a la Controladora, y con el ejercicio regular de derechos en proceso judicial, administrativo o arbitral (LGPD, art. 7º, VI); a continuación, purga automática y definitiva, conforme al DPA",
+    "en": "12 months from the end of each session, in line with the retention duties of the Marco Civil da Internet, when applicable to the Controller, and with the regular exercise of rights in judicial, administrative or arbitration proceedings (LGPD, art. 7, VI); thereafter, automatic and permanent purge, in accordance with the DPA"
+  },
+  "privacidade.s7_row2_col1": {
+    "pt": "Registros de consentimento de Visitantes",
+    "es": "Registros de consentimiento de Visitantes",
+    "en": "Visitor consent records"
+  },
+  "privacidade.s7_row2_col2": {
+    "pt": "Pelo prazo necessário à comprovação do tratamento e ao exercício regular de direitos",
+    "es": "Por el plazo necesario para la comprobación del tratamiento y el ejercicio regular de derechos",
+    "en": "For as long as necessary to evidence the processing and for the regular exercise of rights"
+  },
+  "privacidade.s7_row3_col1": {
+    "pt": "Dados cadastrais e financeiros de Administradores",
+    "es": "Datos de registro y financieros de Administradores",
+    "en": "Administrator registration and financial data"
+  },
+  "privacidade.s7_row3_col2": {
+    "pt": "Pela vigência da relação contratual e pelos prazos legais, regulatórios e prescricionais aplicáveis",
+    "es": "Durante la vigencia de la relación contractual y por los plazos legales, regulatorios y de prescripción aplicables",
+    "en": "For the duration of the contractual relationship and for the applicable legal, regulatory and statute-of-limitations periods"
+  },
+  "privacidade.s7_row4_col1": {
+    "pt": "Dados de navegação nos nossos sites e cookies",
+    "es": "Datos de navegación en nuestros sitios y cookies",
+    "en": "Browsing data on our websites and cookies"
+  },
+  "privacidade.s7_row4_col2": {
+    "pt": "Pelos prazos indicados no banner de cookies, conforme a categoria",
+    "es": "Por los plazos indicados en el banner de cookies, según la categoría",
+    "en": "For the periods indicated in the cookie banner, depending on the category"
+  },
+  "privacidade.s7_row5_col1": {
+    "pt": "Cópias de segurança (cifradas)",
+    "es": "Copias de seguridad (cifradas)",
+    "en": "Backup copies (encrypted)"
+  },
+  "privacidade.s7_row5_col2": {
+    "pt": "Ciclo próprio de sobrescrição, detalhado no DPA, não superior a 90 dias após a eliminação na base ativa",
+    "es": "Ciclo propio de sobrescritura, detallado en el DPA, no superior a 90 días después de la eliminación en la base activa",
+    "en": "Its own overwrite cycle, detailed in the DPA, not exceeding 90 days after deletion from the active database"
+  },
+  "privacidade.s8_h2": {
+    "pt": "Segurança",
+    "es": "Seguridad",
+    "en": "Security"
+  },
+  "privacidade.s8_p1": {
+    "pt": "Adotamos salvaguardas técnicas e administrativas compatíveis com o estado da técnica, incluindo criptografia em trânsito e em repouso, controles de acesso por papéis, autenticação multifator para administradores, segregação lógica por cliente, monitoramento e testes periódicos. Nenhum método de transmissão ou armazenamento é totalmente seguro; a segurança da sua conta também depende da confidencialidade das suas credenciais. Incidentes de segurança que possam acarretar risco ou dano relevante serão comunicados nos termos da LGPD, da regulamentação da ANPD e, quanto a dados operados, do DPA.",
+    "es": "Adoptamos salvaguardas técnicas y administrativas compatibles con el estado de la técnica, incluyendo cifrado en tránsito y en reposo, controles de acceso por roles, autenticación multifactor para administradores, segregación lógica por cliente, monitoreo y pruebas periódicas. Ningún método de transmisión o almacenamiento es totalmente seguro; la seguridad de su cuenta también depende de la confidencialidad de sus credenciales. Los incidentes de seguridad que puedan generar riesgo o daño relevante serán comunicados en los términos de la LGPD, de la regulación de la ANPD y, en cuanto a los datos operados, del DPA.",
+    "en": "We adopt technical and administrative safeguards consistent with the state of the art, including encryption in transit and at rest, role-based access controls, multi-factor authentication for administrators, logical segregation per customer, monitoring and periodic testing. No transmission or storage method is completely secure; the security of your account also depends on the confidentiality of your credentials. Security incidents that could pose a relevant risk or harm will be communicated in accordance with the LGPD, ANPD regulations and, regarding processed data, the DPA."
+  },
+  "privacidade.s9_h2": {
+    "pt": "Seus direitos e como exercê-los",
+    "es": "Sus derechos y cómo ejercerlos",
+    "en": "Your rights and how to exercise them"
+  },
+  "privacidade.s9_p1": {
+    "pt": "Nos termos do art. 18 da LGPD, você pode solicitar: confirmação da existência de tratamento; acesso aos dados; correção de dados incompletos, inexatos ou desatualizados; anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade; portabilidade, observada a regulamentação; informação sobre compartilhamentos realizados; informação sobre a possibilidade de não consentir e suas consequências; revogação do consentimento; e revisão de decisões tomadas unicamente com base em tratamento automatizado, quando existentes. Você também pode peticionar à ANPD.",
+    "es": "Conforme al art. 18 de la LGPD, usted puede solicitar: confirmación de la existencia de tratamiento; acceso a los datos; corrección de datos incompletos, inexactos o desactualizados; anonimización, bloqueo o eliminación de datos innecesarios, excesivos o tratados en incumplimiento; portabilidad, observada la regulación; información sobre los compartimientos realizados; información sobre la posibilidad de no consentir y sus consecuencias; revocación del consentimiento; y revisión de decisiones tomadas únicamente con base en tratamiento automatizado, cuando existan. Usted también puede presentar una petición ante la ANPD.",
+    "en": "Under art. 18 of the LGPD, you may request: confirmation of the existence of processing; access to the data; correction of incomplete, inaccurate or outdated data; anonymization, blocking or deletion of unnecessary, excessive data or data processed in non-compliance; portability, subject to applicable regulations; information on disclosures made; information on the possibility of not consenting and its consequences; withdrawal of consent; and review of decisions made solely on the basis of automated processing, where they exist. You may also file a complaint with the ANPD."
+  },
+  "privacidade.s9_p2": {
+    "pt": "<strong>Como exercer:</strong> envie seu pedido ao Encarregado (Seção 12). Para sua proteção, poderemos solicitar informações que confirmem a sua identidade antes de atender ao pedido; responderemos nos prazos da legislação e da regulamentação da ANPD. Se você é Visitante de uma rede operada por um cliente nosso, dirija seu pedido ao estabelecimento que opera a rede, o Controlador dos seus dados; prestaremos a ele o apoio necessário, na qualidade de Operadora, conforme o DPA.",
+    "es": "<strong>Cómo ejercerlos:</strong> envíe su solicitud al Encargado (Sección 12). Para su protección, podremos solicitar información que confirme su identidad antes de atender la solicitud; responderemos dentro de los plazos de la legislación y de la regulación de la ANPD. Si usted es Visitante de una red operada por un cliente nuestro, dirija su solicitud al establecimiento que opera la red, el Controlador de sus datos; le prestaremos el apoyo necesario, en calidad de Operadora, conforme al DPA.",
+    "en": "<strong>How to exercise them:</strong> send your request to the Data Protection Officer (Section 12). For your protection, we may request information confirming your identity before fulfilling the request; we will respond within the periods set by law and ANPD regulations. If you are a Visitor of a network operated by one of our customers, direct your request to the establishment operating the network, the Controller of your data; we will provide it with the necessary support, as Processor, in accordance with the DPA."
+  },
+  "privacidade.s10_h2": {
+    "pt": "Comunicações de marketing",
+    "es": "Comunicaciones de marketing",
+    "en": "Marketing communications"
+  },
+  "privacidade.s10_p1": {
+    "pt": "Mensagens operacionais e transacionais (cadastro, segurança, cobrança) são necessárias à prestação do Serviço e não admitem descadastramento. Demais comunicações, como novidades e materiais, podem ser canceladas a qualquer momento pelo link presente na própria mensagem ou pelo canal da Seção 12. Não enviamos marketing a Visitantes das redes dos nossos clientes.",
+    "es": "Los mensajes operativos y transaccionales (registro, seguridad, facturación) son necesarios para la prestación del Servicio y no admiten baja. Las demás comunicaciones, como novedades y materiales, pueden cancelarse en cualquier momento mediante el enlace presente en el propio mensaje o por el canal de la Sección 12. No enviamos marketing a los Visitantes de las redes de nuestros clientes.",
+    "en": "Operational and transactional messages (registration, security, billing) are necessary for the provision of the Service and cannot be opted out of. Other communications, such as news and materials, can be cancelled at any time via the link included in the message itself or through the channel in Section 12. We do not send marketing to Visitors of our customers' networks."
+  },
+  "privacidade.s11_h2": {
+    "pt": "Crianças e adolescentes",
+    "es": "Niños, niñas y adolescentes",
+    "en": "Children and adolescents"
+  },
+  "privacidade.s11_p1": {
+    "pt": "O Serviço destina-se a maiores de 18 anos e a pessoas jurídicas, e não é direcionado a crianças; não coletamos intencionalmente dados de crianças. Os textos exibidos no portal cativo de cada estabelecimento são definidos pelo Administrador, a quem cabe observar o art. 14 da LGPD quando seu público incluir crianças e adolescentes.",
+    "es": "El Servicio está destinado a mayores de 18 años y a personas jurídicas, y no está dirigido a niños; no recopilamos intencionalmente datos de niños. Los textos exhibidos en el portal cautivo de cada establecimiento son definidos por el Administrador, a quien corresponde observar el art. 14 de la LGPD cuando su público incluya niños, niñas y adolescentes.",
+    "en": "The Service is intended for individuals over 18 years of age and for legal entities, and is not directed at children; we do not knowingly collect data from children. The texts displayed on each establishment's captive portal are defined by the Administrator, who is responsible for observing art. 14 of the LGPD when its audience includes children and adolescents."
+  },
+  "privacidade.s12_h2": {
+    "pt": "Encarregado e contato",
+    "es": "Encargado y contacto",
+    "en": "Data Protection Officer and contact"
+  },
+  "privacidade.s12_p1": {
+    "pt": "O Encarregado pelo tratamento de dados pessoais (DPO) da FXO pode ser contatado pelo e-mail <a href=\"mailto:dpo@wi-fi.now\">dpo@wi-fi.now</a>. Responderemos às comunicações nos prazos legais e regulamentares.",
+    "es": "El Encargado del tratamiento de datos personales (DPO) de FXO puede ser contactado por el correo electrónico <a href=\"mailto:dpo@wi-fi.now\">dpo@wi-fi.now</a>. Responderemos a las comunicaciones dentro de los plazos legales y regulatorios.",
+    "en": "FXO's Data Protection Officer (DPO) can be contacted at <a href=\"mailto:dpo@wi-fi.now\">dpo@wi-fi.now</a>. We will respond to communications within the legal and regulatory deadlines."
+  },
+  "privacidade.s13_h2": {
+    "pt": "Alterações desta Política",
+    "es": "Cambios a esta Política",
+    "en": "Changes to this Policy"
+  },
+  "privacidade.s13_p1": {
+    "pt": "Podemos atualizar esta Política, publicando a nova versão com a respectiva data de vigência e mantendo o histórico de versões. Alterações materiais serão comunicadas com destaque e com antecedência mínima de 15 (quinze) dias; nesse prazo, o Administrador que não concordar com a nova versão poderá resilir o contrato sem ônus, observadas as obrigações já constituídas. Esta Política pode ser disponibilizada em outros idiomas, como cortesia; em caso de divergência entre versões, prevalece, para todos os fins, a versão em língua portuguesa.",
+    "es": "Podemos actualizar esta Política, publicando la nueva versión con la respectiva fecha de vigencia y manteniendo el historial de versiones. Los cambios materiales serán comunicados con destaque y con una antelación mínima de 15 (quince) días; dentro de ese plazo, el Administrador que no esté de acuerdo con la nueva versión podrá rescindir el contrato sin cargo, observadas las obligaciones ya constituidas. Esta Política puede estar disponible en otros idiomas, como cortesía; en caso de divergencia entre versiones, prevalece, para todos los efectos, la versión en idioma portugués.",
+    "en": "We may update this Policy by publishing the new version with its effective date and maintaining a version history. Material changes will be communicated prominently and with at least 15 (fifteen) days' notice; within that period, an Administrator who does not agree with the new version may terminate the contract without penalty, subject to obligations already accrued. This Policy may be made available in other languages as a courtesy; in the event of a discrepancy between versions, the Portuguese-language version shall prevail for all purposes."
+  },
+  "dpa.titulo": {
+    "pt": "Acordo de Tratamento de Dados Pessoais (DPA)",
+    "es": "Acuerdo de Tratamiento de Datos Personales (DPA)",
+    "en": "Data Processing Agreement (DPA)"
+  },
+  "dpa.vigente_label": {
+    "pt": "Vigente a partir de:",
+    "es": "Vigente a partir de:",
+    "en": "Effective as of:"
+  },
+  "dpa.versao_label": {
+    "pt": "Versão",
+    "es": "Versión",
+    "en": "Version"
+  },
+  "dpa.consolidada_label": {
+    "pt": "(consolidada)",
+    "es": "(consolidada)",
+    "en": "(consolidated)"
+  },
+  "dpa.toc_label": {
+    "pt": "Nesta página",
+    "es": "En esta página",
+    "en": "On this page"
+  },
+  "dpa.toc_s1": {
+    "pt": "1. Objeto e relação com os instrumentos contratuais",
+    "es": "1. Objeto y relación con los instrumentos contractuales",
+    "en": "1. Purpose and relationship with the contractual instruments"
+  },
+  "dpa.toc_s2": {
+    "pt": "2. Papéis e instruções documentadas",
+    "es": "2. Roles e instrucciones documentadas",
+    "en": "2. Roles and documented instructions"
+  },
+  "dpa.toc_s3": {
+    "pt": "3. Escopo do tratamento",
+    "es": "3. Alcance del tratamiento",
+    "en": "3. Scope of processing"
+  },
+  "dpa.toc_s4": {
+    "pt": "4. Confidencialidade do pessoal",
+    "es": "4. Confidencialidad del personal",
+    "en": "4. Personnel confidentiality"
+  },
+  "dpa.toc_s5": {
+    "pt": "5. Segurança do tratamento",
+    "es": "5. Seguridad del tratamiento",
+    "en": "5. Security of processing"
+  },
+  "dpa.toc_s6": {
+    "pt": "6. Suboperadores",
+    "es": "6. Subencargados",
+    "en": "6. Subprocessors"
+  },
+  "dpa.toc_s7": {
+    "pt": "7. Transferências internacionais",
+    "es": "7. Transferencias internacionales",
+    "en": "7. International transfers"
+  },
+  "dpa.toc_s8": {
+    "pt": "8. Assistência à Controladora",
+    "es": "8. Asistencia a la Controladora",
+    "en": "8. Assistance to the Controller"
+  },
+  "dpa.toc_s9": {
+    "pt": "9. Retenção e eliminação",
+    "es": "9. Retención y eliminación",
+    "en": "9. Retention and deletion"
+  },
+  "dpa.toc_s10": {
+    "pt": "10. Incidentes de segurança",
+    "es": "10. Incidentes de seguridad",
+    "en": "10. Security incidents"
+  },
+  "dpa.toc_s11": {
+    "pt": "11. Auditoria",
+    "es": "11. Auditoría",
+    "en": "11. Audit"
+  },
+  "dpa.toc_s12": {
+    "pt": "12. Responsabilidade",
+    "es": "12. Responsabilidad",
+    "en": "12. Liability"
+  },
+  "dpa.toc_s13": {
+    "pt": "13. Vigência",
+    "es": "13. Vigencia",
+    "en": "13. Term"
+  },
+  "dpa.toc_a1": {
+    "pt": "Apêndice 1 ::: Descrição do tratamento",
+    "es": "Apéndice 1 ::: Descripción del tratamiento",
+    "en": "Appendix 1 ::: Description of processing"
+  },
+  "dpa.toc_a2": {
+    "pt": "Apêndice 2 ::: Medidas de segurança",
+    "es": "Apéndice 2 ::: Medidas de seguridad",
+    "en": "Appendix 2 ::: Security measures"
+  },
+  "dpa.s1_h2": {
+    "pt": "Objeto e relação com os instrumentos contratuais",
+    "es": "Objeto y relación con los instrumentos contractuales",
+    "en": "Purpose and relationship with the contractual instruments"
+  },
+  "dpa.s1_p1": {
+    "pt": "Este Acordo de Tratamento de Dados Pessoais (\"DPA\") disciplina o tratamento de dados pessoais realizado pela FXO Serviços em Informática Ltda. (\"FXO\" ou \"Operadora\") em nome do cliente (\"Controladora\"), no âmbito da plataforma Wi-Fi.now, em conformidade com a Lei nº 13.709/2018 (\"LGPD\"). Aplica-se tanto aos clientes vinculados por contrato bilateral (como seu Anexo II) quanto aos vinculados por adesão aos Termos de Uso da Plataforma, que o incorporam por referência.",
+    "es": "Este Acuerdo de Tratamiento de Datos Personales (\"DPA\") regula el tratamiento de datos personales realizado por FXO Serviços em Informática Ltda. (\"FXO\" u \"Operadora\") en nombre del cliente (\"Controladora\"), en el ámbito de la plataforma Wi-Fi.now, de conformidad con la Ley nº 13.709/2018 (\"LGPD\"). Se aplica tanto a los clientes vinculados por contrato bilateral (como su Anexo II) como a los vinculados por adhesión a los Términos de Uso de la Plataforma, que lo incorporan por referencia.",
+    "en": "This Data Processing Agreement (\"DPA\") governs the processing of personal data carried out by FXO Serviços em Informática Ltda. (\"FXO\" or \"Processor\") on behalf of the customer (\"Controller\"), within the scope of the Wi-Fi.now platform, in accordance with Law No. 13,709/2018 (\"LGPD\"). It applies both to customers bound by a bilateral agreement (as its Exhibit II) and to those bound by adherence to the Platform Terms of Use, which incorporate it by reference."
+  },
+  "dpa.s1_p2": {
+    "pt": "<span class=\"dpa-clause\">1.2.</span><strong>Vinculação recíproca.</strong> Este DPA e o instrumento principal (contrato ou Termos de Uso da Plataforma) são mutuamente condicionados: a aceitação de um implica a aceitação do outro, e o término de um implica o término do outro, ressalvadas as obrigações que, por sua natureza, sobrevivam. Em matéria de proteção de dados pessoais, este DPA prevalece sobre o instrumento principal.",
+    "es": "<span class=\"dpa-clause\">1.2.</span><strong>Vinculación recíproca.</strong> Este DPA y el instrumento principal (contrato o Términos de Uso de la Plataforma) están mutuamente condicionados: la aceptación de uno implica la aceptación del otro, y la terminación de uno implica la terminación del otro, salvo las obligaciones que, por su naturaleza, sobrevivan. En materia de protección de datos personales, este DPA prevalece sobre el instrumento principal.",
+    "en": "<span class=\"dpa-clause\">1.2.</span><strong>Reciprocal linkage.</strong> This DPA and the main instrument (agreement or Platform Terms of Use) are mutually conditioned: acceptance of one implies acceptance of the other, and termination of one implies termination of the other, except for obligations that, by their nature, survive. In matters of personal data protection, this DPA prevails over the main instrument."
+  },
+  "dpa.s1_p3": {
+    "pt": "<span class=\"dpa-clause\">1.3.</span>Este DPA não se aplica aos dados pessoais que a FXO trata na qualidade de controladora (dados cadastrais, financeiros e de uso do painel pelos prepostos da Controladora), regidos pela <a href=\"privacidade.html\">Política de Privacidade</a>.",
+    "es": "<span class=\"dpa-clause\">1.3.</span>Este DPA no se aplica a los datos personales que FXO trata en calidad de controladora (datos registrales, financieros y de uso del panel por los representantes de la Controladora), regidos por la <a href=\"privacidade.html\">Política de Privacidad</a>.",
+    "en": "<span class=\"dpa-clause\">1.3.</span>This DPA does not apply to personal data that FXO processes as a controller (registration and financial data, and panel usage data of the Controller's representatives), which are governed by the <a href=\"privacidade.html\">Privacy Policy</a>."
+  },
+  "dpa.s2_h2": {
+    "pt": "Papéis e instruções documentadas",
+    "es": "Roles e instrucciones documentadas",
+    "en": "Roles and documented instructions"
+  },
+  "dpa.s2_p1": {
+    "pt": "No tratamento de dados pessoais de Usuários Finais por meio da plataforma, a Controladora determina as finalidades e os meios do tratamento (art. 5º, VI, da LGPD), e a FXO atua exclusivamente como Operadora (art. 5º, VII), tratando os dados em nome da Controladora e segundo suas instruções documentadas.",
+    "es": "En el tratamiento de datos personales de Usuarios Finales a través de la plataforma, la Controladora determina las finalidades y los medios del tratamiento (art. 5º, VI, de la LGPD), y FXO actúa exclusivamente como Operadora (art. 5º, VII), tratando los datos en nombre de la Controladora y conforme a sus instrucciones documentadas.",
+    "en": "In the processing of End Users' personal data through the platform, the Controller determines the purposes and means of processing (LGPD, art. 5, VI), and FXO acts exclusively as Processor (art. 5, VII), processing the data on behalf of the Controller and in accordance with its documented instructions."
+  },
+  "dpa.s2_p2": {
+    "pt": "Constituem instruções documentadas da Controladora: (i) o instrumento principal e este DPA, incluindo o Apêndice 1; (ii) as configurações realizadas pela Controladora no painel administrativo (métodos de autenticação habilitados, campos coletados, personalização do portal); e (iii) instruções escritas supervenientes, desde que lícitas, tecnicamente viáveis e compatíveis com o escopo da plataforma.",
+    "es": "Constituyen instrucciones documentadas de la Controladora: (i) el instrumento principal y este DPA, incluido el Apéndice 1; (ii) las configuraciones realizadas por la Controladora en el panel administrativo (métodos de autenticación habilitados, campos recopilados, personalización del portal); y (iii) instrucciones escritas posteriores, siempre que sean lícitas, técnicamente viables y compatibles con el alcance de la plataforma.",
+    "en": "The Controller's documented instructions consist of: (i) the main instrument and this DPA, including Appendix 1; (ii) the settings configured by the Controller in the administrative panel (enabled authentication methods, collected fields, portal customization); and (iii) subsequent written instructions, provided they are lawful, technically feasible, and compatible with the platform's scope."
+  },
+  "dpa.s2_p3": {
+    "pt": "A FXO informará a Controladora, sem demora injustificada, caso entenda que uma instrução viola a LGPD ou outra norma aplicável, podendo suspender a execução da instrução específica até confirmação escrita da Controladora, que assumirá a responsabilidade correspondente.",
+    "es": "FXO informará a la Controladora, sin demora injustificada, si considera que una instrucción viola la LGPD u otra norma aplicable, pudiendo suspender la ejecución de la instrucción específica hasta la confirmación por escrito de la Controladora, que asumirá la responsabilidad correspondiente.",
+    "en": "FXO will inform the Controller, without undue delay, if it understands that an instruction violates the LGPD or another applicable rule, and may suspend execution of the specific instruction until written confirmation from the Controller, who will assume the corresponding responsibility."
+  },
+  "dpa.s2_p4": {
+    "pt": "<span class=\"dpa-clause\">2.4.</span><strong>Vedações absolutas.</strong> É vedado à FXO: (i) tratar os dados pessoais dos Usuários Finais para finalidades próprias, incluindo publicidade, enriquecimento de bases, criação de perfis comportamentais ou comercialização de dados, sob qualquer hipótese; (ii) correlacionar Registros de Sessão com dados de navegação: registros de navegação, quando existentes, residem exclusivamente na infraestrutura da Controladora e não transitam pelos sistemas da FXO; e (iii) reter dados além dos prazos da Seção 9.",
+    "es": "<span class=\"dpa-clause\">2.4.</span><strong>Prohibiciones absolutas.</strong> Se prohíbe a FXO: (i) tratar los datos personales de los Usuarios Finales para fines propios, incluyendo publicidad, enriquecimiento de bases, creación de perfiles comportamentales o comercialización de datos, bajo cualquier hipótesis; (ii) correlacionar Registros de Sesión con datos de navegación: los registros de navegación, cuando existan, residen exclusivamente en la infraestructura de la Controladora y no transitan por los sistemas de FXO; y (iii) retener datos más allá de los plazos de la Sección 9.",
+    "en": "<span class=\"dpa-clause\">2.4.</span><strong>Absolute prohibitions.</strong> FXO is prohibited from: (i) processing End Users' personal data for its own purposes, including advertising, database enrichment, creation of behavioral profiles, or commercialization of data, under any circumstances; (ii) correlating Session Records with browsing data: browsing records, when they exist, reside exclusively on the Controller's infrastructure and do not pass through FXO's systems; and (iii) retaining data beyond the periods set out in Section 9."
+  },
+  "dpa.s2_p5": {
+    "pt": "A FXO poderá utilizar dados agregados e anonimizados de forma irreversível, insuscetíveis de reidentificação, para fins estatísticos e de melhoria da plataforma; uma vez anonimizados, tais dados deixam de constituir dados pessoais para os fins da LGPD.",
+    "es": "FXO podrá utilizar datos agregados y anonimizados de forma irreversible, no susceptibles de reidentificación, con fines estadísticos y de mejora de la plataforma; una vez anonimizados, dichos datos dejan de constituir datos personales para los fines de la LGPD.",
+    "en": "FXO may use aggregated data that has been irreversibly anonymized, not susceptible to re-identification, for statistical purposes and platform improvement; once anonymized, such data ceases to constitute personal data for purposes of the LGPD."
+  },
+  "dpa.s3_h2": {
+    "pt": "Escopo do tratamento",
+    "es": "Alcance del tratamiento",
+    "en": "Scope of processing"
+  },
+  "dpa.s3_p1": {
+    "pt": "O escopo do tratamento (categorias de titulares, categorias de dados, finalidades, natureza e duração) está descrito no Apêndice 1, que delimita exaustivamente o tratamento autorizado. Qualquer tratamento fora do Apêndice 1 depende de aditivo escrito.",
+    "es": "El alcance del tratamiento (categorías de titulares, categorías de datos, finalidades, naturaleza y duración) está descrito en el Apéndice 1, que delimita exhaustivamente el tratamiento autorizado. Cualquier tratamiento fuera del Apéndice 1 depende de un anexo escrito.",
+    "en": "The scope of processing (categories of data subjects, categories of data, purposes, nature, and duration) is described in Appendix 1, which exhaustively delimits the authorized processing. Any processing outside Appendix 1 requires a written amendment."
+  },
+  "dpa.s3_p2": {
+    "pt": "<span class=\"dpa-clause\">3.2.</span><strong>Declarações da Controladora.</strong> A Controladora declara e garante que: (i) possui base legal válida para o tratamento dos dados dos Usuários Finais (art. 7º da LGPD); (ii) disponibiliza aos Usuários Finais, no portal e em seus ambientes físicos, as informações exigidas pelos arts. 9º e 18 da LGPD; e (iii) suas instruções observam a legislação aplicável. A FXO não responde pela ausência ou invalidade de base legal definida pela Controladora.",
+    "es": "<span class=\"dpa-clause\">3.2.</span><strong>Declaraciones de la Controladora.</strong> La Controladora declara y garantiza que: (i) posee base legal válida para el tratamiento de los datos de los Usuarios Finales (art. 7º de la LGPD); (ii) pone a disposición de los Usuarios Finales, en el portal y en sus ambientes físicos, las informaciones exigidas por los arts. 9º y 18 de la LGPD; y (iii) sus instrucciones observan la legislación aplicable. FXO no responde por la ausencia o invalidez de la base legal definida por la Controladora.",
+    "en": "<span class=\"dpa-clause\">3.2.</span><strong>Controller representations.</strong> The Controller represents and warrants that: (i) it has a valid legal basis for the processing of End Users' data (LGPD, art. 7); (ii) it makes available to End Users, on the portal and in its physical premises, the information required by arts. 9 and 18 of the LGPD; and (iii) its instructions comply with applicable law. FXO is not liable for the absence or invalidity of the legal basis defined by the Controller."
+  },
+  "dpa.s3_p3": {
+    "pt": "<span class=\"dpa-clause\">3.3.</span><strong>Dados sensíveis e regulados.</strong> É vedado à Controladora configurar o portal cativo para coletar dados pessoais sensíveis (art. 5º, II, da LGPD), dados de crianças e adolescentes ou dados sujeitos a regimes regulatórios específicos, salvo prévia comunicação escrita à FXO e aditivo específico. A coleta em desacordo corre por conta e risco exclusivos da Controladora e autoriza a suspensão imediata do recurso envolvido.",
+    "es": "<span class=\"dpa-clause\">3.3.</span><strong>Datos sensibles y regulados.</strong> Se prohíbe a la Controladora configurar el portal cautivo para recopilar datos personales sensibles (art. 5º, II, de la LGPD), datos de niños y adolescentes o datos sujetos a regímenes regulatorios específicos, salvo comunicación previa por escrito a FXO y anexo específico. La recopilación en desacuerdo corre por cuenta y riesgo exclusivos de la Controladora y autoriza la suspensión inmediata del recurso involucrado.",
+    "en": "<span class=\"dpa-clause\">3.3.</span><strong>Sensitive and regulated data.</strong> The Controller is prohibited from configuring the captive portal to collect sensitive personal data (LGPD, art. 5, II), data of children and adolescents, or data subject to specific regulatory regimes, except upon prior written notice to FXO and a specific amendment. Collection in violation of this provision is at the Controller's sole risk and authorizes immediate suspension of the feature involved."
+  },
+  "dpa.s3_p4": {
+    "pt": "A autenticação incidental de adolescentes no portal cativo, decorrente da impossibilidade técnica de verificação etária nos métodos de autenticação disponíveis, não configura descumprimento do item 3.3 pela FXO. Cabe à Controladora observar o art. 14 da LGPD e o melhor interesse do menor na definição dos textos, avisos e configurações do portal quando seu público puder incluir adolescentes.",
+    "es": "La autenticación incidental de adolescentes en el portal cautivo, derivada de la imposibilidad técnica de verificación de edad en los métodos de autenticación disponibles, no constituye incumplimiento del ítem 3.3 por parte de FXO. Corresponde a la Controladora observar el art. 14 de la LGPD y el interés superior del menor en la definición de los textos, avisos y configuraciones del portal cuando su público pueda incluir adolescentes.",
+    "en": "Incidental authentication of adolescents on the captive portal, resulting from the technical impossibility of age verification in the available authentication methods, does not constitute a breach of item 3.3 by FXO. It is the Controller's responsibility to observe LGPD art. 14 and the best interests of the minor when defining the portal's texts, notices, and settings whenever its audience may include adolescents."
+  },
+  "dpa.s4_h2": {
+    "pt": "Confidencialidade do pessoal",
+    "es": "Confidencialidad del personal",
+    "en": "Personnel confidentiality"
+  },
+  "dpa.s4_p1": {
+    "pt": "A FXO assegura que o acesso aos dados pessoais tratados em nome da Controladora é restrito a profissionais com necessidade funcional de acesso, vinculados a obrigação de confidencialidade contratual ou estatutária e treinados em proteção de dados pessoais.",
+    "es": "FXO asegura que el acceso a los datos personales tratados en nombre de la Controladora está restringido a profesionales con necesidad funcional de acceso, vinculados a una obligación de confidencialidad contractual o estatutaria y capacitados en protección de datos personales.",
+    "en": "FXO ensures that access to personal data processed on behalf of the Controller is restricted to professionals with a functional need for access, bound by a contractual or statutory confidentiality obligation, and trained in personal data protection."
+  },
+  "dpa.s5_h2": {
+    "pt": "Segurança do tratamento",
+    "es": "Seguridad del tratamiento",
+    "en": "Security of processing"
+  },
+  "dpa.s5_p1": {
+    "pt": "A FXO adotará as medidas técnicas e administrativas descritas no Apêndice 2, aptas a proteger os dados pessoais de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou difusão (LGPD, arts. 46 a 49), observado o estado da técnica e a natureza dos dados tratados.",
+    "es": "FXO adoptará las medidas técnicas y administrativas descritas en el Apéndice 2, aptas para proteger los datos personales frente a accesos no autorizados y a situaciones accidentales o ilícitas de destrucción, pérdida, alteración, comunicación o difusión (LGPD, arts. 46 a 49), observado el estado de la técnica y la naturaleza de los datos tratados.",
+    "en": "FXO will adopt the technical and administrative measures described in Appendix 2, suitable to protect personal data against unauthorized access and against accidental or unlawful destruction, loss, alteration, communication, or dissemination (LGPD, arts. 46 to 49), taking into account the state of the art and the nature of the data processed."
+  },
+  "dpa.s5_p2": {
+    "pt": "A FXO poderá atualizar as medidas do Apêndice 2, desde que o nível de proteção resultante não seja reduzido.",
+    "es": "FXO podrá actualizar las medidas del Apéndice 2, siempre que el nivel de protección resultante no se vea reducido.",
+    "en": "FXO may update the measures in Appendix 2, provided that the resulting level of protection is not reduced."
+  },
+  "dpa.s6_h2": {
+    "pt": "Suboperadores",
+    "es": "Subencargados",
+    "en": "Subprocessors"
+  },
+  "dpa.s6_p1": {
+    "pt": "A Controladora autoriza, de forma geral, a contratação de suboperadores pela FXO para a execução da plataforma (infraestrutura de nuvem, envio de tokens por SMS e WhatsApp e serviços correlatos).",
+    "es": "La Controladora autoriza, de forma general, la contratación de subencargados por parte de FXO para la ejecución de la plataforma (infraestructura en la nube, envío de tokens por SMS y WhatsApp y servicios relacionados).",
+    "en": "The Controller generally authorizes the engagement of subprocessors by FXO for the operation of the platform (cloud infrastructure, sending of tokens via SMS and WhatsApp, and related services)."
+  },
+  "dpa.s6_p2": {
+    "pt": "A FXO comunicará à Controladora, com antecedência mínima de 30 (trinta) dias, a inclusão ou substituição de suboperador com acesso a dados pessoais dos Usuários Finais. A Controladora poderá objetar, por escrito e fundamentadamente, em 15 (quinze) dias da comunicação. Persistindo a objeção sem alternativa razoável, a Controladora poderá resolver o vínculo quanto aos ambientes afetados, sem multa, como remédio exclusivo, ressalvada a reparação de danos decorrentes de dolo ou culpa grave da FXO ou de seus suboperadores.",
+    "es": "FXO comunicará a la Controladora, con una antelación mínima de 30 (treinta) días, la inclusión o sustitución de un subencargado con acceso a datos personales de los Usuarios Finales. La Controladora podrá objetar, por escrito y de forma fundamentada, dentro de los 15 (quince) días de la comunicación. Si la objeción persiste sin alternativa razonable, la Controladora podrá resolver el vínculo respecto de los ambientes afectados, sin multa, como remedio exclusivo, salvo la reparación de daños derivados de dolo o culpa grave de FXO o de sus subencargados.",
+    "en": "FXO will notify the Controller, with at least 30 (thirty) days' notice, of the inclusion or replacement of a subprocessor with access to End Users' personal data. The Controller may object, in writing and with justification, within 15 (fifteen) days of the notice. If the objection persists without a reasonable alternative, the Controller may terminate the relationship with respect to the affected environments, without penalty, as the exclusive remedy, except for damages arising from willful misconduct or gross negligence by FXO or its subprocessors."
+  },
+  "dpa.s6_p3": {
+    "pt": "<span class=\"dpa-clause\">6.3.</span><strong>Responsabilidade pela cadeia.</strong> A FXO imporá contratualmente a cada suboperador obrigações de proteção de dados equivalentes às deste DPA e permanecerá integralmente responsável, perante a Controladora, pelos atos e omissões de seus suboperadores como se seus fossem.",
+    "es": "<span class=\"dpa-clause\">6.3.</span><strong>Responsabilidad por la cadena.</strong> FXO impondrá contractualmente a cada subencargado obligaciones de protección de datos equivalentes a las de este DPA y permanecerá íntegramente responsable, ante la Controladora, por los actos y omisiones de sus subencargados como si fueran propios.",
+    "en": "<span class=\"dpa-clause\">6.3.</span><strong>Chain liability.</strong> FXO will contractually impose on each subprocessor data protection obligations equivalent to those of this DPA and will remain fully liable, to the Controller, for the acts and omissions of its subprocessors as if they were its own."
+  },
+  "dpa.s6_p4": {
+    "pt": "Os provedores de identidade OAuth (Google, LinkedIn, Microsoft) e as operadoras de telefonia do Usuário Final não são suboperadores da FXO: atuam como agentes de tratamento autônomos, sob seus próprios termos, na relação direta que mantêm com o Usuário Final e/ou com a Controladora, titular das credenciais OAuth.",
+    "es": "Los proveedores de identidad OAuth (Google, LinkedIn, Microsoft) y los operadores de telefonía del Usuario Final no son subencargados de FXO: actúan como agentes de tratamiento autónomos, bajo sus propios términos, en la relación directa que mantienen con el Usuario Final y/o con la Controladora, titular de las credenciales OAuth.",
+    "en": "OAuth identity providers (Google, LinkedIn, Microsoft) and the End User's telephone carriers are not FXO subprocessors: they act as autonomous processing agents, under their own terms, in the direct relationship they maintain with the End User and/or with the Controller, holder of the OAuth credentials."
+  },
+  "dpa.s7_h2": {
+    "pt": "Transferências internacionais",
+    "es": "Transferencias internacionales",
+    "en": "International transfers"
+  },
+  "dpa.s7_p1": {
+    "pt": "O tratamento será realizado, preferencialmente, em infraestrutura localizada no Brasil. Caso a execução da plataforma envolva suboperador que armazene ou acesse dados fora do território nacional, a FXO assegurará que a transferência observe o regime dos arts. 33 e seguintes da LGPD e a regulamentação da ANPD vigente à época, incluindo, quando cabível, cláusulas contratuais padrão por ela reconhecidas.",
+    "es": "El tratamiento se realizará, preferentemente, en infraestructura ubicada en Brasil. En caso de que la ejecución de la plataforma involucre a un subencargado que almacene o acceda a datos fuera del territorio nacional, FXO asegurará que la transferencia observe el régimen de los arts. 33 y siguientes de la LGPD y la reglamentación de la ANPD vigente en ese momento, incluyendo, cuando corresponda, cláusulas contractuales estándar reconocidas por ella.",
+    "en": "Processing will preferably be carried out on infrastructure located in Brazil. Should the operation of the platform involve a subprocessor that stores or accesses data outside national territory, FXO will ensure that the transfer complies with the regime set out in arts. 33 et seq. of the LGPD and the ANPD regulations in force at the time, including, where applicable, standard contractual clauses recognized by it."
+  },
+  "dpa.s8_h2": {
+    "pt": "Assistência à Controladora",
+    "es": "Asistencia a la Controladora",
+    "en": "Assistance to the Controller"
+  },
+  "dpa.s8_h3_1": {
+    "pt": "8.1. Direitos dos titulares",
+    "es": "8.1. Derechos de los titulares",
+    "en": "8.1. Data subject rights"
+  },
+  "dpa.s8_p1": {
+    "pt": "Cabe à Controladora responder aos pedidos de titulares (LGPD, art. 18). Pedidos de Usuários Finais recebidos diretamente pela FXO serão encaminhados à Controladora em até 5 (cinco) dias úteis, sem resposta de mérito ao titular, salvo instrução escrita em contrário ou dever legal.",
+    "es": "Corresponde a la Controladora responder a las solicitudes de los titulares (LGPD, art. 18). Las solicitudes de Usuarios Finales recibidas directamente por FXO serán remitidas a la Controladora en un plazo de hasta 5 (cinco) días hábiles, sin respuesta de fondo al titular, salvo instrucción escrita en contrario o deber legal.",
+    "en": "It is the Controller's responsibility to respond to data subject requests (LGPD, art. 18). Requests from End Users received directly by FXO will be forwarded to the Controller within 5 (five) business days, without a substantive response to the data subject, unless otherwise instructed in writing or required by law."
+  },
+  "dpa.s8_p2": {
+    "pt": "A FXO disponibilizará à Controladora, pelo painel ou mediante solicitação, as funcionalidades e informações razoavelmente necessárias ao atendimento de pedidos de acesso, correção, eliminação, portabilidade e informação sobre o tratamento, no limite dos dados descritos no Apêndice 1.",
+    "es": "FXO pondrá a disposición de la Controladora, a través del panel o mediante solicitud, las funcionalidades e informaciones razonablemente necesarias para atender solicitudes de acceso, corrección, eliminación, portabilidad e información sobre el tratamiento, dentro del límite de los datos descritos en el Apéndice 1.",
+    "en": "FXO will make available to the Controller, through the panel or upon request, the functionalities and information reasonably necessary to handle requests for access, correction, deletion, portability, and information about the processing, limited to the data described in Appendix 1."
+  },
+  "dpa.s8_h3_2": {
+    "pt": "8.2. Demais obrigações",
+    "es": "8.2. Demás obligaciones",
+    "en": "8.2. Other obligations"
+  },
+  "dpa.s8_p3": {
+    "pt": "A FXO prestará cooperação razoável à Controladora na elaboração de relatórios de impacto à proteção de dados pessoais (RIPD) e no atendimento a requisições da ANPD, no que se refira ao tratamento descrito neste DPA. Cooperação que exceda o uso ordinário do plano contratado poderá ser cobrada conforme tabela vigente da FXO, comunicada previamente. A cooperação indispensável ao cumprimento, pela Controladora, de prazo legal ou regulamentar não será condicionada a pagamento prévio, sem prejuízo da cobrança posterior dos valores devidos.",
+    "es": "FXO prestará cooperación razonable a la Controladora en la elaboración de informes de impacto a la protección de datos personales (RIPD) y en la atención de requerimientos de la ANPD, en lo que se refiera al tratamiento descrito en este DPA. La cooperación que exceda el uso ordinario del plan contratado podrá ser cobrada conforme a la tabla vigente de FXO, comunicada previamente. La cooperación indispensable para el cumplimiento, por parte de la Controladora, de un plazo legal o regulatorio no estará condicionada a pago previo, sin perjuicio del cobro posterior de los valores adeudados.",
+    "en": "FXO will provide reasonable cooperation to the Controller in preparing data protection impact assessments (DPIA) and in responding to ANPD requests, insofar as they relate to the processing described in this DPA. Cooperation that exceeds ordinary use of the contracted plan may be charged according to FXO's then-current price table, communicated in advance. Cooperation indispensable for the Controller to meet a legal or regulatory deadline will not be conditioned on prior payment, without prejudice to the subsequent billing of amounts owed."
+  },
+  "dpa.s9_h2": {
+    "pt": "Retenção e eliminação",
+    "es": "Retención y eliminación",
+    "en": "Retention and deletion"
+  },
+  "dpa.s9_p1": {
+    "pt": "<span class=\"dpa-clause\">9.1.</span><strong>Registros de Sessão (accounting):</strong> mantidos por 12 (doze) meses contados do encerramento de cada sessão, prazo que atende, com margem, aos deveres de guarda do Marco Civil da Internet, quando aplicáveis à Controladora, e ampara o exercício regular de direitos em processo judicial, administrativo ou arbitral (LGPD, art. 7º, VI). Ao término, a FXO promoverá o expurgo automático, definitivo e irrecuperável.",
+    "es": "<span class=\"dpa-clause\">9.1.</span><strong>Registros de Sesión (accounting):</strong> conservados durante 12 (doce) meses contados desde el cierre de cada sesión, plazo que cumple, con margen, con los deberes de conservación del Marco Civil de Internet, cuando sean aplicables a la Controladora, y ampara el ejercicio regular de derechos en proceso judicial, administrativo o arbitral (LGPD, art. 7º, VI). Al término, FXO realizará la purga automática, definitiva e irrecuperable.",
+    "en": "<span class=\"dpa-clause\">9.1.</span><strong>Session Records (accounting):</strong> retained for 12 (twelve) months from the end of each session, a period that meets, with a margin, the record-keeping duties of the Marco Civil da Internet (Brazilian Internet Civil Rights Framework), when applicable to the Controller, and supports the regular exercise of rights in judicial, administrative, or arbitration proceedings (LGPD, art. 7, VI). Upon expiry, FXO will carry out automatic, permanent, and irrecoverable purging."
+  },
+  "dpa.s9_p2": {
+    "pt": "Registros de consentimento e identificadores de autenticação: mantidos pela vigência do vínculo e, após seu término, pelo prazo necessário ao cumprimento de obrigações legais e ao exercício regular de direitos em processo, limitado o uso a essas finalidades.",
+    "es": "Registros de consentimiento e identificadores de autenticación: conservados durante la vigencia del vínculo y, tras su terminación, por el plazo necesario para el cumplimiento de obligaciones legales y el ejercicio regular de derechos en proceso, limitado el uso a esas finalidades.",
+    "en": "Consent records and authentication identifiers: retained for the duration of the relationship and, after its termination, for the period necessary to comply with legal obligations and to exercise rights in proceedings, with use limited to those purposes."
+  },
+  "dpa.s9_p3": {
+    "pt": "Término do vínculo: a FXO disponibilizará a exportação dos dados em formato estruturado de leitura corrente por 30 (trinta) dias e, em seguida, eliminará os dados pessoais tratados em nome da Controladora, ressalvada a conservação exigida por lei. A eliminação será certificada por escrito mediante solicitação da Controladora.",
+    "es": "Terminación del vínculo: FXO pondrá a disposición la exportación de los datos en formato estructurado de lectura corriente durante 30 (treinta) días y, a continuación, eliminará los datos personales tratados en nombre de la Controladora, salvo la conservación exigida por ley. La eliminación será certificada por escrito a solicitud de la Controladora.",
+    "en": "Termination of the relationship: FXO will make available the export of data in a structured, commonly used format for 30 (thirty) days, after which it will delete the personal data processed on behalf of the Controller, except for retention required by law. Deletion will be certified in writing upon the Controller's request."
+  },
+  "dpa.s9_p4": {
+    "pt": "Cópias de segurança: dados em backups cifrados seguem ciclo próprio de sobrescrição, não superior a 90 (noventa) dias após a eliminação na base ativa, permanecendo nesse intervalo logicamente inacessíveis ao uso ordinário e protegidos pelas medidas do Apêndice 2.",
+    "es": "Copias de seguridad: los datos en backups cifrados siguen un ciclo propio de sobrescritura, no superior a 90 (noventa) días después de la eliminación en la base activa, permaneciendo en ese intervalo lógicamente inaccesibles para el uso ordinario y protegidos por las medidas del Apéndice 2.",
+    "en": "Backup copies: data in encrypted backups follow their own overwrite cycle, not exceeding 90 (ninety) days after deletion from the active database, remaining during that interval logically inaccessible for ordinary use and protected by the measures in Appendix 2."
+  },
+  "dpa.s10_h2": {
+    "pt": "Incidentes de segurança",
+    "es": "Incidentes de seguridad",
+    "en": "Security incidents"
+  },
+  "dpa.s10_p1": {
+    "pt": "<span class=\"dpa-clause\">10.1.</span><strong>Prazo de comunicação.</strong> A FXO comunicará à Controladora, sem demora injustificada e em prazo não superior a 48 (quarenta e oito) horas contadas da ciência, todo incidente de segurança que possa acarretar risco ou dano relevante aos Usuários Finais, com as informações disponíveis: natureza do incidente, categorias e volume estimado de titulares e dados afetados, medidas adotadas e recomendadas, e ponto de contato.",
+    "es": "<span class=\"dpa-clause\">10.1.</span><strong>Plazo de comunicación.</strong> FXO comunicará a la Controladora, sin demora injustificada y en un plazo no superior a 48 (cuarenta y ocho) horas contadas desde que tuvo conocimiento, todo incidente de seguridad que pueda ocasionar riesgo o daño relevante a los Usuarios Finales, con la información disponible: naturaleza del incidente, categorías y volumen estimado de titulares y datos afectados, medidas adoptadas y recomendadas, y punto de contacto.",
+    "en": "<span class=\"dpa-clause\">10.1.</span><strong>Notification period.</strong> FXO will notify the Controller, without undue delay and within a period not exceeding 48 (forty-eight) hours from becoming aware, of any security incident that may cause relevant risk or harm to End Users, with the available information: nature of the incident, categories and estimated volume of data subjects and data affected, measures taken and recommended, and a point of contact."
+  },
+  "dpa.s10_p2": {
+    "pt": "As informações serão complementadas progressivamente, à medida da apuração, sem que a pendência de detalhes justifique retardo da comunicação inicial.",
+    "es": "La información se complementará progresivamente, a medida que avance la investigación, sin que la falta de detalles justifique un retraso en la comunicación inicial.",
+    "en": "The information will be progressively supplemented as the investigation proceeds, and the lack of details shall not justify delaying the initial notification."
+  },
+  "dpa.s10_p3": {
+    "pt": "Cabe à Controladora, na qualidade de controladora dos dados dos Usuários Finais, avaliar e realizar as comunicações à ANPD e aos titulares nos prazos da regulamentação vigente. O prazo do item 10.1 foi fixado para preservar a margem de cumprimento do prazo regulamentar da Controladora. A FXO prestará a cooperação necessária a essas comunicações.",
+    "es": "Corresponde a la Controladora, en su calidad de controladora de los datos de los Usuarios Finales, evaluar y realizar las comunicaciones a la ANPD y a los titulares dentro de los plazos de la reglamentación vigente. El plazo del ítem 10.1 fue fijado para preservar el margen de cumplimiento del plazo regulatorio de la Controladora. FXO prestará la cooperación necesaria para esas comunicaciones.",
+    "en": "It is the Controller's responsibility, in its capacity as controller of the End Users' data, to assess and carry out notifications to the ANPD and to data subjects within the deadlines set by the applicable regulations. The deadline in item 10.1 was set to preserve the Controller's margin to meet its regulatory deadline. FXO will provide the cooperation necessary for such notifications."
+  },
+  "dpa.s10_p4": {
+    "pt": "A FXO comunicará diretamente à ANPD apenas os incidentes relativos a dados de que seja controladora. Nenhuma das partes admitirá, em nome da outra, responsabilidade perante titulares ou autoridades.",
+    "es": "FXO comunicará directamente a la ANPD únicamente los incidentes relativos a datos de los que sea controladora. Ninguna de las partes admitirá, en nombre de la otra, responsabilidad ante titulares o autoridades.",
+    "en": "FXO will notify the ANPD directly only for incidents relating to data of which it is the controller. Neither party will admit liability, on behalf of the other, to data subjects or authorities."
+  },
+  "dpa.s11_h2": {
+    "pt": "Auditoria",
+    "es": "Auditoría",
+    "en": "Audit"
+  },
+  "dpa.s11_p1": {
+    "pt": "A FXO disponibilizará anualmente, mediante solicitação, documentação que demonstre o cumprimento deste DPA (descrição das medidas de segurança, atestados, certificações ou relatórios de avaliações independentes, quando existentes).",
+    "es": "FXO pondrá a disposición anualmente, mediante solicitud, documentación que demuestre el cumplimiento de este DPA (descripción de las medidas de seguridad, certificados, certificaciones o informes de evaluaciones independientes, cuando existan).",
+    "en": "FXO will make available annually, upon request, documentation demonstrating compliance with this DPA (description of security measures, attestations, certifications, or independent assessment reports, where they exist)."
+  },
+  "dpa.s11_p2": {
+    "pt": "Caso a documentação não seja razoavelmente suficiente, a Controladora poderá realizar, diretamente ou por auditor independente sujeito a confidencialidade, 1 (uma) auditoria por período de 12 (doze) meses, mediante aviso prévio de 30 (trinta) dias, em dias úteis e horário comercial, limitada ao tratamento objeto deste DPA, sem acesso a dados de outros clientes da FXO, a segredos de negócio ou a sistemas alheios ao escopo, e às custas da Controladora.",
+    "es": "En caso de que la documentación no sea razonablemente suficiente, la Controladora podrá realizar, directamente o por medio de un auditor independiente sujeto a confidencialidad, 1 (una) auditoría por período de 12 (doce) meses, mediante aviso previo de 30 (treinta) días, en días hábiles y horario comercial, limitada al tratamiento objeto de este DPA, sin acceso a datos de otros clientes de FXO, a secretos comerciales o a sistemas ajenos al alcance, y a costa de la Controladora.",
+    "en": "If the documentation is not reasonably sufficient, the Controller may conduct, directly or through an independent auditor bound by confidentiality, 1 (one) audit per 12 (twelve)-month period, upon 30 (thirty) days' prior notice, on business days and during business hours, limited to the processing covered by this DPA, without access to data of other FXO customers, trade secrets, or systems outside the scope, and at the Controller's expense."
+  },
+  "dpa.s11_p3": {
+    "pt": "Auditoria adicional será admitida após incidente de segurança relevante ou por determinação de autoridade competente.",
+    "es": "Se admitirá una auditoría adicional tras un incidente de seguridad relevante o por determinación de autoridad competente.",
+    "en": "An additional audit will be permitted following a relevant security incident or by determination of a competent authority."
+  },
+  "dpa.s12_h2": {
+    "pt": "Responsabilidade",
+    "es": "Responsabilidad",
+    "en": "Liability"
+  },
+  "dpa.s12_p1": {
+    "pt": "A responsabilidade das partes por violações deste DPA observa o regime de limitação de responsabilidade e de indenização do instrumento principal, ressalvados o dolo, a culpa grave e as hipóteses em que a limitação seja vedada por norma de ordem pública. Na ausência de regime de limitação no instrumento principal, aplica-se o regime legal. Nenhuma disposição deste DPA limita ou exclui a responsabilidade das partes perante titulares de dados ou autoridades, nos termos da LGPD.",
+    "es": "La responsabilidad de las partes por infracciones a este DPA observa el régimen de limitación de responsabilidad e indemnización del instrumento principal, salvo el dolo, la culpa grave y los supuestos en que la limitación esté prohibida por norma de orden público. En ausencia de régimen de limitación en el instrumento principal, se aplica el régimen legal. Ninguna disposición de este DPA limita o excluye la responsabilidad de las partes ante titulares de datos o autoridades, en los términos de la LGPD.",
+    "en": "The parties' liability for breaches of this DPA is subject to the limitation of liability and indemnification regime of the main instrument, except for willful misconduct, gross negligence, and cases where such limitation is prohibited by public policy rules. In the absence of a limitation regime in the main instrument, the statutory regime applies. No provision of this DPA limits or excludes the parties' liability to data subjects or authorities under the LGPD."
+  },
+  "dpa.s12_p2": {
+    "pt": "A parte que ressarcir dano causado pela outra terá direito de regresso, na medida da participação de cada agente no evento danoso (LGPD, art. 42, § 4º).",
+    "es": "La parte que resarza un daño causado por la otra tendrá derecho de regreso, en la medida de la participación de cada agente en el evento dañoso (LGPD, art. 42, § 4º).",
+    "en": "The party that compensates for damage caused by the other will have a right of recourse, in proportion to each agent's participation in the harmful event (LGPD, art. 42, § 4)."
+  },
+  "dpa.s13_h2": {
+    "pt": "Vigência",
+    "es": "Vigencia",
+    "en": "Term"
+  },
+  "dpa.s13_p1": {
+    "pt": "Este DPA vigora enquanto a FXO tratar dados pessoais em nome da Controladora, sobrevivendo ao término as obrigações das Seções 4, 7, 9, 10 e 12 e do item 6.3, enquanto a FXO conservar, a qualquer título, dados pessoais tratados em nome da Controladora, inclusive em cópias de segurança. Este DPA pode ser disponibilizado em outros idiomas, como cortesia; em caso de divergência, prevalece a versão em língua portuguesa.",
+    "es": "Este DPA tiene vigencia mientras FXO trate datos personales en nombre de la Controladora, sobreviviendo a su terminación las obligaciones de las Secciones 4, 7, 9, 10 y 12 y del ítem 6.3, mientras FXO conserve, a cualquier título, datos personales tratados en nombre de la Controladora, incluso en copias de seguridad. Este DPA puede estar disponible en otros idiomas, como cortesía; en caso de divergencia, prevalece la versión en idioma portugués.",
+    "en": "This DPA remains in force for as long as FXO processes personal data on behalf of the Controller, with the obligations of Sections 4, 7, 9, 10, and 12 and item 6.3 surviving termination for as long as FXO retains, under any title, personal data processed on behalf of the Controller, including in backup copies. This DPA may be made available in other languages as a courtesy; in the event of any discrepancy, the Portuguese-language version prevails."
+  },
+  "dpa.a1_h2": {
+    "pt": "Apêndice 1. Descrição do tratamento",
+    "es": "Apéndice 1. Descripción del tratamiento",
+    "en": "Appendix 1. Description of processing"
+  },
+  "dpa.a1_th1": {
+    "pt": "Elemento",
+    "es": "Elemento",
+    "en": "Element"
+  },
+  "dpa.a1_th2": {
+    "pt": "Descrição",
+    "es": "Descripción",
+    "en": "Description"
+  },
+  "dpa.a1_row1_col1": {
+    "pt": "Categorias de titulares",
+    "es": "Categorías de titulares",
+    "en": "Categories of data subjects"
+  },
+  "dpa.a1_row1_col2": {
+    "pt": "Usuários Finais: pessoas naturais que se autenticam no portal cativo para acessar a rede Wi-Fi da Controladora (visitantes, clientes, colaboradores).",
+    "es": "Usuarios Finales: personas naturales que se autentican en el portal cautivo para acceder a la red Wi-Fi de la Controladora (visitantes, clientes, colaboradores).",
+    "en": "End Users: natural persons who authenticate on the captive portal to access the Controller's Wi-Fi network (visitors, customers, staff)."
+  },
+  "dpa.a1_row2_col1": {
+    "pt": "Dados de autenticação por token",
+    "es": "Datos de autenticación por token",
+    "en": "Token authentication data"
+  },
+  "dpa.a1_row2_col2": {
+    "pt": "Número de telefone informado; token enviado e validado; registro do consentimento (texto, versão, data, hora).",
+    "es": "Número de teléfono informado; token enviado y validado; registro del consentimiento (texto, versión, fecha, hora).",
+    "en": "Phone number provided; token sent and validated; consent record (text, version, date, time)."
+  },
+  "dpa.a1_row3_col1": {
+    "pt": "Dados de autenticação OAuth",
+    "es": "Datos de autenticación OAuth",
+    "en": "OAuth authentication data"
+  },
+  "dpa.a1_row3_col2": {
+    "pt": "Dados básicos retornados pelo provedor escolhido pelo Usuário Final (identificador da conta, nome e e-mail, conforme escopo configurado); registro do consentimento. A plataforma não recebe nem armazena senhas.",
+    "es": "Datos básicos devueltos por el proveedor elegido por el Usuario Final (identificador de la cuenta, nombre y correo electrónico, conforme al alcance configurado); registro del consentimiento. La plataforma no recibe ni almacena contraseñas.",
+    "en": "Basic data returned by the provider chosen by the End User (account identifier, name, and email, as per the configured scope); consent record. The platform does not receive or store passwords."
+  },
+  "dpa.a1_row4_col1": {
+    "pt": "Registros de Sessão (accounting)",
+    "es": "Registros de Sesión (accounting)",
+    "en": "Session Records (accounting)"
+  },
+  "dpa.a1_row4_col2": {
+    "pt": "Identificação do usuário autenticado, endereço IP atribuído, endereço MAC, horários de início e fim, tempo de permanência, status, atualizações periódicas (intervalo padrão de 15 minutos).",
+    "es": "Identificación del usuario autenticado, dirección IP asignada, dirección MAC, horarios de inicio y fin, tiempo de permanencia, estado, actualizaciones periódicas (intervalo estándar de 15 minutos).",
+    "en": "Identification of the authenticated user, assigned IP address, MAC address, start and end times, duration of stay, status, periodic updates (default interval of 15 minutes)."
+  },
+  "dpa.a1_row5_col1": {
+    "pt": "Dados expressamente NÃO tratados",
+    "es": "Datos expresamente NO tratados",
+    "en": "Data expressly NOT processed"
+  },
+  "dpa.a1_row5_col2": {
+    "pt": "Histórico de navegação, sites acessados, URLs, aplicações utilizadas, conteúdo de comunicações, geolocalização contínua, dados sensíveis (art. 5º, II, da LGPD). Registros de navegação, quando existentes, residem exclusivamente no firewall da Controladora.",
+    "es": "Historial de navegación, sitios visitados, URLs, aplicaciones utilizadas, contenido de comunicaciones, geolocalización continua, datos sensibles (art. 5º, II, de la LGPD). Los registros de navegación, cuando existan, residen exclusivamente en el firewall de la Controladora.",
+    "en": "Browsing history, sites visited, URLs, applications used, content of communications, continuous geolocation, sensitive data (LGPD, art. 5, II). Browsing records, when they exist, reside exclusively on the Controller's firewall."
+  },
+  "dpa.a1_row6_col1": {
+    "pt": "Finalidades",
+    "es": "Finalidades",
+    "en": "Purposes"
+  },
+  "dpa.a1_row6_col2": {
+    "pt": "(i) autenticar Usuários Finais; (ii) registrar accounting da sessão; (iii) registrar consentimentos de forma auditável; (iv) cumprir deveres legais de guarda aplicáveis. Nenhuma outra.",
+    "es": "(i) autenticar Usuarios Finales; (ii) registrar el accounting de la sesión; (iii) registrar consentimientos de forma auditable; (iv) cumplir deberes legales de conservación aplicables. Ninguna otra.",
+    "en": "(i) authenticate End Users; (ii) record session accounting; (iii) record consents in an auditable manner; (iv) comply with applicable legal record-keeping duties. No other purpose."
+  },
+  "dpa.a1_row7_col1": {
+    "pt": "Natureza do tratamento",
+    "es": "Naturaleza del tratamiento",
+    "en": "Nature of processing"
+  },
+  "dpa.a1_row7_col2": {
+    "pt": "Coleta, registro, armazenamento, consulta, exportação para a Controladora e eliminação, por meios automatizados.",
+    "es": "Recopilación, registro, almacenamiento, consulta, exportación a la Controladora y eliminación, por medios automatizados.",
+    "en": "Collection, recording, storage, retrieval, export to the Controller, and deletion, by automated means."
+  },
+  "dpa.a1_row8_col1": {
+    "pt": "Duração",
+    "es": "Duración",
+    "en": "Duration"
+  },
+  "dpa.a1_row8_col2": {
+    "pt": "Pela vigência do vínculo, observados os prazos de retenção da Seção 9.",
+    "es": "Durante la vigencia del vínculo, observados los plazos de retención de la Sección 9.",
+    "en": "For the duration of the relationship, subject to the retention periods set out in Section 9."
+  },
+  "dpa.a2_h2": {
+    "pt": "Apêndice 2. Medidas técnicas e administrativas de segurança",
+    "es": "Apéndice 2. Medidas técnicas y administrativas de seguridad",
+    "en": "Appendix 2. Technical and administrative security measures"
+  },
+  "dpa.a2_th1": {
+    "pt": "Domínio",
+    "es": "Dominio",
+    "en": "Domain"
+  },
+  "dpa.a2_th2": {
+    "pt": "Medidas",
+    "es": "Medidas",
+    "en": "Measures"
+  },
+  "dpa.a2_row1_col1": {
+    "pt": "Criptografia",
+    "es": "Criptografía",
+    "en": "Encryption"
+  },
+  "dpa.a2_row1_col2": {
+    "pt": "Tráfego cifrado em trânsito (TLS) entre dispositivo, portal e plataforma; comunicação com o firewall suportada por certificado dedicado; dados em repouso cifrados; backups cifrados.",
+    "es": "Tráfico cifrado en tránsito (TLS) entre dispositivo, portal y plataforma; comunicación con el firewall respaldada por certificado dedicado; datos en reposo cifrados; copias de seguridad cifradas.",
+    "en": "Traffic encrypted in transit (TLS) between device, portal, and platform; communication with the firewall supported by a dedicated certificate; data encrypted at rest; encrypted backups."
+  },
+  "dpa.a2_row2_col1": {
+    "pt": "Controle de acesso",
+    "es": "Control de acceso",
+    "en": "Access control"
+  },
+  "dpa.a2_row2_col2": {
+    "pt": "Acesso lógico por necessidade funcional (least privilege); autenticação reforçada para acessos administrativos; revisão periódica de acessos; registro (log) de acessos administrativos aos dados.",
+    "es": "Acceso lógico por necesidad funcional (least privilege); autenticación reforzada para accesos administrativos; revisión periódica de accesos; registro (log) de accesos administrativos a los datos.",
+    "en": "Logical access on a need-to-know basis (least privilege); strengthened authentication for administrative access; periodic access reviews; logging of administrative access to data."
+  },
+  "dpa.a2_row3_col1": {
+    "pt": "Segregação",
+    "es": "Segregación",
+    "en": "Segregation"
+  },
+  "dpa.a2_row3_col2": {
+    "pt": "Isolamento lógico por ambiente/tenant (UNIQID); segregação entre produção e desenvolvimento; dados de clientes distintos não compartilham contexto de acesso.",
+    "es": "Aislamiento lógico por ambiente/tenant (UNIQID); segregación entre producción y desarrollo; los datos de clientes distintos no comparten contexto de acceso.",
+    "en": "Logical isolation by environment/tenant (UNIQID); segregation between production and development; data from different customers do not share an access context."
+  },
+  "dpa.a2_row4_col1": {
+    "pt": "Operação segura",
+    "es": "Operación segura",
+    "en": "Secure operation"
+  },
+  "dpa.a2_row4_col2": {
+    "pt": "Gestão de vulnerabilidades e atualizações; hardening de servidores; monitoramento de disponibilidade e de eventos de segurança; restrição de origem para comunicação RADIUS (IPs públicos previamente autorizados).",
+    "es": "Gestión de vulnerabilidades y actualizaciones; hardening de servidores; monitoreo de disponibilidad y de eventos de seguridad; restricción de origen para comunicación RADIUS (IPs públicas previamente autorizadas).",
+    "en": "Vulnerability and update management; server hardening; availability and security event monitoring; source restriction for RADIUS communication (previously authorized public IPs)."
+  },
+  "dpa.a2_row5_col1": {
+    "pt": "Continuidade",
+    "es": "Continuidad",
+    "en": "Continuity"
+  },
+  "dpa.a2_row5_col2": {
+    "pt": "Cópias de segurança periódicas cifradas; procedimentos de restauração testados; ciclo de sobrescrição de backups não superior a 90 dias após eliminação na base ativa.",
+    "es": "Copias de seguridad periódicas cifradas; procedimientos de restauración probados; ciclo de sobrescritura de copias de seguridad no superior a 90 días después de la eliminación en la base activa.",
+    "en": "Periodic encrypted backups; tested restoration procedures; backup overwrite cycle not exceeding 90 days after deletion from the active database."
+  },
+  "dpa.a2_row6_col1": {
+    "pt": "Pessoas e processos",
+    "es": "Personas y procesos",
+    "en": "People and processes"
+  },
+  "dpa.a2_row6_col2": {
+    "pt": "Obrigações de confidencialidade; treinamento periódico em privacidade e segurança; procedimento interno de resposta a incidentes com papéis definidos; Encarregado designado (dpo@wi-fi.now).",
+    "es": "Obligaciones de confidencialidad; capacitación periódica en privacidad y seguridad; procedimiento interno de respuesta a incidentes con roles definidos; DPO designado (dpo@wi-fi.now).",
+    "en": "Confidentiality obligations; periodic privacy and security training; internal incident response procedure with defined roles; designated DPO (dpo@wi-fi.now)."
+  },
+  "dpa.a2_row7_col1": {
+    "pt": "Descarte",
+    "es": "Descarte",
+    "en": "Disposal"
+  },
+  "dpa.a2_row7_col2": {
+    "pt": "Expurgo automatizado ao fim dos prazos da Seção 9, com eliminação definitiva e irrecuperável na base ativa.",
+    "es": "Purga automatizada al final de los plazos de la Sección 9, con eliminación definitiva e irrecuperable en la base activa.",
+    "en": "Automated purging at the end of the periods set out in Section 9, with permanent and irrecoverable deletion from the active database."
+  }
+}

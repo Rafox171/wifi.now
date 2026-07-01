@@ -46,7 +46,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev">
-    <link rel="stylesheet" href="styles.css?v=88">
+    <link rel="stylesheet" href="styles.css?v=90">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -58,16 +58,25 @@
             </a>
             <div class="nav-right">
                 <div class="nav-links" id="nav-links">
-                    <a href="recursos.html">Recursos</a>
-                    <a href="como-funciona.html">Onboarding</a>
-                    <a href="planos.html">Planos</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="#" class="nav-mobile-login">Entrar</a>
+                    <a href="recursos.html" data-i18n="header.recursos">Recursos</a>
+                    <a href="como-funciona.html" data-i18n="header.onboarding">Onboarding</a>
+                    <a href="planos.html" data-i18n="header.planos">Planos</a>
+                    <a href="faq.html" data-i18n="header.faq">FAQ</a>
+                    <a href="#" class="nav-mobile-login" data-i18n="header.nav_mobile_login">Entrar</a>
                 </div>
                 <span class="nav-divider"></span>
                 <div class="nav-actions">
-                    <a href="#" class="login-link">Entrar</a>
-                    <a href="#" class="btn btn-pill">Comece agora</a>
+                    <a href="#" class="login-link" data-i18n="header.entrar">Entrar</a>
+                    <a href="#" class="btn btn-pill" data-i18n="header.comece_agora">Comece agora</a>
+                    <div class="language-selector-wrap">
+                        <svg class="language-selector-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        <select id="language-selector" class="language-selector" aria-label="Selecionar idioma">
+                            <option value="pt">PT</option>
+                            <option value="es">ES</option>
+                            <option value="en">EN</option>
+                        </select>
+                        <svg class="language-selector-caret" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
                 </div>
                 <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
                     <span></span>
@@ -86,12 +95,12 @@
             <div class="hero-slide active" style="background-image: url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/escritorio.jpg');">
                 <div class="hero-carousel-overlay"></div>
                 <div class="hero-content">
-                    <span class="hero-eyebrow">Mais um visitante pedindo Wi-Fi.</span>
-                    <h1 class="hero-title">Seu Wi-Fi de visitantes pronto<br>em <span class="text-teal">minutos</span></h1>
-                    <p class="hero-subtitle">Teste grátis. Use o FortiGate que você já tem. Sem senha compartilhada, sem servidor local.</p>
+                    <span class="hero-eyebrow" data-i18n="hero.slide1.eyebrow">Mais um visitante pedindo Wi-Fi.</span>
+                    <h1 class="hero-title" data-i18n="hero.slide1.titulo">Seu Wi-Fi de visitantes pronto<br>em <span class="text-teal">minutos</span></h1>
+                    <p class="hero-subtitle" data-i18n="hero.slide1.subtitulo">Teste grátis. Use o FortiGate que você já tem. Sem senha compartilhada, sem servidor local.</p>
                     <div class="hero-action-group">
-                        <a href="#" class="btn-hero-main">Comece agora</a>
-                        <span class="hero-hint">feito para quem cuida da rede</span>
+                        <a href="#" class="btn-hero-main" data-i18n="hero.cta">Comece agora</a>
+                        <span class="hero-hint" data-i18n="hero.slide1.hint">feito para quem cuida da rede</span>
                     </div>
                 </div>
             </div>
@@ -100,12 +109,12 @@
             <div class="hero-slide" style="background-image: url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/wifirecp%C3%A7%C3%A3o.jpg');">
                 <div class="hero-carousel-overlay"></div>
                 <div class="hero-content">
-                    <span class="hero-eyebrow">Senha compartilhada resolve agora. Depois sobra para você.</span>
-                    <h1 class="hero-title">Saia do improviso<br>antes que vire <span class="text-teal">problema</span></h1>
-                    <p class="hero-subtitle">Coloque o acesso de visitantes no fluxo certo: portal, identificação e registro de sessão, direto no FortiGate que você já conhece.</p>
+                    <span class="hero-eyebrow" data-i18n="hero.slide2.eyebrow">Senha compartilhada resolve agora. Depois sobra para você.</span>
+                    <h1 class="hero-title" data-i18n="hero.slide2.titulo">Saia do improviso<br>antes que vire <span class="text-teal">problema</span></h1>
+                    <p class="hero-subtitle" data-i18n="hero.slide2.subtitulo">Coloque o acesso de visitantes no fluxo certo: portal, identificação e registro de sessão, direto no FortiGate que você já conhece.</p>
                     <div class="hero-action-group">
-                        <a href="#" class="btn-hero-main">Comece agora</a>
-                        <span class="hero-hint">simples para quem vive rede todos os dias</span>
+                        <a href="#" class="btn-hero-main" data-i18n="hero.cta">Comece agora</a>
+                        <span class="hero-hint" data-i18n="hero.slide2.hint">simples para quem vive rede todos os dias</span>
                     </div>
                 </div>
             </div>
@@ -114,12 +123,12 @@
             <div class="hero-slide" style="background-image: url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/ti.jpg');">
                 <div class="hero-carousel-overlay"></div>
                 <div class="hero-content">
-                    <span class="hero-eyebrow">Solução cara demais também é problema.</span>
-                    <h1 class="hero-title">Wi-Fi de visitantes,<br>de <span class="text-teal">admin para admin</span></h1>
-                    <p class="hero-subtitle">Feito para resolver uma dor comum de quem usa FortiGate, com simplicidade, preço acessível e comunidade em volta.</p>
+                    <span class="hero-eyebrow" data-i18n="hero.slide3.eyebrow">Solução cara demais também é problema.</span>
+                    <h1 class="hero-title" data-i18n="hero.slide3.titulo">Wi-Fi de visitantes,<br>de <span class="text-teal">admin para admin</span></h1>
+                    <p class="hero-subtitle" data-i18n="hero.slide3.subtitulo">Feito para resolver uma dor comum de quem usa FortiGate, com simplicidade, preço acessível e comunidade em volta.</p>
                     <div class="hero-action-group">
-                        <a href="planos.html" class="btn-hero-main">Ver planos</a>
-                        <span class="hero-hint">uma solução do tamanho da dor</span>
+                        <a href="planos.html" class="btn-hero-main" data-i18n="hero.slide3.cta">Ver planos</a>
+                        <span class="hero-hint" data-i18n="hero.slide3.hint">uma solução do tamanho da dor</span>
                     </div>
                 </div>
             </div>
@@ -247,8 +256,8 @@
                     <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/ChatGPT%20Image%2018%20de%20mai.%20de%202026%2C%2016_57_42%20(1).png" alt="FCS Brasil 2026" class="fcs-logo-img" loading="lazy" decoding="async">
                 </div>
                 <div class="banner-text">
-                    <h2>Encontre a gente no FCS 2026</h2>
-                    <p>Conheça o Wi-fi.now e veja como modernizar o acesso Wi-Fi para visitantes.</p>
+                    <h2 data-i18n="banner_fcs.titulo">Encontre a gente no FCS 2026</h2>
+                    <p data-i18n="banner_fcs.descricao">Conheça o Wi-fi.now e veja como modernizar o acesso Wi-Fi para visitantes.</p>
                 </div>
             </div>
             <a href="#" class="btn-cta">
@@ -272,20 +281,20 @@
                 <div class="ln-pillar">
                     <span class="ln-pillar-num">2.1</span>
                     <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/imag.png" alt="Portal na sua marca" class="pillar-image" loading="lazy" decoding="async">
-                    <h3>Portal na sua marca</h3>
-                    <p>Portal com a identidade da sua empresa. Logo, cores e termos definidos por você.</p>
+                    <h3 data-i18n="pilares.portal_marca">Portal na sua marca</h3>
+                    <p data-i18n="pilares.portal_marca_desc">Portal com a identidade da sua empresa. Logo, cores e termos definidos por você.</p>
                 </div>
                 <div class="ln-pillar">
                     <span class="ln-pillar-num">2.2</span>
                     <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/linkedi.png" alt="Token SMS ou OAuth" class="pillar-image" loading="lazy" decoding="async">
-                    <h3>Token SMS ou OAuth</h3>
-                    <p>Validação por token SMS/WhatsApp ou login Google, LinkedIn, Microsoft. Sem amarrar.</p>
+                    <h3 data-i18n="pilares.token_auth">Token SMS ou OAuth</h3>
+                    <p data-i18n="pilares.token_auth_desc">Validação por token SMS/WhatsApp ou login Google, LinkedIn, Microsoft. Sem amarrar.</p>
                 </div>
                 <div class="ln-pillar">
                     <span class="ln-pillar-num">2.3</span>
                     <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/radius.png" alt="Accounting RADIUS" class="pillar-image" loading="lazy" decoding="async">
-                    <h3>RADIUS Accounting</h3>
-                    <p>Quem, quando, por quanto tempo. Nada de histórico de navegação.</p>
+                    <h3 data-i18n="pilares.radius">RADIUS Accounting</h3>
+                    <p data-i18n="pilares.radius_desc">Quem, quando, por quanto tempo. Nada de histórico de navegação.</p>
                 </div>
             </div>
         </div>
@@ -295,59 +304,59 @@
     <section class="ln-resp">
         <div class="container">
             <div class="ln-section-head">
-                <span class="ln-eyebrow">[ 03 ] DIVISÃO DE PAPÉIS</span>
-                <h2>Cada parte faz bem uma coisa.</h2>
-                <p>Sem sobreposição, sem confusão de escopo. wi-fi.now cuida do portal e do accounting. FortiGate cuida de segurança e tráfego. Você define termos e retenção.</p>
+                <span class="ln-eyebrow" data-i18n="resp.eyebrow">[ 03 ] DIVISÃO DE PAPÉIS</span>
+                <h2 data-i18n="resp.titulo">Cada parte faz bem uma coisa.</h2>
+                <p data-i18n="resp.descricao">Sem sobreposição, sem confusão de escopo. wi-fi.now cuida do portal e do accounting. FortiGate cuida de segurança e tráfego. Você define termos e retenção.</p>
             </div>
             <div class="ln-resp-grid">
                 <div class="ln-resp-col ln-resp-col-wifi">
                     <div class="ln-resp-header">
-                        <span class="ln-resp-eyebrow">Plataforma</span>
-                        <h3 class="ln-resp-name">wi-fi.now</h3>
-                        <p class="ln-resp-tag">Portal de autenticação e accounting da sessão.</p>
+                        <span class="ln-resp-eyebrow" data-i18n="resp.wifi.label">Plataforma</span>
+                        <h3 class="ln-resp-name" data-i18n="resp.wifi.name">wi-fi.now</h3>
+                        <p class="ln-resp-tag" data-i18n="resp.wifi.tag">Portal de autenticação e accounting da sessão.</p>
                     </div>
                     <div class="ln-resp-body">
                         <ul>
-                            <li>Portal personalizado para cada cliente</li>
-                            <li>Validação por token SMS ou WhatsApp</li>
-                            <li>OAuth Google, LinkedIn e Microsoft</li>
-                            <li>RADIUS Accounting</li>
-                            <li>Conexão segura para acessar Wi-Fi</li>
-                            <li>Relatório simples de uso da sessão</li>
+                            <li data-i18n="resp.wifi.item1">Portal personalizado para cada cliente</li>
+                            <li data-i18n="resp.wifi.item2">Validação por token SMS ou WhatsApp</li>
+                            <li data-i18n="resp.wifi.item3">OAuth Google, LinkedIn e Microsoft</li>
+                            <li data-i18n="resp.wifi.item4">RADIUS Accounting</li>
+                            <li data-i18n="resp.wifi.item5">Conexão segura para acessar Wi-Fi</li>
+                            <li data-i18n="resp.wifi.item6">Relatório simples de uso da sessão</li>
                         </ul>
                     </div>
                 </div>
                 <div class="ln-resp-col ln-resp-col-forti">
                     <div class="ln-resp-header">
-                        <span class="ln-resp-eyebrow">Firewall</span>
-                        <h3 class="ln-resp-name">FortiGate</h3>
-                        <p class="ln-resp-tag">Controle de acesso, segurança e políticas de tráfego.</p>
+                        <span class="ln-resp-eyebrow" data-i18n="resp.forti.label">Firewall</span>
+                        <h3 class="ln-resp-name" data-i18n="resp.forti.name">FortiGate</h3>
+                        <p class="ln-resp-tag" data-i18n="resp.forti.tag">Controle de acesso, segurança e políticas de tráfego.</p>
                     </div>
                     <div class="ln-resp-body">
                         <ul>
-                            <li>Redirecionamento ao portal externo</li>
-                            <li>Liberação do cliente após autenticação</li>
-                            <li>Firewall, NAT e segmentação de rede</li>
-                            <li>Web Filter, App Control, IPS, Antivirus</li>
-                            <li>Bloqueios, limites de banda e tempo de sessão</li>
-                            <li>Envio dos eventos de accounting RADIUS</li>
+                            <li data-i18n="resp.forti.item1">Redirecionamento ao portal externo</li>
+                            <li data-i18n="resp.forti.item2">Liberação do cliente após autenticação</li>
+                            <li data-i18n="resp.forti.item3">Firewall, NAT e segmentação de rede</li>
+                            <li data-i18n="resp.forti.item4">Web Filter, App Control, IPS, Antivirus</li>
+                            <li data-i18n="resp.forti.item5">Bloqueios, limites de banda e tempo de sessão</li>
+                            <li data-i18n="resp.forti.item6">Envio dos eventos de accounting RADIUS</li>
                         </ul>
                     </div>
                 </div>
                 <div class="ln-resp-col ln-resp-col-you">
                     <div class="ln-resp-header">
-                        <span class="ln-resp-eyebrow">Cliente</span>
-                        <h3 class="ln-resp-name">Você</h3>
-                        <p class="ln-resp-tag">Política, identidade e conformidade do ambiente.</p>
+                        <span class="ln-resp-eyebrow" data-i18n="resp.you.label">Cliente</span>
+                        <h3 class="ln-resp-name" data-i18n="resp.you.name">Você</h3>
+                        <p class="ln-resp-tag" data-i18n="resp.you.tag">Política, identidade e conformidade do ambiente.</p>
                     </div>
                     <div class="ln-resp-body">
                         <ul>
-                            <li>Termos de uso e política de privacidade</li>
-                            <li>Credenciais OAuth (Google, LinkedIn, Microsoft)</li>
-                            <li>IPs públicos autorizados no RADIUS wi-fi.now</li>
-                        <li>Definição de retenção e adequação LGPD</li>
-                            <li>Aplicação do script gerado pela plataforma</li>
-                            <li>Homologação antes da entrada em produção</li>
+                            <li data-i18n="resp.you.item1">Termos de uso e política de privacidade</li>
+                            <li data-i18n="resp.you.item2">Credenciais OAuth (Google, LinkedIn, Microsoft)</li>
+                            <li data-i18n="resp.you.item3">IPs públicos autorizados no RADIUS wi-fi.now</li>
+                        <li data-i18n="resp.you.item4">Definição de retenção e adequação LGPD</li>
+                            <li data-i18n="resp.you.item5">Aplicação do script gerado pela plataforma</li>
+                            <li data-i18n="resp.you.item6">Homologação antes da entrada em produção</li>
                         </ul>
                     </div>
                 </div>
@@ -359,9 +368,9 @@
     <section class="ln-approach">
         <div class="container">
             <div class="ln-section-head-left">
-                <span class="ln-eyebrow">[ 04 ] A FERIDA</span>
-                <h2>Senha compartilhada resolve agora.<br>Depois <span class="text-teal">sobra para você.</span></h2>
-                <p class="section-desc">A recepção passa a senha. O fornecedor compartilha. O visitante volta outro dia e ainda conecta. Quando alguém pergunta quem acessou, quando acessou e por quanto tempo, a resposta cai na TI.</p>
+                <span class="ln-eyebrow" data-i18n="approach.eyebrow">[ 04 ] A FERIDA</span>
+                <h2 data-i18n="approach.titulo">Senha compartilhada resolve agora.<br>Depois <span class="text-teal">sobra para você.</span></h2>
+                <p class="section-desc" data-i18n="approach.descricao">A recepção passa a senha. O fornecedor compartilha. O visitante volta outro dia e ainda conecta. Quando alguém pergunta quem acessou, quando acessou e por quanto tempo, a resposta cai na TI.</p>
             </div>
 
             <div class="approach-grid">
@@ -392,31 +401,31 @@
         </video>
         <div class="ln-video-overlay"></div>
         <div class="ln-video-content">
-            <span class="ln-video-eyebrow">
+            <span class="ln-video-eyebrow" data-i18n="lgpd.eyebrow">
                 Conformidade LGPD
             </span>
-            <h2>Auditoria inteligente.<br>Privacidade <span class="ln-video-hl">respeitada.</span></h2>
+            <h2 data-i18n="lgpd.titulo">Auditoria inteligente.<br>Privacidade <span class="ln-video-hl">respeitada.</span></h2>
             <span class="ln-video-divider"></span>
-            <p class="ln-video-lead">Registramos apenas o essencial para auditoria administrativa: <strong>quem acessou, com qual dispositivo, quando entrou e quando saiu.</strong></p>
-            <p class="ln-video-sub">Não monitoramos navegação, não armazenamos conteúdo e não violamos a privacidade dos usuários.</p>
+            <p class="ln-video-lead" data-i18n="lgpd.lead">Registramos apenas o essencial para auditoria administrativa: <strong>quem acessou, com qual dispositivo, quando entrou e quando saiu.</strong></p>
+            <p class="ln-video-sub" data-i18n="lgpd.sub">Não monitoramos navegação, não armazenamos conteúdo e não violamos a privacidade dos usuários.</p>
             <div class="ln-video-features">
                 <div class="ln-video-feature">
                     <span class="ln-video-feature-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#04D2B4"><path d="M707-707q93 93 93 227t-93 227q-93 93-227 93t-227-93q-93-93-93-227t93-227q93-93 227-93t227 93Zm-57 397q70-70 70-170t-70-170q-70-70-170-70t-170 70q-70 70-70 170t70 170q70 70 170 70t170-70Zm-84-57.5q38-27.5 54-72.5H340q16 45 54 72.5t86 27.5q48 0 86-27.5Zm-214.5-164Q363-520 380-520t28.5-11.5Q420-543 420-560t-11.5-28.5Q397-600 380-600t-28.5 11.5Q340-577 340-560t11.5 28.5Zm200 0Q563-520 580-520t28.5-11.5Q620-543 620-560t-11.5-28.5Q597-600 580-600t-28.5 11.5Q540-577 540-560t11.5 28.5ZM40-720v-120q0-33 23.5-56.5T120-920h120v80H120v120H40ZM240-40H120q-33 0-56.5-23.5T40-120v-120h80v120h120v80Zm480 0v-80h120v-120h80v120q0 33-23.5 56.5T840-40H720Zm120-680v-120H720v-80h120q33 0 56.5 23.5T920-840v120h-80ZM480-480Z"/></svg>
                     </span>
-                    <span class="ln-video-feature-label">Identificação<br>de usuários</span>
+                    <span class="ln-video-feature-label" data-i18n="lgpd.feature1">Identificação<br>de usuários</span>
                 </div>
                 <div class="ln-video-feature">
                     <span class="ln-video-feature-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#04D2B4"><path d="M600-320h160v-160h-60v100H600v60ZM200-560h60v-100h100v-60H200v160Zm120 440v-80H160q-33 0-56.5-23.5T80-280v-480q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v480q0 33-23.5 56.5T800-200H640v80H320ZM160-280h640v-480H160v480Zm0 0v-480 480Z"/></svg>
                     </span>
-                    <span class="ln-video-feature-label">Informações<br>de acesso</span>
+                    <span class="ln-video-feature-label" data-i18n="lgpd.feature2">Informações<br>de acesso</span>
                 </div>
                 <div class="ln-video-feature">
                     <span class="ln-video-feature-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#04D2B4"><path d="M480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q97-30 162-118.5T718-480H480v-315l-240 90v207q0 7 2 18h238v316Z"/></svg>
                     </span>
-                    <span class="ln-video-feature-label">Conformidade<br>e segurança</span>
+                    <span class="ln-video-feature-label" data-i18n="lgpd.feature3">Conformidade<br>e segurança</span>
                 </div>
             </div>
         </div>
@@ -426,14 +435,14 @@
     <section class="ln-flow" style="background-image: url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/comunidade.jpg'); background-size: cover; background-position: center;">
         <div class="container">
             <div class="ln-section-head">
-                <span class="ln-eyebrow">Comunidade</span>
-                <h2>Faça parte da maior comunidade de captive portal</h2>
-                <p>O wi-fi.now cresce de admin para admin. Indique outro administrador e, quando ele ativar no FortiGate, vocês dois ganham acesso grátis.</p>
+                <span class="ln-eyebrow" data-i18n="comunidade.eyebrow">Comunidade</span>
+                <h2 data-i18n="comunidade.titulo">Faça parte da maior comunidade de captive portal</h2>
+                <p data-i18n="comunidade.descricao">O wi-fi.now cresce de admin para admin. Indique outro administrador e, quando ele ativar no FortiGate, vocês dois ganham acesso grátis.</p>
             </div>
             <div class="ln-flow-grid">
                 <div class="ln-flow-card">
-                    <h3>Indique um admin</h3>
-                    <p>Compartilhe seu link com quem também cuida de uma rede Fortinet.</p>
+                    <h3 data-i18n="comunidade.passo_1">Indique um admin</h3>
+                    <p data-i18n="comunidade.passo_1_desc">Compartilhe seu link com quem também cuida de uma rede Fortinet.</p>
                 </div>
 
                 <div class="ln-flow-arrow">
@@ -441,8 +450,8 @@
                 </div>
 
                 <div class="ln-flow-card">
-                    <h3>Ele ativa no FortiGate</h3>
-                    <p>Seu indicado liga o wi-fi.now na rede dele em minutos.</p>
+                    <h3 data-i18n="comunidade.passo_2">Ele ativa no FortiGate</h3>
+                    <p data-i18n="comunidade.passo_2_desc">Seu indicado liga o wi-fi.now na rede dele em minutos.</p>
                 </div>
 
                 <div class="ln-flow-arrow">
@@ -450,12 +459,12 @@
                 </div>
 
                 <div class="ln-flow-card">
-                    <h3>Vocês ganham</h3>
-                    <p>Acesso grátis liberado para os dois.</p>
+                    <h3 data-i18n="comunidade.passo_3">Vocês ganham</h3>
+                    <p data-i18n="comunidade.passo_3_desc">Acesso grátis liberado para os dois.</p>
                 </div>
             </div>
             <div class="text-center" style="margin-top: 3rem;">
-                <a href="#" class="btn btn-primary">Indique e ganhe</a>
+                <a href="#" class="btn btn-primary" data-i18n="comunidade.cta">Indique e ganhe</a>
             </div>
         </div>
     </section>
@@ -464,41 +473,41 @@
     <section class="ln-testimonial">
         <div class="container ln-testimonial-container">
             <div class="ln-section-head">
-                <span class="ln-eyebrow">Depoimento</span>
-                <h2>Quem usa, entende o valor rapidamente</h2>
+                <span class="ln-eyebrow" data-i18n="testimonial.eyebrow">Depoimento</span>
+                <h2 data-i18n="testimonial.titulo">Quem usa, entende o valor rapidamente</h2>
             </div>
 
             <figure class="ln-quote-card">
-                <blockquote>Antes, liberar Wi-Fi pra visitante sempre virava discussão: segurança, equipamento, quem acessou o quê. O wi-fi.now resolveu isso sem trocar nada da nossa infraestrutura. Configuramos, e voltamos a trabalhar. O melhor elogio que eu consigo dar é que esqueço que ele existe, ele só funciona, e quando preciso saber quem acessou, está tudo lá.</blockquote>
+                <blockquote data-i18n="testimonial.quote">Antes, liberar Wi-Fi pra visitante sempre virava discussão: segurança, equipamento, quem acessou o quê. O wi-fi.now resolveu isso sem trocar nada da nossa infraestrutura. Configuramos, e voltamos a trabalhar. O melhor elogio que eu consigo dar é que esqueço que ele existe, ele só funciona, e quando preciso saber quem acessou, está tudo lá.</blockquote>
                 <figcaption class="ln-quote-author">
                     <span class="ln-quote-avatar">RP</span>
                     <span class="ln-quote-author-info">
-                        <strong>Rodrigo Perenha</strong>
-                        <span>Diretor ::: Kamino</span>
+                        <strong data-i18n="testimonial.author">Rodrigo Perenha</strong>
+                        <span data-i18n="testimonial.role">Diretor ::: Kamino</span>
                     </span>
                 </figcaption>
             </figure>
 
             <ul class="ln-quote-highlights">
-                <li>
+                <li data-i18n="testimonial.highlight1">
                     <span class="ln-quote-check">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3b82f6"><path d="M268-240 42-466l57-56 170 170 56 56-57 56Zm226 0L268-466l56-57 170 170 368-368 56 57-424 424Zm0-226-57-56 198-198 57 56-198 198Z"/></svg>
                     </span>
                     Mais visibilidade para o time de TI
                 </li>
-                <li>
+                <li data-i18n="testimonial.highlight2">
                     <span class="ln-quote-check">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3b82f6"><path d="M268-240 42-466l57-56 170 170 56 56-57 56Zm226 0L268-466l56-57 170 170 368-368 56 57-424 424Zm0-226-57-56 198-198 57 56-198 198Z"/></svg>
                     </span>
                     Auditoria simples dos acessos
                 </li>
-                <li>
+                <li data-i18n="testimonial.highlight3">
                     <span class="ln-quote-check">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3b82f6"><path d="M268-240 42-466l57-56 170 170 56 56-57 56Zm226 0L268-466l56-57 170 170 368-368 56 57-424 424Zm0-226-57-56 198-198 57 56-198 198Z"/></svg>
                     </span>
                     Privacidade preservada
                 </li>
-                <li>
+                <li data-i18n="testimonial.highlight4">
                     <span class="ln-quote-check">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3b82f6"><path d="M268-240 42-466l57-56 170 170 56 56-57 56Zm226 0L268-466l56-57 170 170 368-368 56 57-424 424Zm0-226-57-56 198-198 57 56-198 198Z"/></svg>
                     </span>
@@ -512,9 +521,9 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-left">
-                <a href="termos.html">Termos</a>
+                <a href="termos.html" data-i18n="footer.termos">Termos</a>
                 <span class="footer-bullet">•</span>
-                <a href="privacidade.html">Privacidade</a>
+                <a href="privacidade.html" data-i18n="footer.privacidade">Privacidade</a>
                 <span class="footer-bullet">•</span>
                 <a href="dpa.html">DPA</a>
             </div>
@@ -524,7 +533,7 @@
                 </a>
             </div>
             <div class="footer-right">
-                <span class="copyright">Todos os direitos reservados © 2026</span>
+                <span class="copyright" data-i18n="footer.copyright">Todos os direitos reservados © 2026</span>
             </div>
         </div>
     </footer>
@@ -602,5 +611,6 @@
     </script>
 
     <script src="modal.js?v=5"></script>
+    <script src="i18n.js"></script>
 </body>
 </html>

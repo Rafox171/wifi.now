@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev">
-    <link rel="stylesheet" href="styles.css?v=88">
+    <link rel="stylesheet" href="styles.css?v=90">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         /* ===== Página Privacidade (mesmo estilo da DPA) ===== */
@@ -290,16 +290,25 @@
             </a>
             <div class="nav-right">
                 <div class="nav-links" id="nav-links">
-                    <a href="recursos.html">Recursos</a>
-                    <a href="como-funciona.html">Onboarding</a>
-                    <a href="planos.html">Planos</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="#" class="nav-mobile-login">Entrar</a>
+                    <a href="recursos.html" data-i18n="header.recursos">Recursos</a>
+                    <a href="como-funciona.html" data-i18n="header.onboarding">Onboarding</a>
+                    <a href="planos.html" data-i18n="header.planos">Planos</a>
+                    <a href="faq.html" data-i18n="header.faq">FAQ</a>
+                    <a href="#" class="nav-mobile-login" data-i18n="header.nav_mobile_login">Entrar</a>
                 </div>
                 <span class="nav-divider"></span>
                 <div class="nav-actions">
-                    <a href="#" class="login-link">Entrar</a>
-                    <a href="#" class="btn btn-pill">Comece agora</a>
+                    <a href="#" class="login-link" data-i18n="header.entrar">Entrar</a>
+                    <a href="#" class="btn btn-pill" data-i18n="header.comece_agora">Comece agora</a>
+                    <div class="language-selector-wrap">
+                        <svg class="language-selector-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        <select id="language-selector" class="language-selector" aria-label="Selecionar idioma">
+                            <option value="pt">PT</option>
+                            <option value="es">ES</option>
+                            <option value="en">EN</option>
+                        </select>
+                        <svg class="language-selector-caret" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
                 </div>
                 <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
                     <span></span>
@@ -313,181 +322,181 @@
     <!-- Cabeçalho do documento -->
     <header class="dpa-header">
         <div class="container">
-            <h1 class="dpa-title">Política de Privacidade</h1>
-            <p class="dpa-effective">Vigente a partir de: 12/06/2026<span class="sep">|</span>Versão 1.1 (consolidada)</p>
+            <h1 class="dpa-title" data-i18n="privacidade.titulo">Política de Privacidade</h1>
+            <p class="dpa-effective"><span data-i18n="privacidade.vigente_label">Vigente a partir de:</span> 12/06/2026<span class="sep">|</span><span data-i18n="privacidade.versao_label">Versão</span> 1.1 <span data-i18n="privacidade.consolidada_label">(consolidada)</span></p>
         </div>
     </header>
 
     <div class="container dpa-layout">
         <!-- Sumário -->
         <aside class="dpa-toc" aria-label="Sumário do documento">
-            <div class="dpa-toc-label">Nesta página</div>
-            <a href="#s1">1. Dois papéis: dados que controlamos e dados que operamos</a>
-            <a href="#s2">2. Quais informações coletamos</a>
-            <a href="#s3">3. Como usamos as informações e com que bases legais</a>
-            <a href="#s4">4. Cookies e tecnologias de rastreamento</a>
-            <a href="#s5">5. Com quem compartilhamos</a>
-            <a href="#s6">6. Transferências internacionais e residência dos dados</a>
-            <a href="#s7">7. Retenção</a>
-            <a href="#s8">8. Segurança</a>
-            <a href="#s9">9. Seus direitos e como exercê-los</a>
-            <a href="#s10">10. Comunicações de marketing</a>
-            <a href="#s11">11. Crianças e adolescentes</a>
-            <a href="#s12">12. Encarregado e contato</a>
-            <a href="#s13">13. Alterações desta Política</a>
+            <div class="dpa-toc-label" data-i18n="privacidade.toc_label">Nesta página</div>
+            <a href="#s1" data-i18n="privacidade.toc_s1">1. Dois papéis: dados que controlamos e dados que operamos</a>
+            <a href="#s2" data-i18n="privacidade.toc_s2">2. Quais informações coletamos</a>
+            <a href="#s3" data-i18n="privacidade.toc_s3">3. Como usamos as informações e com que bases legais</a>
+            <a href="#s4" data-i18n="privacidade.toc_s4">4. Cookies e tecnologias de rastreamento</a>
+            <a href="#s5" data-i18n="privacidade.toc_s5">5. Com quem compartilhamos</a>
+            <a href="#s6" data-i18n="privacidade.toc_s6">6. Transferências internacionais e residência dos dados</a>
+            <a href="#s7" data-i18n="privacidade.toc_s7">7. Retenção</a>
+            <a href="#s8" data-i18n="privacidade.toc_s8">8. Segurança</a>
+            <a href="#s9" data-i18n="privacidade.toc_s9">9. Seus direitos e como exercê-los</a>
+            <a href="#s10" data-i18n="privacidade.toc_s10">10. Comunicações de marketing</a>
+            <a href="#s11" data-i18n="privacidade.toc_s11">11. Crianças e adolescentes</a>
+            <a href="#s12" data-i18n="privacidade.toc_s12">12. Encarregado e contato</a>
+            <a href="#s13" data-i18n="privacidade.toc_s13">13. Alterações desta Política</a>
         </aside>
 
         <!-- Documento -->
         <main class="dpa-doc">
             <section id="intro">
-                <p>Esta Política de Privacidade explica como a FXO Serviços em Informática Ltda. ("FXO", "nós") coleta, usa, compartilha e protege dados pessoais no contexto da plataforma Wi-Fi.now e dos nossos sites (em conjunto, o "Serviço"). Ela integra, por referência, os <a href="termos.html">Termos de Uso do Site</a>, os Termos de Uso da Plataforma e, quanto aos dados operados em nome de clientes, o <a href="dpa.html">Acordo de Tratamento de Dados (DPA)</a>. Em caso de divergência sobre matéria de dados pessoais, prevalece esta Política e, na relação Controlador-Operadora, o DPA.</p>
+                <p data-i18n-html="privacidade.intro_p1">Esta Política de Privacidade explica como a FXO Serviços em Informática Ltda. ("FXO", "nós") coleta, usa, compartilha e protege dados pessoais no contexto da plataforma Wi-Fi.now e dos nossos sites (em conjunto, o "Serviço"). Ela integra, por referência, os <a href="termos.html">Termos de Uso do Site</a>, os Termos de Uso da Plataforma e, quanto aos dados operados em nome de clientes, o <a href="dpa.html">Acordo de Tratamento de Dados (DPA)</a>. Em caso de divergência sobre matéria de dados pessoais, prevalece esta Política e, na relação Controlador-Operadora, o DPA.</p>
             </section>
 
             <section id="s1">
-                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M560-360h80v-400H480v80h80v320ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Dois papéis: dados que controlamos e dados que operamos</h2>
-                <p>Tratamos dados pessoais em duas qualidades distintas, e essa diferença define quem responde pelo quê:</p>
-                <p><strong>Dados que controlamos.</strong> As informações de Administradores (clientes que operam a plataforma) e de visitantes dos nossos sites são tratadas pela FXO na qualidade de Controladora (art. 5º, VI, da LGPD), para finalidades próprias: prestar o Serviço, faturar, dar suporte, garantir segurança e nos comunicarmos com você. Esta Política rege esse tratamento.</p>
-                <p><strong>Dados que operamos para nossos clientes.</strong> Quando um Administrador usa o Serviço para oferecer Wi-Fi a seus Visitantes, o Administrador é o Controlador dos dados pessoais dos Visitantes, por decidir as finalidades e os meios do tratamento, e a FXO atua exclusivamente como Operadora (art. 5º, VII, da LGPD), tratando esses dados em nome do Administrador, conforme suas instruções e o DPA. Se você é Visitante de uma rede Wi-Fi, o Controlador dos seus dados é o estabelecimento que opera a rede; dirija a ele os seus pedidos. Prestaremos ao estabelecimento o apoio necessário, na qualidade de Operadora, sem prejuízo das responsabilidades que a lei atribui diretamente à FXO nessa qualidade.</p>
+                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M560-360h80v-400H480v80h80v320ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg><span data-i18n="privacidade.s1_h2">Dois papéis: dados que controlamos e dados que operamos</span></h2>
+                <p><span data-i18n="privacidade.s1_p1">Tratamos dados pessoais em duas qualidades distintas, e essa diferença define quem responde pelo quê:</span></p>
+                <p data-i18n-html="privacidade.s1_p2"><strong>Dados que controlamos.</strong> As informações de Administradores (clientes que operam a plataforma) e de visitantes dos nossos sites são tratadas pela FXO na qualidade de Controladora (art. 5º, VI, da LGPD), para finalidades próprias: prestar o Serviço, faturar, dar suporte, garantir segurança e nos comunicarmos com você. Esta Política rege esse tratamento.</p>
+                <p data-i18n-html="privacidade.s1_p3"><strong>Dados que operamos para nossos clientes.</strong> Quando um Administrador usa o Serviço para oferecer Wi-Fi a seus Visitantes, o Administrador é o Controlador dos dados pessoais dos Visitantes, por decidir as finalidades e os meios do tratamento, e a FXO atua exclusivamente como Operadora (art. 5º, VII, da LGPD), tratando esses dados em nome do Administrador, conforme suas instruções e o DPA. Se você é Visitante de uma rede Wi-Fi, o Controlador dos seus dados é o estabelecimento que opera a rede; dirija a ele os seus pedidos. Prestaremos ao estabelecimento o apoio necessário, na qualidade de Operadora, sem prejuízo das responsabilidades que a lei atribui diretamente à FXO nessa qualidade.</p>
             </section>
 
             <section id="s2">
-                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M440-360h240v-80H520v-80h80q33 0 56.5-23.5T680-600v-80q0-33-23.5-56.5T600-760H440v80h160v80h-80q-33 0-56.5 23.5T440-520v160ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Quais informações coletamos</h2>
-                <p><strong>Informações que você fornece.</strong> Ao se cadastrar, contratar ou falar conosco: nome, e-mail, senha, nome do estabelecimento, modelo do equipamento de rede, dados de cobrança e contato, e o conteúdo das suas comunicações conosco.</p>
-                <p><strong>Informações coletadas automaticamente.</strong> Ao acessar o Serviço ou nossos sites: endereço IP, informações de dispositivo e navegador, dados de conexão, data e hora de acesso, páginas visitadas e registros equivalentes, inclusive por cookies e tecnologias similares (Seção 4).</p>
-                <p><strong>Informações de terceiros.</strong> Podemos receber informações de prestadores de serviço, parceiros e fontes públicas, combinando-as com as que já temos, para operar e melhorar o Serviço e nossas comunicações.</p>
-                <p><strong>Dados de Visitantes operados para Administradores.</strong> Por meio do portal cativo, e em nome do Administrador, o Serviço trata o mínimo necessário para autenticar Visitantes e cumprir obrigações legais: identificadores de autenticação (telefone, ou dados básicos do perfil OAuth: identificador da conta, nome e e-mail), registros de consentimento e registros de sessão (accounting: IP atribuído, MAC, início e fim, tempo de permanência). A coleta é mínima por desenho.</p>
-                <p><strong>O que não fazemos, em nenhuma hipótese:</strong> não exigimos nem armazenamos senhas de Visitantes; não registramos histórico de navegação, sites acessados, URLs ou conteúdo consumido; não usamos dados de Visitantes para marketing comportamental, criação de perfis ou personas; e não vendemos dados pessoais.</p>
+                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M440-360h240v-80H520v-80h80q33 0 56.5-23.5T680-600v-80q0-33-23.5-56.5T600-760H440v80h160v80h-80q-33 0-56.5 23.5T440-520v160ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg><span data-i18n="privacidade.s2_h2">Quais informações coletamos</span></h2>
+                <p data-i18n-html="privacidade.s2_p1"><strong>Informações que você fornece.</strong> Ao se cadastrar, contratar ou falar conosco: nome, e-mail, senha, nome do estabelecimento, modelo do equipamento de rede, dados de cobrança e contato, e o conteúdo das suas comunicações conosco.</p>
+                <p data-i18n-html="privacidade.s2_p2"><strong>Informações coletadas automaticamente.</strong> Ao acessar o Serviço ou nossos sites: endereço IP, informações de dispositivo e navegador, dados de conexão, data e hora de acesso, páginas visitadas e registros equivalentes, inclusive por cookies e tecnologias similares (Seção 4).</p>
+                <p data-i18n-html="privacidade.s2_p3"><strong>Informações de terceiros.</strong> Podemos receber informações de prestadores de serviço, parceiros e fontes públicas, combinando-as com as que já temos, para operar e melhorar o Serviço e nossas comunicações.</p>
+                <p data-i18n-html="privacidade.s2_p4"><strong>Dados de Visitantes operados para Administradores.</strong> Por meio do portal cativo, e em nome do Administrador, o Serviço trata o mínimo necessário para autenticar Visitantes e cumprir obrigações legais: identificadores de autenticação (telefone, ou dados básicos do perfil OAuth: identificador da conta, nome e e-mail), registros de consentimento e registros de sessão (accounting: IP atribuído, MAC, início e fim, tempo de permanência). A coleta é mínima por desenho.</p>
+                <p data-i18n-html="privacidade.s2_p5"><strong>O que não fazemos, em nenhuma hipótese:</strong> não exigimos nem armazenamos senhas de Visitantes; não registramos histórico de navegação, sites acessados, URLs ou conteúdo consumido; não usamos dados de Visitantes para marketing comportamental, criação de perfis ou personas; e não vendemos dados pessoais.</p>
             </section>
 
             <section id="s3">
-                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M440-360h160q33 0 56.5-23.5T680-440v-60q0-26-17-43t-43-17q26 0 43-17t17-43v-60q0-33-23.5-56.5T600-760H440v80h160v80h-80v80h80v80H440v80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Como usamos as informações e com que bases legais</h2>
-                <p>Usamos os dados que controlamos para as finalidades abaixo, cada uma amparada em base legal do art. 7º da LGPD:</p>
+                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M440-360h160q33 0 56.5-23.5T680-440v-60q0-26-17-43t-43-17q26 0 43-17t17-43v-60q0-33-23.5-56.5T600-760H440v80h160v80h-80v80h80v80H440v80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg><span data-i18n="privacidade.s3_h2">Como usamos as informações e com que bases legais</span></h2>
+                <p><span data-i18n="privacidade.s3_p1">Usamos os dados que controlamos para as finalidades abaixo, cada uma amparada em base legal do art. 7º da LGPD:</span></p>
                 <div class="dpa-table-wrap">
                     <table class="dpa-table">
                         <thead>
                             <tr>
-                                <th scope="col">Finalidade</th>
-                                <th scope="col">Base legal (LGPD, art. 7º)</th>
+                                <th scope="col" data-i18n="privacidade.s3_th1">Finalidade</th>
+                                <th scope="col" data-i18n="privacidade.s3_th2">Base legal (LGPD, art. 7º)</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Criar e administrar contas; prestar, operar e melhorar o Serviço; suporte</td>
-                                <td>Execução de contrato ou de procedimentos preliminares (inciso V)</td>
+                                <td data-i18n="privacidade.s3_row1_col1">Criar e administrar contas; prestar, operar e melhorar o Serviço; suporte</td>
+                                <td data-i18n="privacidade.s3_row1_col2">Execução de contrato ou de procedimentos preliminares (inciso V)</td>
                             </tr>
                             <tr>
-                                <td>Cobrança, contabilidade, auditoria</td>
-                                <td>Execução de contrato (V) e cumprimento de obrigação legal (II)</td>
+                                <td data-i18n="privacidade.s3_row2_col1">Cobrança, contabilidade, auditoria</td>
+                                <td data-i18n="privacidade.s3_row2_col2">Execução de contrato (V) e cumprimento de obrigação legal (II)</td>
                             </tr>
                             <tr>
-                                <td>Segurança do Serviço, prevenção a fraudes e a incidentes</td>
-                                <td>Legítimo interesse (IX), ponderado com seus direitos, e cumprimento de obrigação legal (II)</td>
+                                <td data-i18n="privacidade.s3_row3_col1">Segurança do Serviço, prevenção a fraudes e a incidentes</td>
+                                <td data-i18n="privacidade.s3_row3_col2">Legítimo interesse (IX), ponderado com seus direitos, e cumprimento de obrigação legal (II)</td>
                             </tr>
                             <tr>
-                                <td>Mensagens operacionais e transacionais (cadastro, segurança, cobrança)</td>
-                                <td>Execução de contrato (V)</td>
+                                <td data-i18n="privacidade.s3_row4_col1">Mensagens operacionais e transacionais (cadastro, segurança, cobrança)</td>
+                                <td data-i18n="privacidade.s3_row4_col2">Execução de contrato (V)</td>
                             </tr>
                             <tr>
-                                <td>Comunicações de marketing a Administradores</td>
-                                <td>Legítimo interesse (IX), com descadastramento garantido (Seção 10), ou consentimento (I), conforme o caso</td>
+                                <td data-i18n="privacidade.s3_row5_col1">Comunicações de marketing a Administradores</td>
+                                <td data-i18n="privacidade.s3_row5_col2">Legítimo interesse (IX), com descadastramento garantido (Seção 10), ou consentimento (I), conforme o caso</td>
                             </tr>
                             <tr>
-                                <td>Produção de dados agregados e anonimizados</td>
-                                <td>Legítimo interesse (IX); dados anonimizados de forma irreversível deixam de ser dados pessoais</td>
+                                <td data-i18n="privacidade.s3_row6_col1">Produção de dados agregados e anonimizados</td>
+                                <td data-i18n="privacidade.s3_row6_col2">Legítimo interesse (IX); dados anonimizados de forma irreversível deixam de ser dados pessoais</td>
                             </tr>
                             <tr>
-                                <td>Cumprimento de obrigações legais e exercício de direitos em processos</td>
-                                <td>Cumprimento de obrigação legal (II) e exercício regular de direitos (VI)</td>
+                                <td data-i18n="privacidade.s3_row7_col1">Cumprimento de obrigações legais e exercício de direitos em processos</td>
+                                <td data-i18n="privacidade.s3_row7_col2">Cumprimento de obrigação legal (II) e exercício regular de direitos (VI)</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <p>Os dados de Visitantes são tratados exclusivamente para prestar o Serviço ao Administrador e cumprir obrigações legais, sob a base legal adotada pelo Administrador na qualidade de Controlador, conforme o DPA. Não realizamos decisões unicamente automatizadas que produzam efeitos jurídicos sobre os titulares.</p>
+                <p><span data-i18n="privacidade.s3_p2">Os dados de Visitantes são tratados exclusivamente para prestar o Serviço ao Administrador e cumprir obrigações legais, sob a base legal adotada pelo Administrador na qualidade de Controlador, conforme o DPA. Não realizamos decisões unicamente automatizadas que produzam efeitos jurídicos sobre os titulares.</span></p>
             </section>
 
             <section id="s4">
-                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M600-360h80v-400h-80v160h-80v-160h-80v240h160v160ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Cookies e tecnologias de rastreamento</h2>
-                <p>Usamos cookies e tecnologias similares para operar nossos sites, lembrar preferências, medir uso e melhorar desempenho. Cookies não essenciais são utilizados apenas com o seu consentimento, quando exigido, gerenciável pelo banner do site e pelas configurações do seu navegador, inclusive para recusá-los ou apagá-los. O bloqueio de certos cookies pode afetar funcionalidades. O portal cativo exibido aos Visitantes não utiliza cookies de publicidade.</p>
+                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M600-360h80v-400h-80v160h-80v-160h-80v240h160v160ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg><span data-i18n="privacidade.s4_h2">Cookies e tecnologias de rastreamento</span></h2>
+                <p><span data-i18n="privacidade.s4_p1">Usamos cookies e tecnologias similares para operar nossos sites, lembrar preferências, medir uso e melhorar desempenho. Cookies não essenciais são utilizados apenas com o seu consentimento, quando exigido, gerenciável pelo banner do site e pelas configurações do seu navegador, inclusive para recusá-los ou apagá-los. O bloqueio de certos cookies pode afetar funcionalidades. O portal cativo exibido aos Visitantes não utiliza cookies de publicidade.</span></p>
             </section>
 
             <section id="s5">
-                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M440-360h160q33 0 56.5-23.5T680-440v-80q0-33-23.5-56.5T600-600h-80v-80h160v-80H440v240h160v80H440v80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Com quem compartilhamos</h2>
-                <p><strong>Não vendemos dados pessoais.</strong> Podemos compartilhar dados pessoais com: (i) prestadores de serviço (hospedagem, processamento de pagamentos, envio de mensagens, incluindo gateways de SMS e WhatsApp); (ii) empresas do nosso grupo, para as finalidades desta Política; (iii) autoridades e terceiros, quando a divulgação for exigida por lei, ordem judicial ou requisição de autoridade competente, na estrita medida da ordem recebida, ou quando necessária para apurar fraudes, proteger direitos e segurança ou executar nossos contratos; e (iv) outros destinatários, com a sua autorização.</p>
-                <p>Os provedores de identidade OAuth (Google, LinkedIn, Microsoft) e as operadoras de telefonia atuam como agentes de tratamento autônomos na relação direta que mantêm com você, sob seus próprios termos e políticas.</p>
+                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M440-360h160q33 0 56.5-23.5T680-440v-80q0-33-23.5-56.5T600-600h-80v-80h160v-80H440v240h160v80H440v80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg><span data-i18n="privacidade.s5_h2">Com quem compartilhamos</span></h2>
+                <p data-i18n-html="privacidade.s5_p1"><strong>Não vendemos dados pessoais.</strong> Podemos compartilhar dados pessoais com: (i) prestadores de serviço (hospedagem, processamento de pagamentos, envio de mensagens, incluindo gateways de SMS e WhatsApp); (ii) empresas do nosso grupo, para as finalidades desta Política; (iii) autoridades e terceiros, quando a divulgação for exigida por lei, ordem judicial ou requisição de autoridade competente, na estrita medida da ordem recebida, ou quando necessária para apurar fraudes, proteger direitos e segurança ou executar nossos contratos; e (iv) outros destinatários, com a sua autorização.</p>
+                <p><span data-i18n="privacidade.s5_p2">Os provedores de identidade OAuth (Google, LinkedIn, Microsoft) e as operadoras de telefonia atuam como agentes de tratamento autônomos na relação direta que mantêm com você, sob seus próprios termos e políticas.</span></p>
             </section>
 
             <section id="s6">
-                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M520-360h80q33 0 56.5-23.5T680-440v-80q0-33-23.5-56.5T600-600h-80v-80h120v-80H520q-33 0-56.5 23.5T440-680v240q0 33 23.5 56.5T520-360Zm0-160h80v80h-80v-80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Transferências internacionais e residência dos dados</h2>
-                <p>A residência padrão dos dados de Visitantes é o Brasil, e o Serviço pode ser configurado, nos planos que ofereçam esse recurso, para que os dados de Visitantes não deixem a região escolhida. Quando dados pessoais forem transferidos para outro país, por exemplo a um prestador de serviço, adotaremos salvaguardas compatíveis com o regime dos arts. 33 e seguintes da LGPD e com a regulamentação da ANPD vigente, incluindo, quando cabível, cláusulas contratuais padrão por ela reconhecidas.</p>
+                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M520-360h80q33 0 56.5-23.5T680-440v-80q0-33-23.5-56.5T600-600h-80v-80h120v-80H520q-33 0-56.5 23.5T440-680v240q0 33 23.5 56.5T520-360Zm0-160h80v80h-80v-80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg><span data-i18n="privacidade.s6_h2">Transferências internacionais e residência dos dados</span></h2>
+                <p><span data-i18n="privacidade.s6_p1">A residência padrão dos dados de Visitantes é o Brasil, e o Serviço pode ser configurado, nos planos que ofereçam esse recurso, para que os dados de Visitantes não deixem a região escolhida. Quando dados pessoais forem transferidos para outro país, por exemplo a um prestador de serviço, adotaremos salvaguardas compatíveis com o regime dos arts. 33 e seguintes da LGPD e com a regulamentação da ANPD vigente, incluindo, quando cabível, cláusulas contratuais padrão por ela reconhecidas.</span></p>
             </section>
 
             <section id="s7">
-                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M440-360h80l160-320v-80H440v80h160L440-360ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Retenção</h2>
-                <p>Mantemos dados pessoais apenas pelo tempo necessário às finalidades desta Política, salvo prazo maior exigido ou permitido por lei:</p>
+                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M440-360h80l160-320v-80H440v80h160L440-360ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg><span data-i18n="privacidade.s7_h2">Retenção</span></h2>
+                <p><span data-i18n="privacidade.s7_p1">Mantemos dados pessoais apenas pelo tempo necessário às finalidades desta Política, salvo prazo maior exigido ou permitido por lei:</span></p>
                 <div class="dpa-table-wrap">
                     <table class="dpa-table">
                         <thead>
                             <tr>
-                                <th scope="col">Categoria</th>
-                                <th scope="col">Prazo</th>
+                                <th scope="col" data-i18n="privacidade.s7_th1">Categoria</th>
+                                <th scope="col" data-i18n="privacidade.s7_th2">Prazo</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Registros de sessão (accounting) de Visitantes</td>
-                                <td>12 meses do encerramento de cada sessão, em linha com os deveres de guarda do Marco Civil da Internet, quando aplicáveis à Controladora, e com o exercício regular de direitos em processo judicial, administrativo ou arbitral (LGPD, art. 7º, VI); em seguida, expurgo automático e definitivo, conforme o DPA</td>
+                                <td data-i18n="privacidade.s7_row1_col1">Registros de sessão (accounting) de Visitantes</td>
+                                <td data-i18n="privacidade.s7_row1_col2">12 meses do encerramento de cada sessão, em linha com os deveres de guarda do Marco Civil da Internet, quando aplicáveis à Controladora, e com o exercício regular de direitos em processo judicial, administrativo ou arbitral (LGPD, art. 7º, VI); em seguida, expurgo automático e definitivo, conforme o DPA</td>
                             </tr>
                             <tr>
-                                <td>Registros de consentimento de Visitantes</td>
-                                <td>Pelo prazo necessário à comprovação do tratamento e ao exercício regular de direitos</td>
+                                <td data-i18n="privacidade.s7_row2_col1">Registros de consentimento de Visitantes</td>
+                                <td data-i18n="privacidade.s7_row2_col2">Pelo prazo necessário à comprovação do tratamento e ao exercício regular de direitos</td>
                             </tr>
                             <tr>
-                                <td>Dados cadastrais e financeiros de Administradores</td>
-                                <td>Pela vigência da relação contratual e pelos prazos legais, regulatórios e prescricionais aplicáveis</td>
+                                <td data-i18n="privacidade.s7_row3_col1">Dados cadastrais e financeiros de Administradores</td>
+                                <td data-i18n="privacidade.s7_row3_col2">Pela vigência da relação contratual e pelos prazos legais, regulatórios e prescricionais aplicáveis</td>
                             </tr>
                             <tr>
-                                <td>Dados de navegação nos nossos sites e cookies</td>
-                                <td>Pelos prazos indicados no banner de cookies, conforme a categoria</td>
+                                <td data-i18n="privacidade.s7_row4_col1">Dados de navegação nos nossos sites e cookies</td>
+                                <td data-i18n="privacidade.s7_row4_col2">Pelos prazos indicados no banner de cookies, conforme a categoria</td>
                             </tr>
                             <tr>
-                                <td>Cópias de segurança (cifradas)</td>
-                                <td>Ciclo próprio de sobrescrição, detalhado no DPA, não superior a 90 dias após a eliminação na base ativa</td>
+                                <td data-i18n="privacidade.s7_row5_col1">Cópias de segurança (cifradas)</td>
+                                <td data-i18n="privacidade.s7_row5_col2">Ciclo próprio de sobrescrição, detalhado no DPA, não superior a 90 dias após a eliminação na base ativa</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <p>Quando os dados deixam de ser necessários, são eliminados de forma definitiva ou anonimizados de forma irreversível.</p>
+                <p><span data-i18n="privacidade.s7_p2">Quando os dados deixam de ser necessários, são eliminados de forma definitiva ou anonimizados de forma irreversível.</span></p>
             </section>
 
             <section id="s8">
-                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M520-360h80q33 0 56.5-23.5T680-440v-60q0-26-17-43t-43-17q26 0 43-17t17-43v-60q0-33-23.5-56.5T600-760h-80q-33 0-56.5 23.5T440-680v60q0 26 17 43t43 17q-26 0-43 17t-17 43v60q0 33 23.5 56.5T520-360Zm0-320h80v80h-80v-80Zm0 240v-80h80v80h-80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Segurança</h2>
-                <p>Adotamos salvaguardas técnicas e administrativas compatíveis com o estado da técnica, incluindo criptografia em trânsito e em repouso, controles de acesso por papéis, autenticação multifator para administradores, segregação lógica por cliente, monitoramento e testes periódicos. Nenhum método de transmissão ou armazenamento é totalmente seguro; a segurança da sua conta também depende da confidencialidade das suas credenciais. Incidentes de segurança que possam acarretar risco ou dano relevante serão comunicados nos termos da LGPD, da regulamentação da ANPD e, quanto a dados operados, do DPA.</p>
+                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M520-360h80q33 0 56.5-23.5T680-440v-60q0-26-17-43t-43-17q26 0 43-17t17-43v-60q0-33-23.5-56.5T600-760h-80q-33 0-56.5 23.5T440-680v60q0 26 17 43t43 17q-26 0-43 17t-17 43v60q0 33 23.5 56.5T520-360Zm0-320h80v80h-80v-80Zm0 240v-80h80v80h-80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg><span data-i18n="privacidade.s8_h2">Segurança</span></h2>
+                <p><span data-i18n="privacidade.s8_p1">Adotamos salvaguardas técnicas e administrativas compatíveis com o estado da técnica, incluindo criptografia em trânsito e em repouso, controles de acesso por papéis, autenticação multifator para administradores, segregação lógica por cliente, monitoramento e testes periódicos. Nenhum método de transmissão ou armazenamento é totalmente seguro; a segurança da sua conta também depende da confidencialidade das suas credenciais. Incidentes de segurança que possam acarretar risco ou dano relevante serão comunicados nos termos da LGPD, da regulamentação da ANPD e, quanto a dados operados, do DPA.</span></p>
             </section>
 
             <section id="s9">
-                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M480-360h120q33 0 56.5-23.5T680-440v-240q0-33-23.5-56.5T600-760h-80q-33 0-56.5 23.5T440-680v80q0 33 23.5 56.5T520-520h80v80H480v80Zm120-240h-80v-80h80v80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Seus direitos e como exercê-los</h2>
-                <p>Nos termos do art. 18 da LGPD, você pode solicitar: confirmação da existência de tratamento; acesso aos dados; correção de dados incompletos, inexatos ou desatualizados; anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade; portabilidade, observada a regulamentação; informação sobre compartilhamentos realizados; informação sobre a possibilidade de não consentir e suas consequências; revogação do consentimento; e revisão de decisões tomadas unicamente com base em tratamento automatizado, quando existentes. Você também pode peticionar à ANPD.</p>
-                <p><strong>Como exercer:</strong> envie seu pedido ao Encarregado (Seção 12). Para sua proteção, poderemos solicitar informações que confirmem a sua identidade antes de atender ao pedido; responderemos nos prazos da legislação e da regulamentação da ANPD. Se você é Visitante de uma rede operada por um cliente nosso, dirija seu pedido ao estabelecimento que opera a rede, o Controlador dos seus dados; prestaremos a ele o apoio necessário, na qualidade de Operadora, conforme o DPA.</p>
+                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M480-360h120q33 0 56.5-23.5T680-440v-240q0-33-23.5-56.5T600-760h-80q-33 0-56.5 23.5T440-680v80q0 33 23.5 56.5T520-520h80v80H480v80Zm120-240h-80v-80h80v80ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg><span data-i18n="privacidade.s9_h2">Seus direitos e como exercê-los</span></h2>
+                <p><span data-i18n="privacidade.s9_p1">Nos termos do art. 18 da LGPD, você pode solicitar: confirmação da existência de tratamento; acesso aos dados; correção de dados incompletos, inexatos ou desatualizados; anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade; portabilidade, observada a regulamentação; informação sobre compartilhamentos realizados; informação sobre a possibilidade de não consentir e suas consequências; revogação do consentimento; e revisão de decisões tomadas unicamente com base em tratamento automatizado, quando existentes. Você também pode peticionar à ANPD.</span></p>
+                <p data-i18n-html="privacidade.s9_p2"><strong>Como exercer:</strong> envie seu pedido ao Encarregado (Seção 12). Para sua proteção, poderemos solicitar informações que confirmem a sua identidade antes de atender ao pedido; responderemos nos prazos da legislação e da regulamentação da ANPD. Se você é Visitante de uma rede operada por um cliente nosso, dirija seu pedido ao estabelecimento que opera a rede, o Controlador dos seus dados; prestaremos a ele o apoio necessário, na qualidade de Operadora, conforme o DPA.</p>
             </section>
 
             <section id="s10">
-                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M370-360h80v-400h-80v400ZM510-680v-80h240v80H510ZM510-360v-80h240v80H510ZM510-440h80v-240h-80v240ZM670-440h80v-240h-80v240ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Comunicações de marketing</h2>
-                <p>Mensagens operacionais e transacionais (cadastro, segurança, cobrança) são necessárias à prestação do Serviço e não admitem descadastramento. Demais comunicações, como novidades e materiais, podem ser canceladas a qualquer momento pelo link presente na própria mensagem ou pelo canal da Seção 12. Não enviamos marketing a Visitantes das redes dos nossos clientes.</p>
+                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M370-360h80v-400h-80v400ZM510-680v-80h240v80H510ZM510-360v-80h240v80H510ZM510-440h80v-240h-80v240ZM670-440h80v-240h-80v240ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg><span data-i18n="privacidade.s10_h2">Comunicações de marketing</span></h2>
+                <p><span data-i18n="privacidade.s10_p1">Mensagens operacionais e transacionais (cadastro, segurança, cobrança) são necessárias à prestação do Serviço e não admitem descadastramento. Demais comunicações, como novidades e materiais, podem ser canceladas a qualquer momento pelo link presente na própria mensagem ou pelo canal da Seção 12. Não enviamos marketing a Visitantes das redes dos nossos clientes.</span></p>
             </section>
 
             <section id="s11">
-                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M370-360h80v-400h-80v400ZM590-360h80v-400h-80v400ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Crianças e adolescentes</h2>
-                <p>O Serviço destina-se a maiores de 18 anos e a pessoas jurídicas, e não é direcionado a crianças; não coletamos intencionalmente dados de crianças. Os textos exibidos no portal cativo de cada estabelecimento são definidos pelo Administrador, a quem cabe observar o art. 14 da LGPD quando seu público incluir crianças e adolescentes.</p>
+                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M370-360h80v-400h-80v400ZM590-360h80v-400h-80v400ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg><span data-i18n="privacidade.s11_h2">Crianças e adolescentes</span></h2>
+                <p><span data-i18n="privacidade.s11_p1">O Serviço destina-se a maiores de 18 anos e a pessoas jurídicas, e não é direcionado a crianças; não coletamos intencionalmente dados de crianças. Os textos exibidos no portal cativo de cada estabelecimento são definidos pelo Administrador, a quem cabe observar o art. 14 da LGPD quando seu público incluir crianças e adolescentes.</span></p>
             </section>
 
             <section id="s12">
-                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M370-360h80v-400h-80v400ZM510-680v-80h240v80H510ZM670-600v-80h80v80h-80ZM510-520v-80h240v80H510ZM510-440v-80h80v80h-80ZM510-360v-80h240v80H510ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Encarregado e contato</h2>
-                <p>O Encarregado pelo tratamento de dados pessoais (DPO) da FXO pode ser contatado pelo e-mail <a href="mailto:dpo@wi-fi.now">dpo@wi-fi.now</a>. Responderemos às comunicações nos prazos legais e regulamentares.</p>
+                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M370-360h80v-400h-80v400ZM510-680v-80h240v80H510ZM670-600v-80h80v80h-80ZM510-520v-80h240v80H510ZM510-440v-80h80v80h-80ZM510-360v-80h240v80H510ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg><span data-i18n="privacidade.s12_h2">Encarregado e contato</span></h2>
+                <p data-i18n-html="privacidade.s12_p1">O Encarregado pelo tratamento de dados pessoais (DPO) da FXO pode ser contatado pelo e-mail <a href="mailto:dpo@wi-fi.now">dpo@wi-fi.now</a>. Responderemos às comunicações nos prazos legais e regulamentares.</p>
             </section>
 
             <section id="s13">
-                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M370-360h80v-400h-80v400ZM510-680v-80h240v80H510ZM670-440v-240h80v240h-80ZM550-520v-80h200v80H550ZM510-360v-80h240v80H510ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>Alterações desta Política</h2>
-                <p>Podemos atualizar esta Política, publicando a nova versão com a respectiva data de vigência e mantendo o histórico de versões. Alterações materiais serão comunicadas com destaque e com antecedência mínima de 15 (quinze) dias; nesse prazo, o Administrador que não concordar com a nova versão poderá resilir o contrato sem ônus, observadas as obrigações já constituídas. Esta Política pode ser disponibilizada em outros idiomas, como cortesia; em caso de divergência entre versões, prevalece, para todos os fins, a versão em língua portuguesa.</p>
+                <h2><svg class="dpa-num" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="37px" viewBox="0 -960 960 960" width="37px" fill="currentColor"><path d="M370-360h80v-400h-80v400ZM510-680v-80h240v80H510ZM670-440v-240h80v240h-80ZM550-520v-80h200v80H550ZM510-360v-80h240v80H510ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg><span data-i18n="privacidade.s13_h2">Alterações desta Política</span></h2>
+                <p><span data-i18n="privacidade.s13_p1">Podemos atualizar esta Política, publicando a nova versão com a respectiva data de vigência e mantendo o histórico de versões. Alterações materiais serão comunicadas com destaque e com antecedência mínima de 15 (quinze) dias; nesse prazo, o Administrador que não concordar com a nova versão poderá resilir o contrato sem ônus, observadas as obrigações já constituídas. Esta Política pode ser disponibilizada em outros idiomas, como cortesia; em caso de divergência entre versões, prevalece, para todos os fins, a versão em língua portuguesa.</span></p>
             </section>
         </main>
     </div>
@@ -496,9 +505,9 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-left">
-                <a href="termos.html">Termos</a>
+                <a href="termos.html" data-i18n="footer.termos">Termos</a>
                 <span class="footer-bullet">•</span>
-                <a href="privacidade.html">Privacidade</a>
+                <a href="privacidade.html" data-i18n="footer.privacidade">Privacidade</a>
                 <span class="footer-bullet">•</span>
                 <a href="dpa.html">DPA</a>
             </div>
@@ -508,7 +517,7 @@
                 </a>
             </div>
             <div class="footer-right">
-                <span class="copyright">Todos os direitos reservados © 2026</span>
+                <span class="copyright" data-i18n="footer.copyright">Todos os direitos reservados © 2026</span>
             </div>
         </div>
     </footer>
@@ -551,5 +560,6 @@
         });
     </script>
     <script src="modal.js?v=5"></script>
+    <script src="i18n.js"></script>
 </body>
 </html>
