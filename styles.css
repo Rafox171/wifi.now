@@ -2194,7 +2194,7 @@ ul {
 
 .footer {
     background: var(--bg-dark);
-    border-top: 150px solid #ffffff;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 2rem 0;
     margin-top: 1rem;
 }
@@ -2234,11 +2234,46 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1.25rem;
 }
 
 .footer-logo img {
-    height: 32px;
+    height: 35px;
     display: block;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-left: 1.25rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+    transform: translateY(4px);
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.85;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social a:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.footer-social img {
+    height: 23px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.footer-social img.footer-social-linkedin {
+    height: 40px;
+    width: 40px;
 }
 
 .footer-right {
@@ -5316,6 +5351,56 @@ ul {
         grid-template-columns: 1fr;
         gap: 0.85rem;
     }
+}
+
+/* Parceria: 3S Networks — logos inline no título */
+.nowrap {
+    white-space: nowrap;
+}
+
+.partner-title-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    margin: 0 0.05em;
+}
+
+.partner-title-logo-3s {
+    height: 1.785em;
+    transform: translateY(-0.05em);
+}
+
+.partner-title-logo-wifinow {
+    height: 1.5em;
+    vertical-align: baseline;
+    transform: none;
+}
+
+.ln-partner {
+    padding: 1rem 0;
+}
+
+.ln-partner-text {
+    text-align: left;
+}
+
+.ln-partner-text > .ln-eyebrow,
+.ln-partner-cta {
+    margin-left: -3cm;
+}
+
+.ln-partner-centered {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .ln-partner { padding: 1rem 0; }
+}
+
+@media (max-width: 768px) {
+    .ln-partner { padding: 0.75rem 0; }
 }
 
 /* Hero Carousel Indicators */

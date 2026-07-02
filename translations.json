@@ -2118,5 +2118,30 @@
     "pt": "Expurgo automatizado ao fim dos prazos da Seção 9, com eliminação definitiva e irrecuperável na base ativa.",
     "es": "Purga automatizada al final de los plazos de la Sección 9, con eliminación definitiva e irrecuperable en la base activa.",
     "en": "Automated purging at the end of the periods set out in Section 9, with permanent and irrecoverable deletion from the active database."
+  },
+  "brands.titulo": {
+    "pt": "Compatível com fabricantes",
+    "es": "Compatible con fabricantes",
+    "en": "Compatible with manufacturers"
+  },
+  "partner.eyebrow": {
+    "pt": "[ PARCERIA ]",
+    "es": "[ ALIANZA ]",
+    "en": "[ PARTNERSHIP ]"
+  },
+  "partner.titulo": {
+    "pt": "<img src=\"https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/3spreta-Photoroom.png\" alt=\"3S Networks\" class=\"partner-title-logo partner-title-logo-3s\"> implanta o <span class=\"nowrap\"><img src=\"https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg\" alt=\"wi-fi.now\" class=\"partner-title-logo partner-title-logo-wifinow\"></span> na sua rede",
+    "es": "<img src=\"https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/3spreta-Photoroom.png\" alt=\"3S Networks\" class=\"partner-title-logo partner-title-logo-3s\"> implementa <span class=\"nowrap\"><img src=\"https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg\" alt=\"wi-fi.now\" class=\"partner-title-logo partner-title-logo-wifinow\"></span> en su red",
+    "en": "<img src=\"https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/3spreta-Photoroom.png\" alt=\"3S Networks\" class=\"partner-title-logo partner-title-logo-3s\"> deploys <span class=\"nowrap\"><img src=\"https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg\" alt=\"wi-fi.now\" class=\"partner-title-logo partner-title-logo-wifinow\"></span> on your network"
+  },
+  "partner.descricao": {
+    "pt": "A 3S Networks é parceira certificada de implantação do wi-fi.now: instala, configura e homologa o portal cativo direto na infraestrutura do cliente, unindo know-how em redes à nossa plataforma de autenticação e accounting.",
+    "es": "3S Networks es socio certificado de implementación de wi-fi.now: instala, configura y homologa el portal cautivo directamente en la infraestructura del cliente, uniendo su experiencia en redes a nuestra plataforma de autenticación y accounting.",
+    "en": "3S Networks is a certified deployment partner for wi-fi.now: it installs, configures and validates the captive portal directly on the customer's network infrastructure, pairing its networking expertise with our authentication and accounting platform."
+  },
+  "partner.link": {
+    "pt": "Conhecer a 3S Networks ›",
+    "es": "Conocer 3S Networks ›",
+    "en": "Learn about 3S Networks ›"
   }
 }
