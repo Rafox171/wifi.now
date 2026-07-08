@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wi-fi.now | Captive portal externo para FortiGate</title>
-    <meta name="description" content="Portal cativo externo para FortiGate. Identifique visitantes, valide acesso por SMS, WhatsApp ou OAuth e registre sessões com RADIUS Accounting, sem servidor local.">
-    <meta name="keywords" content="captive portal fortigate, portal cativo externo, wi-fi para visitantes, guest wi-fi, fortinet, radius accounting, lgpd, marco civil da internet">
+    <title>wi-fi.now | Captive Portal para FortiGate, Cisco, Ubiquiti e HPE</title>
+    <meta name="description" content="Portal cativo externo para FortiGate, Cisco, Ubiquiti e HPE Aruba. Valide acesso por SMS, WhatsApp ou OAuth, com RADIUS Accounting, sem servidor local.">
+    <meta name="keywords" content="captive portal fortigate, captive portal cisco, captive portal ubiquiti, captive portal hpe aruba, portal cativo externo, wi-fi para visitantes, guest wi-fi, fortinet, radius accounting, lgpd, marco civil da internet">
     <link rel="canonical" href="https://wi-fi.now/">
     <meta name="robots" content="index, follow">
     <meta name="author" content="wi-fi.now">
@@ -14,21 +14,21 @@
     <!-- Open Graph / compartilhamento em redes e WhatsApp -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="wi-fi.now">
-    <meta property="og:title" content="wi-fi.now | Captive portal externo para FortiGate">
-    <meta property="og:description" content="Portal cativo externo para FortiGate com identificação de visitantes, validação por SMS, WhatsApp ou OAuth e registro de sessões via RADIUS Accounting.">
+    <meta property="og:title" content="wi-fi.now | Captive Portal para FortiGate, Cisco, Ubiquiti e HPE">
+    <meta property="og:description" content="Portal cativo externo para FortiGate, Cisco, Ubiquiti e HPE Aruba, com identificação de visitantes, validação por SMS, WhatsApp ou OAuth e RADIUS Accounting.">
     <meta property="og:url" content="https://wi-fi.now/">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:image" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/escritorio.jpg">
     <meta property="og:image:secure_url" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/escritorio.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="wi-fi.now, portal cativo externo para FortiGate">
+    <meta property="og:image:alt" content="wi-fi.now, portal cativo externo para FortiGate, Cisco, Ubiquiti e HPE">
     <!-- Twitter / X Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="wi-fi.now | Captive portal externo para FortiGate">
-    <meta name="twitter:description" content="Identifique visitantes, valide o acesso e registre sessões de Wi-Fi no FortiGate sem servidor local.">
+    <meta name="twitter:title" content="wi-fi.now | Captive Portal para FortiGate, Cisco, Ubiquiti e HPE">
+    <meta name="twitter:description" content="Identifique visitantes e registre sessões de Wi-Fi em FortiGate, Cisco, Ubiquiti e HPE Aruba, sem servidor local.">
     <meta name="twitter:image" content="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/escritorio.jpg">
-    <meta name="twitter:image:alt" content="wi-fi.now, portal cativo externo para FortiGate">
+    <meta name="twitter:image:alt" content="wi-fi.now, portal cativo externo para FortiGate, Cisco, Ubiquiti e HPE">
     <!-- Idioma / hreflang -->
     <link rel="alternate" hreflang="pt-BR" href="https://wi-fi.now/">
     <link rel="alternate" hreflang="x-default" href="https://wi-fi.now/">
@@ -39,14 +39,15 @@
       "name": "wi-fi.now",
       "url": "https://wi-fi.now/",
       "logo": "https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logowi-finow.svg",
-      "description": "Captive portal externo para FortiGate: Wi-Fi de visitantes com validação por token SMS, WhatsApp ou OAuth e accounting RADIUS, com apoio à LGPD e ao Marco Civil da Internet."
+      "description": "Captive portal externo com integração nativa em FortiGate (Fortinet), Cisco, Ubiquiti e HPE Aruba: Wi-Fi de visitantes com validação por token SMS, WhatsApp ou OAuth e accounting RADIUS, com apoio à LGPD e ao Marco Civil da Internet.",
+      "knowsAbout": ["FortiGate", "Fortinet", "Cisco", "Ubiquiti", "HPE Aruba", "captive portal", "RADIUS Accounting"]
     }
     </script>
     <link rel="preconnect" href="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev">
-    <link rel="stylesheet" href="styles.css?v=136">
+    <link rel="stylesheet" href="styles.css?v=142">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -364,40 +365,62 @@
         </div>
     </section>
 
-    <!-- Compatibilidade com fabricantes -->
+    <!-- Compatibilidade com fabricantes + Clientes -->
     <section class="ln-brands">
         <div class="container">
+          <div class="ln-brands-split">
+            <!-- Fabricantes -->
+            <div class="ln-brands-group ln-brands-group--makers">
             <div class="ln-brands-label">
                 <span class="ln-brands-brace" aria-hidden="true">{</span>
-                <span data-i18n="brands.titulo">Compatível com fabricantes</span>
+                <span data-i18n="brands.fabricantes">Fabricantes</span>
                 <span class="ln-brands-brace" aria-hidden="true">}</span>
             </div>
             <div class="ln-brands-carousel" aria-label="Fabricantes compatíveis">
                 <div class="ln-brands-slot" data-variant="up">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/aruba-Photoroom.png" alt="HPE" class="logo-hpe is-active" loading="lazy" decoding="async">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/cisco-Photoroom.png" alt="Cisco" class="logo-cisco" loading="lazy" decoding="async">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/fortinte-Photoroom.png" alt="Fortinet" class="logo-fortinet" loading="lazy" decoding="async">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/ubiquti-Photoroom.png" alt="Ubiquiti" class="logo-ubiquiti" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/aruba-Photoroom.png" alt="HPE Aruba – captive portal wi-fi.now compatível com HPE Aruba" class="logo-hpe is-active" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/cisco-Photoroom.png" alt="Cisco – captive portal wi-fi.now compatível com Cisco" class="logo-cisco" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/fortinte-Photoroom.png" alt="Fortinet FortiGate – captive portal wi-fi.now compatível com FortiGate" class="logo-fortinet" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/ubiquti-Photoroom.png" alt="Ubiquiti – captive portal wi-fi.now compatível com Ubiquiti" class="logo-ubiquiti" loading="lazy" decoding="async">
                 </div>
                 <div class="ln-brands-slot" data-variant="down">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/aruba-Photoroom.png" alt="HPE" class="logo-hpe" loading="lazy" decoding="async">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/cisco-Photoroom.png" alt="Cisco" class="logo-cisco is-active" loading="lazy" decoding="async">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/fortinte-Photoroom.png" alt="Fortinet" class="logo-fortinet" loading="lazy" decoding="async">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/ubiquti-Photoroom.png" alt="Ubiquiti" class="logo-ubiquiti" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/aruba-Photoroom.png" alt="HPE Aruba – captive portal wi-fi.now compatível com HPE Aruba" class="logo-hpe" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/cisco-Photoroom.png" alt="Cisco – captive portal wi-fi.now compatível com Cisco" class="logo-cisco is-active" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/fortinte-Photoroom.png" alt="Fortinet FortiGate – captive portal wi-fi.now compatível com FortiGate" class="logo-fortinet" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/ubiquti-Photoroom.png" alt="Ubiquiti – captive portal wi-fi.now compatível com Ubiquiti" class="logo-ubiquiti" loading="lazy" decoding="async">
                 </div>
                 <div class="ln-brands-slot" data-variant="side">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/aruba-Photoroom.png" alt="HPE" class="logo-hpe" loading="lazy" decoding="async">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/cisco-Photoroom.png" alt="Cisco" class="logo-cisco" loading="lazy" decoding="async">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/fortinte-Photoroom.png" alt="Fortinet" class="logo-fortinet is-active" loading="lazy" decoding="async">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/ubiquti-Photoroom.png" alt="Ubiquiti" class="logo-ubiquiti" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/aruba-Photoroom.png" alt="HPE Aruba – captive portal wi-fi.now compatível com HPE Aruba" class="logo-hpe" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/cisco-Photoroom.png" alt="Cisco – captive portal wi-fi.now compatível com Cisco" class="logo-cisco" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/fortinte-Photoroom.png" alt="Fortinet FortiGate – captive portal wi-fi.now compatível com FortiGate" class="logo-fortinet is-active" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/ubiquti-Photoroom.png" alt="Ubiquiti – captive portal wi-fi.now compatível com Ubiquiti" class="logo-ubiquiti" loading="lazy" decoding="async">
                 </div>
                 <div class="ln-brands-slot" data-variant="reveal">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/aruba-Photoroom.png" alt="HPE" class="logo-hpe" loading="lazy" decoding="async">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/cisco-Photoroom.png" alt="Cisco" class="logo-cisco" loading="lazy" decoding="async">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/fortinte-Photoroom.png" alt="Fortinet" class="logo-fortinet" loading="lazy" decoding="async">
-                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/ubiquti-Photoroom.png" alt="Ubiquiti" class="logo-ubiquiti is-active" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/aruba-Photoroom.png" alt="HPE Aruba – captive portal wi-fi.now compatível com HPE Aruba" class="logo-hpe" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/cisco-Photoroom.png" alt="Cisco – captive portal wi-fi.now compatível com Cisco" class="logo-cisco" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/fortinte-Photoroom.png" alt="Fortinet FortiGate – captive portal wi-fi.now compatível com FortiGate" class="logo-fortinet" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/logosfornecedores/ubiquti-Photoroom.png" alt="Ubiquiti – captive portal wi-fi.now compatível com Ubiquiti" class="logo-ubiquiti is-active" loading="lazy" decoding="async">
                 </div>
             </div>
+            </div>
+
+            <!-- Divisória -->
+            <div class="ln-brands-divider" aria-hidden="true"></div>
+
+            <!-- Clientes -->
+            <div class="ln-brands-group ln-brands-group--clients">
+                <div class="ln-brands-label">
+                    <span class="ln-brands-brace" aria-hidden="true">{</span>
+                    <span data-i18n="brands.clientes">Clientes</span>
+                    <span class="ln-brands-brace" aria-hidden="true">}</span>
+                </div>
+                <div class="ln-brands-clients">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/3spretaca-Photoroom.png" alt="3S Networks – cliente wi-fi.now" class="ln-client-logo ln-client-3s" loading="lazy" decoding="async">
+                    <img src="https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/sixcore_leao_branco.png" alt="Sixcore – cliente wi-fi.now" class="ln-client-logo ln-client-sixcore" loading="lazy" decoding="async">
+                </div>
+            </div>
+          </div>
+            <p class="ln-brands-caption" data-i18n="brands.caption">Portal cativo nativo em FortiGate (Fortinet), Cisco, Ubiquiti e HPE Aruba.</p>
         </div>
     </section>
 

@@ -2143,5 +2143,20 @@
     "pt": "Conhecer a 3S Networks ›",
     "es": "Conocer 3S Networks ›",
     "en": "Learn about 3S Networks ›"
+  },
+  "brands.caption": {
+    "pt": "Portal cativo nativo em FortiGate (Fortinet), Cisco, Ubiquiti e HPE Aruba.",
+    "es": "Portal cautivo nativo en FortiGate (Fortinet), Cisco, Ubiquiti y HPE Aruba.",
+    "en": "Native captive portal on FortiGate (Fortinet), Cisco, Ubiquiti and HPE Aruba."
+  },
+  "brands.fabricantes": {
+    "pt": "Fabricantes",
+    "es": "Fabricantes",
+    "en": "Manufacturers"
+  },
+  "brands.clientes": {
+    "pt": "Clientes",
+    "es": "Clientes",
+    "en": "Customers"
   }
 }

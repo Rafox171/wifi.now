@@ -4555,8 +4555,43 @@ ul {
     letter-spacing: 0.02em;
     color: #f8fafc;
     margin-bottom: 0.34375rem;
-    margin-left: -5cm;
 }
+
+/* Divisão da seção: Fabricantes | Clientes */
+.ln-brands-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 1px auto;
+    align-items: stretch;
+    gap: 3.5rem;
+}
+
+.ln-brands-group {
+    min-width: 0;
+}
+
+.ln-brands-divider {
+    width: 1px;
+    align-self: stretch;
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.14) 18%, rgba(255, 255, 255, 0.14) 82%, transparent);
+}
+
+/* Clientes: logos estáticas, alinhadas à mesma altura do carrossel */
+.ln-brands-clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 148px;
+}
+
+.ln-client-logo {
+    width: auto;
+    object-fit: contain;
+    opacity: 0.97;
+}
+
+.ln-client-3s { height: 74px; }
+.ln-client-sixcore { height: 75px; }
 
 .ln-brands-brace {
     font-size: 1.3rem;
@@ -4573,6 +4608,13 @@ ul {
     height: 148px;
     -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%);
     mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%);
+}
+
+.ln-brands-caption {
+    text-align: center;
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.35);
+    margin: 0.25rem 0 0;
 }
 
 .ln-brands-slot {
@@ -4631,9 +4673,23 @@ ul {
     .ln-brands-carousel { height: 120px; }
     .ln-brands-slot img { height: 48px; }
     .ln-brands-slot img.logo-hpe { height: 79px; }
+    .ln-brands-split { gap: 2rem; }
+    .ln-brands-clients { height: 120px; gap: 2rem; }
+    .ln-client-3s { height: 58px; }
+    .ln-client-sixcore { height: 59px; }
 }
 
 @media (max-width: 640px) {
+    .ln-brands-split {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .ln-brands-divider {
+        width: auto;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.14) 18%, rgba(255, 255, 255, 0.14) 82%, transparent);
+    }
+    .ln-brands-clients { height: auto; padding: 0.75rem 0; }
     .ln-brands-carousel {
         grid-template-columns: repeat(2, 1fr);
         height: auto;
@@ -5377,6 +5433,7 @@ ul {
 }
 
 .ln-partner {
+    display: none;
     padding: 1rem 0;
 }
 
