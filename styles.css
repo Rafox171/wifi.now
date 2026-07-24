@@ -3690,15 +3690,15 @@ ul {
 }
 
 .ln-resp-col-wifi .ln-resp-header {
-    background: url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/bannerwifi.jpg') center/100% 100% no-repeat;
+    background: url('assets/bannerwifi.jpg') center/100% 100% no-repeat;
 }
 
 .ln-resp-col-forti .ln-resp-header {
-    background: url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/herofort.jpg') center/100% 100% no-repeat;
+    background: url('assets/herofort.jpg') center/100% 100% no-repeat;
 }
 
 .ln-resp-col-you .ln-resp-header {
-    background: url('https://pub-21cf2b2af6f342faa0b7a83a6c5e7815.r2.dev/clientes%20hero.jpg') center/100% 100% no-repeat;
+    background: url('assets/clientes%20hero.jpg') center/100% 100% no-repeat;
 }
 
 .ln-resp-eyebrow {
