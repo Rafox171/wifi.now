@@ -32,4 +32,17 @@
     <loc>https://wi-fi.now/privacidade.html</loc>
     <lastmod>2026-06-12</lastmod>
   </url>
+  <!-- Blog: a cada artigo novo, adicione um <url> e atualize o lastmod do /blog/ -->
+  <url>
+    <loc>https://wi-fi.now/blog/</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://wi-fi.now/blog/wifi-prestadores-temporarios-revogar-acesso</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://wi-fi.now/blog/wifi-visitantes-identidade-no-log</loc>
+    <lastmod>2026-10-16</lastmod>
+  </url>
 </urlset>

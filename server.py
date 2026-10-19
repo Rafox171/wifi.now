@@ -4,7 +4,6 @@ Servidor local para desenvolvimento. Serve arquivos estáticos na porta 3000.
 URLs sem extensão redirecionam para .html automaticamente (ex: /termos → termos.html).
 """
 import http.server
-import socketserver
 import os
 
 PORT = 3000
@@ -24,12 +23,22 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 self.send_header('Location', path + '.html')
                 self.end_headers()
                 return
-        super().do_GET()
+        try:
+            super().do_GET()
+        except (ConnectionResetError, ConnectionAbortedError, BrokenPipeError):
+            pass
 
     def log_message(self, format, *args):
         print(f"  {self.address_string()} - {format % args}")
 
-with socketserver.TCPServer(('', PORT), Handler) as httpd:
+if __name__ == '__main__':
+    httpd = http.server.ThreadingHTTPServer(('', PORT), Handler)
     print(f"Servidor rodando em http://localhost:{PORT}")
     print("Pressione Ctrl+C para parar.")
-    httpd.serve_forever()
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        httpd.server_close()
+

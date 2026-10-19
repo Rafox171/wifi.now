@@ -19,6 +19,11 @@
     "es": "Preguntas frecuentes",
     "en": "FAQ"
   },
+  "header.blog": {
+    "pt": "Blog",
+    "es": "Blog",
+    "en": "Blog"
+  },
   "header.entrar": {
     "pt": "Entrar",
     "es": "Ingresar",
@@ -820,9 +825,9 @@
     "en": "Do I need a FortiGate?"
   },
   "faq.q1_resposta": {
-    "pt": "Sim, é o pré-requisito. O wi-fi.now roda em cima do seu FortiGate, que faz o trabalho pesado de controle de acesso. Sem FortiGate, não é o caso de uso agora. A gente diz isso cedo, sem rodeio.",
-    "es": "Sí, es el prerrequisito. wi-fi.now corre sobre tu FortiGate, que hace el trabajo pesado de control de acceso. Sin FortiGate, no es el caso de uso ahora. Lo decimos temprano, sin rodeos.",
-    "en": "Yes, it's the prerequisite. wi-fi.now runs on top of your FortiGate, which does the heavy lifting for access control. Without FortiGate, it's not the use case right now. We say this upfront, no beating around the bush."
+    "pt": "Sim, o firewall precisa ser FortiGate. O ponto de acesso Wi-Fi pode ser de qualquer fabricante, desde que esteja conectado ao FortiGate.",
+    "es": "Sí, el firewall debe ser FortiGate. El punto de acceso Wi-Fi puede ser de cualquier fabricante, siempre que esté conectado al FortiGate.",
+    "en": "Yes, the firewall must be a FortiGate. The Wi-Fi access point can be from any manufacturer, as long as it is connected to the FortiGate."
   },
   "faq.q2_pergunta": {
     "pt": "Preciso instalar servidor ou RADIUS local?",
@@ -830,9 +835,9 @@
     "en": "Do I need to install a local server or RADIUS?"
   },
   "faq.q2_resposta": {
-    "pt": "Não. O wi-fi.now é cloud e usa o seu FortiGate. Sem servidor local, sem RADIUS local, sem link novo.",
-    "es": "No. wi-fi.now es cloud y usa tu FortiGate. Sin servidor local, sin RADIUS local, sin nuevo enlace.",
-    "en": "No. wi-fi.now is cloud-based and uses your FortiGate. No local server, no local RADIUS, no new link."
+    "pt": "Não. Toda a autenticação, o consentimento e o armazenamento de registros são feitos pelo wi-fi.now. Não é necessário instalar nada na sua rede além de uma configuração simples no FortiGate.",
+    "es": "No. Toda la autenticación, el consentimiento y el almacenamiento de registros los realiza wi-fi.now. No es necesario instalar nada en tu red, salvo una configuración simple en el FortiGate.",
+    "en": "No. All authentication, consent, and record storage are handled by wi-fi.now. You do not need to install anything on your network beyond a simple configuration on the FortiGate."
   },
   "faq.q3_pergunta": {
     "pt": "Vou precisar trocar minha infraestrutura?",
@@ -840,9 +845,9 @@
     "en": "Will I need to change my infrastructure?"
   },
   "faq.q3_resposta": {
-    "pt": "Não. O wi-fi.now aproveita o que já existe. Seu FortiGate já faz o trabalho pesado, falta só ligar o wi-fi.now.",
-    "es": "No. wi-fi.now aprovecha lo que ya existe. Tu FortiGate ya hace el trabajo pesado, solo falta activar wi-fi.now.",
-    "en": "No. wi-fi.now uses what's already there. Your FortiGate already does the heavy lifting, you just need to turn on wi-fi.now."
+    "pt": "Não. O wi-fi.now funciona com o FortiGate e os equipamentos Wi-Fi que você já tem. Não há necessidade de comprar hardware ou access point novos.",
+    "es": "No. wi-fi.now funciona con el FortiGate y los equipos Wi-Fi que ya tienes. No hay necesidad de comprar hardware ni access points nuevos.",
+    "en": "No. wi-fi.now works with the FortiGate and Wi-Fi equipment you already have. There is no need to buy new hardware or access points."
   },
   "faq.q4_pergunta": {
     "pt": "Em quanto tempo coloco no ar?",
@@ -850,9 +855,9 @@
     "en": "How long does it take to go live?"
   },
   "faq.q4_resposta": {
-    "pt": "Minutos. A configuração entra via script pronto, sem ajuste manual linha a linha. Aplica, homologa e vai para produção.",
-    "es": "Minutos. La configuración entra vía script listo, sin ajuste manual línea por línea. Aplica, homologa y va a producción.",
-    "en": "Minutes. Configuration is applied via a ready-made script, no manual line-by-line adjustment. Apply, validate, and go to production."
+    "pt": "Poucos minutos. Depois de uma configuração simples no FortiGate, o portal já está funcionando.",
+    "es": "Pocos minutos. Después de una configuración simple en el FortiGate, el portal ya está funcionando.",
+    "en": "A few minutes. After a simple configuration on the FortiGate, the portal is up and running."
   },
   "faq.q5_pergunta": {
     "pt": "Isso é uma ferramenta de marketing?",
@@ -860,9 +865,9 @@
     "en": "Is this a marketing tool?"
   },
   "faq.q5_resposta": {
-    "pt": "Não. O foco é acesso, controle e conformidade. Sem CRM obrigatório, sem captura de leads como meta.",
-    "es": "No. El foco es acceso, control y conformidad. Sin CRM obligatorio, sin captura de leads como objetivo.",
-    "en": "No. The focus is access, control, and compliance. No mandatory CRM, no lead capture as a goal."
+    "pt": "Não. O wi-fi.now cuida de governança e segurança: conformidade com a LGPD e o Marco Civil, registro de consentimento e controle de dados dos visitantes. O produto não é voltado para campanhas, envio de e-mail marketing ou análise de comportamento de visitantes.",
+    "es": "No. wi-fi.now se ocupa de gobernanza y seguridad: conformidad con la LGPD y el Marco Civil, registro de consentimiento y control de datos de los visitantes. El producto no está orientado a campañas, envío de e-mail marketing ni análisis del comportamiento de los visitantes.",
+    "en": "No. wi-fi.now handles governance and security: compliance with LGPD and Marco Civil, consent logging, and control of visitor data. The product is not built for campaigns, email marketing, or visitor behavior analysis."
   },
   "faq.s2_label": {
     "pt": "Segurança e conformidade",
@@ -875,14 +880,14 @@
     "en": "Privacy and control"
   },
   "faq.q6_pergunta": {
-    "pt": "Atende LGPD e Marco Civil?",
+    "pt": "Atende à LGPD e ao Marco Civil?",
     "es": "¿Cumple con la LGPD y el Marco Civil?",
     "en": "Is it compliant with LGPD and Marco Civil?"
   },
   "faq.q6_resposta": {
-    "pt": "Sim, conformidade desde a base. LGPD e Marco Civil contemplados por padrão, não como remendo. Auditável por padrão.",
-    "es": "Sí, conformidad desde la base. LGPD y Marco Civil contemplados por defecto, no como parche. Auditable por defecto.",
-    "en": "Yes, compliance from the ground up. LGPD and Marco Civil built in by default, not as an afterthought. Auditable by default."
+    "pt": "Sim. Conformidade é fundação do produto. Registramos só o necessário para atribuir o acesso, quem acessou, com qual dispositivo, quando entrou e quando saiu. Nada de navegação ou conteúdo. Tudo auditável e exportável. Política de Privacidade, Termos e DPA publicados.",
+    "es": "Sí. La conformidad es el fundamento del producto. Registramos solo lo necesario para atribuir el acceso: quién accedió, con qué dispositivo, cuándo entró y cuándo salió. Nada de navegación ni contenido. Todo auditable y exportable. Política de Privacidad, Términos y DPA publicados.",
+    "en": "Yes. Compliance is the product's foundation. We record only what is needed to attribute access: who accessed, with which device, when they entered and when they left. No browsing or content. Everything auditable and exportable. Privacy Policy, Terms, and DPA published."
   },
   "faq.q7_pergunta": {
     "pt": "O que vocês registram?",
@@ -890,9 +895,9 @@
     "en": "What do you record?"
   },
   "faq.q7_resposta": {
-    "pt": "Quem acessou, com qual dispositivo, quando entrou e quando saiu. Só isso. Não registramos histórico de navegação, sites acessados nem URLs.",
-    "es": "Quién accedió, qué dispositivo, cuándo entró y cuándo salió. Solo eso. No registramos historial de navegación, sitios visitados ni URLs.",
-    "en": "Who accessed, which device, when they entered and left. That's it. We don't record browsing history, visited sites, or URLs."
+    "pt": "Quem acessou, com qual dispositivo, quando entrou e quando saiu. Só isso. Não registramos navegação, sites nem URLs. É registro de conexão, não de conteúdo.",
+    "es": "Quién accedió, con qué dispositivo, cuándo entró y cuándo salió. Solo eso. No registramos navegación, sitios ni URLs. Es registro de conexión, no de contenido.",
+    "en": "Who accessed, with which device, when they entered and when they left. That is it. We do not record browsing, sites, or URLs. It is a connection log, not a content log."
   },
   "faq.q8_pergunta": {
     "pt": "O wi-fi.now identifica qualquer fraudador?",
@@ -900,29 +905,19 @@
     "en": "Does wi-fi.now identify any fraudster?"
   },
   "faq.q8_resposta": {
-    "pt": "Não prometemos infalibilidade. O wi-fi.now vincula sessão, dispositivo e código identificado via WhatsApp ou SMS. Isso dissuade a maioria e mantém evidência. Dissuade, não blinda.",
-    "es": "No prometemos infalibilidad. wi-fi.now vincula sesión, dispositivo y código identificado vía WhatsApp o SMS. Esto disuade a la mayoría y mantiene evidencia. Disuade, no blindar.",
-    "en": "We don't promise infallibility. wi-fi.now links session, device, and code identified via WhatsApp or SMS. This deters most and maintains evidence. Deters, doesn't shield."
+    "pt": "Não prometemos infalibilidade. Cada sessão fica vinculada ao dispositivo e a um número verificado por WhatsApp ou SMS. Isso desestimula a maioria e preserva evidência. Dissuade, não blinda.",
+    "es": "No prometemos infalibilidad. Cada sesión queda vinculada al dispositivo y a un número verificado por WhatsApp o SMS. Esto desalienta a la mayoría y preserva evidencia. Disuade, no blinda.",
+    "en": "We do not promise infallibility. Each session is tied to the device and to a number verified by WhatsApp or SMS. This discourages most and preserves evidence. It deters, it does not shield."
   },
   "faq.q9_pergunta": {
-    "pt": "Sou parceiro ou revenda Fortinet, dá pra revender?",
-    "es": "Soy socio o revendedor Fortinet, ¿puedo revender?",
-    "en": "I'm a Fortinet partner or reseller, can I resell?"
+    "pt": "Posso revender ou fazer parceria com o wi-fi.now?",
+    "es": "¿Puedo revender o asociarme con wi-fi.now?",
+    "en": "Can I resell or partner with wi-fi.now?"
   },
   "faq.q9_resposta": {
-    "pt": "Dá. Temos o modelo White-Label para parceiros e revendas Fortinet. Você entrega com a sua marca.",
-    "es": "Sí. Tenemos el modelo White-Label para socios y revendedores Fortinet. Entregas con tu propia marca.",
-    "en": "Yes. We have a White-Label model for Fortinet partners and resellers. You deliver under your own brand."
-  },
-  "faq.q10_pergunta": {
-    "pt": "Funciona sem FortiGate?",
-    "es": "¿Funciona sin FortiGate?",
-    "en": "Does it work without FortiGate?"
-  },
-  "faq.q10_resposta": {
-    "pt": "Não. O foco é Fortinet. Sem FortiGate, não é o caso de uso agora. A gente diz isso cedo, sem rodeio.",
-    "es": "No. El foco es Fortinet. Sin FortiGate, no es el caso de uso ahora. Lo decimos temprano, sin rodeos.",
-    "en": "No. The focus is Fortinet. Without FortiGate, it's not the use case right now. We say this upfront, no beating around the bush."
+    "pt": "Sim. Atuamos em parceria de revenda com diversas empresas. Você leva o wi-fi.now como ferramenta para a sua carteira e mantém o relacionamento comercial com o cliente. A equipe wi-fi.now cuida da plataforma e do suporte técnico.",
+    "es": "Sí. Trabajamos en asociación de reventa con diversas empresas. Llevas wi-fi.now como herramienta para tu cartera y mantienes la relación comercial con el cliente. El equipo wi-fi.now se ocupa de la plataforma y del soporte técnico.",
+    "en": "Yes. We work in reseller partnerships with several companies. You take wi-fi.now as a tool for your portfolio and keep the commercial relationship with the client. The wi-fi.now team handles the platform and technical support."
   },
   "faq.cta_quote": {
     "pt": "Resolve a fila de chamados de Wi-Fi de visitante de uma vez.",
@@ -1593,11 +1588,6 @@
     "pt": "Versão",
     "es": "Versión",
     "en": "Version"
-  },
-  "dpa.consolidada_label": {
-    "pt": "(consolidada)",
-    "es": "(consolidada)",
-    "en": "(consolidated)"
   },
   "dpa.toc_label": {
     "pt": "Nesta página",

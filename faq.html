@@ -80,7 +80,7 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles.css?v=142">
+    <link rel="stylesheet" href="styles.css?v=144">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -96,6 +96,7 @@
                     <a href="como-funciona.html" data-i18n="header.onboarding">Onboarding</a>
                     <a href="planos.html" data-i18n="header.planos">Planos</a>
                     <a href="faq.html" data-i18n="header.faq">FAQ</a>
+                    <a href="blog/" data-i18n="header.blog">Blog</a>
                     <a href="#" class="nav-mobile-login" data-i18n="header.nav_mobile_login">Entrar</a>
                 </div>
                 <span class="nav-divider"></span>
@@ -122,8 +123,8 @@
     </nav>
 
     <!-- Hero -->
-    <section class="ft-hero" style="background-image: linear-gradient(to bottom, rgba(246,247,252,0) 80%, #F6F7FC 100%), url('assets/faqhero.jpg'); background-size: cover; background-position: center; border-bottom: none;">
-        <div class="container ft-hero-container" style="justify-content: flex-start; max-width: 1200px;">
+    <section class="ft-hero" style="background-image: linear-gradient(to bottom, rgba(246,247,252,0) 80%, #F6F7FC 100%), url('img/passos/fqa.png'); background-size: cover; background-position: center; border-bottom: none; aspect-ratio: 3.27 / 1; display: flex; align-items: center;">
+        <div class="container ft-hero-container" style="justify-content: flex-start; max-width: 1200px; width: 100%;">
             <div class="ft-hero-text" style="margin-left: 0;">
                 <span class="ft-eyebrow" data-i18n="faq.hero_eyebrow">FAQ</span>
                 <h1 class="ft-hero-title" data-i18n="faq.hero_titulo">
@@ -150,13 +151,13 @@
                 <details>
                     <summary data-i18n="faq.q1_pergunta">Preciso ter FortiGate?</summary>
                     <div class="ft-acc-body">
-                        <p data-i18n="faq.q1_resposta">Sim, é o pré-requisito. O wi-fi.now roda em cima do seu FortiGate, que faz o trabalho pesado de controle de acesso. Sem FortiGate, não é o caso de uso agora. A gente diz isso cedo, sem rodeio.</p>
+                        <p data-i18n="faq.q1_resposta">Sim, o firewall precisa ser FortiGate. O ponto de acesso Wi-Fi pode ser de qualquer fabricante, desde que esteja conectado ao FortiGate.</p>
                     </div>
                 </details>
                 <details>
                     <summary data-i18n="faq.q2_pergunta">Preciso instalar servidor ou RADIUS local?</summary>
                     <div class="ft-acc-body">
-                        <p data-i18n="faq.q2_resposta">Não. O wi-fi.now é cloud e usa o seu FortiGate. Sem servidor local, sem RADIUS local, sem link novo.</p>
+                        <p data-i18n="faq.q2_resposta">Não. Toda a autenticação, o consentimento e o armazenamento de registros são feitos pelo wi-fi.now. Não é necessário instalar nada na sua rede além de uma configuração simples no FortiGate.</p>
                     </div>
                 </details>
                 <!-- Pergunta "Tem plano grátis?" oculta temporariamente
@@ -170,19 +171,19 @@
                 <details>
                     <summary data-i18n="faq.q3_pergunta">Vou precisar trocar minha infraestrutura?</summary>
                     <div class="ft-acc-body">
-                        <p data-i18n="faq.q3_resposta">Não. O wi-fi.now aproveita o que já existe. Seu FortiGate já faz o trabalho pesado, falta só ligar o wi-fi.now.</p>
+                        <p data-i18n="faq.q3_resposta">Não. O wi-fi.now funciona com o FortiGate e os equipamentos Wi-Fi que você já tem. Não há necessidade de comprar hardware ou access point novos.</p>
                     </div>
                 </details>
                 <details>
                     <summary data-i18n="faq.q4_pergunta">Em quanto tempo coloco no ar?</summary>
                     <div class="ft-acc-body">
-                        <p data-i18n="faq.q4_resposta">Minutos. A configuração entra via script pronto, sem ajuste manual linha a linha. Aplica, homologa e vai para produção.</p>
+                        <p data-i18n="faq.q4_resposta">Poucos minutos. Depois de uma configuração simples no FortiGate, o portal já está funcionando.</p>
                     </div>
                 </details>
                 <details>
                     <summary data-i18n="faq.q5_pergunta">Isso é uma ferramenta de marketing?</summary>
                     <div class="ft-acc-body">
-                        <p data-i18n="faq.q5_resposta">Não. O foco é acesso, controle e conformidade. Sem CRM obrigatório, sem captura de leads como meta.</p>
+                        <p data-i18n="faq.q5_resposta">Não. O wi-fi.now cuida de governança e segurança: conformidade com a LGPD e o Marco Civil, registro de consentimento e controle de dados dos visitantes. O produto não é voltado para campanhas, envio de e-mail marketing ou análise de comportamento de visitantes.</p>
                     </div>
                 </details>
             </div>
@@ -198,33 +199,27 @@
             <h2 class="ft-h2" data-i18n="faq.s2_titulo">Privacidade e controle</h2>
             <div class="ft-accordion">
                 <details>
-                    <summary data-i18n="faq.q6_pergunta">Atende LGPD e Marco Civil?</summary>
+                    <summary data-i18n="faq.q6_pergunta">Atende à LGPD e ao Marco Civil?</summary>
                     <div class="ft-acc-body">
-                        <p data-i18n="faq.q6_resposta">Sim, conformidade desde a base. LGPD e Marco Civil contemplados por padrão, não como remendo. Auditável por padrão.</p>
+                        <p data-i18n="faq.q6_resposta">Sim. Conformidade é fundação do produto. Registramos só o necessário para atribuir o acesso, quem acessou, com qual dispositivo, quando entrou e quando saiu. Nada de navegação ou conteúdo. Tudo auditável e exportável. Política de Privacidade, Termos e DPA publicados.</p>
                     </div>
                 </details>
                 <details>
                     <summary data-i18n="faq.q7_pergunta">O que vocês registram?</summary>
                     <div class="ft-acc-body">
-                        <p data-i18n="faq.q7_resposta">Quem acessou, com qual dispositivo, quando entrou e quando saiu. Só isso. Não registramos histórico de navegação, sites acessados nem URLs.</p>
+                        <p data-i18n="faq.q7_resposta">Quem acessou, com qual dispositivo, quando entrou e quando saiu. Só isso. Não registramos navegação, sites nem URLs. É registro de conexão, não de conteúdo.</p>
                     </div>
                 </details>
                 <details>
                     <summary data-i18n="faq.q8_pergunta">O wi-fi.now identifica qualquer fraudador?</summary>
                     <div class="ft-acc-body">
-                        <p data-i18n="faq.q8_resposta">Não prometemos infalibilidade. O wi-fi.now vincula sessão, dispositivo e código identificado via WhatsApp ou SMS. Isso dissuade a maioria e mantém evidência. Dissuade, não blinda.</p>
+                        <p data-i18n="faq.q8_resposta">Não prometemos infalibilidade. Cada sessão fica vinculada ao dispositivo e a um número verificado por WhatsApp ou SMS. Isso desestimula a maioria e preserva evidência. Dissuade, não blinda.</p>
                     </div>
                 </details>
                 <details>
-                    <summary data-i18n="faq.q9_pergunta">Sou parceiro ou revenda Fortinet, dá pra revender?</summary>
+                    <summary data-i18n="faq.q9_pergunta">Posso revender ou fazer parceria com o wi-fi.now?</summary>
                     <div class="ft-acc-body">
-                        <p data-i18n="faq.q9_resposta">Dá. Temos o modelo White-Label para parceiros e revendas Fortinet. Você entrega com a sua marca.</p>
-                    </div>
-                </details>
-                <details>
-                    <summary data-i18n="faq.q10_pergunta">Funciona sem FortiGate?</summary>
-                    <div class="ft-acc-body">
-                        <p data-i18n="faq.q10_resposta">Não. O foco é Fortinet. Sem FortiGate, não é o caso de uso agora. A gente diz isso cedo, sem rodeio.</p>
+                        <p data-i18n="faq.q9_resposta">Sim. Atuamos em parceria de revenda com diversas empresas. Você leva o wi-fi.now como ferramenta para a sua carteira e mantém o relacionamento comercial com o cliente. A equipe wi-fi.now cuida da plataforma e do suporte técnico.</p>
                     </div>
                 </details>
             </div>
