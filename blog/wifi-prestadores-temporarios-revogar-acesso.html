@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prestadores e temporários no Wi-Fi: o acesso que ninguém revoga</title>
-    <meta name="description" content="Entre o visitante e o colaborador existe o terceiro: volta toda semana e sai sem aviso. Veja como dar acesso Wi-Fi com dono, prazo e registro.">
+    <title>Revogar acesso de prestador no Wi-Fi: dono e prazo</title>
+    <meta name="description" content="Prestador volta toda semana e sai sem aviso, usando a senha de todo mundo. Veja como dar acesso de terceiro com dono, prazo e registro.">
     <link rel="canonical" href="https://wi-fi.now/blog/wifi-prestadores-temporarios-revogar-acesso">
     <link rel="icon" type="image/svg+xml" href="../assets/logowi-finow.svg">
     <!-- Open Graph / compartilhamento em redes e WhatsApp -->
@@ -13,7 +13,7 @@
     <meta property="og:site_name" content="wi-fi.now">
     <meta property="og:url" content="https://wi-fi.now/blog/wifi-prestadores-temporarios-revogar-acesso">
     <meta property="og:title" content="Prestadores e temporários no Wi-Fi: o acesso que ninguém revoga">
-    <meta property="og:description" content="Entre o visitante e o colaborador existe o terceiro: volta toda semana e sai sem aviso. Veja como dar acesso Wi-Fi com dono, prazo e registro.">
+    <meta property="og:description" content="Prestador volta toda semana e sai sem aviso, usando a senha de todo mundo. Veja como dar acesso de terceiro com dono, prazo e registro.">
     <meta property="og:image" content="https://wi-fi.now/assets/blog/wifi-prestadores-temporarios-revogar-acesso.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="675">
@@ -22,7 +22,7 @@
     <meta property="article:section" content="Segurança de rede">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Prestadores e temporários no Wi-Fi: o acesso que ninguém revoga">
-    <meta name="twitter:description" content="Entre o visitante e o colaborador existe o terceiro: volta toda semana e sai sem aviso. Veja como dar acesso Wi-Fi com dono, prazo e registro.">
+    <meta name="twitter:description" content="Prestador volta toda semana e sai sem aviso, usando a senha de todo mundo. Veja como dar acesso de terceiro com dono, prazo e registro.">
     <meta name="twitter:image" content="https://wi-fi.now/assets/blog/wifi-prestadores-temporarios-revogar-acesso.jpg">
     <script type="application/ld+json">
     {
@@ -32,13 +32,13 @@
           "@type": "BlogPosting",
           "@id": "https://wi-fi.now/blog/wifi-prestadores-temporarios-revogar-acesso#artigo",
           "headline": "Prestadores e temporários no Wi-Fi: o acesso que ninguém revoga",
-          "description": "Entre o visitante e o colaborador existe o terceiro: volta toda semana e sai sem aviso. Veja como dar acesso Wi-Fi com dono, prazo e registro.",
+          "description": "Prestador volta toda semana e sai sem aviso, usando a senha de todo mundo. Veja como dar acesso de terceiro com dono, prazo e registro.",
           "image": "https://wi-fi.now/assets/blog/wifi-prestadores-temporarios-revogar-acesso.jpg",
           "datePublished": "2026-10-19T09:00:00-03:00",
           "dateModified": "2026-10-19T09:00:00-03:00",
           "inLanguage": "pt-BR",
           "articleSection": "Segurança de rede",
-          "keywords": "Wi-Fi para visitantes, controle de acesso, terceiros, LGPD, segurança de rede",
+          "keywords": "revogar acesso de prestador no Wi-Fi, acesso Wi-Fi de terceiros, acesso temporário de visitante, senha compartilhada no Wi-Fi, captive portal para prestadores, isolamento de rede de visitantes",
           "mainEntityOfPage": "https://wi-fi.now/blog/wifi-prestadores-temporarios-revogar-acesso",
           "author": {
             "@type": "Organization",
@@ -60,13 +60,43 @@
             { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wi-fi.now/blog/" },
             { "@type": "ListItem", "position": 3, "name": "Prestadores e temporários no Wi-Fi", "item": "https://wi-fi.now/blog/wifi-prestadores-temporarios-revogar-acesso" }
           ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Dá para revogar o acesso de um prestador sem trocar a senha de todos?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Com senha compartilhada, não. Só dá para trocar a senha de todo mundo, o que ninguém faz numa sexta à tarde. Para revogar uma pessoa só, cada prestador precisa de acesso próprio, criado no portal de conexão com prazo definido." }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre acesso de visitante e de prestador no Wi-Fi?",
+              "acceptedAnswer": { "@type": "Answer", "text": "O visitante chega uma vez e precisa só de internet por tempo curto. O prestador volta com frequência, por um período de contrato, e às vezes precisa alcançar um sistema interno. Por isso ele pede dono, prazo e registro próprios, não a senha do visitante." }
+            },
+            {
+              "@type": "Question",
+              "name": "Por quanto tempo o acesso de um terceiro deve ficar ativo?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Pelo prazo do contrato, definido na criação do acesso, não lembrado depois. Contrato de três meses, acesso de três meses. A data de fim vale sozinha, sem depender de alguém trocar a senha quando o contrato acaba." }
+            },
+            {
+              "@type": "Question",
+              "name": "Prestador pode usar a mesma rede dos visitantes?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Por padrão sim, isolado dos demais dispositivos e só com internet. Alcançar sistema interno é exceção, com rede própria e justificativa. Quem aplica essa segmentação é o FortiGate, não o portal." }
+            },
+            {
+              "@type": "Question",
+              "name": "O cadastro de um prestador precisa seguir a LGPD?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sim, o cadastro é dado pessoal. A LGPD limita o tratamento ao mínimo necessário (art. 6º, III) e exige segurança contra acesso indevido (art. 6º, VII). Na prática, peça só o que identifica a pessoa e o patrocinador interno, e não reaproveite esse cadastro para outra coisa." }
+            }
+          ]
         }
       ]
     }
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../styles.css?v=144">
+    <link rel="stylesheet" href="../styles.css?v=145">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -131,7 +161,7 @@
                             <div class="bl-meta">
                                 <span>Publicado em <time datetime="2026-10-19">19 out. 2026</time></span>
                                 <span aria-hidden="true">·</span>
-                                <span>5 min de leitura</span>
+                                <span>7 min de leitura</span>
                             </div>
                         </div>
                     </div>
@@ -145,10 +175,11 @@
                     <span class="bl-toc-title">Neste artigo</span>
                     <ol>
                         <li><a href="#terceiro-perfil">O terceiro perfil</a></li>
-                        <li><a href="#encerrar">O problema é encerrar</a></li>
+                        <li><a href="#encerrar">O problema é revogar</a></li>
                         <li><a href="#quatro-perguntas">Quatro perguntas para cada acesso</a></li>
                         <li><a href="#identidade">Onde a identidade é registrada</a></li>
-                        <li><a href="#wi-fi-now">Como o wi-fi.now trata isso</a></li>
+                        <li><a href="#wi-fi-now">Como o wi-fi.now controla o acesso</a></li>
+                        <li><a href="#perguntas-frequentes">Perguntas frequentes</a></li>
                     </ol>
                 </nav>
                 <div class="bl-aside-cta">
@@ -186,7 +217,7 @@
                     </ul>
                     <p>Sem regra própria, esse grupo recebe a senha do visitante ou, pior, a da rede interna. E o risco não é teórico. O relatório DBIR 2025 da Verizon, que analisou 12.195 violações confirmadas, aponta que a participação de terceiros nessas violações dobrou e chegou a 30% (<a href="https://www.verizon.com/about/news/2025-data-breach-investigations-report" target="_blank" rel="noopener">Verizon</a>). O número cobre todo tipo de envolvimento de terceiros, não só Wi-Fi, mas mostra onde o risco cresceu.</p>
 
-                    <h2 id="encerrar">O problema não é liberar, é encerrar</h2>
+                    <h2 id="encerrar">O problema não é liberar o acesso, é revogar</h2>
                     <p>Liberar acesso é fácil: alguém passa a senha. Encerrar é onde a política falha, porque ninguém sabe exatamente quem tem acesso nem até quando.</p>
                     <p>O CIS Controls v8, referência de boas práticas de segurança, separa as duas coisas. A salvaguarda 6.1 pede um processo documentado para conceder acesso. A 6.2 pede um processo, de preferência automatizado, para revogar: desativar contas imediatamente no desligamento, na revogação de direitos ou na mudança de função. O mesmo texto observa que desativar, em vez de apagar, pode ser necessário para preservar a trilha de auditoria (<a href="https://cas.docs.cisecurity.org/en/latest/source/Controls6/" target="_blank" rel="noopener">CIS Controls v8, Controle 6</a>).</p>
                     <p>Com senha compartilhada, nenhuma das duas salvaguardas é possível. Não há como revogar uma pessoa; só dá para trocar a senha de todos. E trocar a senha de todos é exatamente o que ninguém faz numa sexta-feira à tarde.</p>
@@ -203,18 +234,59 @@
 
                     <h2 id="identidade">Onde a identidade do terceiro é registrada</h2>
                     <p>O prestador não tem conta no diretório da empresa nem perfil instalado no aparelho. Por isso ele não entra pelo 802.1X dos colaboradores, e não deveria entrar pela senha da rede interna.</p>
-                    <p>Para ele, o portal de conexão é o ponto em que a identidade fica registrada e o prazo passa a valer. Na prática, isso pode ser um código enviado por e-mail ou SMS, um cadastro feito pela recepção ou um voucher com validade. O que muda em relação à senha única é que cada pessoa passa a ter um acesso próprio, que pode ser encerrado sem afetar os outros.</p>
+                    <p>Para ele, o portal de conexão é o ponto em que a identidade fica registrada e o prazo passa a valer. Na prática, isso pode ser um código enviado por e-mail ou SMS, um cadastro feito pela recepção ou um voucher com validade. O que muda em relação à senha única é que cada pessoa passa a ter um acesso próprio, que pode ser encerrado sem afetar os outros. Por que o aparelho não serve de identidade, com MAC aleatório e NAT na borda, está detalhado em <a href="wifi-visitantes-identidade-no-log.html">Quem estava no seu Wi-Fi às 14h32</a>.</p>
                     <p>Um teste rápido: liste os terceiros que usaram a rede na última semana e, ao lado, a data em que o acesso de cada um termina. Se a segunda coluna ficar vazia, o problema não está no firewall; está na forma como o terceiro entra.</p>
 
-                    <h2 id="wi-fi-now">Como o wi-fi.now trata isso</h2>
-                    <p>O wi-fi.now é um <a href="../recursos.html">captive portal em nuvem para Wi-Fi de visitantes</a>, desenhado para conformidade com a LGPD e o Marco Civil. Ele funciona sobre redes Fortinet, Cisco, Ubiquiti e HPE já instaladas, sem projeto de implementação para a equipe de TI, e dá ao terceiro uma entrada com identidade própria no lugar da senha compartilhada.</p>
+                    <h2 id="wi-fi-now">Como o wi-fi.now controla o acesso de prestadores</h2>
+                    <p>O wi-fi.now é um <a href="../recursos.html">captive portal em nuvem para Wi-Fi de visitantes</a>, desenhado para conformidade com a LGPD e o Marco Civil. Ele funciona sobre redes Fortinet, Cisco, Ubiquiti e HPE já instaladas, sem projeto de implementação para a equipe de TI. Respondendo às quatro perguntas, na ordem:</p>
+                    <ol class="bl-steps">
+                        <li><strong>Quem pediu e quem responde.</strong> O wi-fi.now troca a senha coletiva por acesso individual. Cada terceiro se identifica no portal por token SMS ou WhatsApp, ou por login Google, LinkedIn ou Microsoft. O acesso passa a apontar para uma pessoa real, não para uma credencial que circula. O patrocinador interno continua sendo processo da sua empresa; o que a plataforma garante é que o acesso tem nome.</li>
+                        <li><strong>Até quando vale.</strong> O perfil de autenticação define limite de sessão e de inatividade, e o acesso expira sozinho, sem renovação manual. O prazo vale por conta própria, sem depender de alguém trocar a senha quando o contrato acaba.</li>
+                        <li><strong>O que alcança.</strong> O terceiro entra numa rede separada e isolada dos demais dispositivos. Quem aplica a segmentação é o FortiGate que você já tem, com as políticas dele. O wi-fi.now cuida do portal e da identificação, não do tráfego.</li>
+                        <li><strong>O que fica registrado.</strong> O accounting RADIUS grava início, término e duração de cada sessão, e os logs de captive guardam quem acessou e os dados do acesso. O registro continua disponível depois que o acesso termina, para responder a uma auditoria. A retenção e a adequação à LGPD são definidas por você, dono do ambiente.</li>
+                    </ol>
 
                     <div class="bl-inline-cta">
                         <div>
-                            <strong>Quer fazer o teste da lista na sua rede?</strong>
-                            <p>Fale com o time do wi-fi.now e veja como fica o acesso de um prestador do começo ao fim.</p>
+                            <strong>Comece o teste gratuito de 30 dias.</strong>
+                            <p>Integre o wi-fi.now no FortiGate que você já tem e veja o acesso de um prestador do começo ao fim, com dono, prazo e registro.</p>
                         </div>
-                        <a href="#" class="btn btn-primary">Fale com um especialista</a>
+                        <a href="../planos.html" class="btn btn-primary">Começar o teste gratuito &rarr;</a>
+                    </div>
+
+                    <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
+                    <!-- Mesmas perguntas e respostas do FAQPage no topo do arquivo -->
+                    <div class="ft-accordion">
+                        <details>
+                            <summary>Dá para revogar o acesso de um prestador sem trocar a senha de todos?</summary>
+                            <div class="ft-acc-body">
+                                <p>Com senha compartilhada, não. Só dá para trocar a senha de todo mundo, o que ninguém faz numa sexta à tarde. Para revogar uma pessoa só, cada prestador precisa de acesso próprio, criado no portal de conexão com prazo definido.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Qual a diferença entre acesso de visitante e de prestador no Wi-Fi?</summary>
+                            <div class="ft-acc-body">
+                                <p>O visitante chega uma vez e precisa só de internet por tempo curto. O prestador volta com frequência, por um período de contrato, e às vezes precisa alcançar um sistema interno. Por isso ele pede dono, prazo e registro próprios, não a senha do visitante.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Por quanto tempo o acesso de um terceiro deve ficar ativo?</summary>
+                            <div class="ft-acc-body">
+                                <p>Pelo prazo do contrato, definido na criação do acesso, não lembrado depois. Contrato de três meses, acesso de três meses. A data de fim vale sozinha, sem depender de alguém trocar a senha quando o contrato acaba.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Prestador pode usar a mesma rede dos visitantes?</summary>
+                            <div class="ft-acc-body">
+                                <p>Por padrão sim, isolado dos demais dispositivos e só com internet. Alcançar sistema interno é exceção, com rede própria e justificativa. Quem aplica essa segmentação é o FortiGate, não o portal.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>O cadastro de um prestador precisa seguir a LGPD?</summary>
+                            <div class="ft-acc-body">
+                                <p>Sim, o cadastro é dado pessoal. A LGPD limita o tratamento ao mínimo necessário (art. 6º, III) e exige segurança contra acesso indevido (art. 6º, VII). Na prática, peça só o que identifica a pessoa e o patrocinador interno, e não reaproveite esse cadastro para outra coisa.</p>
+                            </div>
+                        </details>
                     </div>
                 </div>
 
