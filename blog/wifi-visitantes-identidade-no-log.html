@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem estava no seu Wi-Fi às 14h32? O log sozinho não responde</title>
-    <meta name="description" content="MAC aleatório, NAT e senha compartilhada apagam quem usou o Wi-Fi de visitantes. Veja como separar perfis e ligar cada sessão a uma pessoa.">
+    <title>Identificar visitante no Wi-Fi: por que o log não basta</title>
+    <meta name="description" content="MAC aleatório, NAT e senha compartilhada apagam quem usou o Wi-Fi de visitantes. Veja como ligar cada sessão a uma pessoa e registrar para auditoria.">
     <link rel="canonical" href="https://wi-fi.now/blog/wifi-visitantes-identidade-no-log">
     <link rel="icon" type="image/svg+xml" href="../assets/logowi-finow.svg">
     <!-- Open Graph / compartilhamento em redes e WhatsApp -->
@@ -13,7 +13,7 @@
     <meta property="og:site_name" content="wi-fi.now">
     <meta property="og:url" content="https://wi-fi.now/blog/wifi-visitantes-identidade-no-log">
     <meta property="og:title" content="Quem estava no seu Wi-Fi às 14h32? O log sozinho não responde">
-    <meta property="og:description" content="MAC aleatório, NAT e senha compartilhada apagam quem usou o Wi-Fi de visitantes. Veja como separar perfis e ligar cada sessão a uma pessoa.">
+    <meta property="og:description" content="MAC aleatório, NAT e senha compartilhada apagam quem usou o Wi-Fi de visitantes. Veja como ligar cada sessão a uma pessoa e registrar para auditoria.">
     <meta property="og:image" content="https://wi-fi.now/assets/blog/wifi-visitantes-identidade-no-log.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="675">
@@ -22,7 +22,7 @@
     <meta property="article:section" content="Segurança de rede">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Quem estava no seu Wi-Fi às 14h32? O log sozinho não responde">
-    <meta name="twitter:description" content="MAC aleatório, NAT e senha compartilhada apagam quem usou o Wi-Fi de visitantes. Veja como separar perfis e ligar cada sessão a uma pessoa.">
+    <meta name="twitter:description" content="MAC aleatório, NAT e senha compartilhada apagam quem usou o Wi-Fi de visitantes. Veja como ligar cada sessão a uma pessoa e registrar para auditoria.">
     <meta name="twitter:image" content="https://wi-fi.now/assets/blog/wifi-visitantes-identidade-no-log.jpg">
     <script type="application/ld+json">
     {
@@ -32,13 +32,13 @@
           "@type": "BlogPosting",
           "@id": "https://wi-fi.now/blog/wifi-visitantes-identidade-no-log#artigo",
           "headline": "Quem estava no seu Wi-Fi às 14h32? O log sozinho não responde",
-          "description": "MAC aleatório, NAT e senha compartilhada apagam quem usou o Wi-Fi de visitantes. Veja como separar perfis e ligar cada sessão a uma pessoa.",
+          "description": "MAC aleatório, NAT e senha compartilhada apagam quem usou o Wi-Fi de visitantes. Veja como ligar cada sessão a uma pessoa e registrar para auditoria.",
           "image": "https://wi-fi.now/assets/blog/wifi-visitantes-identidade-no-log.jpg",
           "datePublished": "2026-10-16T09:00:00-03:00",
           "dateModified": "2026-10-16T09:00:00-03:00",
           "inLanguage": "pt-BR",
           "articleSection": "Segurança de rede",
-          "keywords": "Wi-Fi para visitantes, controle de acesso, Marco Civil, LGPD, segurança de rede",
+          "keywords": "identificar visitante no Wi-Fi, log de Wi-Fi de visitantes, MAC aleatório identificação, registro de conexão Marco Civil, captive portal identificação de visitante, LGPD Wi-Fi de visitantes",
           "mainEntityOfPage": "https://wi-fi.now/blog/wifi-visitantes-identidade-no-log",
           "author": {
             "@type": "Organization",
@@ -59,6 +59,36 @@
             { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://wi-fi.now/" },
             { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wi-fi.now/blog/" },
             { "@type": "ListItem", "position": 3, "name": "Quem estava no seu Wi-Fi às 14h32?", "item": "https://wi-fi.now/blog/wifi-visitantes-identidade-no-log" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "O endereço MAC identifica quem usou o Wi-Fi?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não de forma confiável. Celulares usam MAC aleatório por padrão, no iOS e no Android, e esse endereço muda com o tempo. Uma lista de MACs montada hoje descreve aparelhos que amanhã terão outro endereço, não pessoas." }
+            },
+            {
+              "@type": "Question",
+              "name": "O log do controlador mostra quem usou a rede?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Mostra um aparelho, não uma pessoa. Em geral aparece um MAC, um IP interno e o nome do SSID, sem nome de ninguém. A identidade precisa vir da autenticação no portal, não do aparelho." }
+            },
+            {
+              "@type": "Question",
+              "name": "Como identificar um visitante que usou o Wi-Fi num horário específico?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Ligando a sessão a uma identidade capturada no portal de conexão, por token SMS, e-mail validado ou voucher. O registro precisa guardar quem, quando (com relógio sincronizado por NTP), onde (SSID e ponto de acesso) e, quando há NAT, o IP público e a porta de origem." }
+            },
+            {
+              "@type": "Question",
+              "name": "Por quanto tempo preciso guardar o log de Wi-Fi de visitantes?",
+              "acceptedAnswer": { "@type": "Answer", "text": "O art. 13 do Marco Civil atribui a quem provê a conexão o dever de guardar os registros de conexão por um ano, em sigilo e ambiente seguro. Se a sua empresa ocupa esse papel ao abrir o Wi-Fi para terceiros é análise para o jurídico. A pergunta técnica vem antes: o registro que você guarda leva a uma pessoa?" }
+            },
+            {
+              "@type": "Question",
+              "name": "Quais dados registrar de um visitante sem ferir a LGPD?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Só o necessário para identificar a sessão. O art. 6º da LGPD pede finalidade específica, tratamento mínimo e segurança contra acesso indevido. Um formulário de oito campos não deixa a rede mais segura, deixa a base mais exposta." }
+            }
           ]
         }
       ]
@@ -131,7 +161,7 @@
                             <div class="bl-meta">
                                 <span>Publicado em <time datetime="2026-10-16">16 out. 2026</time></span>
                                 <span aria-hidden="true">·</span>
-                                <span>5 min de leitura</span>
+                                <span>7 min de leitura</span>
                             </div>
                         </div>
                     </div>
@@ -145,10 +175,11 @@
                     <span class="bl-toc-title">Neste artigo</span>
                     <ol>
                         <li><a href="#aparelho-nao-pessoa">O log mostra um aparelho</a></li>
-                        <li><a href="#perfis">Perfis com riscos diferentes</a></li>
+                        <li><a href="#perfis">A senha compartilhada</a></li>
                         <li><a href="#identidade">Onde nasce a identidade</a></li>
-                        <li><a href="#o-que-guardar">O que guardar</a></li>
-                        <li><a href="#wi-fi-now">Como o wi-fi.now trata isso</a></li>
+                        <li><a href="#o-que-guardar">O que registrar</a></li>
+                        <li><a href="#wi-fi-now">Como o wi-fi.now identifica</a></li>
+                        <li><a href="#perguntas-frequentes">Perguntas frequentes</a></li>
                     </ol>
                 </nav>
                 <div class="bl-aside-cta">
@@ -183,22 +214,17 @@
                     <p><strong>NAT na borda.</strong> Todos os visitantes saem para a internet pelo mesmo IP público. Sem a tabela de tradução com horário sincronizado, esse IP aponta para o prédio inteiro.</p>
                     <p>A conclusão é técnica: a identidade precisa vir da autenticação, não do aparelho.</p>
 
-                    <h2 id="perfis">Visitante, prestador e colaborador têm riscos diferentes</h2>
-                    <p>Tratar todo mundo que conecta como "convidado" mistura perfis que pedem regras distintas.</p>
-                    <ul>
-                        <li><strong>Visitante:</strong> chega uma vez, precisa só de internet, por tempo limitado.</li>
-                        <li><strong>Prestador de serviço:</strong> volta toda semana, às vezes precisa alcançar um sistema interno, e o acesso deve acabar quando o contrato acaba.</li>
-                        <li><strong>Colaborador:</strong> tem identidade corporativa e deveria entrar por ela, não pela senha da recepção.</li>
-                    </ul>
+                    <h2 id="perfis">Por que a senha compartilhada apaga a identidade</h2>
+                    <p>A raiz do log sem nome é a credencial coletiva. Se o visitante, o prestador e o colaborador entram todos pela mesma senha da recepção, o registro não distingue um do outro, e nenhum aponta para uma pessoa.</p>
                     <p>Credencial compartilhada é risco medido, não teórico. O relatório DBIR 2025 da Verizon aponta o uso de credenciais comprometidas como vetor de acesso inicial em 22% das violações analisadas (<a href="https://www.verizon.com/business/resources/articles/credential-stuffing-attacks-2025-dbir-research/" target="_blank" rel="noopener">Verizon</a>). Uma senha de Wi-Fi impressa no balcão é, por definição, uma credencial que circula sem controle.</p>
-                    <p>Na prática, cada perfil ganha sua rede lógica (SSID ou VLAN), o visitante fica isolado dos demais clientes da mesma rede, e cada acesso tem duração definida. O prestador que encerrou o contrato perde o acesso no mesmo dia, sem depender de alguém lembrar de trocar a senha.</p>
+                    <p>Cada perfil que conecta tem um risco diferente e pede regra própria: o visitante de passagem, o prestador recorrente, o colaborador com identidade corporativa. O ciclo de vida desse acesso, com dono e prazo para cada pessoa, está em <a href="wifi-prestadores-temporarios-revogar-acesso.html">Prestadores e temporários no Wi-Fi: o acesso que ninguém revoga</a>. Aqui o foco é anterior a tudo isso: ligar cada sessão a uma pessoa.</p>
 
                     <h2 id="identidade">Onde nasce a identidade do visitante</h2>
                     <p>Certificados, 802.1X e Passpoint funcionam bem para quem já tem credencial instalada no aparelho: o colaborador com MDM, o prestador recorrente. O visitante que chega uma vez não tem nada disso. Para ele, a identidade nasce no portal de conexão.</p>
                     <p>É ali que a rede pode pedir um dado verificável (um código por SMS, um e-mail validado, um cadastro feito pela recepção, um voucher) e ligar a sessão a uma pessoa: quem, em que aparelho, a partir de que horário.</p>
                     <p>Identificar é tratar dado pessoal, e a LGPD dá o limite. O art. 6º exige finalidade específica e informada, tratamento limitado ao mínimo necessário e medidas de segurança contra acesso indevido (<a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener">Lei 13.709/2018</a>). Para o Wi-Fi de visitantes, isso significa pedir só o que permite identificar a sessão, dizer para que serve e guardar com acesso restrito. Um formulário com oito campos não deixa a rede mais segura; deixa a base mais exposta.</p>
 
-                    <h2 id="o-que-guardar">O que guardar para responder em minutos</h2>
+                    <h2 id="o-que-guardar">O que registrar para responder em minutos</h2>
                     <p>Volte ao pedido das 14h32. Para respondê-lo, o registro de cada sessão precisa trazer:</p>
                     <ol class="bl-steps">
                         <li><strong>Quem:</strong> o identificador autenticado no portal, não o MAC.</li>
@@ -210,15 +236,57 @@
                     <p>Sobre o prazo, o art. 13 do Marco Civil da Internet atribui a quem provê a conexão o dever de manter os registros de conexão por um ano, em sigilo e em ambiente controlado e seguro (<a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm" target="_blank" rel="noopener">Lei 12.965/2014</a>). Se a sua empresa ocupa esse papel ao abrir o Wi-Fi para terceiros é uma análise para o jurídico. A pergunta técnica vem antes: o registro que você guarda leva a uma pessoa?</p>
                     <p>Um teste simples: escolha uma sessão de ontem na rede de visitantes e tente responder aos cinco itens em dez minutos. Se não conseguir, o ajuste não está no firewall; está em como o visitante entra.</p>
 
-                    <h2 id="wi-fi-now">Como o wi-fi.now trata isso</h2>
-                    <p>O wi-fi.now é um <a href="../recursos.html">captive portal em nuvem para Wi-Fi de visitantes</a>, desenhado para conformidade com a LGPD e o Marco Civil. Ele autentica o visitante no portal e funciona sobre redes Fortinet, Cisco, Ubiquiti e HPE já instaladas, sem projeto de implementação para a equipe de TI.</p>
+                    <h2 id="wi-fi-now">Como o wi-fi.now identifica cada visitante</h2>
+                    <p>O wi-fi.now é um <a href="../recursos.html">captive portal em nuvem para Wi-Fi de visitantes</a>, desenhado para conformidade com a LGPD e o Marco Civil. Ele autentica o visitante no portal e funciona sobre redes Fortinet, Cisco, Ubiquiti e HPE já instaladas, sem projeto de implementação. Respondendo aos cinco itens do registro, na ordem:</p>
+                    <ol class="bl-steps">
+                        <li><strong>Quem.</strong> O visitante se identifica no portal por token SMS ou WhatsApp, ou por login Google, LinkedIn ou Microsoft. O registro guarda o identificador autenticado, não o MAC do aparelho.</li>
+                        <li><strong>Quando.</strong> O accounting RADIUS grava início, término e duração de cada sessão.</li>
+                        <li><strong>Onde.</strong> A sessão fica associada ao SSID e ao ponto de acesso em que o visitante entrou.</li>
+                        <li><strong>Como saiu.</strong> O IP público e a porta de origem, quando há NAT, ficam no equipamento de borda. O wi-fi.now entrega o lado que falta para fechar a correlação: a identidade ligada à sessão e ao horário.</li>
+                        <li><strong>Quem pode consultar.</strong> Os registros ficam no painel, com acesso restrito. A retenção e a adequação à LGPD são definidas por você, dono do ambiente.</li>
+                    </ol>
+
+                    <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
+                    <!-- Mesmas perguntas e respostas do FAQPage no topo do arquivo -->
+                    <div class="ft-accordion">
+                        <details>
+                            <summary>O endereço MAC identifica quem usou o Wi-Fi?</summary>
+                            <div class="ft-acc-body">
+                                <p>Não de forma confiável. Celulares usam MAC aleatório por padrão, no iOS e no Android, e esse endereço muda com o tempo. Uma lista de MACs montada hoje descreve aparelhos que amanhã terão outro endereço, não pessoas.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>O log do controlador mostra quem usou a rede?</summary>
+                            <div class="ft-acc-body">
+                                <p>Mostra um aparelho, não uma pessoa. Em geral aparece um MAC, um IP interno e o nome do SSID, sem nome de ninguém. A identidade precisa vir da autenticação no portal, não do aparelho.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Como identificar um visitante que usou o Wi-Fi num horário específico?</summary>
+                            <div class="ft-acc-body">
+                                <p>Ligando a sessão a uma identidade capturada no portal de conexão, por token SMS, e-mail validado ou voucher. O registro precisa guardar quem, quando (com relógio sincronizado por NTP), onde (SSID e ponto de acesso) e, quando há NAT, o IP público e a porta de origem.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Por quanto tempo preciso guardar o log de Wi-Fi de visitantes?</summary>
+                            <div class="ft-acc-body">
+                                <p>O art. 13 do Marco Civil atribui a quem provê a conexão o dever de guardar os registros de conexão por um ano, em sigilo e ambiente seguro. Se a sua empresa ocupa esse papel ao abrir o Wi-Fi para terceiros é análise para o jurídico. A pergunta técnica vem antes: o registro que você guarda leva a uma pessoa?</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Quais dados registrar de um visitante sem ferir a LGPD?</summary>
+                            <div class="ft-acc-body">
+                                <p>Só o necessário para identificar a sessão. O art. 6º da LGPD pede finalidade específica, tratamento mínimo e segurança contra acesso indevido. Um formulário de oito campos não deixa a rede mais segura, deixa a base mais exposta.</p>
+                            </div>
+                        </details>
+                    </div>
 
                     <div class="bl-inline-cta">
                         <div>
-                            <strong>Quer fazer o teste das 14h32 na sua rede?</strong>
-                            <p>Fale com o time do wi-fi.now e veja como fica o registro de uma sessão de visitante.</p>
+                            <strong>Comece o teste gratuito de 30 dias.</strong>
+                            <p>Integre o wi-fi.now na rede que você já tem e veja como fica o registro de uma sessão de visitante, pronto para uma auditoria.</p>
                         </div>
-                        <a href="#" class="btn btn-primary">Fale com um especialista</a>
+                        <a href="../planos.html" class="btn btn-primary">Começar o teste gratuito &rarr;</a>
                     </div>
                 </div>
 
