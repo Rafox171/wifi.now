@@ -6054,9 +6054,9 @@ a.bl-card:hover .bl-card-media img { transform: scale(1.03); }
 
 .bl-post-title {
     font-size: 2.6rem;
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: -0.025em;
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
     color: var(--text-dark);
     margin: 0.85rem 0 1.1rem;
 }
@@ -6091,6 +6091,16 @@ a.bl-card:hover .bl-card-media img { transform: scale(1.03); }
     font-size: 0.9rem;
     font-weight: 600;
     color: var(--text-dark);
+}
+
+/* Data e tempo de leitura no estilo do "Vigente a partir de" da Privacidade */
+.bl-byline .bl-meta {
+    font-family: 'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #5b6779;
 }
 
 .bl-post-layout {
@@ -6133,38 +6143,42 @@ a.bl-card:hover .bl-card-media img { transform: scale(1.03); }
     background: #ffffff;
 }
 
+/* Mesmo padrão do sumário da Privacidade: itens numerados e barra à esquerda */
 .bl-toc-title {
     display: block;
     font-size: 0.7rem;
     font-weight: 700;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--text-dark);
-    margin-bottom: 0.75rem;
+    color: var(--text-dark-muted);
+    margin-bottom: 0.9rem;
 }
 
 .bl-toc ol {
     list-style: none;
-    border-left: 1px solid var(--border-light);
+    counter-reset: bl-toc;
 }
+
+.bl-toc li { counter-increment: bl-toc; }
 
 .bl-toc a {
     display: block;
-    margin-left: -1px;
-    padding: 0.35rem 0 0.35rem 0.9rem;
-    border-left: 2px solid transparent;
-    font-size: 0.85rem;
+    padding: 0.32rem 0.75rem;
+    border-left: 2px solid var(--border-light);
+    font-size: 0.84rem;
     line-height: 1.4;
     color: var(--text-dark-muted);
     transition: color 0.15s, border-color 0.15s;
 }
 
-.bl-toc a:hover { color: var(--primary); }
+.bl-toc a::before { content: counter(bl-toc) ". "; }
+
+.bl-toc a:hover { color: var(--text-dark); }
 
 .bl-toc a.is-active {
     color: var(--primary);
     border-left-color: var(--primary);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .bl-aside-cta {
@@ -6195,52 +6209,59 @@ a.bl-card:hover .bl-card-media img { transform: scale(1.03); }
     padding: 0.6rem 1rem;
 }
 
-/* Texto corrido */
+/* Texto corrido no estilo da página de Privacidade (.dpa-doc).
+   Cinza do texto um tom acima do #64748b para manter contraste AA sobre o fundo cinza */
 .bl-prose {
-    font-size: 1.0625rem;
+    font-size: 0.95rem;
     line-height: 1.75;
-    color: #334155;
+    color: #5b6779;
 }
 
-.bl-prose > * + * { margin-top: 1.25rem; }
+.bl-prose > * + * { margin-top: 1rem; }
 
+/* Seções: numeral (ícone inserido pelo blog.js) + traço separador */
 .bl-prose h2 {
-    font-size: 1.6rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    font-size: 1.35rem;
     font-weight: 700;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
     color: var(--text-dark);
     margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #dde2e8;
     scroll-margin-top: 90px;
+}
+
+.bl-num {
+    flex-shrink: 0;
+    width: 37px;
+    height: 37px;
+    color: var(--primary);
 }
 
 .bl-prose h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.35;
+    font-size: 1.02rem;
+    font-weight: 700;
+    line-height: 1.4;
     color: var(--text-dark);
-    margin-top: 2rem;
+    margin-top: 1.75rem;
     scroll-margin-top: 90px;
 }
 
-.bl-prose a:not(.btn) {
-    color: var(--primary);
-    text-decoration: underline;
-    text-decoration-color: rgba(37, 99, 235, 0.35);
-    text-underline-offset: 3px;
-}
+.bl-prose a:not(.btn) { color: var(--primary); }
+.bl-prose a:not(.btn):hover { text-decoration: underline; }
 
-.bl-prose a:not(.btn):hover { text-decoration-color: currentColor; }
-
-.bl-prose strong { color: var(--text-dark); font-weight: 600; }
+.bl-prose strong { color: var(--text-dark); font-weight: 700; }
 
 .bl-prose ul,
-.bl-prose ol { padding-left: 1.4rem; }
+.bl-prose ol { padding-left: 1.25rem; }
 
 .bl-prose ul { list-style: disc; }
 .bl-prose ol { list-style: decimal; }
-.bl-prose li + li { margin-top: 0.55rem; }
-.bl-prose li::marker { color: var(--primary); }
+.bl-prose li + li { margin-top: 0.4rem; }
 
 .bl-prose code {
     background: var(--primary-soft);
@@ -6325,7 +6346,6 @@ a.bl-card:hover .bl-card-media img { transform: scale(1.03); }
     border-left: 3px solid var(--primary);
     border-radius: 0 12px 12px 0;
     padding: 1.4rem 1.6rem;
-    font-size: 1rem;
 }
 
 .bl-answer-label {
@@ -6362,13 +6382,13 @@ a.bl-card:hover .bl-card-media img { transform: scale(1.03); }
     width: 100%;
     min-width: 560px;
     border-collapse: collapse;
-    font-size: 0.93rem;
-    line-height: 1.55;
+    font-size: 0.9rem;
+    line-height: 1.65;
 }
 
 .bl-prose th,
 .bl-prose td {
-    padding: 0.85rem 1rem;
+    padding: 0.95rem 1.25rem;
     text-align: left;
     vertical-align: top;
     border-bottom: 1px solid var(--border-light);
@@ -6376,9 +6396,9 @@ a.bl-card:hover .bl-card-media img { transform: scale(1.03); }
 
 .bl-prose thead th {
     background: var(--bg-light-soft);
-    font-size: 0.78rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--text-dark);
 }
@@ -6491,6 +6511,12 @@ a.bl-card:hover .bl-card-media img { transform: scale(1.03); }
     .bl-post-main { max-width: none; }
     .bl-post-aside { position: static; }
     .bl-aside-cta { display: none; }
+
+    /* Leitura no celular igual à Privacidade: fonte maior e entrelinha folgada */
+    .bl-prose { font-size: 1.05rem; line-height: 1.8; }
+    .bl-prose > * + * { margin-top: 1.35rem; }
+    .bl-prose h2 { font-size: 1.3rem; gap: 0.6rem; margin-top: 2.75rem; padding-top: 1.85rem; }
+    .bl-prose h3 { font-size: 1.08rem; }
 }
 
 @media (max-width: 640px) {
@@ -6505,8 +6531,8 @@ a.bl-card:hover .bl-card-media img { transform: scale(1.03); }
     .bl-featured { margin-bottom: 2.5rem; }
     .bl-featured-body { padding: 1.5rem; }
     .bl-featured-title { font-size: 1.35rem; }
-    .bl-prose { font-size: 1rem; }
-    .bl-prose h2 { font-size: 1.4rem; margin-top: 2.5rem; }
+    .bl-prose h2 { font-size: 1.2rem; }
+    .bl-num { width: 32px; height: 32px; }
     .bl-answer { padding: 1.15rem 1.2rem; }
     .bl-inline-cta { padding: 1.4rem; }
     .bl-cover { margin-bottom: 1.75rem; }

@@ -96,7 +96,7 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../styles.css?v=145">
+    <link rel="stylesheet" href="../styles.css?v=146">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -413,43 +413,9 @@
                     });
                 });
             }
-
-            // "Wi-Fi" não quebra no hífen dentro dos títulos
-            document.querySelectorAll('.bl-page h1, .bl-page h2, .bl-page h3').forEach(h => {
-                h.innerHTML = h.innerHTML.replace(/Wi-Fi/g, '<span class="bl-nowrap">Wi-Fi</span>');
-            });
-
-            // Índice: destaca a seção que está na tela
-            const tocLinks = document.querySelectorAll('.bl-toc a');
-            const sections = new Map();
-            tocLinks.forEach(link => {
-                const target = document.querySelector(link.getAttribute('href'));
-                if (target) sections.set(target, link);
-            });
-            if ('IntersectionObserver' in window && sections.size) {
-                const observer = new IntersectionObserver(entries => {
-                    entries.forEach(entry => {
-                        if (!entry.isIntersecting) return;
-                        tocLinks.forEach(l => l.classList.remove('is-active'));
-                        sections.get(entry.target).classList.add('is-active');
-                    });
-                }, { rootMargin: '-90px 0px -70% 0px' });
-                sections.forEach((_, section) => observer.observe(section));
-            }
-
-            // Copiar link do artigo
-            const copyBtn = document.querySelector('[data-copy-link]');
-            if (copyBtn) {
-                copyBtn.addEventListener('click', () => {
-                    const url = document.querySelector('link[rel="canonical"]').href;
-                    navigator.clipboard.writeText(url).then(() => {
-                        copyBtn.textContent = 'Link copiado';
-                        setTimeout(() => { copyBtn.textContent = 'Copiar link'; }, 2000);
-                    }).catch(() => {});
-                });
-            }
         });
     </script>
+    <script src="blog.js?v=1"></script>
     <script src="../modal.js?v=5"></script>
     <script src="../i18n.js"></script>
 </body>

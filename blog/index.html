@@ -66,7 +66,7 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../styles.css?v=145">
+    <link rel="stylesheet" href="../styles.css?v=146">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -314,31 +314,9 @@
                     });
                 });
             }
-
-            // "Wi-Fi" não quebra no hífen dentro dos títulos
-            document.querySelectorAll('.bl-page h1, .bl-page h2, .bl-page h3').forEach(h => {
-                h.innerHTML = h.innerHTML.replace(/Wi-Fi/g, '<span class="bl-nowrap">Wi-Fi</span>');
-            });
-
-            // Filtro por categoria (todos os cards já estão no HTML; o filtro só esconde)
-            const filters = document.querySelectorAll('.bl-filter');
-            const items = document.querySelectorAll('.bl-item');
-            const empty = document.querySelector('.bl-empty');
-            filters.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const cat = btn.dataset.filter;
-                    let visible = 0;
-                    filters.forEach(b => b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'));
-                    items.forEach(item => {
-                        const show = cat === 'todos' || item.dataset.cat.split(' ').includes(cat);
-                        item.hidden = !show;
-                        if (show) visible++;
-                    });
-                    if (empty) empty.hidden = visible > 0;
-                });
-            });
         });
     </script>
+    <script src="blog.js?v=1"></script>
     <script src="../modal.js?v=5"></script>
     <script src="../i18n.js"></script>
 </body>
